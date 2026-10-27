@@ -1,0 +1,15 @@
+DOI: 10.1039/C6SM00187D — https://arxiv.org/abs/1601.00575 (arXiv:1601.00575)
+
+Chopin, J. & Kudrolli, A. (2016). "Disclinations, e-cones, and their interactions in
+extensible sheets." Soft Matter 12, 4457–4462.
+
+We investigate the nucleation, growth, and spatial organization of topological defects with a
+ribbon shaped elastic sheet which is stretched and twisted. Singularities are found to
+spontaneously arrange in a triangular lattice in the form of vertices connected by stretched
+ridges that result in a self-rigidified structure. The vertices are shown to be negative
+disclinations or e-cones which occur in sheets with negative Gaussian curvature, in contrast
+with d-cones in sheets with zero-Gaussian curvature. We find the growth of the wrinkled width
+of the ribbon to be consistent with a far-from-threshold approach assuming a compression-free
+base state. The system is found to show a transition from a regime where the wavelength is
+given by the ribbon geometry, to where it is given by its elasticity as a function of the ratio
+of the applied tension to the elastic modulus and cross-sectional area of the ribbon.

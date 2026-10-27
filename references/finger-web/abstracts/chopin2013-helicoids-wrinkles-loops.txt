@@ -1,0 +1,16 @@
+DOI: 10.1103/PhysRevLett.111.174302 — https://physics.clarku.edu/~akudrolli/preprints/ribbons.pdf
+
+Chopin, J. & Kudrolli, A. (2013). "Helicoids, Wrinkles, and Loops in Twisted Ribbons."
+Physical Review Letters 111, 174302.
+
+We investigate the instabilities of a flat elastic ribbon subject to twist under tension and
+develop an integrated phase diagram of the observed shapes and transitions. We find that the
+primary buckling mode switches from being localized longitudinally along the length of the
+ribbon to transverse above a triple point characterized by a crossover tension that scales with
+ribbon elasticity and aspect ratio. Far from threshold, the longitudinally buckled ribbon evolves
+continuously into a self-creased helicoid with focusing of the curvature along the triangular
+edges. Further twist causes an anomalous transition to loops compared with rods due to the
+self-rigidity induced by the creases. When the ribbon is twisted under high tension, transverse
+wrinkles are observed due to the development of compressive stresses with higher harmonics for
+greater width-to-length ratios. Our results can be used to develop functional structures using a
+wide range of elastic materials and length scales.

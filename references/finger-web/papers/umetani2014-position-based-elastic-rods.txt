@@ -1,0 +1,470 @@
+Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014), pp. 1­10 Vladlen Koltun and Eftychios Sifakis (Editors)
+
+Position-based Elastic Rods
+
+Nobuyuki Umetani Ryan Schmidt Autodesk Research
+
+Jos Stam
+
+Abstract We present a novel method to simulate complex bending and twisting of elastic rods. Elastic rods are commonly simulated using force based methods, such as the finite element method. These methods are accurate, but do not directly fit into the more efficient position-based dynamics framework, since the definition of material frames are not entirely based on positions. We introduce ghost points, which are additional points defined on edges, to naturally endow continuous material frames on discretized rods. We achieve robustness by a novel discretization of the Cosserat theory. The method supports coupling with a frame, a triangle, and a rigid body at the rod's end point. Our formulation is highly efficient, capable of simulating hundreds of strands in real-time.
+Categories and Subject Descriptors (according to ACM CCS): I.6.8 [Computer Graphics]: Simulation and modeling--Animation
+
+1. Introduction
+Position-based dynamics (PBD) has been widely accepted in the field of computer animation due to its efficiency, robustness and simplicity. The goal of the PBD is not to simulate physics as accurately as possible, but rather to sacrifice some quantitative accuracy to generate visually plausible simulation results very quickly. To this end, PBD has broadly been applied in many game engines and visual effects, where speed and controllability is crucial. PBD has primarily been used to simulate various physical phenomena associated with solid and thin-shell (i.e., clothing) deformations [MHHR07]. We present a new application of PBD to elastic rod simulation, which is essential for animating thin strands such as hair, fur, ropes, and so on.
+Because of the existence of twist, rod simulations are more complicated than solid or thin-shell simulations, making it hard to implement them in the PBD framework. PBD requires an object's deformations be characterized with discrete positions of points. However twist of a rod cannot be directly specified with only positions of the rod center line, because twist requires angular information ­rather than positional­ which describes how much the material is twisted around the center line. Since complex nonlinear deformation, such as out-of-plane buckling under torsional strain (e.g., Fig. 2), is caused by an interaction between twist and bending, handling of twist is critical in nonlinear deformation of rods.
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+Figure 1: A squishy ball hits a wall. Tentacles of the squishy ball was modeled with our position-based elastic rods.
+Representation of twist in elastic rods is actively researched, but so far no previous work has successfully implemented it in a PBD framework. While bending and stretching can be characterized by the position of the centerline, the twist is represented using material frames defined on the centerline. Constructing a material frame is difficult because its orientation is coupled with the centerline. Various approaches have been proposed. For example, Spillman et al. [ST07] use the penalty method to orient the material frame to rods' tangential direction. [BWR08] defined a material frame by rotating a Bishop frame in the direction of the rod's tangential direction. However, theses approaches are not suitable for PBD in which all deformations are described via discrete point positions, not frame orientations.
+Our goal is to incorporate the twisting and bending physics of elastic rods into the PBD framework. With proper handling of twist, we can produce (i) visually plausible sim-
+
+2
+
+N.Umetani et al. / Position-based Elastic Rods
+
+ulation of rod deformations, capable of reproducing various phenomena, which are (ii) fully controllable by physically meaningful parameters, (iii) the PBD framework ensures robustness, speed and simple implementation. Our position-based elastic rod model is derived from Cosserat theory [CC07], which describes the physical principles of elastic rods. Even though our model may not quantitatively agree with real-world experiments, it reproduces plausible deformation such as looping phenomena.
+Our key contribution is to introduce ghost points, which are placed on edges to represents material points distributed around the edge. Using ghost points, we can represent the material frame so that its orientation naturally follows the rods' tangential direction, leading to an efficient formulation. The dynamics of these ghost points are treated straightforwardly in the framework of PBD, hence our implementation is simple and fast.
+We propose a novel discretization of the Cosserat theory, which further enhances robustness and simplicity of the simulation. Qith this enhancement, we can enforce the twisting and bending forces without computing expensive trigonometric functions or their inverses. Moreover, our formula prevents the rod from flipping in high-torsion situations. We extend our discretization to also specify boundary conditions, in which the rod is connected to a rigid body or a triangle with one- or two-way coupling.
+We find that we can interpret the traditional constraint enforcement procedure of PBD in a variational formulation. This allows us to extend PBD so that it can handle multiple constraints simultaneously, resulting in a significant speed-up. Furthermore, because the material's deformation is usually written in a vector or tensor form, our variational approach enables us to manipulate the multi-dimensional anisotropic stiffness parameters of the material.
+Our formulation is very efficient. For example, on a modern workstation we can simulate 200 strands of hair, discretized with 20 edges, at an interactive rate. Our rods are also highly stable, to the point of being able to recover from a random initial deformation without kinks or instability. We demonstrate the flexibility of our approach by showing various examples coupling rods with other rigid and deformable objects. Our contributions include:
+· Ghost points to discretize material frames on a rod which are directly compatible with position-based dynamics.
+· New robust discrete elastic rod formulation based on Cosserat theory which also can specify boundary conditions of rods.
+· New variational interpretation of the PBD constraint enforcement, which enables fusing multiple constraints.
+2. Related Work
+Since Pai et al. [Pai02] first introduced the Cosserat theory of elastic rod simulation into graphics, it has remained an
+
+Figure 2: Rods show dynamic looping phenomenon known as Plectoneme when the both ends of a rod is clamped and twisted. This nonlinear behavior cannot be reproduced with a model without coupling of twist and bending.
+active research topic. Most elastic rod models are based on Cosserat theory, which describes nonlinear deformation of rods. A primary difference between formulations is whether the centerline is represented implicitly or explicitly.
+Implicit discretization of Cosserat theory. This approach uses curvatures to represent curved rod shape and recovers the rods' explicit centerline shape by integrating frames from one end. The first model from Pai et al. [Pai02] falls into this category. Later, this approach was further extended for helical elastic rods [BAC06] to simulate curled hairs. Recently, a super-clothoid model has been proposed [CBD13] that uses power-series to integrate curvature to find the center line of a clothoid with a stability guarantee. Implicit models achieve high-order smoothness of the rod with fewer DoFs and are suitable for hair simulations where one end is clamped and another end is free. However, since this approach solves for derivative information of material frames, it cannot be combined with position based approaches.
+Explicit discretization of Cossarat theory. Our methods are greatly inspired by the CORDE model proposed by Spillman et al. [ST07]. We both begin with an explicit representation of the centerline and define material frames to apply Cosserart theory. However, Spillman et al. define material frames independently from the centerline position, and thus require penalty-based methods to make the frames follow the centerline. This approach does not directly fit into the PBD framework because the variables have frame orientation, in addition to the position of the centerline.
+Formulation based on Bishop frame. In the explicit centerline model, the definition of a material frame that tracks the rods' tangential direction is not straightforward. The discrete elastic rod proposed by Bergou et al. [BWR08] was a breakthrough because their material frames, constructed from the Bishop frame, automatically follows the deformation of the rod center line. The Bishop frame construction was later transferred from the spatial domain to the temporal domain to enhance efficiency [BAV10, KJM10]. However as transported frames are not straightforward to represent in a point-based formulation, formulating constraints for PBD is a challenge with Bishop-based approaches.
+Mass-spring model. Several studies [SLF08, MSW09] modeled hair deformation with network of masses connected
+
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+N.Umetani et al. / Position-based Elastic Rods
+
+3
+
+by springs. The mass-spring model is simple and robust, but it is difficult to separate the bending stiffness from twisting stiffness. In contrast, our model is highly controllable; the properties of rods can be manipulated with independent, physically meaningful parameters.
+Position-based dynamics. PBD provides fast and robust simulation tailored for computer animations [MHHR07, BMOT13]. The core ideas, such as Verlet integration and stiffness based on constraints, are presented in [Jak01]. While PBD is not quantitatively accurate, in that it cannot reproduce real-world experimental data, PBD animation is sufficiently plausible for computer animations. PBD has been applied in game engines such as Nvidia PhysXTMand visual effect engines such as Nucleus [Sta09]. The numerous games and films produced with these tools are a testament to the importance and utility of PBD. Recently, application of PBD has been extended to fluid dynamics [MM13]. Muller et al. [MKC12] presented a fast method to apply inextensible constraints in the PBD for hair and fur without the twisting and bending forces. To our knowledge, twisting and bending of elastic rods have yet to be solved in the PBD framework.
+Shape matching method [MHTG05] is the most similar to PBD, and in that domain several studies tackle simulation of elastic rods. The model in [RKM12] represents the elastic rod by appending twisting force, computed by method using Bishop frame, to the shape matching deformation. The twisting force is modeled as an external force hence this method doesn't benefit from shape matching techniques unconditional stability. Oriented particles [MC11] consider rotational inertia at the nodes and perform rod simulation stably, but do not handle the coupling of bending and twisting. Shape matching method treats elasticity as a force to get back to the rigid goal shape, thus cannot easily handle coupling of twisting and bending where the rigid shape cannot be a goal shape.
+3. Discrete formulation of rod
+Like other PBD formulations, our position-based elastic rod handles elasticity in the form of constraints. Similar to the Gauss-Seidel method, the particle locations are iteratively updated, so that linearized constraints are locally satisfied. Hence, how to construct constraint for twisting and bending is essential for elastic rod simulation.
+We our technique is based on the Cosserat theory, which we briefly review (§ 3.1). To define differentiable continuous material frames on a rod in a discrete setting, we introduce ghost points (§ 3.2). Next, we describe a novel discretization of Cosserat theory that makes simulation simpler and faster (§ 3.3). We extend the types of constraints that PBD can handle by introducing a variational interpretation (§ 4). Using this extension, constraints for our elastic rod are described (§ 5). Finally, we describe end point constraints that fix the position and orientation of a rod at its end (§ 5.1).
+
+3.1. Cosserat theory
+
+We briefly review elastic rod simulation based on the
+Cosserat theory. For a more detailed discussion, please re-
+fer to [Ant05]. We assume that a rod is parameterized by arclength s  [0, L¯ ], where L¯ is the initial rod length. The
+rod's one dimensional configuration is described by the centerline, where p(s)  R3 is the position of the rod's centroid at the location s.
+
+The twist of a rod cannot be represented by the centerline positions. Thus, at every point s on the rod, we define an orthonormal material bases d1(s), d2(s), d3(s). A material frame is a 3×3 orthogonal matrix D(s) = [d1, d2, d3] which has material bases as columns. In differential geometry, the Darboux vector describes how the material frame evolves along the curve, and is a key component of Cosserat theory. The Darboux vector is an axial vector of frame rotation with respect to change of s. More specifically, using the bases of the material frame, the Darboux vector can be written as
+
+(s)
+
+=
+
+1 2
+
+3
+
+dk(s) × dk(s) ,
+
+(1)
+
+k=1
+
+where the prime ( ) denotes derivative with respect to s.
+
+Material coordinates of the Darboux vector at a location s become i(s) = (s) · di(s). This i encodes how the frame rotates around the material frame basis di. In Cosserat the-
+ory, the rod's bending and twisting energy is defined using
+the material coordinates of the Darboux vector as
+
+V=
+
+L¯ 1 02
+
+3 i=1
+
+3
+(i - ¯ i)Ki j( j - ¯ j)dt,
+j=1
+
+(2)
+
+where ¯ i is the material coordinate of the Darboux vector in an initial zero-stress configuration, and Ki j  R, i, j  {1, 2, 3} is a positive definite symmetric stiffness matrix.
+
+The initial material frame D(s) can be chosen arbitrarily.
+In practice, the material coordinates are chosen such that one of the basis vectors, such as d3, corresponds the rod's tangential direction so that p(s) become parallel to d3 ( this frame choice is called the adapted frame [BWR08]). Next, d1 and d2 are chosen as the principal axes of the second mo-
+ment of area computed for the rod's cross-section. In this
+particular setting, assuming isotropic homogeneous mate-
+rial, K becomes diagonal and the K11 and K22 correspond to stiffness of bending around the axes d1 and d2, and K33 specifies the twisting stiffness.
+
+Material frames must track the motion of the centerline over time. More specifically, when a rod changes its centerline, the material frames should move so that the tangential direction always corresponds to the basis d3. This constraint on the material frame complicates the simulation of rods. In contrast to the penalty method used in the CORDE model, the construction of the material frame that we describe in the following section naturally satisfies the above condition.
+
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+4
+
+N.Umetani et al. / Position-based Elastic Rods
+
+3.2. Continuous material frames on a discrete rod
+We explicitly model the rod's centerline as a polyline with N + 1 vertices {p0, p1, . . . , pN }. Edge e  {1, . . . , N} has end points pe-1 and pe, and masses {m0, . . . , mN } are associated with the vertices. As shown in Fig. 3, we assume each edge e has a ghost point peg  R3, which is placed on the perpendicular bisector of each edge. Masses {m1g, . . . , mNg } are associated with the ghost points .
+
+Figure 3: Configuration of edges, points (red) and ghost points (cyan).
+Within the PBD framework, our ghost points are treated in the same manner as any other points. The distance between the ghost point and the edge is set to a fixed value l¯g, which we set to the average edge length. Ghost points represent material distributed around the edges, thus inertia for the rotation around an edge becomes l¯g2meg. As a result, we can control rotational inertia by changing l¯g.
+
+Material frame at the center of an edge. Using the ghost points, we define frame De at the center of edge e as
+
+ 
+
+d3e
+
+d2e
+
+= =
+
+(pe - pe-1) / |pe - pe-1|, d3e × (pge - pe-1) / |d3e × (peg - pe-1)|,
+
+(3)
+
+ de1 = de2 × d3e .
+
+For the rest of the rod, the frame is continuously interpo-
+lated from these edge centers. Following [ST07], we define an orientation element e ( e  {1, . . . , N - 1} ) as a segment starting at the midpoint of edge e and ending at the midpoint of edge e + 1. Within the orientation element, the frame is interpolated from the two end frames De = [d1e , d2e , d3e ] and De+1 = [d1e+1, de2+1, de3+1].
+
+The vector  parameterizes the rotation, hence we can
+scale rotation by scaling this vector with the ratio inside orientation element as R(s) = exp([]r), where r = (s - se)/l¯e. Here, l¯e is the initial length of the orientation element e and se is the arclength parameter s at the midpoint of the edge e. With this uniform scaling, bases of the frame are interpo-
+lated with s as
+
+di(s) = exp([]r)dei ,
+
+(5)
+
+The differentiation of basis di(s) with respect to s can be written as di(s) = ([]/l¯)di(s). Thus, from (1), the Darboux vector can be written as (s) = /l¯, which is constant over
+s. Note that the constant Darboux vector means this orienta-
+tion element is modeled as a helix. However our discretization is different from super-helix [BAC06] in that helices
+are an internal representation to model bending and twist-
+ing; they are not used to represent outer shape of the rod. In
+fact, our helices are not connected to each other.
+
+Because the basis di is rotated around the axis vector n,
+the angle between the axis vector and the basis does not change. Hence, the inner product of the two vectors n and di(s) is constant with s (see Fig. 4-right). Thus, the material
+coordinate of the Darboux vector is also constant as
+
+i(s) =
+
+1 l¯
+
+
+
+·
+
+die
+
+=
+
+1 l¯
+
+
+
+·
+
+die+1,
+
+i = 1, 2, 3.
+
+(6)
+
+r (1-r)
+Figure 4: Left: configuration of points and frames. Middle: the rotation between neighboring frames. Right: rotation of basis around an axis.
+
+Interpolation of frames. In order to compute the Darboux
+vector and its material coordinates for Cosserat theory, we interpolate between two frames De and De+1 inside the orientation element e (see Fig. 4-left). We assume that the material frame changes uniformly from De into De+1 (i.e., spherical linear interpolation). This uniform interpolation
+between two frames can be easily computed using an axis-
+angle formulation. The rotation matrix between two frames R = De+1(De)T is represented with a 3-vector  = n, where   [0, ) is a rotation angle and n is an unit axis vector (see Fig. 4-middle). Using the matrix exponential, the
+rotation matrix can then be written as
+
+R = exp([]),
+
+(4)
+
+where "[·]" denotes the cross product matrix (i.e., [a] is a 3x3 skew-symmetric matrix as [a]b = a × b, a, b  R3).
+
+3.3. Modified frame twist representation
+
+So far, we described a straightforward way to obtain the Darboux vector using axis-angle parameterization (R  ). This parameterization involves inverse trigonometric functions and is computationally intensive for PBD, where constraint application may be iterated hundreds of times within a single time step. In this section, we further simplify our model - while increasing robustness - by modifying the axisangle parameterization  of the rotational matrix R.
+
+To obtain a better parameterization of , we start from Rodrigues' rotation formula, which describes the relationship between the rotation matrix and axis-angle parameter:
+
+R = I + [n] sin  + (1 - cos )(nnT - I),
+
+(7)
+
+where I is an identity matrix. To obtain cos , we take the
+
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+N.Umetani et al. / Position-based Elastic Rods
+
+5
+
+trace of both sides of (7), giving
+
+3
+
+1 + 2 cos  = trR = dne · den+1.
+
+(8)
+
+n=1
+
+Here we use the relationship tr(XY) = tr(XY), which is applicable for square matrices X and Y. Let "vect(·)" be an operator R3×3  R3 which maps a matrix to an axis vector which is the anti-symmetric part of the matrix (i.e., vect(A) = 1/2 (A32 - A23, A13 - A31, A21 - A12)). Using Rodrigues' parameter [MLSS94], rotation R can be pa-
+rameterized with 3-vector  as
+
+
+
+=
+
+2n
+
+tan
+
+ 2
+
+=
+
+4vect (R) 1 + trR
+
+=
+
+2 1+
+
+3 k=1
+
+dke
+
+×
+
+dke+1
+
+3 n=1
+
+den
+
+·
+
+den+1
+
+.
+
+(9)
+
+Here we use a trigonometric identity tan /2 = sin /(1 + cos ). Note that Rodrigues' parameter  have the same orientation n as , but the parameter has a different magnitude || = 2 tan(/2).
+
+Material coordinates of the Darboux vector. In our Cosserat-based formulation, we interchange axis angle vector (n) with Rodrigues' parameter  in the Darboux vector as (s) /l¯  (s). We call this approximated Darboux vector the modified discrete Darboux vector, denoted by . This modification may affect the quantitative accuracy of our position-based elastic rod, but brings us closer to our goal of simplicity and robustness.
+
+There are four motivations for using this approximation. First, Rodrigues' parameter  is a good approximation of  if the rotation angle  is small. Second, the  is easy to compute from the coordinate bases without using any trigonometric functions or their inverse. Third, as mentioned in [BWR08], the material coordinate of the modified discrete Darboux vector k goes to infinity when the rod is kinked completely ( = ). In such a case, the energy also goes to infinity, as it tries to push the rod back to the original shape. Finally, since the magnitude 2 tan(/2) is a monotonically increasing convex function, this makes the relative rotation at V = 0 unique. In other words, the Rodrigues' rotation parameter is a bijective map to the rotation matrix. This ensures that there are no kinked rest shapes other than the initial shape.
+
+From (9), the local coordinate of the modified discrete Darboux vector i(s) = (s)·di(s), (i = 1, 2, 3) can be writ-
+ten as
+
+i =
+
+4 l¯
+
+vect(Q)i = 1 + trQ
+
+2 l¯
+
+dej · dek+1 - dek · dej+1
+
+1+
+
+3 n=1
+
+den
+
+·
+
+den+1
+
+,
+
+(10)
+
+where Q = (De)T De+1 and indexes i, j, k permute as {i, j, k} = {1, 2, 3}, {2, 3, 1}, {3, 1, 2}. Note that R and Q are
+both rotation matrices from De to De+1, but they are different. While R is rotation in the global coordinate, Q is rela-
+tive rotation describing rotation to De+1 observed from the
+
+frame De. Since the coordinate of the modified discrete Darboux vector is also constant over an orientation element, the bending and twisting energy on the orientation element e can be written as
+
+Ve
+
+=
+
+l¯e 2
+
+3
+Kii(i - ¯ i)2.
+
+(11)
+
+i=1
+
+Note that in our formula, the rods' bending and twisting energy are computed exactly for both bending and twisting components. Hence, the bending and the twisting stiffness parameters are completely decoupled. In other words, we can make a rod that has zero twisting resistance with high bending stiffness or vice versa. This gives the computer animation artist fine-grained control over the rods' behavior.
+
+4. Variational interpretation of constraint enforcement
+
+In the PBD framework, elasticity is formulated via constraints. These constraints take zero values for the rest shape and increase if strain is applied. In each time step, the particle is updated in the gradient direction of the constraint, representing the internal force pushing object back to the rest shape. Let each constraint be written in the form C(p) = 0, where p is a concatenation of the positions of points involve in this constraint. We denote A as the set of points involving in this constraint, and we assume the constraint is a Mdimensional function. While the constraint function is scalar in the original PBD formula, here we want generalize it for multi-dimensional function. For this purpose, we introduce a variational formula for the constraint enforcement.
+
+In the classical mechanics, the points trajectory under constraints is known to comply the Gauss's principle of least constraint [GJS01]. This principle states that the trajectories of constrained points under gravity g minimize a quantity Z = aA ma |p¨ a - g|2, where p¨ is a points' accelerations. Because the p¨ a - g means how much the constraint changed the accelerations, the principle means constrained motion takes a path that minimizes the sum of acceleration change caused by constraints. Batty et al. [BBB07] leverage this variational principle for incompressible constraint around coupling boundary of fluid against rigid bodies.
+
+Let us explain how the Gauss's principle unfolds for the PBD time integration scheme. Let pt and vt are positions and
+velocities of points at time t and t is the time step. In the
+PBD scheme [MHHR07], the positions in the next time step can be computed as: pt+t = pt + t(vt + tg) + p, where
+the p is the position updates by constraint enforcement. Hence, the velocity of points becomes vt+t = (pt+t - pt )/t = vt + tg + p/t. Finally, the acceleration of a
+point can be written as
+
+p¨ = (vt+t - vt )/t = p/t2 + g.
+
+(12)
+
+By plugging in (12) in the Gauss's principle, we obtain the
+
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+6
+
+N.Umetani et al. / Position-based Elastic Rods
+
+following variational formula for the position update:
+
+p = arg min ma |pa|2 , where C(p + p) = 0. (13)
+p aA
+
+This means the position update minimizes weighted sum of
+
+its squares while satisfying the constraints. This QP problem
+
+can be easily solved by introducing a Lagrange multiplier
+
+
+
+
+
+M
+R
+
+.
+
+First,
+
+we
+
+add
+
+T
+
+
+C
+
+to
+
+the
+
+minimization
+
+target,
+
+which
+
+has to have zero derivative at the solution:
+
+
+
+
+
+b 
+
+ma
+
+|pa|2
+
++
+
+T
+
+
+C
+
+=
+
+0
+
+(b  A).
+
+(14)
+
+aA
+
+Here b means derivative with respect to the position of point b. Then, with a little calculation exercise, we get the
+point update using the Lagrange multiplier as:
+
+pa = -0.5waT aC,
+
+(15)
+
+where wa is a inverse of the point weight. Nest, we put this (15) into linearized constraint
+
+C + Cp = 0,
+
+(16)
+
+to solve the Lagrange multiplier. Finally, we obtain the final position update:
+
+
+
+-1
+
+pa = (waaC)  wbbCT bC C. (17)
+bA
+
+Note that when the mass of all points are equal, this update is equivalent to multiplying the C with Moore-Penrose matrix inverse of the matrix C. This formula is equal to the original one when the constraint is a scalar function (M = 1) and thus, is the natural extension of the original formula for solving multiple constrains at the same time. In other words, the original PBD approach solves constraint in the Gauss-Seidel manor, but we solved in the block GaussSeidel manor, which gives better convergence if there is a block structure in the coefficient matrix.
+This position update preserves the linear and angular momentum. The constraints are chosen to be invariant to the rigid transformation of points (i.e., its value doesn't change when the points are translated and rotated). Hence, the gradient of constraint C is perpendicular to the null space of the constraint. As long as we update the positions in the gradient space as (15), each constraint enforcement conserves translational and rotational momentum, and consequently, the sequence of constraint enforcements also consequently do.
+We have also tried a different approach to handle the multi-dimensional constraint. Inspired by the penalty-based method, we create a new scalar constraint by taking square norm of the multi-dimensional constraint (C = CT C). This approach was also functional, because if the constraint is zero, the square norm becomes also zero. However, since the
+
+square norm is quadratic, the linearization of the constraint is not a good approximation. Thus, more iterations are required to achieve a rod with the same stiffness.
+
+5. Constraints for elastic rod simulation
+Based on the previous sections, we construct constraints suitable for elastic rod simulation. Please refer to the accompanying supplemental document for differentiations of these constraint functions.
+
+Edge constraints. We consider three constraints for each edge. The first one is an edge length constraint
+
+CeL(pe-1, pe) = |pe-1 - pe| - L¯ e,
+
+(18)
+
+where L¯ e is the initial length of edge e. This constraint keeps the length of the edge similar to the rest length. The second constraint enforces that the ghost point lies on the edge's perpendicular bisector
+
+CeP(pe-1, pe, pge ) = (peg - pe-1/2)T (pe - pe-1), (19)
+
+where pe-1/2 = (pe-1 + pe)/2 is the midpoint of the edge e. The third constraint enforces a constant distance L¯ eg between the ghost point and the edge
+
+CeD(pe-1, pe, pge ) = pe-1/2 - pge - L¯ eg.
+
+(20)
+
+The rods' diameter change is usually very small, hence we enforce this constraint to prevent it.
+
+Anisotropic Bending-twisting constraint. With these three constraints, CeL, CeP, and CeD, we can define coordinates at the center of edge. Next, we define bending and twisting constraints based on the material frames defined on the orientation element. The constraint tries to minimize the difference of modified Darboux vector (defined in (10)) between rest shape and current shape.
+We specify a rod's anisotropic stiffness via parameters i  [0, 1] (i = 1, 2, 3). More specifically, 1 denotes the resistance to bending around d1 (the direction from midpoint to ghost point), 2 denotes the resistance to bending around d2, and 3 denotes twisting stiffness. To handle this anisotropic stiffness, we define the goal Darboux vector Gi oal = (1 - i)i + i¯ i, with i  [0, 1]. This is simply an interpolation between the current Darboux vector and that of the rest shape. The bending and twisting constraint can be written as:
+ 1 - 1Goal  CeBT (pe-1, pe, pe+1, pge , pge+1) =  2 - G2 oal  . (21)
+3 - G3 oal
+Note that if all the i are zero (zero stiffness), this constraint C takes value zero and has no effect on the constraint enforcement. Similarly, if all i = 1, the constraint tries to match the Darboux vector to the one from the rest shape.
+
+submitted to Eurographics/ ACM SIGGRAPH Symposium on Computer Animation (2014)
+
+

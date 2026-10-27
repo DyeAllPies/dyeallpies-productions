@@ -1,0 +1,1224 @@
+Miklo´s Bergou
+Columbia University
+
+Discrete Elastic Rods
+
+Max Wardetzky
+Freie Universita¨t Berlin
+
+Stephen Robinson
+Columbia University
+
+Basile Audoly
+CNRS / UPMC Univ Paris 06
+
+Eitan Grinspun
+Columbia University
+
+Figure 1: Experiment and simulation: A simple (trefoil) knot tied on an elastic rope can be turned into a number of fascinating shapes when twisted. Starting with a twist-free knot (left), we observe both continuous and discontinuous changes in the shape, for both directions of twist. Using our model of Discrete Elastic Rods, we are able to reproduce experiments with high accuracy.
+
+Abstract
+We present a discrete treatment of adapted framed curves, parallel transport, and holonomy, thus establishing the language for a discrete geometric model of thin flexible rods with arbitrary cross section and undeformed configuration. Our approach differs from existing simulation techniques in the graphics and mechanics literature both in the kinematic description--we represent the material frame by its angular deviation from the natural Bishop frame-- as well as in the dynamical treatment--we treat the centerline as dynamic and the material frame as quasistatic. Additionally, we describe a manifold projection method for coupling rods to rigidbodies and simultaneously enforcing rod inextensibility. The use of quasistatics and constraints provides an efficient treatment for stiff twisting and stretching modes; at the same time, we retain the dynamic bending of the centerline and accurately reproduce the coupling between bending and twisting modes. We validate the discrete rod model via quantitative buckling, stability, and coupled-mode experiments, and via qualitative knot-tying comparisons.
+CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism--Animation
+Keywords: rods, strands, discrete holonomy, discrete differential geometry
+1 Introduction
+Recent activity in the field of discrete differential geometry (DDG) has fueled the development of simple, robust, and efficient tools for geometry processing and physical simulation. The DDG approach to simulation begins with the laying out of a physical model that is discrete from the ground up; the primary directive in designing this model is a focus on the preservation of key geometric structures that characterize the actual (smooth) physical system [Grinspun 2006].
+
+Notably lacking is the application of DDG to physical modeling of elastic rods--curve-like elastic bodies that have one dimension ("length") much larger than the others ("cross-section"). Rods have many interesting potential applications in animating knots, sutures, plants, and even kinematic skeletons. They are ideal for modeling deformations characterized by stretching, bending, and twisting. Stretching and bending are captured by the deformation of a curve called the centerline, while twisting is captured by the rotation of a material frame associated to each point on the centerline.
+1.1 Goals and contributions
+Our goal is to develop a principled model that is (a) simple to implement and efficient to execute and (b) easy to validate and test for convergence, in the sense that solutions to static problems and trajectories of dynamic problems in the discrete setup approach the solutions of the corresponding smooth problem. In pursuing this goal, this paper advances our understanding of discrete differential geometry, physical modeling, and physical simulation.
+Elegant model of elastic rods We build on a representation of elastic rods introduced for purposes of analysis by Langer and Singer [1996], arriving at a reduced coordinate formulation with a minimal number of degrees of freedom for extensible rods that represents the centerline of the rod explicitly and represents the material frame using only a scalar variable (§4.2). Like other reduced coordinate models, this avoids the need for stiff constraints that couple the material frame to the centerline, yet unlike other (e.g., curvature-based) reduced coordinate models, the explicit centerline representation facilitates collision handling and rendering.
+Efficient quasistatic treatment of material frame We additionally emphasize that the speed of sound in elastic rods is much faster for twisting waves than for bending waves. While this has long been established, to the best of our knowledge it has not been used to simulate general elastic rods. Since in most applications the slower waves are of interest, we treat the material frame quasistatically (§5). When we combine this assumption with our reduced coordinate representation, the resulting equations of motion (§7) become very straightforward to implement and efficient to execute.
+Geometry of discrete framed curves and their connections Because our derivation is based on the concepts of DDG, our discrete model retains very distinctly the geometric structure of the smooth setting--in particular, that of parallel transport and the forces induced by the variation of holonomy (§6). We introduce
+
+Figure 2: Helical perversion in experiment and simulation: starting from the natural shape of a Slinky R (top) we first remove writhe by pinching the flat cross-section between two fingers and traveling from one end to the other, arriving at a fully stretched, almost flat ribbon (middle). By bringing the ends together, a persistent perversion forms (bottom), whose shape is surprisingly different from the natural shape.
+
+simple algebraic tools and mnemonic diagrams that make it possible to carry out in a methodical manner derivations involving the discrete connection induced by parallel transport. These tools are the central building blocks for deriving forces associated to displacements of the rod's centerline and twist of the material frame.
+Inextensibility and encapsulated coupling with rigid-bodies When simulating inextensible rods, it becomes profitable to enforce the rod's inextensibility via constraints rather than stiff penalty forces. Also, in general simulation applications, and in computer animation and gaming, it is often useful to enforce boundary conditions by coupling the rod to another physical system--most naturally, to a rigid-body, which carries exactly the degrees of freedom as any point on an elastic rod (i.e., position and orientation). Our approach in §8 handles both types of constraints, emphasizing physical correctness as well as an important software reuse principle: the method of coupling allows our rod simulation to interact with any existing rigid-body simulation without internal modification of either the rod or rigid-body codes.
+Validation We show how to model and simulate inextensible elastic rods with arbitrary curved undeformed centerline and anisotropic bending response (§7), and we show the simplifications that occur for naturally straight rods with isotropic bending response. We validate our model against known analytic solutions and present empirical evidence supporting the good convergence behavior of our discrete model to its smooth counterpart (§9).
+2 Related work
+Mathematical analysis, modeling, and simulation of elastic rods is an active field in mechanics [van der Heijden et al. 2003; Goyal et al. 2007], numerical analysis [Falk and Xu 1995], and geometry [Bobenko and Suris 1999; Lin and Schwetlick 2004] with applications spanning medicine [Lenoir et al. 2006], biology [Yang et al. 1993; Klapper 1996], the study of knots [Phillips et al. 2002; Brown et al. 2004], and computer graphics [Chang et al. 2007]. It is impossible to survey the many works in this area in a brief space, so we discuss only the most closely-related works. For a broader starting point, refer to the expositions of Rubin [2000] and Maddocks [1984; 1994]. For the state of the art in strand and hair simulation, refer to the survey by Ward et al. [2007] and the course notes of Hadap et al. [2007].
+In mechanical engineering, elastic rods are typically treated with a finite difference [Klapper 1996] or finite element [Yang et al. 1993; Goyal et al. 2007] discretization of the smooth equations. Goldstein and Langer [1995] observed that using the Bishop frame sim-
+
+plifies both the analytical formulation and the numerical implementation of the dynamics of symmetric rods.
+In graphics, Terzopoulos et al. [1987] introduced tensorial treatments of elastica, and Pai [2002] applied a discretization of the Cosserat rod model to simulate a strand. Bertails et al. [2006] used a piecewise helical discretization to produce compelling animations of curly hair using few elements per strand. Hadap [2006] considered a serial multi-body chain and used differential algebraic equations to treat the attendant numerical stiffness. These recent works used an implicit centerline representation based on reduced (curvature) coordinates.
+By contrast, Choe et al. [2005] represented the centerline explicitly by a sequence of edges connected by linear and torsional springs. Gre´goire and Scho¨mer [2007] proposed an explicit centerline discretization coupled to a quaternionic material frame representation. Spillmann and Teschner [2007; 2008] built on this idea in their development of algorithms for dynamic contact. Theetten et al. [2006] presented a geometric spline-based approach that can model large-displacement plastic deformations. These authors argue that an explicit (displacement) representation of the centerline facilitates the simulation of complex contact scenarios and looping phenomena. We share this view.
+3 Overview
+In many applications, the rod tends to bend or twist rather than to stretch; therefore, the case of inextensible rods is prevalent and im-
+
+Algorithm 1 Discrete elastic rod simulation
+
+Require: u0
+
+// Bishop frame vector in frame {t0, u0, v0} at edge 0
+
+Require: x0 . . . xn+1
+
+// position of centerline in rest state
+
+Require: (x0, x0) . . . (xn+1, x n+1) // initial position/velocity of centerline
+
+Require: boundary conditions
+
+// free, clamped or body-coupled ends
+
+1:
+
+precompute
+
+
+
+j i
+
+using (2)
+
+2: set quasistatic material frame (§5.1)
+
+3: while simulating do
+
+4: apply torque to rigid-body (§8.2)
+
+5: integrate rigid-body (external library)
+
+// [Smith 2008]
+
+6: compute forces on centerline (§7.1)
+
+7: integrate centerline (§7.2)
+
+// [Hairer et al. 2006]
+
+8: enforce inextensibility and rigid-body coupling (§8)
+
+9: collision detection and response // [Spillmann and Teschner 2008]
+
+10: update Bishop frame (§4.2.2)
+
+11: update quasistatic material frame (§5.1)
+
+12: end while
+
+portant. We visualize an inextensible rod as an infinitesimally thin, fixed centerline that can bend but not stretch and that is surrounded by a finite, but thin, elastic material. We consider the general case of naturally curved rods with anisotropic bending response and note the simplifications that occur in the special case of naturally straight rods with isotropic bending response. We also present a simple and efficient method for attaching a rod to a rigid-body (§8). The different components of our method are summarized in Algorithm 1. Barred quantities are precomputed and subsequently held fixed.
+4 Kirchhoff rods
+4.1 Smooth setting
+Framed-curve representation We describe the configuration of a rod by an adapted framed curve  = { ; t, m1, m2} (see Fig. 3). Here  (s) is an arc length parameterized curve in R3 describing the rod's centerline; the assignment of an orthonormal material frame {t(s), m1(s), m2(s)} to each point on the centerline contains the requisite information for measuring twist. The material frame satisfies t(s) =  (s), i.e., it is adapted to the centerline such that the first material axis is tangent to the curve. We will refer to  = t as the centerline's curvature (normal) vector.
+
+Elastic energy The Kirchhoff theory of elastic rods assigns an elastic energy, E(), to any adapted framed curve . This energy is assembled from three scalar functions that measure strain--given by the change of the orthonormal frame {t(s), m1(s), m2(s)} expressed in its own coordinates:
+1 = t · m1, 2 = t · m2, and m = m1 · m2 .
+Notice that since t =  , the first two of the above terms, 1 and 2, represent the rod's curvature vector expressed in material coordinates and measure the bending of material frame. The last term, m, refers to the twist of the material frame around the tangent. Accordingly, total elastic energy contains bending and twisting contributions:
+E() = Ebend() + Etwist() .
+The classical Kirchhoff equations for rods are obtained from this type of energy using Lagrangian mechanics (see, e.g., [Audoly and Pomeau 2008]). The goal of the present paper is to derive a discrete form of these equations.
+Our assumption that s is an arc length parameterization implies that the rod is inextensible; therefore, we do not include a stretching energy. Instead, we enforce inextensibility via an auxiliary constraint (§8). It is straightforward to drop this assumption by also including a stretching term.
+
+4.1.1 Bending energy
+
+When the rod's undeformed configuration is straight (as opposed to curved) and the bending response is isotropic (as opposed to giving preference to some bending directions over others), the bending energy takes the simple form
+
+Ebend()
+
+=
+
+1 2
+
+ 2ds = 1 2
+
+ 2ds ,
+
+where the 2-vector  = (1, 2)T represents the centerline curvature vector expressed in the material frame coordinates and  is the
+rod's bending modulus.
+
+We generalize this to anisotropic bending response by replacing the (isotropic) dot product with a general quadratic form B (a symmetric positive definite 2 × 2 matrix), so that  T B is the bending
+
+(s)
+
+t
+
+t
+
+Figure 3: Adapted framed curve (Left) The configuration of an elastic rod is represented by a curve  (s) and a material frame {t(s), m1(s), m2(s)}. (Right) The material frame is encoded by an angle of rotation  relative to the natural Bishop frame {t(s), u(s), v(s)}.
+
+energy density. We do not assume that B is diagonal--in fact, we determine B by requiring that the undeformed material frame is a Bishop frame (see below). We also generalize to naturally curved rods by subtracting away the undeformed centerline curvature  , i.e., using ( - ) in place of  above.
+Putting all this together, we have
+
+Ebend()
+
+=
+
+1 2
+
+( - )T B( - )ds ,
+
+where barred quantities refer to the undeformed configuration. The particular case of an isotropic, naturally straight rod is recovered by taking B =  Id2×2 and  = 0.
+
+4.1.2 Twisting energy
+
+Letting m = m1 · m2 denote the twist of the material frame about the centerline, the twisting energy is given by
+
+Etwist()
+
+=
+
+1 2
+
+ m2ds .
+
+The formula m = m1 · m2 gives an expression for the twist in terms of material vectors immersed in ambient space. We now seek an equivalent expression that exposes a reduced set of coordinates.
+
+Parallel transport and the Bishop (natural) frame Given a fixed centerline, consider the task of assigning to it the geometrically most natural (and physically the most relaxed) frame. The Bishop frame {t(s), u(s), v(s)} for a given centerline is an adapted frame with zero twist uniformly, i.e., u · v = -v · u = 0. The assignment of an adapted frame to one point on the curve uniquely fixes the Bishop frame throughout the curve. Our convention is to assign the Bishop frame at the first endpoint (s = 0) of the curve.
+Consider traversing the centerline from one end to the other at unit speed. The evolution of the Bishop frame (and any other orthonormal frame) can be described in terms of its Darboux vector, (s):
+t =  × t , u =  × u , and v =  × v .
+Since by the definition of the Bishop frame, u · v = 0, it follows from the second equation that  has no tangential component (along t). This, together with the first equation implies that  = b, where b = t × is the curvature binormal along the centerline.
+The Darboux vector of the Bishop frame serves to define parallel transport, a concept that plays a central role in the remainder of this paper. We parallel transport a vector x from one point on the centerline to another by integrating the equation x = b × x.
+
+x ti-1 ei-1 i
+
+xi-1
+
+-i
+
+ti
+ei xi+1
+
+Figure 4: Notation Angles and vectors used in our discrete model.
+
+Thus, infinitesimally, parallel transport corresponds to a rotation about the binormal--a concept that we will use again in our discrete model. Parallel transport keeps the tangential component of x tangential, and evolves the cross-sectional component of x via a tangential velocity, in particular without rotating the cross-section about the centerline. Observe that the three Bishop axes evolve under parallel transport.
+
+Curve-angle representation The (twist-free) Bishop frame allows for a simple parameterization of the material frame [Langer and Singer 1996]. Let  (s) be the scalar function that measures the rotation about the tangent of the material frame relative to the Bishop frame (see Fig. 3):
+
+m1 = cos  · u + sin  · v , m2 = - sin  · u + cos  · v .
+
+The key observation is that twist, m, can be expressed in terms of  by m(s) =  (s). This relation is easily derived using the facts that m = (m1) · m2 and u · v = 0. Hence, we write the twist energy as
+
+Etwist()
+
+=
+
+1 2
+
+ ( )2ds .
+
+Observe that we have expressed the elastic energy of Kirchhoff rods by two dominant players: the position of the centerline,  , and the angle of rotation,  , between the Bishop and the material frame. This reduced coordinate representation is the cornerstone of our
+discrete theory.
+
+4.2 Discrete Kirchhoff rods
+
+When painting the discrete picture, our guiding principle is to seek a viewpoint that builds on the same geometric principles as the corresponding smooth theory.
+
+Primal vs. dual We distinguish between primal quantities, associated with vertices and decorated with lower indices, and dual quantities, associated with edges and decorated with upper indices. This diagram summarizes our indexing and notation conventions:
+
+x1
+
+x0
+
+e0
+
+e1
+
+x3
+
+x2
+
+e2
+
+xn
+
+en
+
+xn+1
+
+Discrete framed curves A discrete framed curve, , consists of a centerline comprised of (n + 2) vertices x0, . . . , xn+1 and (n + 1) straight edges e0, . . . , en such that ei = xi+1 - xi, together with an assignment of material frames Mi = {ti, m1i , mi2} per edge (see Fig. 4). We consider adapted frames, where ti = ei/|ei| is the unit tangent vector per edge. Notice that tangent vectors of polygonal curves are uniquely defined at edges, whereas their definition at
+
+vertices would be ambiguous. Since tangent vectors belong to the triad that makes up frames on curves, we naturally assign frames to edges, rather than to vertices.
+
+Pointwise vs. integrated quantities In the smooth setting, we consider certain quantities (i.e., curvature and twist) at each point on the rod, and we define the energy by integrating over the length of the rod. By contrast, in the discrete setting, certain quantities often emerge naturally in an integrated rather than a pointwise way. For example, relating discrete curvature to the turning angle between incident edges corresponds to an integration over the curve's Gauss image [Grinspun 2006].
+We refer to an integrated quantity as a measure that associates a number to a domain D of the curve, corresponding to an integral of a function over that domain. To convert an integrated quantity back to a pointwise one, we simply divide by the length, |D|, of the domain of integration. In the discrete case, we define Di as the Voronoi region associated to each vertex, having length |Di| = li/2, where li = |ei-1| + |ei|.
+
+4.2.1 Discrete bending energy
+
+Recall that the key player for formulating elastic bending energy in the smooth case was the curvature of the centerline.
+
+Discrete curvature Since each edge is straight, it follows that discrete curvature is naturally associated with vertices. Letting i denote the turning angle between two consecutive edges (see Fig. 4)
+we define (integrated) curvature by
+
+i
+
+= 2 tan i 2
+
+.
+
+We will see in §6 that this definition of discrete curvature emerges
+naturally from an analysis of the geometry of discrete rods, and to
+be consistent throughout, we will use this definition in the bending energy. Note that i   as incident edges bend toward each other, so this measure of curvature will penalize sharp kinks in the rod.
+
+Discrete curvature binormal We define the curvature binormal at a vertex (an integrated quantity) by
+
+( b)i
+
+=
+
+2ei-1 × ei |ei-1||ei| + ei-1 · ei
+
+.
+
+(1)
+
+Observe that the vector (b)i is orthogonal to the osculating plane passing through two consecutive edges and has magnitude 2 tan(i/2). In particular, this quantity is well-defined in the case of collinear edges, even though the binormal itself is not.
+
+Discrete bending energy We now have all the pieces to assemble the bending energy of a discrete naturally straight, isotropic rod:
+
+  Ebend()
+
+=
+
+1 2
+
+n
+
+i=1
+
+bi 2 li = n (bi)2 . li/2 2 i=1 li
+
+The division by li/2 is due to converting the integrated quantity bi
+into a pointwise one (see above), whereas the multiplication by li/2 takes care of the measure of the domain of integration, Di.
+
+Recall that for an anisotropic bending response, we require the ma-
+terial curvatures given by inner products between curvature vectors and material frame vectors. Using the curvature binormal (b)i as defined by (1), we express the material curvatures as
+
+
+
+j i
+
+=
+
+(b)i · m2j , -(b)i · m1j
+
+T
+
+for
+
+j  {i - 1, i} .
+
+(2)
+
+Here, following our primal-dual notation, the double indices-- upper and lower--correspond to an edge-vertex pair. Barred quantities we denote evaluation on the undeformed configuration.
+
+With these definitions, the bending energy of a discrete rod is
+
+  Ebend
+
+()
+
+=
+
+n i=1
+
+1 2li
+
+i j=i-1
+
+
+
+j i
+
+-
+
+
+
+j i
+
+T Bj
+
+
+
+j i
+
+-
+
+
+
+j i
+
+.
+
+(3)
+
+This formulation allows for a general (anisotropic) bending re-
+
+sponse and a general (curved) undeformed configuration. As in the
+
+smooth case, the simple expression of the special case is recovered
+
+by
+
+taking
+
+Bj
+
+=
+
+
+
+Id2×2
+
+and
+
+
+
+j i
+
+=
+
+0.
+
+4.2.2 Discrete twisting energy
+
+To formulate the discrete twisting energy, we follow the same progression as in the smooth setting, first laying out the notions of parallel transport and the Bishop frame, and then introducing the angle of rotation to the material frame.
+
+Discrete parallel transport and Bishop frame We define discrete parallel transport in analogy to the smooth case, i.e.,
+as a rotation Pi about the curvature binormal,
+Pi ti-1 = ti, Pi ti-1 × ti = ti-1 × ti .
+By convention, Pi is the identity if ti-1 = ti, whereas Pi is not defined if ti-1 = -ti. Parallel transport is a key notion that allows us to generalize the notion of twist from the smooth to the discrete setting.
+In order to define Bishop frames, we draw upon the smooth case by transporting a unit vector u0, which is orthogonal to t0, along the rod using our rotation operators Pi, i.e., we iteratively define
+ui = Pi ui-1 .
+The third axis of each Bishop frame is then vi = ti × ui.
+
+Bishop frame update The Bishop frame is by definition adapted to the centerline. This requires that u0  t0, a condition that must be maintained during simulation. Each simulation step moves the centerline to a new position, so that in general after Algorithm step 9 the requirement u0  t0 may be violated (the exception is when t0 is clamped). We re-adapt the frame by parallel transporting the Bishop vector (in time)--in analogy to the parallel transport along the centerline--by computing a rotation operation.
+
+Material frame representation Since both the material frame and Bishop frame are defined at edges, let  i denote the angle needed to rotate the Bishop frame into the material frame at edge ei (see Fig. 4). Then the material frame vectors at edge i are
+m1i = cos  i · ui + sin  i · vi , and mi2 = - sin  i · ui + cos  i · vi .
+
+Discrete twisting energy In perfect analogy to the curve-angle representation in the smooth case, we adopt the twisting energy
+
+  n
+Etwist() = 
+i=1
+
+( i -  i-1)2 li
+
+n
+=
+i=1
+
+ mi2 li
+
+,
+
+where the scalar mi =  i -  i-1 is the (integrated) discrete twist. The variable mi measures the angle between two adapted frames: the result of parallel transporting the material frame from edge ei-1 to ei and the material frame at edge ei itself.
+
+5 Quasistatic material frame postulation
+
+Our goal is to arrive at equations describing the time-evolution of the centerline of the rod. We first pave the way with an important simplifying assumption.
+The speed of a twist wave increases as the rotational inertia of the cross section vanishes. By contrast, bending waves are dispersive [Sommerfeld 1964]--their speed depends on their wavelength,  --with velocity vh/ , where h is the rod radius, and v is solid material's speed of sound. Consequently, twist waves travel faster than bending waves, for bending waves with large wavelengths   h, i.e., much larger than the rod radius. For the problems we consider, the relevant dynamics are in (large-wavelength) bending modes, and it is wasteful of computation to resolve the temporal evolution of the twist waves.
+Consider the limit of a vanishing cross-sectional rotational inertia: twist waves propagate instantly. At any instant in time, the material frames are the minimizer of elastic energy, subject to any given boundary conditions on the material frame:
+
+ E()  j
+
+=
+
+0
+
+,
+
+(4)
+
+Note that the quasistatic treatment of the material frame eliminates the  j variables as degrees of freedom from the system: given the rod's centerline and the boundary conditions on the material frame, (4) is used to determine what the material frame must be.
+
+Boundary conditions The value of  j for an edge may be prescribed by a given boundary condition on the material frame. In practice, we consider stressfree ends (i.e., no boundary conditions) or clamped ends (i.e., assigning the material frame for j = 0 and j = n). We use (4) for all  j variables whose value is not prescribed by a boundary condition, ensuring that the number of equations matches the number of unknowns for the angles  j.
+5.1 Quasistatic update
+During simulation, we enforce the quasistatic nature of the material frame by ensuring that (4) is satisfied before forces are computed.
+
+Special case of naturally straight, isotropic rods For an isotropic rod with a naturally straight undeformed configuration, (4) implies that a clamped rod has uniform twist,
+
+mi =  n -  0 = constant ,
+
+(5)
+
+li
+
+2L
+
+where 2L = ni=1 li, and the pointwise twist mi/li (recall §4.2.2) depends only on the boundary conditions: the difference of angles of the end edges,  n -  0. Substituting the above into the formula for E() gives the simplified expression
+
+ E() =
+
+n
+
+(b)i2 + 
+
+n -0
+
+2
+.
+
+i=1 li
+
+2L
+
+(6)
+
+Observe that the twist energy depends only on the angle between material and Bishop frame at the boundary edges of the rod. For the naturally straight, isotropic case, the above implies that a rod with stressfree ends has no twist.
+
+General case For the general case, we use Newton's method to minimize the elastic energy E() with respect to the material
+
+Figure 5: Asymmetry of twist: anisotropy of the cross-sections and natural curvature of the centerline "conspire" to produce nonuniform twist distribution. From top to bottom: reference configuration, moderate twist, large twist.
+
+frames, which requires both the gradient and Hessian of the energy with respect to the  j variables. The gradient is given by
+
+ E()  j
+
+=
+
+ 
+
+j
+
+Wj + Wj+1
+
++ 2
+
+m j - m j+1 l j l j+1
+
+,
+
+(7)
+
+where
+
+ 
+
+j Wi
+
+=
+
+1 li
+
+(
+
+j i
+
+)T
+
+JB
+
+j
+
+(
+
+j i
+
+-
+
+
+
+j i
+
+)
+
+.
+
+To derive the latter identity, note that  m1j /  j = m2j and
+
+ m2j /  j
+
+=
+
+-m1j
+
+to
+
+obtain
+
+
+
+
+
+j i
+
+/
+
+
+
+j
+
+=
+
+-J
+
+j i
+
+,
+
+where
+
+J
+
+acts
+
+on
+
+two dimensional vectors by counter-clockwise /2 rotation. As ex-
+
+pected, (5) is a special case of (7).
+
+The Hessian, H, is obtained by differentiating (7) with respect to  j-1,  j, and  j+1. The resulting components of the Hessian are:
+
+where
+
+H j,
+
+j-1
+
+=
+
+-
+
+2 lj
+
+,
+
+H j, j+1
+
+= - 2 l j+1
+
+,
+
+Hj, j
+
+=
+
+2 lj
+
++
+
+2 l j+1
+
++
+
+2 (  j)2
+
+Wj + Wj+1
+
+,
+
+2 (  j)2 Wi
+
+=
+
+1 li
+
+(
+
+j i
+
+)T
+
+JT
+
+B
+
+j
+
+J(
+
+j i
+
+)
+
+-
+
+1 li
+
+(
+
+j i
+
+)T
+
+B
+
+j
+
+(
+
+j i
+
+-
+
+
+
+j i
+
+)
+
+.
+
+Note that the Hessian is tridiagonal and so it can be factored in O(n) time. Additionally, in order to accelerate the convergence of Newton's method, we combine it with a line search along the Newton direction [Press et al. 2002]. Finally, we note that Newton's method converges quickly: the  j variables do not change significantly between time steps, so that previous values are a good initial guess.
+
+Forward We presented the bending and twisting energy of a smooth Kirchhoff rod and constructed by direct analogy the corresponding energies for a discrete Kirchhoff rod. The challenge ahead is to derive the elastic forces induced by the gradients of these energies. These forces will include terms that arise from the dependence of the vectors u j and v j on centerline positions, xi. Since these Bishop vectors are defined via parallel transport, we must consider the variation of parallel transport with respect to moving the centerline. For this, we turn to the concept of holonomy.
+
+6 Discrete holonomy
+
+Holonomy is a classical concept from differential geometry: it measures the deficit of geometric data (frames) to close up when parallel transported around a closed loop. In our case (of discrete rods), holonomy depends--just like parallel transport itself--only on the centerline; it measures the (scalar) angle when parallel transporting an adapted frame along a closed loop of discrete edges. Indeed, the fact that holonomy can be expressed as a scalar is the reason why it is such a useful concept for computing forces.
+Consider the variation of two consecutive edges ei-1() and ei() with tangents ti-1() and ti(), and parallel transport Pi(), where  denotes the variation parameter. We denote by P~i() the parallel transport from ti(0) to the deformed configuration, ti(), i.e., the rotation that satisfies P~i(0) = Id and
+
+P~i() ti(0) = ti() and P~i() ti(0) × ti() = ti(0) × ti() .
+
+Now consider the concatenation of parallel transports given by
+
+Ri-1() = P~i-1() T  Pi() T  P~i()  Pi(0) ,
+
+(8)
+
+which we depict by the following mnemonic diagram, where arrows represent parallel transport:
+
+ti-1 ( ) 6
+
+- ti() 6
+
+i ( )
+
+ti-1(0) - ti(0)
+
+Observe that Ri-1() corresponds to traversing this diagram in counter-clockwise order, starting at ti-1(0). It follows from the definitions that Ri-1() maps the tangent ti-1(0) to itself and is therefore a rotation by angle i() about axis ti-1(0). In the language of differential geometry, i() is the holonomy of the connection induced by parallel transport around the depicted closed loop.
+The ingredient that we require is the gradient of i for 1  i  n. Building on the literature of a related quantity known as the writhe of polygonal curves [de Vries 2005], we obtain the variation of i with respect to a centerline displacement  x:
+
+ i
+
+=
+
+-2ti-1 × ti 1 + ti-1 · ti
+
+·
+
+1 2
+
+ xi -  xi-1 |ei-1|
+
++
+
+1 2
+
+ xi+1 -  xi |ei|
+
+.
+
+It can be shown that the corresponding expression in the smooth setting is  ( ds) = - b·( x)sds where the subscript s denotes differentiation with respect to s. Compare the discrete expression to
+the integrand of the smooth case; the second factor of the discrete expression is a finite-difference approximation of ( x)s. In analogy to the smooth form, we take the first factor to be the integrated
+curvature binormal. Note that this definition coincides with (1),
+and allows us to rewrite the discrete result as
+
+i-1i
+
+=
+
+( b)i 2|ei-1|
+
+,
+
+i+1i
+
+=
+
+-
+
+( b)i 2|ei|
+
+,
+
+(9)
+
+and ii = -(i-1 + i+1)i.
+
+6.1 Variation of parallel transport
+
+With our new tool in hand, we can derive the change in the Bishop frame when varying the rod's centerline. Since the Bishop frame is
+
+by requirement adapted to the curve, we are interested in the angle that the frame is rotated by about the tangent. This situation is again depicted in the following diagram:
+
+F0() 0- F1() 0 - · · · F j-1() 0- F j()
+
+6
+
+6
+
+6
+
+6
+
+0 1()
+
+2 ( )
+
+ j()  j
+
+F0(0) - F1(0)
+
+- · · · F j-1(0) - F j(0)
+
+0
+
+0
+
+0
+
+Here, the Bishop frames Fi = {ti, ui, vi} are displayed in place of the tangents to show that we are parallel-transporting these frames from one edge to the next. Additionally, each labeled arrow indicates the angle needed to align the result of parallel transporting the frame at the tail of the arrow with the frame at the head. Thus, the horizontal arrows are labeled with 0 to indicate that no twist is required to align Pi(Fi-1) to Fi; the first vertical arrow is also labeled with 0 because we ensure that F0 is always updated via parallel transport (see §4.2.2). We are interested in the angle of rotation,  j, required to align P~ j() F j(0) to F j().
+
+Since parallel transport commutes with twist and holonomy is additive under concatenation of loops, it follows from traversing this diagram in counter-clockwise order that the resulting angle is  j = ij=1 i. For computing forces, we require the gradient of this angle with respect to vertex positions, which is given by
+
+j
+
+i j =  ik .
+
+(10)
+
+k=1
+
+By (9), this sum will have at most three non-zero terms.
+
+Discussion In hindsight, we view the relation of holonomy to the profile of the centerline as an extension of the celebrated Calugareanu-White-Fuller theorem [1971] for discrete curves. Fuller [1978] noted that this theorem is applicable to the equilibria of closed elastic rods with isotropic cross-sections. Our development extends to the general case of open boundaries and even to anisotropic cross-sections.
+
+7 Equations of motion
+
+We are now ready to write the equations governing the timeevolution of the rod's centerline. Since the material frames depend on the rod's centerline and are not independent degrees of freedom (see §5), we must consider this dependence as well when computing the centerline forces.
+
+7.1 Forces on centerline
+
+In deriving the forces on the rod's centerline, we must consider how the energy depends on the xi variables--both directly and indirectly by considering the effect that moving a vertex has on the rod's material frame. The force acting on vertex xi is therefore given by
+
+- dE() dxi
+
+ =
+
+-
+
+
+
+E ()  xi
+
+-
+
+n j=0
+
+ E()  j
+
+ j  xi
+
+.
+
+Here, the total derivative dE/dxi takes into account the implicit dependence of potential energy on centerline positions, whereas the partial derivative only takes into account explicit dependence.
+Recall from (4) that  E/  j vanishes for all edges for which  j is not prescribed by a boundary condition. Therefore, for stressfree
+
+boundary conditions, the sum is zero. For clamped boundaries, only one component of this sum could be non-zero, allowing us to write the force as
+
+-
+
+ 
+
+E xi
+
+-
+
+E n
+
+n  xi
+
+.
+
+To evaluate   n/ xi, recall from §6.1 that varying the centerline rotates the Bishop frame at edge en by angle n about the tangent tn. Therefore, to keep the material frame aligned to the boundary condition, we must subtract this angle from  n to obtain
+
+ -
+
+ 
+
+E xi
+
++
+
+E n
+
+n j j=1  xi
+
+.
+
+For clamped boundaries, we give the components required to evaluate this force for both the special and general case.
+
+Special case For naturally straight, isotropic rods, the forces on vertex xi are given by up to three contributions:
+
+- 2 lj
+
+i(b) j
+
+T
+
+( b)
+
+j
+
++
+
+
+
+(
+
+n- L
+
+
+
+0)
+
+i
+
+j
+
+i-1 j i+1 ,
+
+with the gradient of holonomy given by (9) and the gradient of the curvature binormal given by
+
+i-1 ( b)i
+
+=
+
+2[ei] + (bi)(ei)T |ei-1||ei| + ei-1 · ei
+
+,
+
+i+1(b)i =
+
+2[ei-1] - (bi)(ei-1)T |ei-1||ei| + ei-1 · ei
+
+,
+
+i(b)i = - (i-1 + i+1) (b)i .
+
+Here [e] is a skew-symmetric 3 × 3 matrix acting on 3-vectors x by [e] · x = e × x. In deriving these gradients we have used the assumption of inextensibility of the rod's edges.
+
+General case For anisotropic rods with a curved rest shape, the required expressions for the forces are given by:
+
+E n
+
+=
+
+1 ln
+
+(
+
+n n
+
+)T
+
+J
+
+Bn
+
+(
+
+n n
+
+-
+
+
+
+nn)
+
++
+
+2 mn ln
+
+and
+
+   E
+ xi
+
+=n 1 k=1 lk
+
+k j=k-1
+
+i
+
+j k
+
+T Bj
+
+
+
+j k
+
+-
+
+
+
+j k
+
+,
+
+where
+
+the
+
+gradient
+
+of
+
+the
+
+material-frame
+
+curvature
+
+
+
+j k
+
+is
+
+given
+
+by
+
+i
+
+j k
+
+=
+
+-(m(m2j1)j )TT
+
+i(
+
+b)k
+
+-
+
+J
+
+j k
+
+(i
+
+j
+
+)T
+
+.
+
+(11)
+
+This last result is readily apparent from the definition of materialframe curvature in (2) and the variation of the Bishop frame in §6.1.
+
+7.2 Integrating the centerline
+
+Since the material frame is always updated to be in quasistatic equilibrium (see §5.1), we only need to update the centerline based on the forces derived above. The equations of motion are
+Mx¨ = - dE() , dx
+where M is a 3(n + 2) × 3(n + 2) (diagonal) mass matrix associated to centerline positions. We discretize this equation using the symplectic Euler method [Hairer et al. 2006]. We use a manifoldprojection method to enforce the inextensibility constraint.
+
+8 Constraints
+For simulating extensible rods, it would suffice to include a stretching component to the energy; however, simulating inextensible rods using stretch forces would lead to unnecessarily stiff equations. In addition, many interesting physical systems can be modeled by the coupling of elastic rods to rigid-bodies. Canonical examples include the torsional and Wilberforce pendulums, comprised of a rigid-body suspended under gravity by a thin elastic rod. To avoid numerical stiffness associated with maintaining inextensibility and rigid-body coupling, we add auxiliary constraints to our system.
+Inextensibility constraints For each edge of the rod, we use the quadratic constraint equations ei · ei - ei · ei = 0, where (the precomputed) ei refers to the undeformed configuration.
+Rigid-body coupling constraints The welding of the body to the rod requires the body's position and orientation, and the rod edge's position and material frame, to be in one-to-one correspondence. Attaching the rigid-body to the first edge of the rod gives three constraints:
+q · q - 1 = 0 , q x0 q + r - x0 = 0 , q x1 q + r - x1 = 0 ,
+where r  R3 is the translation vector and q  H is the unit quaternion [Hanson 2006] mapping the body's center of mass and orientation, respectively, from the reference to the current configuration, and q is the conjugate of q. The first equation ensures that q is unit length, so qx0q is a rotation of x0 that is summed with r using vector addition. The second and third equations ensure that the rod's first edge and the rigid-body transform identically.
+8.1 Enforcing constraints
+Numerous approaches are available in the literature for maintaining constraints acting on a mechanical system [Shabana 2001]. Perhaps the most simple and straightforward of these is to use the penalty method; alas, as mentioned above, the penalty forces required to closely enforce the constraints are unacceptably stiff and require small time steps to ensure stability [Goldenthal et al. 2007].
+An alternative is to employ an augmented Lagrangian formulation. Such formulations in general introduce additional variables (i.e., Lagrange multipliers) to enforce the constraints during the time integration step of the algorithm. The exception are manifold projection methods [Hairer et al. 2006], which perform constraint enforcement as a post-integration step. We choose to maintain the constraints using this approach.
+A manifold projection method integrates a mechanical system by alternating between an unconstrained time integration step and a constraint enforcement step. For the unconstrained step, we use an explicit symplectic Euler integrator (Algorithm step 7), and we call the ODE [Smith 2008] library to time step the rigid-body (Algorithm step 5).
+Manifold projection allows us to reuse an existing rigid-body code without modifying its time integration, collision response, or other internal structures. However, any other method for enforcing these constraints could be used, and we include a discussion of our approach for completeness.
+Fast manifold projection For the enforcement step, we adopt and extend the fast projection method of Goldenthal et al. [2007]. This method takes an unconstrained configuration and finds a nearby constrained configuration. The notion of "nearby" is made precise by the natural metric on the configuration manifold. We extend the application of fast projection to coupled systems involving
+
+both positional as well as rotational degrees of freedom by consid-
+
+ering
+
+the
+
+metric
+
+induced
+
+by
+
+the
+
+kinetic
+
+energy
+
+1 2
+
+yM~ yT
+
+,
+
+where
+
+the
+
+(3n + 12) × (3n + 12) generalized mass matrix and the generalized
+
+velocity y  R3n+12 are defined respectively by
+
+4 · I
+
+
+
+M~ = 
+
+M · Id3×3  and y = (q-1q , r, x) .
+
+M
+
+Here M is the rod's (diagonal) 3(n + 2) × 3(n + 2) mass matrix, M is the body's total (scalar) mass, and I is the body's (symmetric) moment of inertia tensor expressed as a 3×3 matrix in the reference coordinates. Since q is a unit quaternion, q-1q corresponds to a vector in R3 [Hanson 2006]. The kinetic energy has contributions from the body rotation, body translation, and centerline translation.
+We initialize the first iteration of fast projection with the results of an unconstrained time step. Each step of fast projection improves on the guess by computing the first Newton iteration for the minimization of the functional yM~ yT - CT  , where (using Goldenthal's notation) C is the vector of constraint equations, and  is the vector of corresponding Lagrange multipliers. Thus, by formulating the kinetic energy using a generalized mass matrix in a high-dimensional configuration space, we are able to directly apply fast projection iterations to rigid-body coupling. In all of our examples, we found that after 3­5 steps the method converged to within a tolerance of 10-8 in satisfying the constraint C = 0.
+After the iterations converge, fast projection requires a velocity update [Goldenthal et al. 2007]. Using our generalized coordinates, the appropriate update is
+
+(q ,
+
+r,
+
+x )
+
+
+
+(q ,
+
+r,
+
+x )
+
+-
+
+1 h
+
+(2q0q-1,
+
+r0
+
+-
+
+r,
+
+x0
+
+-
+
+x)
+
+.
+
+Our discussion above immediately generalizes to the case of multiple rigid-bodies attached to multiple rods. As a corollary, we can couple a rigid-body to any edge on the rod simply by splitting the rod at that edge. However, care must be taken to understand the induced boundary conditions: each rigid-body's position and orientation serves to clamp the position and orientation of the centerline and material frame for each coupled rod end-edge. After fast projection, the material frame vector induced by the rigid body orientation is m01 = qm10q.
+
+8.2 Torque transfer
+
+We consider a methodical categorization of those interface forces that are automatically transferred between the rod and rigid-body via projection and those that remain to be transferred explicitly. Observe that forces that correspond to gradients of the independent variables, q, r, x, are automatically transferred between the rod and the body by the projection step. The material frame is not an independent variable--it is a function of the centerline position and of the boundary conditions (see §5). Therefore, in Algorithm step 4, we explicitly transfer the torque acting on the material frame m10, to the coupled rigid-body. Note that the rigid-body's relatively large moment of inertia ensures that the explicit coupling is non-stiff.
+The force acting on the material frame corresponds to the gradient of energy with respect to the dependent angles,  i. By the quasistatic material frame assumption, the torque,  = ||t0, exerted by the rod on the body is equal and opposite to the torque exerted by the body on the rod. To derive the magnitude of the torque we turn to the principle of virtual work [Lanczos 1986]. Holding the centerline fixed, consider a virtual displacement,   0, which varies the material frame about e0. Note that   0 also affects the body's orientation, due to the rod-body constraint. The
+
+Figure 6: Torque transducer: two rigid-bodies coupled by a rod. The total energy, broken up into contributions from the bodies and the rod, is plotted.
+
+work performed by the body on the rod equates to the change in the rod's stored energy: ||  0 = (dE/d 0)  0. Since this holds for any   0, it follows that || = dE/d 0. In the isotropic case, this yields || =  ( n -  0)/L. In the anisotropic case, we expand the full derivative as dE/d 0 = i( E/  i)(  i/  0). By the quasistatic assumption, most terms in this summation are zero, leading to || =  E/  0, which can be evaluated using (7).
+9 Validation
+The interaction between twisting and bending modes produces surprising instability phenomena, such as spontaneous buckling of rods. These instabilities are important for a variety of applications, such as for modeling DNA. When applied to some of these phenomena, our model not only reproduces the correct behavior qualitatively, but in fact shows good convergence to analytical solutions (for those models where an analytical treatment is available in the literature). In the following we describe several example problems; refer to Table 1 for corresponding performance measurements.
+9.1 Convergence
+
+f()
+
+f()
+
+1 0.5
+-3 uniform 3 s/s*
+
+1 0.5
+-3 non-uniform 3
+
+analytical n = 180 n = 140 n = 110 n = 80 n = 60 n = 40
+s/s*
+
+Figure 7: Localized buckling of a naturally straight, isotropic rod with an imposed angle of twist. The rod buckles into a helix with modulated amplitude (inset). Convergence of the envelope of this helix toward the analytical solution in the smooth case is observed for both a uniformly sampled rod (left) and a rod where one half is twice as refined as the other (right). The parameters for the simulation are: rod length L = 9.29, bending modulus  = 1.345, twist modulus  = .789, clamp rotated by 27 turns, imposed axial shortening of 0.3 units, corresponding to a theoretical maximal deviation 0 = 0.919.
+
+Localized helical buckling When a naturally straight, isotropic rod is clamped at its two ends with one end rotated by a given angle, the rod buckles as the two ends are quasi-statically translated towards one another. In the smooth case, the buckling of a long rod under twist is described by an exact solution of the equations of equilibrium. This analytical solution describes nonlinear (finite amplitude) buckling away from the straight configuration and mixes bending and twisting effects. We studied convergence of the equilibria of our discrete model towards this solution in the limit of refinement. The geometry is shown in the inset of Figure 7. We denote by s the arc length, ex the unit vector parallel to the axis passing
+
+through the clamps, (s) = cos-1(t·ex) the angular deviation of the tangent away from this axis, and 0 = maxs (s) the maximal devi-
+
+ation at the center of the pattern. The envelope of the helix is given
+
+by f ((s)) = tanh2
+
+s s
+
+, where s/s is the dimensionless arc length
+
+given by s/s =
+
+m 2
+
+1-cos 0 1+cos 0
+
+s, which simplifies to f () =
+
+cos -cos 0 1-cos 0
+
+(see e.g. [van der Heijden and Thompson 2000]).
+
+With
+
+a fixed loading geometry, we obtain convergence towards this ana-
+
+lytical solution under refinement (see Fig. 7).
+
+(rad) 25 20 15 10
+5 0
+0.4 0.6 0.8 1.0 1.2
+
+Figure 8: Michell's buckling instability of an elastic ring with imposed internal twist  n. Left: above a critical value of  n, the planar, circular shape loses stability and buckles to a non-planar shape. Right: domain of stability of the circular shape with radius R = 1: simulations (dots) compared to theoretical threshold (black curve). Each dot corresponds to a simulation run with particular values of  and  n ( = 1 and n = 50 are fixed), initialized with a slightly perturbed circular shape; dots are colored in light blue when the amplitude of the perturbation decreases in time (stable) and in purple when it increases (unstable).
+
+Michell's instability Another famous example of a rod becoming
+
+unstable when subjected to twist is Michell's instability, also known
+
+as Zajac's instability (see Fig. 8). When the ends of a naturally
+
+straight, isotropic rod are closed into a ring in a twist-free manner,
+
+the resulting shape is circular. When these ends are twisted by an angle  n before they are closed up, and when this angle is pro-
+
+gressively increased starting from zero, the ring suddenly starts to
+
+writhe (buckle) out of plane, at a well-defined critical value of twist.
+
+This effect is a perfect illustration of the coupling of the twist with
+
+the shape alytically
+
+of the centerline. [Goriely 2006] as
+
+Tchni=s c2ritica3l/t(wis/tc)a.nInbeFcigoumrepu8t­erdigahnt-,
+
+we study the stability of the circular shape numerically for different
+
+values of the rod parameters and compare to the analytical predic-
+
+tion. Our model displays excellent agreement with the predictions
+
+of the smooth theory.
+
+9.2 Special case
+
+Instability of knots Although knots have been extensively studied as mathematical objects, the understanding of their mechanical behavior is far less advanced. Very recently, an analytical solution has been obtained describing the equilibrium shape of a loose trefoil knot tied on a naturally straight, isotropic rod [Audoly et al. 2007] in the case where no twist is applied. We ran a simulation of a knotted rod with both ends clamped and were able to reproduce the typical equilibrium shape of the knot, which is made of a large, almost circular loop connected to two flat tails by a braid region (see Fig. 1­left). We next twisted the ends of the rod and found that the shape of the knot first changes smoothly and then jumps at a critical value of the twist. This jump happens both for positive and negative applied twist, although the final shapes of the knot are qualitatively
+
+different (see Fig. 1). This fascinating behavior will be studied in detail in a future paper [Audoly et al. 2008]--it can be easily reproduced using a small tube of an elastic material (a silicone wire in our experiments), and we encourage the reader to try it!
+Figure 9: Plectoneme formation: When the ends of a hanging elastic rod are twisted, it takes on structures known as plectonemes. The formation of plectonemes is governed by physical parameters, such as the twist rate, viscosity of the ambient fluid, and gravity.
+
+occurs with the semi-circular shape, but it is less marked. In either case, the twist concentrates near the end that is rotated, although the rod properties are uniform along its length; this symmetry-breaking points to the fact that that the equations governing the quasi-static twist are nonlinear.
+Helical perversion: Perversion is a classical pattern that can be observed in naturally curved rods. It consists of a junction between two helices with opposite chiralities. It has been described by Darwin in the tendrils of climbing plants and can be often observed in tangled phone cords [Goriely and Tabor 1998]. Perversions can be produced by first flattening a helical spring such as a Slinky R into a flat, straight ribbon by pulling on both of its ends (see Fig. 2­ middle); next, by progressively releasing its ends from this straight configuration, one obtains a shape made of two mirror-symmetric helices (see Fig. 2­bottom). The final shape is surprisingly different from the natural one as the chirality has been reversed in a half of the spring, as revealed by comparison with Figure 2­top. The existence of perversions is due to the nonlinear behavior of the rod--perversions belong to a general class of solutions that can be derived in nonlinear analysis by connecting two competing equilibrium configurations, which are here the right-handed and lefthanded helices in the presence of natural curvature.
+
+Plectonemes A rod generally forms entangled structures called plectonemes when subjected to large twist. Typically, the pattern formed by a twist-driven instability such as Michell's instability grows from a weakly helical shape at short times, to fully developed plectonemes at long time. Such structures have been well-studied, for instance in the context of DNA supercoiling [Yang et al. 1993]. In this experiment, we started with a naturally straight rod and deformed it into a parabola in a twist-free manner. Fixing the positions of the endpoints of the rod and progressively increasing twist, we find that the rod starts to writhe out of the plane. Letting the instability develop fully, we observe plectonemes (see Fig. 9). Depending on the viscous drag and gravity, we found that one or many plectonemes can be obtained. Single plectonemes have been described both analytically [van der Heijden et al. 2003] and numerically [Goyal et al. 2007] in several papers; we observed an interesting phenomenon of plectonemes merging at long times, which has seemingly not yet been studied.
+The simulation of plectonemes requires the treatment of rod selfcontact, which is outside the scope of this paper; for the state of the art, refer to the treatment by Spillmann and Teschner [2008].
+9.3 General case
+The coupling of twisting and bending modes of naturally curved or anisotropic rods is fairly more complex than in the isotropic case, as demonstrated by in following experiments.
+Asymmetry of twist The combination of anisotropy and nonzero rest curvature can result in a non-uniform distribution of twist along the rod. In Figure 5, we show this effect for a rod with anisotropic cross section, whose centerline is either V-shaped or semi-circular in the reference configuration. We clamp one end of each of these rods and twist the other. In the V-shaped case, we observe that twist is first confined on one half of the rod--it takes a significant amount of twist before twist manages to "jump over" the kink in the middle of the rod. A similar phenomenon
+
+Figure 10: Hanging chain: A chain consisting of curved elastic rods as links hangs under the influence of gravity. The material parameters for each rod are B = 2Id2×2 and  = 2, with each link in the chain having a radius of approximately 1 unit.
+Hanging chain: free boundaries In Figure 10, we show a chain hanging from its two ends under the influence of gravity. Each link is an elastic rod with curved undeformed configuration with stressfree boundary conditions on the material frames. As shown in the accompanying animation, the two ends are pulled apart until the chain breaks and the links fly apart. Even though we are not applying a twist to any of the links in the chain, we still need the material frame to represent the undeformed curvature of the rod-- recall that  is defined as a 2-vector in material-frame coordinates.
+9.4 Rigid-body coupling
+When coupling rods with rigid-bodies, the transfer of energy between these systems results in complex motions--in particular, through the interplay between bending and (non-uniform) twisting of the rod and the translational and rotational moment of the attached mass. In order to validate our model, we have in particular tested its ability to faithfully reproduce real-world experiments.
+Wilberforce pendulum This experiment reveals fascinating aspects of how bending and twisting interact and thereby affect the motion of an attached rigid-body. Consider a helicoidal spring (an isotropic rod whose reference state is a helix) whose upper end is
+
+

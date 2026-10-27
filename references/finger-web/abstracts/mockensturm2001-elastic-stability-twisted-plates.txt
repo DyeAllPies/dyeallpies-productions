@@ -1,0 +1,19 @@
+DOI: (not confirmed) — https://asmedigitalcollection.asme.org/appliedmechanics/article/68/4/561/449709/The-Elastic-Stability-of-Twisted-Plates
+
+Mockensturm, E. M. (2001). "The Elastic Stability of Twisted Plates." Journal of Applied
+Mechanics 68(4), 561–567.
+
+NOT FOUND: paywalled at the ASME Digital Collection (HTTP 403 on fetch), no open mirror or
+preprint located. No abstract text saved verbatim.
+
+Secondhand description (from search-engine summaries of the ASME listing, and its citation as
+ref. [13] in Chopin & Kudrolli 2013, papers/chopin2013-helicoids-wrinkles-loops.pdf): the paper
+studies instabilities of thin bodies under large twist using a fully nonlinear plate theory,
+which predicts compressive lateral (transverse) membrane stresses that earlier weakly nonlinear
+theory misses, and which can significantly shift the critical twist angle at which buckling
+occurs. Two end conditions are considered — ends held a fixed distance apart, and a fixed
+applied axial force during twist — with different buckling modes and critical twist angles for
+each. Chopin & Kudrolli 2013 cite Mockensturm 2001 alongside Cranford & Buehler 2011 and Kit
+et al. 2012 as the numerical-simulation sources for finite-tension transverse buckling and
+localized loop formation, i.e. the theoretical precursor to their θ_T ≈ 4.4·(h/W)^{1/2}
+transverse-buckling scaling (see data/02-twisted-ribbon-and-rod-contact.csv).

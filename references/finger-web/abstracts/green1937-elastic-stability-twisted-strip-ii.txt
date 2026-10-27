@@ -1,0 +1,17 @@
+DOI: 10.1098/rspa.1937.0141 — https://royalsocietypublishing.org/doi/10.1098/rspa.1937.0141
+
+Green, A. E. (1937). "The elastic stability of a thin twisted strip. II." Proceedings of the
+Royal Society of London A 161(905), 197–220.
+
+NOT FOUND: paywalled at Royal Society Publishing (HTTP 403 on fetch, no open mirror located);
+this journal issue predates the Society's practice of printing a structured abstract, and no
+freestanding abstract was found via ADS/Semantic Scholar either. No abstract text saved.
+
+Secondhand description (Chopin & Kudrolli 2013, ref. [10], and Chopin, Démery & Davidovitch
+2015 §1.1, both in papers/): Green's is the seminal analysis, later confirmed by numerical
+simulation, showing that a ribbon held under tension is unstable to twist because twist produces
+a spatially nonuniform compressive stress across the ribbon's width; his approach treats the
+ribbon shape as close to a helicoid and derives the threshold at which that compressive stress
+buckles the ribbon. This is Part II of a pair — Part I is "The equilibrium and elastic stability of a thin twisted
+strip," Proc. R. Soc. A (1936), DOI 10.1098/rspa.1936.0061 (volume/page not confirmed this pass)
+— also paywalled, not fetched.

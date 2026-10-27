@@ -1,0 +1,631 @@
+                                                Under consideration for publication in J. Fluid Mech.  1
+
+arXiv:1503.06197v2 [cond-mat.soft] 20 May 2015        Holes and cracks in rigid foam films
+
+                                                              P. C. Petit 1, M. Le Merrer 1 and A.-L. Biance 1,
+
+                                                   1Institut Lumi`ere Mati`ere, Universit´e de Lyon, UMR5306 Universit´e Lyon 1-CNRS, 69622
+                                                                                                  Villeurbanne, France
+
+                                                                                      (Received xx; revised xx; accepted xx)
+
+                                                The classical problem of foam film rupture dynamics has been investigated when surfaces
+                                                exhibit very high rigidity due to the presence of specific surfactants. Two new features
+                                                are reported. First a strong deviation to the well-known Taylor-Culick law is observed.
+                                                Then, crack-like patterns can be visualized in the film; these patterns are shown to appear
+                                                at a well defined deformation. The key role of surface active material on these features
+                                                is quantitatively investigated, pointing the importance of surface elasticity to describe
+                                                these fast dynamical processes, and thus providing an alternative tool to characterize
+                                                surface elasticity in conditions extremely far from equilibrium. The origin of the cracks
+                                                and their consequences on film rupturing dynamics are also discussed.
+
+                                                1. Introduction
+
+                                                   Despite its apparent useless character and simplicity, the dynamics of bursting of soap
+                                                bubbles have fascinated scientists for more than a century. Lucien Bull (1904) made the
+                                                first images of soap bubble bursts. The first theoretical analysis dates back to Dupr´e and
+                                                then to Taylor (1959) and Culick (1960) where they considered the presence of a rim at
+                                                the edge of a hole created in the liquid film, collecting the liquid during its movement.
+                                                The constant hole opening velocity Vc results from a balance between the rim inertia and
+                                                surface tension in the film, and is given by Vc = 2eq/(h0), with eq the equilibrium
+                                                surface tension,  the liquid density and h0 the film thickness. These results are in good
+                                                agreement with stationary experiments performed on liquid sheet (Taylor 1959) and has
+                                                been extensively investigated by McEntee & Mysels (1969) in the case of soap films
+                                                thicker than 50 nm. More recently, satellite formation during edge retraction (Lhuissier
+                                                & Villermaux 2009b) and bubble entrapment (Bird et al. 2010) have been investigated
+                                                as these behaviors are crucial in many applications. Destabilization of liquid sheets or
+                                                bubbles indeed arise in many practical situations ranging from the building material
+                                                industry, when glass sheets are molded, to foam engineering, food processing, biological
+                                                membrane and environmental science (Bird et al. 2010). In these applications, liquids
+                                                can be viscous or contain surface active materials. In the latter, surface tension becomes
+                                                a dynamical quantity, which depends on the local surface concentration of surfactants,
+                                                and thus on the elongation of the surface; this is characterized by the surface elasticity
+                                                defined as the derivative of surface tension with respect to relative changes in surface area.
+                                                The effect of surface elasticity has been observed through the development of an aureole
+                                                surrounding the opening hole and expanding with time (Florence & Frens 1972; Liang
+                                                et al. 1996; Lhuissier & Villermaux 2009a). However, except in the case of very viscous
+                                                liquid, the opening dynamics always obey Taylor-Culick law, although some deviations
+                                                have been reported by Mysels (McEntee & Mysels 1969; Florence & Mysels 1974), but
+                                                hardly commented. In this work, we investigate the dynamics of bursting of circular foam
+                                                films generated from surfactant solutions inducing large surface elasticities and we report
+
+                                                                  Email address for correspondence: anne-laure.biance@univ-lyon1.fr
+              2                                             P. C. Petit et al.
+
+                                               a)
+
+              b)                                                                     
+                    
+                                                                                 
+            
+                                                                               
+                                                                                   
+                                                   
+
+                                                     
+
+                                                       
+ 
+                                                        
+                                                            c)
+
+              Figure 1. (a) Image sequence of a foam film rupture (h0=10 µm, solution E ­ table 1). The
+              timelapse between images is 8 ms. (b) Radius r of the hole vs time t (h0=10 µm, solution E).
+              The red (light) line represents the prediction of Taylor-Culick, while the black line shows the
+              initial opening at constant velocity u0. Inset: Picture of a ruptured foam film (solution C) which
+              highlights aureole formation. (c) Picture of a foam film (solution E) 37 ms after its breaking.
+              The arrows highlight crack-like patterns, which appear during the hole opening.
+
+              for the first time systematic deviations to Taylor-Culick law. A careful analysis allows
+              us to estimate surface elasticity at both large compression and compression rate in good
+              agreement with reported data in the literature. Moreover, unexpected effects of frame
+              size are observed through the appearance of new patterns, reminiscent of fractures or
+              wrinkles in the film.
+
+              2. Experimental set-up
+
+                 The experimental set-up consists in a circular metallic frame of radius R = 1.5 - 11 cm
+              pulled out from a surfactant solution at different velocities to generate films with various
+              thicknesses. The film absolute thickness is determined through an absorption technique
+              measurement (Lastakowski et al. 2014; Petit et al. 2015) and we denote h0 the initial
+              average thickness of the film. Film rupture is initiated by approaching a heated needle
+              and is recorded via a high-speed camera (10000 Hz, Photron SA-4). An image sequence
+              is reported in figure 1a, where we measure the radius r of the expanding hole versus
+              time, as shown in figure 1b. Surfactant solutions are produced in a 10%-90% glycerol-
+              water mixture in which a dye (Brilliant Black BN 60%, Sigma, 5g/L) is added. They
+              contain 3.3 g.L-1 of sodium lauryl-dioxyethylene sulfate (SLES, Stepan), 1.7 g.L-1 of
+              cocoamidopropyl betaine (CAPB, Goldschmidt) and myristic acid (MAc, Fluka) in the
+              concentrations C described in table 1. The surface elasticities of similar solutions are
+              well characterized in the literature (Mitrinova et al. 2013a) and span over two orders
+              of magnitude when the concentration C of MAc is varied as reported in table 1. Such
+              elastic moduli are attributed to the surface properties of the adsorbed layer of MAc,
+              whose surface concentration is expected to increase with C up to the saturation of the
+              surface (Golemanov et al. 2008). At the same time, micelles of the two co-surfactants
+              (SLES and CAPB) help to solubilize the poorly soluble fatty acid.
+          Holes and cracks in rigid foam films   3
+
+Solution           AB C D E F
+
+C [mM]              - 0.055 0.11 0.22 0.88 2.2
+eq [mN/m]          29 29 27 26 23 22
+
+Eod [mN/m]         4 50 90 200 400 400
+E0(u0) [mN/m]      60 200 2000 5000 2.104 4.104
+E0(cracks) [mN/m]
+                    - - 90 200 300 300
+
+Table 1. Properties of the surfactant solutions used in the experiments: MAc concentration C,
+equilibrium surface tension eq and surface elasticities. Data from Mitrinova et al. (2013a) for
+similar solutions (without glycerol and dye) are reported for eq and the elastic modulus Eod
+measured with the oscillating drop method for small deformation (0.2-4 %) at frequency 0.2 Hz.
+E0(u0) corresponds to the elasticity deduced from the initial hole velocity using equation (4.1).
+E0(cracks) corresponds to the elasticity deduced from cracking radius using equation (4.2).
+
+3. Results
+
+   Some remarkable features can be underlined. At first, the opening velocity is constant
+as expected but smaller than predicted by Taylor-Culick law (figure 1b). Moreover,
+an aureole already described in the past (Florence & Frens 1972; Liang et al. 1996;
+Lhuissier & Villermaux 2009a) is observed through spatial variations of transmitted
+light, especially for the less rigid interfaces (inset of figure 1b). Then, some dark patterns
+are observed (see arrows in figure 1c), which we denote cracks in the following. This
+apparition coincides with a decrease of the opening velocity (figure 1b), the presence of
+these cracks modifying the bursting dynamics.
+
+   The initial opening velocity u0 is represented in figure 2a as a function of the initial
+film thickness h0 for various solutions. Without MAc (solution A of table 1), the
+velocity follows Taylor-Culick law (), which is consistent with interfaces of low elasticity.
+However, in the presence of MAc, the initial velocity is lower than in the previous case. For
+each MAc concentration, the initial velocity varies with 1/ h0  Vc. For each solution
+and different thicknesses, we thus extract the initial opening velocity normalized by Culick
+velocity. This quantity decreases when the MAc concentration increases (figure 2b), that
+is, for larger surface elastic moduli (Mitrinova et al. 2013a).
+
+   During the film opening, orthoradial cracks (perpendicular to the direction of opening)
+appear in the film (figures 1a and 1c), at a well defined radius of the hole rp. Some specific
+irregular fold-like patterns and filaments have been previously reported by McEntee
+& Mysels (1969), although not directly comparable to our observations. For a given
+solution, figure 3a shows that the ratio rp/R is independent of the frame radius (for
+R = 1.5 - 11 cm) and almost independent of the film thickness (for h0 = 2 - 20 µm).
+The cracks thus appear for a well-defined critical compression of the interface. Figure 3b
+shows that this critical compression decreases with MAc concentration and the surface
+modulus.
+
+4. Discussion
+
+   These two observations concerning the initial opening velocity and the onset com-
+pression for cracks can be rationalized following the framework initially proposed by
+Frankel & Mysels (1969) for the theoretical description of aureoles. They considered
+that surfactants are insoluble, which is reasonable at the timescale considered here: the
+duration of the opening R/u0, typically 30 ms, is smaller than surfactant desorption time
+4                                     P. C. Petit et al.
+
+   u0 [m/s]     101                             u0/Vc      1.1
+           a)
+                                10-5      10-4       b)         10-1                       100
+                100
+                   10-6     h0 [µm]                          1
+                                                           0.9
+                                                           0.8
+                                                           0.7
+                                                           0.6
+                                                           0.5
+                                                           0.4
+                                                           0.3
+
+                                                                      C [mM]
+
+Figure 2. (a) Initial opening velocity u0 of the hole as a function of the film thickness h0 for
+R = 3 cm. The MAc concentration C decreases from dark to light points: solutions A (o), B
+( ), C ( ), D ( ), E( ) and F ( ). (b) initial opening velocity normalized by Culick velocity
+u0/Vc as a function of C (error bars: 95 % confidence intervals). The magenta solid line shows
+the value measured for C = 0, with error bars shown by the dotted lines. The values u0/Vc
+are extracted by performing least square percentage fit for each solution, with weights taking
+into account the 1 µm error on thickness measurements. In both figures, the black dashed lines
+represent Taylor-Culick law.
+
+          0.2                                          0.8
+   a)
+                                                b)
+        0.15
+                                                       0.6
+
+   rp/R      0.1                                rp/R  0.4
+
+           0.05                                       0.2
+
+             00          5  10  15    20  25           010-1                          100
+
+                            h0 [µm]                                   C [mM]
+
+Figure 3. (a) Critical compression of the interface for crack formation rP /R as a function of
+the initial thickness h0 for solution E and different frame radii R = 1.5 cm (o), R = 3 cm ( ) et
+R = 11 cm ( ). (b) rP /R averaged for thicknesses h0 = 2 - 35 µm and R = 3 cm, as a function
+of MAc concentration C.
+
+ . Indeed, although these processes are likely to be dominated by surfactant exchange
+with micelles in our systems (Golemanov et al. 2008), a lower bound for  is provided by
+the diffusion time across the film thickness h02/D  40 ms - 2 s (for h0 = 2 - 40 µm and
+D = 10-10 m2/s). Adsorption times longer than 30 ms for myristic acid in these systems
+have also been reported (Mitrinova et al. 2013b). A compressive shock thus propagates
+at the surface of the film. The liquid is collected in an extended rim -- an aureole --
+visible in figure 1b (inset) and whose shape depends on surface tension, film thickness
+and surface elasticity.
+
+   Viscous effects have also been neglected. Indeed, as no shear takes place within the
+film thickness, the characteristic Reynolds number and surface Reynolds numbers read
+Re = u0R/ 1 and Res = u0Rh0/, respectively, with  the kinematic bulk viscosity
+and  the intrinsic surface viscosity. Surface viscous dissipation can a priori not be
+neglected if values of  measured at 0.2 Hz are considered (Costa 2012; Golemanov
+et al. 2008). However, surface viscosity is expected to collapse at large frequencies, as
+shown in experiments and modeling (Lucassen & Van DenTempel 1972). Eventually, the
+observation of a constant initial velocity varying with 1/ h0  Vc (figures 1b and 2) is
+a key indication that inertia (and not viscous effects) is dominant in this problem.
+Holes and cracks in rigid foam films  5
+
+1.2
+
+1
+
+0.8
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+100         101     102        103
+
+Figure 4. Solid black line: numerical prediction for the normalized hole velocity
+u0/Vc = f (E0/eq) for radial bursting (equation (4.1) and A). The dashed line corresponds
+
+to u0/Vc = eq/E0 expected for unidimensional bursting (Frankel & Mysels 1969). Blue
+
+dashed line: prediction for the critical radius at which cracks appear rP /R = eq/E0f (E0/eq)
+(equation (4.2). The solid (resp. empty) symbols correspond to the experimental data from
+figure 2 (resp. figure 3), from which we determine the elastic moduli E0(u0) (resp. E0(cracks)).
+Same symbols and colors as in figure 2a.
+
+4.1. Deviation to Taylor-Culick law
+
+   The dynamics of the rim is then controlled by the balance between inertia and surface
+tension spatial gradient. We assume here that surface elasticity is constant up to a certain
+compression. In this particular case, the velocity of the aureole front (delimiting the
+frontier with the zone of undisturbed film whose thickness is still h = h0) simply reads
+uf = 2E0/(h0) = VC E0/eq, which can be seen as a two dimensional analogous of
+sound (compression) velocity. The opening hole velocity can also be determined by solving
+the self-similar profile of the aureole and applying mass conservation. No analytical
+solution is provided in the considered radial geometry but numerical resolution shows
+that
+
+         u0 = Vc f (E0/eq)            (4.1)
+
+with f a decreasing function determined numerically (see appendix A) and reported in
+figure 4. It is thus still proportional to Taylor-Culick velocity Vc and decreases with the
+interfacial elasticity E0, which is consistent with experimental observations of figure 2.
+From these data and equation (4.1), an interfacial elasticity E0(u0) can be deduced
+(figure 4), which is reported in table 1 as a function of the MAc concentration. These
+data are compared to measurements of surface moduli Eod from the oscillating drop
+method performed by Mitrinova et al. (2013a). It shows the same qualitative variation
+with C despite a discrepancy on the absolute values obtained. However, the shrinkage
+amplitude and the compression timescales differ by several orders of magnitude, and the
+surfactant monolayer at the interface is expected to be highly non-Newtonian (Costa
+2012; Lucassen & Van Den Tempel 1972).
+
+     4.2. Crack appearance
+
+   Besides, snapshot inspection shows that cracks appear when the compressive surface
+wave (i.e. the aureole front) reaches the metallic frame of the film. Cracks are thus
+expected for:
+
+     rp  =  u0   =  eq  f  E0         (4.2)
+     R      uf      E0     eq
+6  P. C. Petit et al.
+
+This prediction, represented in figure 4, is indeed in good agreement with our obser-
+vations: The hole radius when cracks appear rp increases with the frame radius R and
+decreases with surface elasticity probed through MAc concentration variations, as shown
+in figure 3. Eventually, this critical compression does not depend on film thickness h0,
+showing that elasticity is not affected by confinement in the experimental configuration
+tested.
+
+   The surface elasticity E0(cracks) can therefore be deduced from the critical radius
+for crack apparition rp (figure 4), and reported for the different MAc concentration in
+table 1. In this case, a very good agreement is obtained with the measured value of the
+surface modulus (Mitrinova et al. 2013a), which confirms that the cracks arise from a
+compression of the aureole when its front reaches the frame.
+
+   Note that the values of surface elasticity deduced from our two methods may differ.
+This is however expected due to our strong hypothesis of constant elasticity. Indeed, while
+the aureole front velocity only depends on the surface elasticity at very low compression
+rate (at the edge of the undisturbed film), the hole opening velocity modeling takes into
+account the elasticity through large interface compression. For large deformation, it is
+expected that the constant elasticity model fails: at large compression, the myristic acid
+surface concentration increases, which should result in larger elasticity as can be inferred
+from the moduli dependency upon C (Mitrinova et al. 2013a). The effective modulus
+E0(u0) should then deviate more from measurements at small deformations performed
+by the oscillating bubble technique (Mitrinova et al. 2013a).
+
+   In addition, the effect of elasticity has indirect consequences of some features of foam
+film rupture. For example, no flapping nor transverse destabilization of the rim was
+observed for our rigid soap films, in contrast to observations on low elasticity films
+and theoretical predictions (Lhuissier & Villermaux 2009b); however, the reduced rim
+velocity could prevent the flapping instability to develop and subsequent film atomization
+(Lhuissier & Villermaux 2009b).
+
+                                          4.3. Crack-like patterns
+
+   Let us now discuss the observed crack-like patterns. During the fast deformation of
+the surface, the surfactants behave as an insoluble monolayer, comparable to a lipid
+monolayer experiencing a compression in a Langmuir trough (Lee 2008). In this case,
+above a critical compression, such a monolayer can behave differently depending on its
+structure. If it is liquid-like, it ejects the molecules in the bulk in the form of vesicles or
+bilayers. If it is solid-like, it can bend as an elastic sheet or fracture as a fragile material.
+
+   Although our experiment does not provide a microscopic characterization of this
+transient surface structure, the crack pattern can be macroscopically characterized. In
+particular, even though the cracks are irregularly distributed, a number of cracks per
+radial segment can be counted; the deduced characteristic length between two cracks
+denoted  (figure 1c) is reported in figure 5 as a function of MAc concentration C (a)
+and film thickness h0 (b).
+
+   The increase of  with C is expected whatever the mechanism proposed. On the
+one hand, for higher bulk concentration, solubilization of interfacial surfactants is more
+difficult, hence a reduced number of vesicles or bilayers are to be expelled. On the other
+hand, a more concentrated solid-like layer will also exhibit a higher bending modulus
+and wavelength of elastic ripples are expected to increase with this modulus (Cerda &
+Mahadevan 2003). The decrease of the characteristic length with the film thickness h0
+is more unexpected. For the solid-like behavior, a thinner elastic sheet will bend more
+easily than a thicker one, thus exhibiting smaller ripple wavelength when buckled (Landau
+& Lifshitz 1975), in contrast with our observations. If cracks correspond to monolayer
+    Holes and cracks in rigid foam films       7
+
+a)  b)  c)                                1cm
+
+Figure 5. (a) Characteristic length  between two cracks as a function of MAc concentration
+C for h0 = 11 ± 3 µm. (b)  as a function of the film thickness h0 for solution D. (c) Bursting of
+a soap film of thickness h0 = 3 µm (solution E). The timelapse between the two images is 9 ms,
+and the two lines highlight the velocity inhomogeneities.
+
+collapse by vesicles formation, it should not be affected by the film thickness. However,
+when modifying the thickness of the film, we also vary the velocity of compression or
+shrinkage rate. This parameter induces dynamical structural change in the surfactant
+monolayers (as it does in bulk crystallization processes for example (Cabane & H´enon
+2003)).
+
+   Finally, a complete understanding of the origin of these crack-like patterns would
+require some local high speed imaging structural analysis, which are beyond the scope
+of the present paper.
+
+   The presence of these irregular cracks have direct consequences on hole opening
+dynamics. Indeed, when the aureole reaches the metallic frame, the hole opening slows
+down (and even stops for the thinner rigid films) and then irregularly accelerates in the
+region where the cracks appears. This feature is reported in figure 5c. Moreover, a velocity
+discontinuity in the liquid is observed, the outer region being at rest whereas the inner
+region is deformed.
+
+5. Conclusion
+
+   To conclude, we have shown that modifying the chemistry of surfactant solutions
+can have strong influences on macroscopic dynamical processes, as observed in various
+situations in foams and foam films (Couder et al. 1989; Durand & Stone 2006; Seiwert
+et al. 2013; Petit et al. 2015; Lorenceau et al. 2009). However, we have investigated
+here this effect under large deformations and in a fast dynamical process, i.e. at large
+Reynolds numbers, where the effects of molecular scales and surfactants are expected to
+be negligible.
+
+   The initial constant velocity opening dynamics is well described taking into account the
+surface elasticity of the interfaces and was shown to be reduced at high surface modulus.
+This may be responsible for the inhibition of rim fragmentation and droplet ejection
+usually reported in liquid film ruptures (Lhuissier & Villermaux 2009b). Further studies
+should determine the role of the ejected droplets in rupture propagation in macroscopic
+foams; the stability of these systems is indeed known to depend dramatically on the
+surface elastic properties (Rio & Biance 2014). However, finite size effects becomes soon
+crucial: when the elastic compression surface wave reaches the border of the frame,
+crack-like patterns, where velocity discontinuity are observed, appear in the foam film.
+Determining the origin of cracks, their microscopic structure, their location and number,
+and how they control film opening dynamics remain a challenge to tackle.
+
+   The authors thank Gilles Simon for his help in setting up the experiment.
+8                                                 P. C. Petit et al.
+
+                                                                            
+
+     a)                                       b)                               c)
+
+                                                                            
+
+                                                  eq
+
+                                                                            
+
+                       h!                h0!             Slope E0           
+
+         r (R, t)!                                                          
+
+                                                  0       c 1                 
+        
+             
+
+
+                                                                                         
+
+Figure 6. (a) Profile of the film and notations. (b) Variations of surface tension 
+versus shrinkage  in the simplified constant elasticity modeling. (c) h/h0 as a function of
+
+r/(Vct) = 2w/Vc2 for radial bursting and different values of C (0.2, 0.4, 0.6, 0.8 from top to
+bottom at the origin).
+
+Appendix A
+
+                                         Equations for radial bursting
+
+   We describe the radial bursting dynamics of a foam film of initial uniform thickness
+
+h0 and include the effect of dynamic surface tension as first proposed by Frankel &
+
+Mysels (1969): the surface tension  is assumed to depend only on the shrinkage of the
+
+surface  which by mass conservation is related to film thickness  = h0/h. We denote
+                                         d
+the  surface        elasticity  E()   =  d    .   As  viscous  terms   are  negligible,  the  capillary  forces
+
+are balanced by the fluid inertia. Variations of fluid velocity across the film are also
+
+neglected and equations are averaged over h. These equations can be explicitly solved in
+
+the unidimensional case (Frankel & Mysels 1969). However, in the case of radial bursting,
+
+a numerical resolution is necessary.
+
+   We consider a material element that has initially the position R (i.e. that has La-
+
+grangian variables (R, t)) . At instant t, its position is r(R, t) and its thickness h(R, t)
+
+(figure 6a). The fluid velocity is u = r/t and the shrinkage is defined as  =
+
+h/h0r2/R2 = (r/R)r/R. The momentum balance on the fluid element yields
+
+                                                  rh  u    =   2r  
+                                                      t            r
+
+which can be rewritten
+
+                                      u       =   2E()  r      =   U2  r                                 (A 1)
+                                      t            h0   R  R           R  R
+
+in which we have defined the characteristic velocity
+
+                                                  U =      2E()    .
+                                                            h0
+
+   Following the analysis of Frankel & Mysels (1969), we are looking for self-similar
+solutions in the form r/t = f (R/t). We define the variables W = R2/(2t2) and w =
+r2/(2t2) (w and W have the dimensions of square velocities) and we expect w = w(W ).
+
+The relative shrinkage is also set by  = dw/dW . Starting from equation (A 1), we find
+
+                    W           1  -  W  dw       dw  =    U2=dw/dW    -    2W 2   d2w                   (A 2)
+                    w                 w  dW       dW                         w     dW 2
+
+   A first information on the film dynamics can be inferred from this equation: Far
+from the hole, i.e. for large W , the film should remain undisturbed, which corresponds
+to w = W and dw/dW = 1. This condition combined with equation (A 2) yields
+                                 Holes and cracks in rigid foam films                                              9
+
+U2=1    -  2W 2  d2 w  =   0,  which    implies    that    the    matching     with   the     disturbed  film      can
+             w   dW 2
+
+only be done at W = W0 = U2=1/2. The velocity of the front of the aureole, or extended
+rim corresponding to the disturbed film, is thus given by uf = U=1 (Frankel & Mysels
+
+1969).
+
+Finally, the complete aureole profile and hole receding velocity will depend on the form
+
+of the elasticity versus shrinkage.
+
+                 Numerical resolution for a constant elasticity model
+
+   We consider at first order a model of constant elasticity E0, as described in figure 6b.
+We introduce here c, which corresponds to the maximum shrinkage the film can endorse.
+For  > c, the surface elasticity is constant and reads
+
+                                           d  =    E0   =  eq  1   1  c
+                                           d                      -
+
+and then
+
+                                    U = U0 =            2E0   =       E0   Vc
+                                                        h0            eq
+
+where Vc = 2eq/(h0) is Culick velocity.
+   When  > c, equation (A 2) can be written as
+
+                           W     1  -   W  dw      dw      =   U02   -  2W 2      d2w                          (A 3)
+                           w            w  dW      dW                    w        dW 2
+
+In non-dimensionalized form (stating W~ = 2W/Vc2 and w~ = 2w/Vc2), this equation
+reduces to
+
+                       W~     1  -  W~  dw~    dw~      =         1     -  2W~ 2   d2w~                        (A 4)
+                       w~           w~  dW~    dW~                                 dW~ 2
+                                                              1 - c w~
+
+with the two following boundary conditions. In W~ = 0, at the hole, we have the maximum
+                                                   (W~                         W~       W~ 0
+shrinkage  (minimum    value        of  c):   dw~       =     0)  =   c.   In      =          =       1  )  ,  at  the
+                                              dW~                                                2(1-c
+aureole front, the solution should match the undisturbed film solution w~(W~ 0) = W~ 0.
+
+This equation is solved numerically with a shooting method. From the function w(W ),
+
+we can deduce the thickness profile, using the relation h/h0 = 1/(dw/dW ) for different
+
+elasticities (figure 6c). As the elasticity increases (i.e. as c becomes closer to 1), we find
+
+that the aureole is thinner and wider, while for E0 = eq (corresponding to c = 0), one
+
+recovers a punctual rim receding at Taylor-Culick velocity Vc.
+
+We can also estimate the initial hole velocity u0 = 2w(W = 0), which is shown in
+
+figure 4 as a function of the ratio E0/eq. We also observe that the results obtained deviate
+
+from those obtained for unidimensional bursting (Frankel & Mysels 1969), especially for
+
+large elasticities, emphasizing the crucial role of radial geometry.
+
+                                                    REFERENCES
+
+Bird, James C., de Ruiter, Rielle, Courbin, Laurent & Stone, Howard A. 2010
+        Daughter bubble cascades produced by folding of ruptured thin films. Nature 465 (7299),
+        759­762.
+
+Cabane, B. & He´non, S. 2003 Liquides­ Solutions, dispersions, gels. Belin.
+Cerda, E. & Mahadevan, L. 2003 Geometry and physics of wrinkling. Physical Review Letters
+
+        90 (7), 074302.
+10  P. C. Petit et al.
+
+Costa, Se´verine 2012 Rh´eologie multi-´echelle des mousse liquides. PhD thesis, Universit´e
+        Paris-Est Marne La Vall´ee.
+
+Couder, Y., Chomaz, J. M. & Rabaud, M. 1989 On the hydrodynamics of soap films. Phys.
+        D 37 (1-3), 384­405.
+
+Culick, F. E. C. 1960 Comments on a ruptured soap film. Journal of Applied Physics 31 (6),
+        1128­1129.
+
+Durand, M. & Stone, H. A. 2006 Relaxation time of the topological T1 process in a two-
+        dimensional foam. Physical Review Letters 97, 226101.
+
+Florence, A. T. & Frens, G. 1972 Aureole profile in bursting soap films - Surface-tension
+        and surface relaxation in rapidly compressed monolayers. Journal of Physical Chemistry
+        76 (21), 3024­3029.
+
+Florence, Alexander T. & Mysels, Karol J. 1974 Bursting of soap films. VI. effect of
+        surfactant purity. The Journal of Physical Chemistry 78 (3), 234­235.
+
+Frankel, S. & Mysels, K. J. 1969 Bursting of soap films .2. Theoretical considerations.
+        Journal of Physical Chemistry 73 (9), 3028­3038.
+
+Golemanov, K., Denkov, N. D., Tcholakova, S., Vethamuthu, M. & Lips, A. 2008
+        Surfactant mixtures for control of bubble surface mobility in foam studies. Langmuir
+        24 (18), 9956­9961.
+
+Landau, L. D. & Lifshitz, E. M. 1975 Elasticity Theory. Oxford: Pergamon Press.
+Lastakowski, H., Boyer, F., Biance, A. L., Pirat, C. & Ybert, C. 2014 Bridging local to
+
+        global dynamics of drop impact onto solid substrates. Journal of Fluid Mechanics 747,
+        103­118.
+
+Lee, K. Y. C. 2008 Collapse mechanisms of Langmuir monolayers. Annu. Rev. Phys. Chem.
+        59, 771­791.
+
+Lhuissier, H. & Villermaux, E. 2009a Destabilization of flapping sheets: The surprising
+        analogue of soap films. Comptes Rendus M´ecanique 337 (6-7), 469­480.
+
+Lhuissier, H. & Villermaux, E. 2009b Soap films burst like flapping flags. Physical Review
+        Letters 103 (5), 054501.
+
+Liang, N. Y., Chan, C. K. & Choi, H. J. 1996 Dynamics of the formation of an aureole in
+        the bursting of soap films. Physical Review E 54 (4), R3117­R3120.
+
+Lorenceau, E., Louvet, N., Rouyer, F. & Pitois, O. 2009 Permeability of aqueous foams.
+        Eur. Phys. J. E 28, 293­304.
+
+Lucassen, J. & Van Den Tempel, M. 1972 Dynamic measurements of dilational properties
+        of a liquid interface. Chemical Engineering Science 27 (6), 1283 ­ 1291.
+
+McEntee, W. R. & Mysels, K. J. 1969 Bursting of soap films .i. An experimental study.
+        Journal of Physical Chemistry 73 (9), 3018­3028.
+
+Mitrinova, Z., Tcholakova, S., Golemanov, K., Denkov, N., Vethamuthu, M. &
+        Ananthapadmanabhan, K. P. 2013a Surface and foam properties of SLES plus CAPB
+        plus fatty acid mixtures: Effect of pH for C12-C16 acids. Colloids and Surfaces A-
+        physicochemical and Engineering Aspects 438, 186­198.
+
+Mitrinova, Z., Tcholakova, S., Popova, Z., Denkov, N., Dasgupta, Bivash R. &
+        Ananthapadmanabhan, K. P. 2013b Efficient control of the rheological and surface
+        properties of surfactant solutions containing C8-C18 fatty acids as cosurfactants. Langmuir
+        29 (26), 8255­8265.
+
+Petit, P., Seiwert, J., Cantat, I. & Biance, A.-L. 2015 On the generation of a foam film
+        during a topological rearrangement. Journal of Fluid Mechanics 763, 286­301.
+
+Rio, Emmanuelle & Biance, Anne-Laure 2014 Thermodynamic and mechanical timescales
+        involved in foam film rupture and liquid foam coalescence. ChemPhysChem 15 (17), 3692­
+        3707.
+
+Seiwert, J., Monloubou, M., Dollet, B. & Cantat, I. 2013 Extension of a suspended soap
+        film: A homogeneous dilatation followed by new film extraction. Physical Review Letters
+        111 (9), 094501.
+
+Taylor, G. 1959 The dynamics of thin sheets of fluid .3. Disintegration of fluid sheets.
+        Proceedings of the Royal Society of London Series A-Mathematical and Physical Sciences
+        253 (1274), 313­321.
+

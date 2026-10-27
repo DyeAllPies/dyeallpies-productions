@@ -1,0 +1,330 @@
+PRL 111, 174302 (2013)
+
+PHYSICAL REVIEW LETTERS
+
+week ending 25 OCTOBER 2013
+
+Helicoids, Wrinkles, and Loops in Twisted Ribbons
+
+Julien Chopin* and Arshad Kudrolli Department of Physics, Clark University, Worcester, Massachusetts 01610, USA (Received 17 April 2013; revised manuscript received 15 July 2013; published 25 October 2013)
+We investigate the instabilities of a flat elastic ribbon subject to twist under tension and develop an integrated phase diagram of the observed shapes and transitions. We find that the primary buckling mode switches from being localized longitudinally along the length of the ribbon to transverse above a triple point characterized by a crossover tension that scales with ribbon elasticity and aspect ratio. Far from threshold, the longitudinally buckled ribbon evolves continuously into a self-creased helicoid with focusing of the curvature along the triangular edges. Further twist causes an anomalous transition to loops compared with rods due to the self-rigidity induced by the creases. When the ribbon is twisted under high tension, transverse wrinkles are observed due to the development of compressive stresses with higher harmonics for greater width-to-length ratios. Our results can be used to develop functional structures using a wide range of elastic materials and length scales.
+
+DOI: 10.1103/PhysRevLett.111.174302
+
+PACS numbers: 46.32.+x, 46.70.Àp
+
+Finding smart, reliable, and efficient strategies toward developing functional shapes at smaller and smaller scales has been a focus of intense research in elastic materials ranging from synthetic yarns to atomically thin graphene sheets and soft tissue [1­4]. Although buckling, wrinkling, and creasing of thin sheets under compressive loading has been widely studied recently [5­9], the instabilities and shapes observed under the application of a twist have received far less attention. Seminal analysis by Green [10], confirmed later by numerical simulations [11,12], showed that a ribbon under tension is unstable upon twist due to the development of a spatially nonuniform compressive stress. Under finite tensile load, transverse buckling and localized loop formation has been shown using numerical simulations [13­15]. In the case where the ribbon is inextensible, stress localization can occur [16]. However, no previous studies, either theoretical or experimental, provide a comprehensive view of these observations.
+Here, we show that the various ribbon shapes are organized in a phase diagram using only two control parameters: the initial tension and the twist angle. In this phase diagram, the lines separating regimes--where helicoids, buckled helicoids, and loops are observed--meet at a triple point that sets the value of a characteristic tension T?. The primary buckling mode switches from longitudinal to transverse when crossing T?. Below T?, we characterize a secondary instability leading to a loop, and show that the development of creases affects this transition dramatically. We find that the transitions studied here are different in nature and more diverse than the ones observed with rods [17]. We provide the first clear experimental observation of the various buckling modes and further develop an integrated understanding of their onset using simple scaling arguments. Our results for the onset of longitudinal buckling compare well to those reported using more elaborate
+
+asymptotic analysis [12], and our approach allows us to further characterize the onset of the transverse buckling and the characteristic tension T?.
+We study a ribbon of length L, width W, and thickness h that is held under tension F using clamped boundary conditions at its ends, and then twisted through a prescribed angle  about its central long axis. Other types of boundary conditions may be considered but they are more difficult to implement experimentally. Ribbons composed of biaxially oriented polyethylene terephthalate with Young's modulus E ¼ 3:4 GPa (see the Supplemental Material [18]) and L > 10W > 500h are used, unless otherwise stated. The normalized twist angle  ¼ ðW=LÞ and the nondimensional tension T ¼ F=ðEhWÞ are used as control parameters to describe the applied conditions as illustrated in Fig. 1(a). Examples of a helicoid, buckled helicoids in the longitudinal and transverse direction, a creased helicoid, and a localized loop obtained by simply varying T and  are shown in Figs. 1(b)­1(f), respectively.
+Phase diagram: T?.--We obtained the phase diagram by measuring the critical angle for the longitudinal buckling, the loop transition, and the transverse buckling for a ribbon by increasing  in small increments from zero for an initial tension T [see Fig. 1(g)]. Note that the local deformations are within a good approximation in the linear elastic regime of the material, while plastic deformations are observed only near the edge of the ribbon for high twist angle ( > 0:5) (see the Supplemental Material [18]). Interestingly, we find that the three lines, corresponding to the onset of the three instabilities mentioned above, meet at a triple point characterized by the crossover tension T?. Longitudinal buckling occurs below T? and the critical angle L increases with T. Above L, the postbuckling shape evolves progressively into a creased helicoid with folds of alternating angles. Upon further twist, a secondary instability occurs at a critical angle T where the ribbon
+
+0031-9007= 13=111(17)=174302(5)
+
+174302-1
+
+Ó 2013 American Physical Society
+
+PRL 111, 174302 (2013)
+
+PHYSICAL REVIEW LETTERS
+
+week ending 25 OCTOBER 2013
+
+FIG. 1 (color online). (a) A schematic of the ribbon illustrating the applied tension and twist at the boundaries. Images of a helicoid (b), a longitudinally buckled helicoid (c), a transversely buckled helicoid (d), a creased helicoid (e), and a ribbon with a localized loop (f). The images all correspond to a uniform green biaxially oriented polyethylene terephthalate ribbon (W ¼ 12:7 mm and h ¼ 76 m). (g) The phase diagram of the shapes observed along with the critical twist angle for the longitudinal buckling (L, solid circle) and the transverse buckling (T, 5) as a function of the tension (L ¼ 45 cm, W ¼ 25:4 mm, and h ¼ 127 m). Below a crossover tension T?, the buckling is longitudinal. A secondary discontinuous buckling transition leading to a loop with self-contact is observed (solid triangle) upon further twist. A transverse buckled mode is observed for T > T?. Upon further twisting, a loop with self-contact develops (open circle).
+shape transforms into a loop with self-contact. The nature of this transition depends on T. Below T?, the ribbon switches dynamically into a loop configuration with T decreasing linearly with T. Above T?, the buckling is now transverse with a critical angle, also denoted by T, independent of T over the range of tension explored. Further twisting can lead to loops with self-contact. More complicated self-wrapped configurations can occur for other ribbon aspect ratios and are not discussed here in the interest of space. Also, it may be noted that changing the boundary conditions affects the phase diagram but investigating this is beyond the scope of the present study as we are primarily interested in clamped edges.
+Buckling and postbuckling: below T?.--In order to obtain quantitative information on the shape of the ribbon, we use a Varian Medical Systems microfocus x-ray computer tomography instrument that allows ribbons with lengths up to 15 cm to be fully scanned to resolutions within tens of m. The mean curvature H and the Gaussian curvature K are then obtained to characterize the shapes. Figures 2(a)­2(c) show the map of the curvature superimposed on the ribbon before and after buckling. A helicoid shape can be expected if a constant twisting rate along the ribbon is assumed, which is confirmed by a zero mean curvature [Fig. 2(a)]. When  ¼ L, the ribbon buckles longitudinally [Fig. 2(b)] with a pattern essentially
+
+FIG. 2 (color online). (a),(b) Ribbon shapes before and after
+longitudinal buckling. (c) Creasing regime at higher twist. The
+mean curvature is measured from 3D x-ray scans of the ribbon
+and superimposed on the extracted shape according to the color
+map shown.p(ffidffiffi)ffiffiffiffiffi L as a function of T. All critical angles lie above 0 ¼ 24T (dashed line), which corresponds to the theoretical critical twist angle for ribbons of vanishing thicknesses. (e) L À 0 as a function of T. The symbol corresponds to the mean and the vertical bar to the standard deviation. For ribbons with finite thicknesses, L is offset by 9:3h=W. Same symbols as in (pd)ffiffi.ffiffi(ffiffifffi ) The longitudinal buckling wavelength L normalized by hW decreases with T in good agreement with Eq. (6).
+
+localized in the central portion of the ribbon, which on
+
+further twist can develop creases where the curvature is
+
+further localized along the sides of a triangle [Fig. 2(c)].
+
+To understand this mode of buckling, we consider the
+
+nondimensional longitudinal stress of a thin filament at a
+
+distance
+
+y
+
+from
+
+the
+
+central
+
+axis
+
+given
+
+by
+
+L
+
+þ
+
+1 2
+
+2ðy=W
+
+Þ2,
+
+where L is the stress of the central line. Then, L is set by the condition of constant load hi ¼ T ¼ L þ 2=24,
+
+where h::i stands for the apvffieffiffirffiffiaffiffigffi e along the transverse
+
+direction. Introducing 0 ¼ 24T,
+
+L
+
+¼
+
+1 24
+
+ð02
+
+À
+
+2Þ:
+
+(1)
+
+Plotting L in Fig. 2(d), we note that buckling occurs consistently above 0 when compressive stress develops longitudinally. Just above 0, the width of the compressive region of the ribbon is
+
+sffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+
+Wc % W
+
+2  À 0 3 0
+
+and
+
+L
+
+%
+
+À
+
+0 12
+
+ð
+
+À
+
+0Þ:
+
+(2)
+
+Now, to develop the criteria for longitudinal buckling as a result of the compressive stresses, we use energy arguments by considering only the central part of the
+
+174302-2
+
+PRL 111, 174302 (2013)
+
+PHYSICAL REVIEW LETTERS
+
+week ending 25 OCTOBER 2013
+
+ribbon where quadratic dependence of the longitudinal
+
+stress with y=W can be neglected. Let us consider a
+
+buckled mode characterized by a typical amplitude A and
+
+wavelength . Then, the change in the elastic energy
+
+density due to longitudinal buckling is the sum of three
+
+contributions,
+
+ÁUL
+
+$
+
+A2 EhL 
+
+þ
+
+Eh3 12
+
+ A 2 2
+
+þ
+
+Eh3 12
+
+ A 2 Wc2 :
+
+(3)
+
+Where the first term corresponds to the compressive energy
+
+stored in the ribbon, and the second and third terms arise
+
+because of the energy penalty due to bending in the longi-
+
+tudinal and transverse direction, respectively. The ribbon is
+
+unstable when the energy gain by releasing the longitudinal
+
+compression overcomes the cost of bending. Then, by
+
+inspection of Eq. (3), the change in stability occurs for a
+
+critical twist angle  ¼ L, and longitudinal wavelength
+
+ ¼ L, when
+
+L
+
+$
+
+À
+
+1 12
+
+ h 2L 2 Wc Wc
+
+þ
+
+Wc2: L
+
+(4)
+
+The wavelength selected is associated with the most
+unstable buckling mode characterized by the condition @L=@ ¼ 0 which leads to L $ Wc and the critical longitudinal stress L $ ðh=WcÞ2. Because we do not measure L, we find it more convenient to obtain an expression for L. Then, as can be seen from Fig. 2(d), L is similar to 0, and we can use the linearized expressions for L and Wc. Solving for L, we obtain
+
+L
+
+À
+
+0
+
+$
+
+h W
+
+;
+
+(5)
+
+and
+
+qffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+
+L $ hW=0:
+
+(6)
+
+The expressions for L and L hold as long as 0 ) ðh=WÞ, which insures that  ( W and the buckling is confined in the central part of the ribbon. By plotting the data where L < W, we find that L À 0 increases linearly with h=W [Fig. 2(e)] consistently with Eq. (5). The corresponding measured L is observed to decrease as a function of T as shown in Fig. 2(f) consistent with Eq. (6) with a numerical prefactor of 3.8. Further, the experimentally obtained prefactors for L À 0 and L are consistent with those seen numerically [12].
+Keeping the tension below T < T?, and twisting the ribbon far above the threshold for longitudinal buckling,
+the pattern breaks the right-left symmetry by progressively
+localizing the mean curvature along the lines of alternating
+angles until a self-creased helicoidal structure forms as
+shown in Fig. 2(c). The sharpness of the crease is more
+pronounced at lower tension. This creased helicoidal pat-
+tern, which is well known in origami, was demonstrated
+previously for inextensible ribbons [16], but no satisfactory
+
+explanation for the pattern selection is available. We find the size of the triangle is not unique and is given by the wavelength at onset as shown in Figs. 2(b) and 2(c), suggesting that our stability analysis is actually a selection mechanism for the observed pattern. Further, we find that the creasing helicoid can be observed in a regime of higher tension (0 ) h=W) than previously thought. The condition of inextensiblility, usually required to form localized stressed regions in thin elastic plate, may be locally met within the central compressed region of the ribbon.
+Transverse buckling: above T?.--Transverse buckling is observed above T? with buckling patterns that depend mainly on geometrical parameters. When L ) W, only the fundamental mode is observed [Fig. 3(a)], which has been seen numerically [14,15]. Further twisting leads to a localized loop with a unique self-contact [Fig. 1(g)]. However, higher modes can be obtained by decreasing h=W and L=W as shown in Figs. 3(b) and 3(c) where transverse cross sections of ribbons (x ¼ 0) twisted above T can be seen. Further twisting leads to shapes with a complex set of self-contacts. We measure the critical angle for various combinations of geometrical parameters L=W and h=W for T > T? and only consider critical twist angle T > 2=ðL=WÞ where the fundamental buckling mode is
+FIG. 3 (color online). (a)­(c) Measured transverse cross section of ribbons (x ¼ 0) twisted above T illustrating different buckling harmonics depending on h=W and L=W (E % 1 MPa). (d) Evolution of the critical angle T for the transverse buckling with the aspect ratio L=W of the ribbons. A given symbol corresponds to a fixed length and thickness and varying width. Four different lengths in the range 10­90 cm are investigated with thicknesses h ¼ 76 m (w), 254 m (diamond), and 127 m (square, down triangle, right triangle). A dashed line drawn as a guide for the eyes separates the ribbon regime (large L=W) with a plate regime (small L=W). (e) Evolution of T with h=W in the ribbon regime. All the data [same symbols as in (d)] collapse on a single curve T ¼ 4:4ðh=WÞ1=2 independent to L as further shown in the corresponding log-log plot in the inset.
+
+174302-3
+
+PRL 111, 174302 (2013)
+
+PHYSICAL REVIEW LETTERS
+
+week ending 25 OCTOBER 2013
+
+FIG. 4 (color online). (a) Evolution of the critical angle T for the transverse buckling with tension [black (blue) solid triangle, gray (red) solid triangle, open triangle, solid lines] using a ribbon with W ¼ 25:4 mm, h ¼ 127 m, and L ¼ 45 cm. Twist angles where self-contact is first observed while increasing  [open circle, black (blue) dashed line], and where self-contact is no longer observed while decreasing  [solid circle, gray (red) dashed line]. Above T?, the transverse buckling (open triangle) and the formation of a self-contact (open circle) are successive and no significant hysteresis is observed. Below T?, when increasing , a loop with a self-contact is formed and T decreases linearly with T [black (blue) solid triangle]. When decreasing  in the striped area, the loss of self-contact (solid circle) and the transition to a creased helicoid [gray (red) solid triangle] are successive. (b) Mean curvature H of ribbon with loop (W ¼ 15 mm, L ¼ 10 cm, and h ¼ 127 m). (c) Gaussian curvature K of the same ribbon. Above the transition, the Gaussian curvature vanishes whereas the mean curvature is localized in the loop region.
+observed. Figure 3(d) shows T versus L=W, and where each symbol corresponds to a different length. In Fig. 3(e),
+we plot T as a function of h=W and find that all the data collapse onto a single line T ¼ 4:4ðh=WÞ1=2. This trend can be explained by a stability analysis of a thin transverse
+section of the ribbon under compression. A compressive transverse stress scaling as T $ E4 has been argued using scaling arguments [15]. The section buckles when T $ Eðh=WÞ2, which corresponds to the buckling condition for a beam of length W anpdffiffitffiffihffiffiiffifficffiffikness h. This condition leads to a critical angle T $ h=W that only depends on a geometrical parameter unlike L, and is consistent with our experimental data [see Fig. 3(e)]. Plastic deformations can be observed near the edges for  > 0:5 and will have to be taken into account in subsequent analysis for a more
+precise prediction, although the scaling is expected not to change.
+Secondary instability: below T?.--We next discuss the anomalous secondary transition to the loop in more detail
+(see Fig. 4). While increasing  above T [solid black (blue) line], the ribbon dynamically jumps to a loop con-
+figuration with self-contact. When  is then decreased below T, the loop remains stable demonstrating the hysteretic nature of the transverse buckling below T?. Upon
+
+further decrease, the ribbon is no longer in self-contact below the dashed red line, and the helicoid is recovered below the solid gray (red) line. This transformation from a shape with a negative Gaussian curvature (helicoid) to a cylindrical shape (loop) is a way for a ribbon to release part of its in-plane stress. But, surprisingly, the critical angle decreases linearly with the tension. This feature is in sharp contrast with the higher T regime. It means that a loop is formed more easily at higher tension unlike rods where the tension is reduced to trigger the loop transition [19]. The self-rigidity that arises from the formation of creases at low tension may well play an important role in this anomalous loop transition. It is well known that shells with large curvature have a great resistance against deformation [20]. However, in the case of a ribbon, the rigidity mechanism is spontaneous because no intrinsic curvature was present in the prestressed flat ribbon.
+Scaling for T?.--Now, by using the condition L ¼ T, we can obtain a scaling for the crossover tension T?. Substituting the expressions for the critical angle for both buckling modes in the thin ribbon limit (h=W ! 0), we obtain T? % 0:8h=W. For the ribbon used in Fig. 1(g), our scaling analysis gives T? % 4 Â 10À3, in good agreement with our experimental data.
+Fundamental questions on the onset of buckling, wrinkling, and crumpling of thin elastic materials and postbuckling behavior is still a matter of significant debate [21]. Because rarely has a single experiment embraced such a diversity of shapes and behaviors without the need for a complex coupling with a substrate [22,23], or frictional walls [24,25], the twisted ribbon configuration offers a new paradigm to understanding the strong nonlinear and singular elastic theory as captured by the Fo¨ppl-von Ka´rma´n equations.
+We thank Ranjan Mukhopadhyay, Pedro Reis, and Benjamin Davidovitch for stimulating discussions, and Arnaud Lazarus for technical support in measuring elastic constants. This work was supported by National Science Foundation Grant No. DMR-0959066.
+*jchopin@coc.ufrj.br akudrolli@clarku.edu [1] Y. Klein, E. Efrati, and E. Sharon, Science 315, 1116 (2007). [2] H. Vandeparre, M. Pineirua, F. Brau, B. Roman, J. Bico, C. Gay, W. Bao, C. N. Lau, P. M. Reis, and P. Damman, Phys. Rev. Lett. 106, 224301 (2011). [3] M. Lima, S. Fang, X. Lepro´, C. Lewis, R. Ovalle-Robles, J. Carretero-Gonza´lez, E. Castillo-Mart´inez, M. E. Kozlov, J. Oh, N. Rawat, C. Haines, M. Haque, V. Aare, S. Stoughton, A. Zakhidov, and R. Baughman, Science 331, 51 (2011). [4] J. Kim, J. Hanna, M. Byun, C. Santangelo, and R. Hayward, Science 335, 1201 (2012).
+
+174302-4
+
+PRL 111, 174302 (2013)
+
+PHYSICAL REVIEW LETTERS
+
+week ending 25 OCTOBER 2013
+
+[5] D. L. Blair and A. Kudrolli, Phys. Rev. Lett. 94, 166107 (2005).
+[6] T. A. Witten, Rev. Mod. Phys. 79, 643 (2007). [7] M. Das, A. Vaziri, A. Kudrolli, and L. Mahadevan, Phys.
+Rev. Lett. 98, 014301 (2007). [8] J. Chopin, D. Vella, and A. Boudaoud, Proc. R. Soc. A
+464, 2887 (2008). [9] D. Chen, S. Cai, Z. Suo, and R. C. Hayward, Phys. Rev.
+Lett. 109, 038001 (2012). [10] A. Green, Proc. R. Soc. A 161, 197 (1937). [11] D. Crispino and R. Benson, Int. J. Mech. Sci. 28, 371
+(1986). [12] C. D. Coman and A. P. Bassom, Acta Mech. 200, 59
+(2008). [13] E. Mockensturm, J. Appl. Mech. 68, 561 (2001). [14] S. Cranford and M. J. Buehler, Model. Simul. Mater. Sci.
+Eng. 19, 054003 (2011). [15] O. O. Kit, T. Tallinen, L. Mahadevan, J. Timonen, and P.
+Koskinen, Phys. Rev. B 85, 085428 (2012). [16] A. P. Korte, E. L. Starostin, and G. H. M. van der Heijden,
+Proc. R. Soc. A 467, 285 (2010).
+
+[17] A. Goriely, M. Nizette, and M. Tabor, J. Nonlinear Sci. 11,
+
+3 (2001).
+
+[18] See Supplemental Material at http://link.aps.org/
+
+supplemental/10.1103/PhysRevLett.111.174302
+
+for
+
+mechanical characterization of the material.
+
+[19] G. van der Heijden and J. Thompson, Nonlinear Dynamics
+
+21, 71 (2000).
+
+[20] B. Audoly and Y. Pomeau, Elasticity and Geometry
+
+(Oxford University Press, New York, 2010).
+
+[21] B. Davidovitch, R. D. Schroll, D. Vella, M. Adda-Bedia,
+
+and E. Cerda, Proc. Natl. Acad. Sci. U.S.A. 108, 18227
+
+(2011).
+
+[22] E. Cerda, K. Ravi-Chandar, and L. Mahadevan, Nature
+
+(London) 419, 579 (2002).
+
+[23] L. Pocivavsek, R. Dellsy, A. Kern, S. Johnson, B. Lin, K.
+
+Lee, and E. Cerda, Science 320, 912 (2008).
+
+[24] L. Boue´, M. Adda-Bedia, A. Boudaoud, D. Cassani, Y.
+
+Couder, A. Eddi, and M. Trejo, Phys. Rev. Lett. 97,
+
+166104 (2006).
+
+[25] A. Cambou and N. Menon, Proc. Natl. Acad. Sci. U.S.A.
+
+108, 14741 (2011).
+
+174302-5
+
+

@@ -66,6 +66,83 @@ def glow(img, sigmas=((4, 0.30), (14, 0.18), (40, 0.10))):
     return np.clip(out, 0, 255).astype(np.uint8)
 
 
+def layout(dr):
+    """The wordmark's geometry (the numbers of BRAND.md): the wordmark at 150 px centred at y = 900 (inside the 270-1250
+    safe band), PRODUCTIONS under its right half, the URL at 1120; per-letter x ranges for the light-up and the five
+    string landings (D, e, l, i, s). Shared with the finger web's fire sting (web_fire.py, 2026-09-19), so the two
+    stings cannot drift apart."""
+    f_word = brand.font("wordmark", 150); f_sub = brand.font("sub", 44); f_url = brand.font("mono", 52)
+    bbox = dr.textbbox((0, 0), WORD, font=f_word); ww = bbox[2] - bbox[0]; x_word = (W - ww) // 2; y_word = 900 - (bbox[3] - bbox[1]) // 2 - bbox[1]
+    xs = []; x = x_word
+    for ch in WORD:
+        cw = dr.textlength(ch, font=f_word); xs.append((x, x + cw)); x += cw
+    land_x = [int((xs[k][0] + xs[k][1]) / 2) for k in (0, 2, 5, 7, 9)]
+    return dict(f_word=f_word, f_sub=f_sub, f_url=f_url, bbox=bbox, ww=ww, x_word=x_word, y_word=y_word, xs=xs, land_x=land_x, y_land=y_word + bbox[1] - 8)
+
+
+def draw_marks(i, dr, dr_word, L, hot, lit, t_word=10, per_letter=1.2, t_sub=22, t_url=30, accent=None, neutral=None, tick=None, neon=None,
+               letter_cols=None, tick_cols=None, sub_col=None):
+    """The brand's beats from frame `t_word` on: the wordmark lights letter by letter (each over 4 frames, `per_letter` apart,
+    with a white flash on the way in) into dr_word; PRODUCTIONS tracks in over 8 frames from `t_sub` and the tick draws
+    under the wordmark's left half (into `hot` in the neon look, `lit` otherwise); the URL fades in over 6 frames from
+    `t_url`, on two lines (44 characters of mono at a legible size do not fit the 950 px safe width on one). Returns the
+    light-up alpha per letter (the fire sting reads it for its flame).
+    2026-09-22 (the finger web, Dennis: the logo's writing in the predominant colours of the animation, the ground black):
+    `letter_cols` (BGR per letter of WORD) colours each glyph on its own; `tick_cols` (a list of BGR) draws the tick as that
+    many equal segments, left to right; `sub_col` colours PRODUCTIONS (default `neutral`). The URL keeps `neutral`."""
+    accent = ACCENT if accent is None else accent; neutral = NEUTRAL if neutral is None else neutral; tick = TICK if tick is None else tick
+    neon = NEON if neon is None else neon; sub_col = neutral if sub_col is None else sub_col
+    alphas = []
+    for k, ch in enumerate(WORD):
+        t0 = t_word + k * per_letter; a = ease_out((i - t0) / 4); alphas.append(a)
+        if a <= 0: continue
+        col = accent if letter_cols is None else letter_cols[k]
+        c = tuple(int(col[j] * a + WHITE[j] * 0.35 * a * (1 - a) * 4) for j in range(3))
+        dr_word.text((L["xs"][k][0], L["y_word"]), ch, font=L["f_word"], fill=(c[2], c[1], c[0]))
+    a = ease_out((i - t_sub) / 8)
+    if a > 0:
+        sub_w = dr.textlength(SUB, font=L["f_sub"]); spacing = 14 * a + 30 * (1 - a)
+        total = sub_w + spacing * (len(SUB) - 1); x = L["xs"][-1][1] - total; y = L["y_word"] + L["bbox"][3] + 18
+        for ch in SUB:
+            dr.text((x, y), ch, font=L["f_sub"], fill=(int(sub_col[2] * a), int(sub_col[1] * a), int(sub_col[0] * a))); x += dr.textlength(ch, font=L["f_sub"]) + spacing
+        x0, x1 = L["x_word"], L["x_word"] + int(L["ww"] * 0.42 * a); yt = L["y_word"] + L["bbox"][3] + 26
+        if tick_cols:                                       # the tick as the ramp's own stops, a segment each (the meter under the wordmark)
+            xf = L["x_word"] + int(L["ww"] * 0.42); nseg = len(tick_cols)
+            for q, c in enumerate(tick_cols):
+                xa = x0 + int((xf - x0) * q / nseg); xb = x0 + int((xf - x0) * (q + 1) / nseg)
+                if xa >= x1: break
+                cv2.line(hot if neon else lit, (xa, yt), (min(xb, x1), yt), tuple(int(v) for v in c), 4, cv2.LINE_AA)
+        else: cv2.line(hot if neon else lit, (x0, yt), (x1, yt), tick, 4, cv2.LINE_AA)
+    a = ease_out((i - t_url) / 6)
+    if a > 0:
+        for k, line in enumerate(("github.com/DyeAllPies/", "dyeallpies-productions")):
+            uw = dr.textlength(line, font=L["f_url"])
+            dr.text(((W - uw) // 2, 1120 + k * 66), line, font=L["f_url"], fill=(int(neutral[2] * a), int(neutral[1] * a), int(neutral[0] * a)))
+    return alphas
+
+
+def tube_core(word, core, inset=CORE_INSET):
+    """The neon look's tube core: the glyph eroded by `inset` px is filled with the pale core colour at the glyph's own
+    brightness (the light-up alpha and the flash carry through), the accent stays as the tube's rim: the same read as
+    the doll's parts, a bright thick middle and a coloured edge. `word` BGR uint8, modified in place."""
+    bright = np.clip(word.max(-1).astype(np.float32) / 255.0, 0, 1)
+    inner = cv2.erode((bright > 0.02).astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * inset + 1, 2 * inset + 1))) > 0
+    c = (np.array(core, np.float32)[None, None] * bright[..., None]).astype(np.uint8)
+    word[inner] = c[inner]
+    return word
+
+
+def neon_composite(canvas, lit, hot, gain=None, wall=None, hot_gain=HOT_GAIN):
+    """The neon look (2026-09-12, Dennis: the logo in the doll's violet, its elements neon and shining, reflecting in the
+    background; "a common visual thread that extends into the logo"): the puppet composite's own glow in linear light,
+    studio.glow: the emission at `gain`, the mip bloom, the pool on the wall, the shoulder. All three BGR uint8."""
+    gain = NEON_GAIN if gain is None else gain; wall = WALL if wall is None else wall
+    E = srgb8_to_lin(lit) * np.float32(gain); Eh = srgb8_to_lin(hot) * np.float32(gain)
+    src = E + Eh * np.float32(hot_gain)
+    out = srgb8_to_lin(canvas) + E + Eh + sglow.bloom(src) + sglow.pool(src, wall)
+    return lin_to_srgb8(sglow.shoulder(out))
+
+
 def frame(i, hold_frames):
     t = i / FPS
     canvas = np.zeros((H, W, 3), np.uint8); canvas[:] = GROUND
@@ -73,64 +150,23 @@ def frame(i, hold_frames):
     hot = np.zeros((H, W, 3), np.uint8)                      # the elements bloomed HOT_GAIN times more (the tick in the neon look, as the boots)
     pil = Image.new("RGB", (W, H)); dr = ImageDraw.Draw(pil)
     pil_word = Image.new("RGB", (W, H)); dr_word = ImageDraw.Draw(pil_word)   # the wordmark alone: the neon look carves its tube core from it
-    f_word = brand.font("wordmark", 150); f_sub = brand.font("sub", 44); f_url = brand.font("mono", 52)
-    # layout: the wordmark centred at y = 900 (inside the 270-1250 safe band), PRODUCTIONS under its right half, the URL at 1150
-    bbox = dr.textbbox((0, 0), WORD, font=f_word); ww = bbox[2] - bbox[0]; x_word = (W - ww) // 2; y_word = 900 - (bbox[3] - bbox[1]) // 2 - bbox[1]
-    # letter positions for the light-up and the string landings
-    xs = []; x = x_word
-    for ch in WORD:
-        cw = dr.textlength(ch, font=f_word); xs.append((x, x + cw)); x += cw
-    land_x = [int((xs[k][0] + xs[k][1]) / 2) for k in (0, 2, 5, 7, 9)]          # five strings land on D, e, l, i, s
-    y_land = y_word + bbox[1] - 8
+    L = layout(dr)
     # strings (frames 0-14): the accent with a pale core, as a lit thread
     if i <= 14:
-        for k, lx in enumerate(land_x):
-            y_end = string_drop(t + k * 0.004, -40, y_land)                     # a 4 ms stagger, left to right
+        for k, lx in enumerate(L["land_x"]):
+            y_end = string_drop(t + k * 0.004, -40, L["y_land"])               # a 4 ms stagger, left to right
             a = 1.0 if i < 12 else 1.0 - (i - 11) / 4
             cv2.line(lit, (lx, 0), (lx, int(y_end)), tuple(int(c * a) for c in ACCENT), 7, cv2.LINE_AA)
             cv2.line(lit, (lx, 0), (lx, int(y_end)), tuple(int(c * a) for c in NEUTRAL), 3, cv2.LINE_AA)
             cv2.circle(lit, (lx, int(y_end)), 8, tuple(int(c * a) for c in WHITE), -1, cv2.LINE_AA)
-    # the wordmark lights letter by letter, frames 10-22 (left to right, each over 4 frames)
-    for k, ch in enumerate(WORD):
-        t0 = 10 + k * 1.2; a = ease_out((i - t0) / 4)
-        if a <= 0: continue
-        c = tuple(int(ACCENT[j] * a + WHITE[j] * 0.35 * a * (1 - a) * 4) for j in range(3))   # a white flash on the way in
-        dr_word.text((xs[k][0], y_word), ch, font=f_word, fill=(c[2], c[1], c[0]))
-    # PRODUCTIONS tracks in, frames 22-30
-    a = ease_out((i - 22) / 8)
-    if a > 0:
-        sub_w = dr.textlength(SUB, font=f_sub); spacing = 14 * a + 30 * (1 - a)
-        total = sub_w + spacing * (len(SUB) - 1); x = xs[-1][1] - total; y = y_word + bbox[3] + 18
-        for ch in SUB:
-            dr.text((x, y), ch, font=f_sub, fill=(int(NEUTRAL[2] * a), int(NEUTRAL[1] * a), int(NEUTRAL[0] * a))); x += dr.textlength(ch, font=f_sub) + spacing
-        # the accent tick under the wordmark's left half, drawn left to right
-        x0, x1 = x_word, x_word + int(ww * 0.42 * a); yt = y_word + bbox[3] + 26
-        cv2.line(hot if NEON else lit, (x0, yt), (x1, yt), TICK, 4, cv2.LINE_AA)
-    # the URL fades in over 6 frames from frame 30 and holds
-    a = ease_out((i - 30) / 6)
-    if a > 0:      # two lines: 44 characters of mono at a legible size do not fit the 950 px safe width on one line
-        for k, line in enumerate(("github.com/DyeAllPies/", "dyeallpies-productions")):
-            uw = dr.textlength(line, font=f_url)
-            dr.text(((W - uw) // 2, 1120 + k * 66), line, font=f_url, fill=(int(NEUTRAL[2] * a), int(NEUTRAL[1] * a), int(NEUTRAL[0] * a)))
+    # the wordmark lights letter by letter (frames 10-22), PRODUCTIONS tracks in (22-30), the URL fades in from 30
+    draw_marks(i, dr, dr_word, L, hot, lit)
     text = cv2.cvtColor(np.array(pil), cv2.COLOR_RGB2BGR); word = cv2.cvtColor(np.array(pil_word), cv2.COLOR_RGB2BGR)
-    if NEON:
-        # the tube core: the glyph eroded by CORE_INSET px is filled with the pale core colour at the glyph's own
-        # brightness (the light-up alpha and the flash carry through), the accent stays as the tube's rim: the
-        # same read as the doll's parts, a bright thick middle and a coloured edge
-        bright = np.clip(word.max(-1).astype(np.float32) / 255.0, 0, 1)
-        inner = cv2.erode((bright > 0.02).astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * CORE_INSET + 1, 2 * CORE_INSET + 1))) > 0
-        core = (np.array(CORE, np.float32)[None, None] * bright[..., None]).astype(np.uint8)
-        word[inner] = core[inner]
+    if NEON: tube_core(word, CORE)
     lit = np.maximum(lit, np.maximum(text, word))
     if not NEON:
         return np.maximum(canvas, glow(lit))
-    # the neon look (2026-09-12, Dennis: the logo in the doll's violet, its elements neon and shining, reflecting
-    # in the background; "a common visual thread that extends into the logo"): the puppet composite's own glow in
-    # linear light, studio.glow: the emission at NEON_GAIN, the mip bloom, the pool on the wall, the shoulder
-    E = srgb8_to_lin(lit) * np.float32(NEON_GAIN); Eh = srgb8_to_lin(hot) * np.float32(NEON_GAIN)
-    src = E + Eh * np.float32(HOT_GAIN)
-    out = srgb8_to_lin(canvas) + E + Eh + sglow.bloom(src) + sglow.pool(src, WALL)
-    return lin_to_srgb8(sglow.shoulder(out))
+    return neon_composite(canvas, lit, hot)
 
 
 def main():

@@ -1,0 +1,17 @@
+DOI: 10.1145/1360612.1360662 — http://www.cs.columbia.edu/cg/pdfs/143-rods.pdf
+
+Bergou, M., Wardetzky, M., Robinson, S., Audoly, B. & Grinspun, E. (2008). "Discrete Elastic
+Rods." ACM Transactions on Graphics (Proc. SIGGRAPH) 27(3), 63:1–63:12.
+
+We present a discrete treatment of adapted framed curves, parallel transport, and holonomy, thus
+establishing the language for a discrete geometric model of thin flexible rods with arbitrary
+cross section and undeformed configuration. Our approach differs from existing simulation
+techniques in the graphics and mechanics literature both in the kinematic description — we
+represent the material frame by its angular deviation from the natural Bishop frame — as well as
+in the dynamical treatment — we treat the centerline as dynamic and the material frame as
+quasistatic. Additionally, we describe a manifold projection method for coupling rods to rigid
+bodies and simultaneously enforcing rod inextensibility. The use of quasistatics and constraints
+provides an efficient treatment for stiff twisting and stretching modes; at the same time, we
+retain the dynamic bending of the centerline and accurately reproduce the coupling between
+bending and twisting modes. We validate the discrete rod model via quantitative buckling,
+stability, and coupled-mode experiments, and via qualitative knot-tying comparisons.

@@ -1,0 +1,25 @@
+DOI: 10.2312/egt.20171034 — https://animation.rwth-aachen.de/media/papers/2017-EG-CourseNotes.pdf
+
+Bender, J., Müller, M. & Macklin, M. (2017). "A Survey on Position Based Dynamics, 2017."
+Eurographics 2017 Tutorials (EG '17), 31 pages.
+
+The physically-based simulation of mechanical effects has been an important research topic in
+computer graphics for more than two decades. Classical methods in this field discretize Newton's
+second law and determine different forces to simulate various effects like stretching, shearing,
+and bending of deformable bodies or pressure and viscosity of fluids, to mention just a few.
+Given these forces, velocities and finally positions are determined by a numerical integration
+of the resulting accelerations. In the last years position-based simulation methods have become
+popular in the graphics community. In contrast to classical simulation approaches these methods
+compute the position changes in each simulation step directly, based on the solution of a
+quasi-static problem. Therefore, position-based approaches are fast, stable and controllable
+which make them well-suited for use in interactive environments. However, these methods are
+generally not as accurate as force-based methods but provide visual plausibility. Hence, the
+main application areas of position-based simulation are virtual reality, computer games and
+special effects in movies and commercials. In this tutorial we first introduce the basic concept
+of position-based dynamics. Then we present different solvers and compare them with the
+variational formulation of the implicit Euler method in connection with compliant constraints.
+We discuss approaches to improve the convergence of these solvers. Moreover, we show how
+position-based methods are applied to simulate elastic rods, cloth, volumetric deformable
+bodies, rigid body systems and fluids. We also demonstrate how complex effects like anisotropy
+or plasticity can be simulated and introduce approaches to improve the performance. Finally, we
+give an outlook and discuss open problems.

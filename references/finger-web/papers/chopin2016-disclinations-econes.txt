@@ -1,0 +1,364 @@
+Disclinations, e-cones, and their interactions in extensible sheets
+Julien Chopin Gulliver UMR 7083, CNRS, ESPCI ParisTech, PSL Research University, F-75005 Paris, France and
+Sorbonne Universit´es, UPMC Univ Paris 06, CNRS, UMR 7190, Institut Jean Le Rond d'Alembert, F-75005 Paris, France
+Arshad Kudrolli Department of Physics, Clark University, Worcester, MA 01610, USA
+We investigate the nucleation, growth, and spatial organization of topological defects with a ribbon shaped elastic sheet which is stretched and twisted. Singularities are found to spontaneously arrange in a triangular lattice in the form of vertices connected by stretched ridges that result in a self-rigidified structure. The vertices are shown to be negative disclinations or e-cones which occur in sheets with negative Gaussian curvature, in contrast with d-cones in sheets with zero-Gaussian curvature. We find the growth of the wrinkled width of the ribbon to be consistent with a far-fromthreshold approach assuming a compression-free base state. The system is found to show a transition from a regime where the wavelength is given by the ribbon geometry, to where it is given by its elasticity as a function of the ratio of the applied tension to the elastic modulus and cross-sectional area of the ribbon.
+
+arXiv:1601.00575v1 [cond-mat.soft] 4 Jan 2016
+
+Localized defects in the form of disclinations, grain boundaries, voids, and inclusions that mark an otherwise featureless solid are important to understanding and designing the macroscopic properties of materials [1]. Topological defects such as disclinations and dislocations are known to control the morphology and mechanical properties of thin flexible sheets and membranes [2]. For example, a disclination appears in a thin disk shaped sheet when the metric of a surface is modified by adding a wedge. Such a point-like defect induces in-plane stresses that can be alleviated by out-of-plane deformations [3]. Disclinations can be positive or negative, depending on the "charge" associated with Gaussian curvature around the defect. Oppositely signed disclinations can pair up resulting in what is called a dislocation with zero net Gaussian charge [2, 4, 5]. Thus, a sheet with a dislocation is isometric to a plane outside the core of the defect. In the context of elastic sheets, dislocation and negative disclinations are usually called d-cones and econes, respectively [6, 7]. Recent studies suggest a deep connection between topological defects, such as disclinations and disclocations in crystaline membrane, and e-cones and d-cones in amorphous membranes based on their Gaussian charge [8].
+Considerable experimental and theoretical challenges exist to identify and model the emergence of such defects and their dynamics under external forcing. Isolated defects in infinite sheets have been well studied [5­7, 9­ 13]. Outside the core of the defect, the deformations are assumed to be inextensible, i.e. stress free. While this has been shown to lead to a reasonable description of the overall shape of the surface [10], the inner structure of the defect and its interaction with other defects and surface edges are still not well understood [14]. Because interacting defects can be commonly noted as in crumpled paper [14­17] and indented shells [18­20], a
+
+(a) (b)
+
+H
+
+K
+
+55
+
+0.3
+
+0
+
+s
+
+0
+
+-0.1
+
+r
+107
+
+-0.2
+
+-0.3
+
+0.75
+
+0
+
+0
+
+-0.6
+
+210
+
+-10..475
+
+-1.2 0
+
+0
+
+-1.5
+
+-3
+
+-1.4
+
+437
+
+2.4
+
+0
+
+0
+
+-8
+
+s r
+
+(c)
+
+-2.4
+
+(d)
+
+-16
+
+FIG. 1. A 3D reconstruction of a twisted ribbon (Mylar, t/W = 8.5 × 10-3, T = 1.2 × 10-3 and  = 437) with measured (a) Gaussian curvature K(r, s), and (b) mean curvature H(r, s) superimposed on a ridge. Map of (c) H(r, s) and (d) K(r, s) as a function of increasing . Here we show that a symmetry breaking and a triangular lattice develop with nonzero Gaussian curvature. The lattice spacing appears almost constant with .
+
+detailed geometrical characterization of defect interactions in sheets under well defined loading and boundary conditions is still needed to build a deeper understanding of macroscopic properties of sheets undergoing large displacement.
+Because of its rich phase diagram and well-defined boundary conditions, the twisted ribbon configuration has been proposed as a model system to understand the nonlinear and singular behavior of elastic sheets [21, 22]. A particularly interesting aspect of the system is the spontaneous emergence of ridges and point-like defects organized in a triangular lattice that have been shown to form at small tension [23]. This simplified geometry develops rigidity due to the formation of ridges and allows investigation of the formation of interacting singularities under well-defined loading conditions. Over the last decades, various theoretical approaches have been
+
+proposed to model twisted ribbons including anisotropic rod-like theory [23­25] and nonlinear plate and shell theory [26­31]. However, none of these approaches have captured or predicted the spontaneous emergence of the ridges and their fine structure with the exception of a recent study which has sought to describe some aspects of the extension of a creased sheet with far from threshold analysis [22].
+Here, we address the nucleation of topological defects in elastic sheets, and examine their growth and detailed structure using micro-focus x-ray computed tomography. We find that the structure of the observed vertex singularities are different from d-cones which are often assumed while viewing such defects in thin sheets. In fact, we find these defects correspond to negatively signed interacting disclinations, i.e. interacting e-cones. We show that triangles emerge even when stretching is applied, in contrast with analysis with inextensible sheets by Korte, et al. [23]. We measure the growth of the width of the wrinkles and show that it is consistent with a far-from threshold approach assuming a compression free base state [22]. We find that the wavelength of the wrinkles changes from being given by ribbon geometry to its elasticity as the tension is increased, and is proportional to   W and   W 1/2t1/2T -1/4, respectively, where W is the width of the ribbon, t the thickness, and T is the normalized applied tension.
+Experiments were performed with mylar and cellulose acetate sheets which have a linear elastic response for strains less than 2% (see Supplementary Documentation.) Above the elastic limit, mylar deforms plastically but does not rupture. Where as, cellulose acetate is a quasi-brittle material which leaves a contrasting mark when deformed just above the elastic limit and can then rupture. Young's modulus E and Poisson ratio  for Mylar are E 3.4 GPa and  = 0.4 ± 0.05, and for cellulose acetate E 2.2 GPa and  = 0.35 ± 0.05. Ribbons with thickness t = 75, 125, and 256 µm, width W in the range 10 - 30 mm, and length L = 100 - 300 mm are used. The ends of the ribbon are clamped and stretched by applying a constant force F , and then twisted around its long axis by a prescribed twist angle . Therefore, the experimental control parameters are the normalized tension T = F/Etw and normalized twist angle  = W/L. Accordingly, one can define a confinement parameter  = 2/T which is the ratio of a geometrical strain over a mechanical strain [32].
+In order to measure its morphology, the ribbon is scanned as a function of applied twist and the surface identified by using a threshold contrast for the absorbed x-rays (see Supplementary Documentation.) As shown in Fig. 1, the longitudinal and transverse coordinates along the ribbon surface normalized by W are denoted by s and r, respectively. The Gaussian curvature K and mean curvature H are then obtained by locally fitting the surface with a quadratic function. A reconstructed shape of the
+
+(a)
+
+(c)
+
+2
+
+(d)
+
+(f)
+
+(b)
+
+(e)
+
+FIG. 2. A paper model of a ribbon with e-cones (a-c) and d-cones (d-f) which is constructed by hand on a triangular lattice. (a) A ribbon with e-cones (black filled circles) obtained by making cuts (white lines) and inserting /6 angled wedges in the lateral flaps (pink/gray areas). (b) A close-up of an e-cone and associated ridges. (c) An e-cone decorated helicoid at equilibrium with flat triangular regions connected by ridges. (d) A ribbon with d-cones (black open circles) and the two lateral flaps. (e) Close-up of a d-cone with lines defining ridges and the inner edges of the flaps. (f) A twisted helicoid with d-cones with flat triangular regions connected by stretched ridges.
+ribbon along with K and H superimposed on a single ridge is shown in Fig. 1(a) and Fig. 1(b), respectively. One observes that regions with higher K are confined to the vertices, and those with higher H are distributed along the ridge as well as focused near the vertices. Further, the peak values of the curvatures do not coincide spatially. Thus, the actual route toward localization and defect formation can be quantified by the evolution of H and K using , or equivalently with , for a fixed T .
+As is well known, a twisted ribbon has a helicoid shape with H  0 and K = -2 for small enough  at finite T , and wrinkles just above  > c  24 due to the development of compressive stress around the centerline [21, 26, 28]. Accordingly, the map of H(r, s) and K(r, s) is shown for  > c in Fig. 1(c) and Fig. 1(d), respectively. We observe a continuous transition from smooth wrinkles to sharp ridges along with an increase in the overall curvature by an order of magnitude as  is increased from 55 to 437. Further, while the wrinkles are initially confined to the center of the ribbon, they are observed to grow in width as  is increased, before a symmetry breaking occurs when the region with larger H tilts with alternating angles. In contrast, the regions with larger |K| progressively reduces in size at the expense of those with smaller |K|. For  c, H is localized along ridges with alternating tilt angles, while K is localized in small regions which are self-organized in a triangular lattice with a spacing similar to the wavelength at threshold. As we discuss next, these localized regions can be thought of as point-like defects which can be modeled as conical singularities with a geometry which can be assigned using the measured curvature.
+
+(a)
+
+(b) (c)
+
+Ridge
+
+Bump Dimple
+
+Vertex
+
+(d)
+
+H>0
+
+H>0
+
+H<0 H<0
+s
+
+r
+
+H
+
+-1.0
+
+0
+
+s
+
+r
+
+K
+
+-0.8
+
+-0.4
+
+102 (e)
+
+1.7
+
+100
+
+1
+
+0 0.2
+
+Kmax
+
+101-201
+
+102
+
+103
+
+-c
+
+1.0
+
+FIG. 3. (a) Front view and (b) side view of the plastic deformations located near the vertex in a cellulose acetate sheet (t/W = 7.4 × 10-3, T = 2.1 × 10-4 and  = 3700) indicating that the strain is mainly localized in a small triangular wedge along the ribbon edges and along the stretched ridges. The side view shows a change of curvature along the edge when passing over the defect. Scale bar is 1mm. (c) Gaussian curvature of a ribbon (Mylar, t/W = 8.5 × 10-3, T = 1.2 × 10-3) for  = 430 shows stretched ridges with K < 0 connecting e-cones. In-between the ridges, bumps and dimples (K > 0) under low compression are observed. Data for K > -1 is shown for better visualization. (d) Mean curvature of the same ribbon as in (c) showing two ridges of positive (red/light gray) and negative (blue/gray) curvature. (e) The maximum Kmax of the Gaussian curvature on the defects increases as a power with Note Kmax -2 (dashed black line).
+
+(a)1 A(r)
+0.5
+0 0 0.2r
+
+(b) rwr
+0.4
+
+(c) A(r0)
+100
+
+0.2
+
+rwr 0.4
+
+00
+
+200 400 
+
+2/3
+
+1
+
+10-1 101
+
+102
+
+c
+
+FIG. 4. (a) Profile of mean curvature amplitude A(r) =
+H2 s for an increasing  showing the growth of amplitude and width of the wrinkles. (b) Evolution of the width of the wrinkles rwr with  is in agreement with the form predicted using a far from threshold analysis (solid red line). For comparison, the prediction from a near threshold analysis is plotted (dashed black line). (c) Evolution of the amplitude A(r = 0) with  showing a sublinear dependence with an exponent 0.65( 2/3) measured for large .
+
+3
+To understand the nature of these singularities, we first examine a model of conical singularities prescribed at the vertices of a triangular lattice which are located at a finite distance from the edge (see Fig. 2.) In practice, negative and positive disclinations are obtained by adding or removing a wedge-shaped sector at the edge of the ribbon, while d-cones are created by forcing a point on the sheet ­ corresponding to the vertex ­ into a small rim [10]. We observe that the buckled shape is qualitatively different from that of an isolated singularity because of the interaction between defects. In Fig. 2(a-c), we show that a ribbon with embedded e-cones leads to a triangular faceted helicoid that we name an e-helicoid. The e-helicoid is reminiscent of the wavy edges of torn polyethene sheets and leaves induced by plastic flow and growth [33], except that in our case, the Gaussian curvature is localized due to the underlying non-planar configuration of the ribbon. We further found that a helicoid structure could not be constructed using positive disclinations. However, d-cones organized in the same triangular lattice (see Fig. 2(d)) lead to a faceted helicoid upon twisting with very similar triangular facets connected by stretched ridges (see Fig. 2d-f). This is a significant result as it is highly non-trivial to find isometric configurations of elastic sheets theoretically or numerically with given boundary conditions. These ordered developable shapes, that we call d-helicoids, offer an intermediate step toward understanding more complicated, fully disordered crumpled sheets which are also singular developable shapes with vertices and ridges.
+In order to compare to these models, we display the front and side views of a scar formed on a twisted ribbon due to plastic deformations located at the core of a singularity in Fig. 3(a) and Fig. 3(b). Unlike d-cones which form a parabolic scar [10], we observe a triangle-shaped plastic deformation near the edge. In this region, we note that the metric of the surface is similar to the paper model of an e-helicoid shown in Fig. 2(c). Further, these characteristic features can be compared with the measured Gaussian and mean curvatures shown in Fig. 3(c) and (d), respectively, where the curvatures are averaged over several ridges to improve the signal to noise ratio. As shown in Fig. 3(e), the core of the defects have a strong negative Gaussian curvature which increases with  as Kmax  K0( - c)1.7, with K0 = 6.7 × 10-4. We observe that the cores of these singularities are connected by ridges with large H with alternating signs and relatively small K which shows stretching between interacting econes. Further, in between ridges, we identify regions with positive K and alternating H indicating bumps and dimples due to compression. As noted in the discussion of the model of an e-helicoid in the previous paragraph and Fig. 3(b), lateral flaps located near the edges of the ribbon (r  ±1/2) are developable (K  0) but with small curvature of alternating signs (see Fig. 3(d)). Based on these measurements and comparisons, we conclude that
+
+(a) (b)
+
+(c)
+
+101
+
+/(tW)1/2
+/W
+
+2
+
+1
+
+T (x10-3)
+
+0
+
+0
+
+5
+
+10-1
+
+101
+
+100
+
+T (x10-3)
+
+FIG. 5. Twisted ribbons (cellulose acetate) with T = 2.5 × 10-3 (a) and T = 2.1×10-4 (b) showing plastics deformations
+at the edges with a spacing which decreases with tension. The
+dashed lines represent location of the ridges which connect the
+e-cone singularitiesto guide the eye. (c) Normalized spacing between defects / tW decreasing with the tension (for T > 10-3) using Mylar (blue circles) and cellulose acetate (red squares). The prediction near threshold CNT / tW (black dashed line) provides a reasonable fit to the data using the
+adjusting parameter C = 0.9. The wavelength is observed to saturate at /W  2 for T < 10-3 (see inset).
+
+a stretched twisted ribbon spontaneously forms e-cones, rather than d-cones, in the far from threshold regime.
+We next focus on the compressed section in the central part of the ribbon. Taking advantage of the translation invariance along the s direction, we introduce the characteristic amplitude A(r) = H2 s of the wrinkled section averaged along s. With this definition, A(r) is identically zero and positive for developable and helicoid states, respectively. In Fig. 4(a), we plot A(r) for increasing . Because the transition from the wrinkled section to the stretched flaps appears continuous, the wrinkled section is defined in practice as the region where A(r) > A(0)/10 corresponding to r < rwr. As shown in Fig. 4(b), the evolution of rwr with  compares well with the prediction from a far from threshold analysis which assumes that the formation of the wrinkles relaxes the stresses leading to a compression free central part and tensile flaps [22, 31]. By contrast, a linear perturbation analysis does not capture the evolution of rwr (dashed black line). This is because assuming that the wrinkles do not relax the stress leads to unphysically large compressive stresses especially in the case of  c. Further, the evolution of the wrinkling amplitude A(0) evaluated at r = 0 is observed to increase sub-linearly for large , consistent with A(0)  ( - c)2/3. However, the origin of this scaling remains unclear.
+Finally, we analyze the lattice spacing between defects . As shown in Fig. 5(a,b), we find that  decreases with T and that there is little dependence with . We verified that the defects are not trapped in one location due to plasticity by decreasing T under fixed twist angle. Two regimes for the defect spacing are identified (see Fig. 5(c)). At relatively large tension
+
+4
+(T > 10-3) corresponding to the elastic regime,  is observed to clearly decrease with tension. Because the scaling for  is not available in the far from threshold regime, we compare the experimental data with the prediction from a linear stability analysis which gives NT = 1.71(1 - 2)-1 t/W T -1/4 [28]. We find that the data can be well described by fit = C × NT , where C = 0.9 is an adjustable non-dimensional prefactor close to one. This indicates that the scaling of  does not change significantly far from threshold, as opposed to the scaling of rwr shown in Fig. 4(b) which is not described by near threshold analysis. Similar distinction has been noted recently as well in the wrinkling of an elastic sheet floating on a liquid drop [32]. However, at lower tension, a plateau is observed for   2W , with no observable dependence on T (Fig. 5(c), inset) indicating a lattice spacing essentially controlled by the geometry.
+In conclusion, we find that a thin extensible ribbon upon twisting exhibits a continuous transition from smooth wrinkles to sharp ridges. We show with physical models that faceted helicoids can be constructed using ridges that connect either d-cones or negatively signed disclinations i.e. e-cones that are located in a periodic triangular lattice near the edges of the ribbon. Our measurements clearly demonstrate that the singularities in extensible ribbons are e-cones, and we thus call the resulting structure an e-helicoid. The longitudinal stretch of the ribbon is found to control the growth of the econes and their spatial organization with a lattice spacing depending on ribbon geometry and elasticity. Hence, we demonstrate that the stretched twisted ribbon has a dual nature as it shows properties intermediate between a torn polyethene sheet where strain induced plasticity leads to edges with negative Gaussian curvature and a crumpled paper where the inextensibility condition produces shapes with flat facets and localized defects. Finally, we suggest that the characteristic features of interacting e-cones found here may be applied to other thin film systems. They may help understand extensible sheets under other conditions which result in changes to the metric, examples of which include torn thin films, shells with cracks, film growth, and even crumpled sheets.
+We thank Marcelo Dias, Vincent D´emery, Martin Mueller, Basile Audoly, Benjamin Davidovitch, Pascal Damman and Mokhtar Adda-Bedia for stimulating discussions. This work was supported by National Science Foundation under grants DMR-0959066 and DMR1508186.
+
+ julien.chopin@espci.fr  akudrolli@clarku.edu [1] P. M. Chaikin and T. C.
+Principles of condensed matter physics Univ Press, 2000).
+
+Lubensky, (Cambridge
+
+5
+
+[2] D. R. Nelson, Defects and geometry in condensed matter phy[s1ic8s] L. Pauchard and S. Rica, Philos. Mag. B 78, 225 (1998).
+
+(Cambridge University Press, 2002).
+
+[19] A. Boudaoud, P. Patricio, Y. Couder, and M. Ben Amar,
+
+[3] H. S. Seung and D. R. Nelson, Phys. Rev. A 38, 1005
+
+Nature 407, 718 (2000).
+
+(1988).
+
+[20] E. Hamm, B. Roman, and F. Melo, Phys. Rev. E 70,
+
+[4] J. W. Wang and T. A. Witten, Physical Review E 80,
+
+026607 (2004).
+
+046610 (2009).
+
+[21] J. Chopin and A. Kudrolli, Phys. Rev. Lett. 111, 174302
+
+[5] J. Guven, J. Hanna, O. Kahraman, and M. M. Muller,
+
+(2013).
+
+Eur. Phys. J. E 36, 1 (2013).
+
+[22] J. Chopin, V. Demery, and B. Davidovitch, J. Elast.
+
+[6] M. Ben Amar and Y. Pomeau, Proc. R. Soc. A 453, 729
+
+119, 137 (2015).
+
+(1997).
+
+[23] A. P. Korte, E. L. Starostin, and G. H. M. van der
+
+[7] M. M. Muller, M. Ben Amar, and J. Guven, Phys. Rev.
+
+Heijden, Proc. R. Soc. A 467, 285 (2011).
+
+Lett. 101, 156104 (2008).
+
+[24] A. Goriely, M. Nizette, and M. Tabor, J. Nonlinear Sci.
+
+[8] N. Bende, R. C. Hayward, and C. Santangelo, Soft Mat-
+
+11, 3 (2001).
+
+ter 10, 6382 (2014).
+
+[25] M. A. Dias and B. Audoly, J. Elast. 119, 49 (2015).
+
+[9] S. Chaieb, F. Melo, and J. C. Geminard, Phys. Rev. [26] A. E. Green, Proc. R. Soc. A 161, 197 (1937).
+
+Lett. 80, 2354 (1998).
+
+[27] E. H. Mansfield, The bending and stretching of plates
+
+[10] E. Cerda and L. Mahadevan, Phys. Rev. Lett. 80, 2358
+
+(Cambridge University Press, 2005).
+
+(1998).
+
+[28] C. D. Coman and A. P. Bassom, Acta Mech. 200, 59
+
+[11] S. Chaieb and F. Melo, Phys. Rev. E 60, 6091 (1999).
+
+(2008).
+
+[12] E. Cerda, S. Chaieb, F. Melo, and L. Mahadevan, Nature [29] E. M. Mockensturm, J. Appl. Mech. 68, 561 (2001).
+
+401, 46 (1999).
+
+[30] E. Efrati, E. Sharon, and R. Kupferman, J. Mech. Phys.
+
+[13] E. Efrati, L. Pocivavsek, R. Meza, K. Y. C. Lee, and
+
+Solids 57, 762 (2009).
+
+T. A. Witten, Phys. Rev. E 91, 022404 (2015).
+
+[31] B. Davidovitch, R. D. Schroll, D. Vella, M. Adda-Bedia,
+
+[14] T. A. Witten, Rev. Mod. Phys. 79, 643 (2007).
+
+and E. A. Cerda, Proc. Natl. Acad. of Sci. U.S.A. 108,
+
+[15] A. Lobkosvky, S. Gentges, H. Li, D. Morse, and T. A.
+
+18227 (2011).
+
+Witten, Science 270, 1482 (1995).
+
+[32] H. King, R. D. Schroll, B. Davidovitch, and N. Menon,
+
+[16] D. L. Blair and A. Kudrolli, Phys. Rev. Lett. 94, 166107
+
+Proc. Natl. Acad. of Sci. U.S.A. 109, 9716 (2012).
+
+(2005).
+
+[33] E. Sharon, M. Marder, and H. L. Swinney, American
+
+[17] H. Aharoni and E. Sharon, Nat. Mater. 9, 993 (2010).
+
+Scientist 92, 254 (2004).
+
+

@@ -1,0 +1,21 @@
+DOI: 10.1007/s10659-014-9498-x — https://arxiv.org/abs/1403.0267 (arXiv:1403.0267)
+
+Chopin, J., Démery, V. & Davidovitch, B. (2015). "Roadmap to the Morphological Instabilities
+of a Stretched Twisted Ribbon." Journal of Elasticity 119, 137–189.
+
+We address the mechanics of an elastic ribbon subjected to twist and tensile load. Motivated by
+the classical work of Green [1, 2] and a recent experiment [3] that discovered a plethora of
+morphological instabilities, we introduce a comprehensive theoretical framework through which
+we construct a 4D phase diagram of this basic system, spanned by the exerted twist and tension,
+as well as the thickness and length of the ribbon. Different types of instabilities appear in
+various "corners" of this 4D parameter space, and are addressed through distinct types of
+asymptotic methods. Our theory employs three instruments, whose concerted implementation is
+necessary to provide an exhaustive study of the various parameter regimes: (i) a covariant form
+of the Föppl-von Kármán (cFvK) equations to the helicoidal state — necessary to account for the
+large deflection of the highly-symmetric helicoidal shape from planarity, and the buckling
+instability of the ribbon in the transverse direction; (ii) a far from threshold (FT) analysis —
+which describes a state in which a longitudinally-wrinkled zone expands throughout the ribbon
+and allows it to retain a helicoidal shape with negligible compression; (iii) finally, we
+introduce an asymptotic isometry equation that characterizes the energetic competition between
+various types of states through which a twisted ribbon becomes strainless in the singular limit
+of zero thickness and no tension.

@@ -1,0 +1,19 @@
+DOI: 10.2312/sca.20161234 — https://animation.rwth-aachen.de/media/papers/2016-SCA-Cosserat-Rods.pdf
+
+Kugelstadt, T. & Schömer, E. (2016). "Position and Orientation Based Cosserat Rods."
+Eurographics/ACM SIGGRAPH Symposium on Computer Animation (SCA) 2016, 169–178.
+
+We present a novel method to simulate bending and torsion of elastic rods within the
+position-based dynamics (PBD) framework. The main challenge is that torsion effects of Cosserat
+rods are described in terms of material frames which are attached to the centerline of the rod.
+But frames or orientations do not fit into the classical position-based dynamics formulation. To
+solve this problem we introduce new types of constraints to couple orientations which are
+represented by unit quaternions. For constraint projection quaternions are treated in the exact
+same way as positions. Unit length is enforced with an additional constraint. This allows us to
+use the strain measures from Cosserat theory directly as constraints in PBD. It leads to very
+simple algebraic expressions for the correction displacements which only contain quaternion
+products and additions. Our results show that our method is very robust and accurately produces
+the complex bending and torsion effects of rods. Due to its simplicity our method is very
+efficient and more than one order of magnitude faster than existing position-based rod
+simulation methods. It even achieves the same performance as position-based simulations without
+torsion effects.

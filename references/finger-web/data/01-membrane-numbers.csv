@@ -1,0 +1,54 @@
+quantity,value,unit,source,measured_or_cited,note
+both_hands_detected,89,percent of frames,tools/scripts/analyze_finger_web.py on web/work/hands.npz,measured,1335 of 1497 frames of IMG_6268.MOV
+fingertip_jitter_floor_mean,0.7,px,analyze_finger_web.py quietest 15-frame window (f465 t=15.50s),measured,per-tip std 0.49-1.36 px
+fingertip_speed_median,4.23,px per frame,analyze_finger_web.py,measured,1080x1920 @ 30 fps
+fingertip_speed_p95,42.08,px per frame,analyze_finger_web.py,measured,
+fingertip_speed_max,273.8,px per frame,analyze_finger_web.py,measured,the fastest hand snap in the take
+fingertip_accel_median,2.71,px per frame^2,analyze_finger_web.py,measured,
+fingertip_accel_p99,92.73,px per frame^2,analyze_finger_web.py,measured,
+palm_width_median,129.11,px,analyze_finger_web.py (landmark 5 to 17),measured,range 78-160 px; the scale reference
+hull_area_median,8.3,percent of frame area,analyze_finger_web.py,measured,ten-fingertip convex hull; p2 0.85 p98 16.46
+hull_norm_median,12.81,palm widths squared,analyze_finger_web.py,measured,scale-invariant membrane area
+hull_norm_run_A_median,6.02,palm widths squared,analyze_finger_web.py,measured,first two-hand run t=0.97-4.30s
+hull_norm_run_A_max,14.60,palm widths squared,analyze_finger_web.py,measured,the FIRST big stretch; candidate rest state
+hull_norm_take_max,31.33,palm widths squared,analyze_finger_web.py,measured,at f789 t=26.30s
+thumb_index_span_median,1.6,palm widths,analyze_finger_web.py ad-hoc check,measured,per hand; p10 0.17 (pinched) p90 2.1
+frames_with_a_pinched_hand,35,percent of two-hand frames,analyze_finger_web.py ad-hoc check,measured,thumb-index < 0.5 palm; collapses the reference's quad to a triangle
+quad_area_over_hull_area,0.47,ratio,analyze_finger_quad.py vs analyze_finger_web.py,measured,median; p10 0.04 p90 0.62 -- the four-corner quad discards over half the spanned area
+quad_area_median,4.0,percent of frame area,analyze_finger_quad.py,measured,against the ten-tip hull's 8.3%
+quad_span_median,619,px,analyze_finger_quad.py,measured,largest corner-to-corner distance; range 28-1084 px
+hull_vertices_mode,6,of 10 tips,analyze_finger_web.py,measured,607 of 1335 frames; a convex hull discards ~4 anchors
+hand_separation_median,7.22,palm widths,analyze_finger_web.py,measured,palm-centre to palm-centre; range 2.86-9.93
+finger_spread_median,0.9-0.99,palm widths,analyze_finger_web.py,measured,mean tip-to-tip-centroid distance per hand
+tip_depth_z_median,-0.05 to -0.07,image-width units,analyze_finger_web.py,measured,MediaPipe model z; tips consistently nearer than the wrist
+J_hole_screen_time_rest14.6_thr1.15,10.63,seconds,analyze_finger_web.py threshold sweep,measured,of a 50 s take; longest single run 2.93 s
+J_hole_screen_time_rest14.6_thr1.30,3.50,seconds,analyze_finger_web.py threshold sweep,measured,longest single run 1.70 s
+oneeuro_mincutoff,0.06,Hz,code/aadishy-hand-gesture-filter-README.md,cited,prior art starting point
+oneeuro_beta,0.85,dimensionless,code/aadishy-hand-gesture-filter-README.md,cited,speed coefficient
+jitter_deadband,1,px,code/aadishy-hand-gesture-filter-README.md,cited,matches our measured 0.7 px floor
+temporal_grace,10,frames,code/aadishy-hand-gesture-filter-README.md,cited,how long a lost hand is held
+gesture_debounce,350,ms,code/aadishy-hand-gesture-filter-README.md,cited,filter-change trigger
+foreshortening_border_gain,1.4,x,code/aadishy-hand-gesture-filter-README.md,cited,border thickness under plane tilt
+prior_art_bend_factor,0.07,fraction of half-diagonal,code/aadishy-geometry.js buildPortalPath,cited,FIXED bow; not driven by tension -- the gap we fill
+dough_strain_hardening_stability_knee,1,dimensionless (index b),papers/dobraszczyk-baking-extrusion-frying-ch8.txt Fig 8.13,cited,below ~1 bubble wall stability falls rapidly
+dough_stress_law,sigma = K * epsilon^b,-,papers/dobraszczyk-baking-extrusion-frying-ch8.txt Fig 8.11,cited,J-shaped power-law strain hardening in biaxial extension
+rubber_hydrostatic_strength,2.9 +/- 0.5,MPa,papers/lopezpamies2024-cavitation-jmps.txt,cited,Gent & Lindley 1959 vulcanizate A; ~4x below tensile
+rubber_uniaxial_strength,11.3 +/- 3.7,MPa,papers/lopezpamies2024-cavitation-jmps.txt,cited,
+rubber_biaxial_strength,14.8 +/- 6.2,MPa,papers/lopezpamies2024-cavitation-jmps.txt,cited,
+cavitation_classical_criterion,0.833,x Young's modulus E,web search summary of Gent & Lindley 1959 (5E/6),cited,classical; superseded by the strength/fracture account -- primary not obtained
+taylor_culick_velocity,sqrt(2*gamma/(rho*h0)),m/s,papers/villermaux2022-taylor-culick-retractions-surroundings.txt eq 1.1,cited,constant hole-opening speed; THINNER FILM OPENS FASTER
+taylor_culick_rim_condition,radial extent > mu/(rho*v_TC),-,papers/villermaux2022-taylor-culick-retractions-surroundings.txt,cited,Stokes length; below it no rim forms
+foam_film_crack_patterns,qualitative,-,papers/petit2015-holes-and-cracks-in-rigid-foam-films.txt,cited,high surface elasticity gives radiating crack-like patterns during hole opening
+catenary_sag_from_slack,sag = sqrt(3*span*dL/8),-,papers/johndcook-catenary-sag-approximation.txt,cited,parabolic approx; ~1% error for shallow sag; Frame 1950 refines
+catenary_extra_length,8*sag^2/(3*span),-,papers/johndcook-catenary-sag-approximation.txt,cited,the inverse relation
+xpbd_compliance,alpha_tilde = alpha/dt^2,-,papers/macklin2016-xpbd.pdf,cited,makes stiffness independent of iteration count and timestep
+ref2_content_band,1170x1239,px,web/work/ref2_content_band.png; row-brightness scan of the reel,measured,her scene letterboxed on black in the 9:16 reel; aspect 0.944
+ref2_vscode_strip_share,25.3,percent of the content band,row-brightness scan,measured,rows 0-313; four code lines visible with sticky scroll
+ref2_titlebar_height,53,px of 1239,row-brightness scan,measured,rows 314-366; near-white ~#F2EFF4
+ref2_feed_aspect,1.321,w/h,row-brightness scan,measured,1152x872 = 4:3; the webcam window
+ref1_content_band,1170x547,px,row-brightness scan,measured,aspect 2.14; three columns VS Code | webcam app | white TIRA panel
+crop_4x3_holds_tips,69.8,percent of two-hand frames,analyze_finger_web.py crop sweep,measured,tracking + 10% pad; her window shape -- loses a fingertip in ~30%
+crop_1x1_holds_tips,88.7,percent of two-hand frames,analyze_finger_web.py crop sweep,measured,tracking + 10% pad
+crop_4x5_holds_tips,90.6,percent of two-hand frames,analyze_finger_web.py crop sweep,measured,tracking + 10% pad; equals the native-frame ceiling -- a 4:5 crop is free
+tips_outside_frame,9.4,percent of two-hand frames,analyze_finger_web.py,measured,MediaPipe predicts a tip outside 1080x1920; the hard ceiling no crop can beat
+video_in_window_width_share,60,percent,layout arithmetic 0.8/1.333,derived,a 4:5 video inside a 4:3 window -> 40% left for a telemetry side panel

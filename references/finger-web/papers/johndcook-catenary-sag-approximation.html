@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<!--[if lt IE 9]>
+<script src="https://www.johndcook.com/wp-content/themes/ThemeAlley.Business.Pro/js/html5shiv.js"></script>
+<![endif]-->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PS5XWB8K');</script>
+<!-- End Google Tag Manager -->
+
+
+		<!-- All in One SEO 5.0.1.1 - aioseo.com -->
+		<title>A simple accurate approximation for how much a catenary sags</title>
+	<meta name="description" content="Given the length of a catenary and the distance between between its supports, estimate how much lower the catenary is in the middle." />
+	<meta name="robots" content="max-image-preview:large" />
+	<meta name="author" content="John"/>
+	<meta name="keywords" content="math" />
+	<link rel="canonical" href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 5.0.1.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="John D. Cook | Applied Mathematics Consulting" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="A simple accurate approximation for how much a catenary sags" />
+		<meta property="og:description" content="Given the length of a catenary and the distance between between its supports, estimate how much lower the catenary is in the middle." />
+		<meta property="og:url" content="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/" />
+		<meta property="article:published_time" content="2024-03-09T23:15:14+00:00" />
+		<meta property="article:modified_time" content="2024-03-10T11:02:37+00:00" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="A simple accurate approximation for how much a catenary sags" />
+		<meta name="twitter:description" content="Given the length of a catenary and the distance between between its supports, estimate how much lower the catenary is in the middle." />
+		<meta name="twitter:image" content="https://www.johndcook.com/blog/wp-content/uploads/2022/05/twittercard.png" />
+		<!-- All in One SEO -->
+
+<link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="John D. Cook &raquo; Feed" href="https://www.johndcook.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="John D. Cook &raquo; Comments Feed" href="https://www.johndcook.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="John D. Cook &raquo; How much will a cable sag? A simple approximation Comments Feed" href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.johndcook.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.johndcook.com%2Fblog%2F2024%2F03%2F09%2Fcatenary-sag-approx%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.johndcook.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.johndcook.com%2Fblog%2F2024%2F03%2F09%2Fcatenary-sag-approx%2F&#038;format=xml" />
+<style type="text/css" media="all">@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m0dR9pA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7m0dR9pBOi.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m0dR9pA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-display:block;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='wpo_min-header-0-css' href='https://www.johndcook.com/wp-content/cache/wpo-minify/1789382821/assets/wpo-minify-header-2a641503.min.css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' href='https://www.johndcook.com/wp-content/themes/ThemeAlley.Business.Pro/css/fixed.css' type='text/css' media='all' />
+<![endif]--><!--[if lt IE 8]>
+<link rel='stylesheet' href='https://www.johndcook.com/wp-content/themes/ThemeAlley.Business.Pro/css/ie.css' type='text/css' media='all' />
+<![endif]--><link rel="https://api.w.org/" href="https://www.johndcook.com/blog/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.johndcook.com/blog/wp-json/wp/v2/posts/243275" /><link rel='shortlink' href='https://www.johndcook.com/blog/?p=243275' />
+             
+<style  type="text/css">
+body,
+button,
+input,
+select,
+textarea,
+.site-description {
+	font-family: 'Montserrat';
+}
+
+
+
+h1,h2,h3,h4,h5,h6,
+.site-slider-slider-one-text-heading,
+.site-slider-slider-one-text-button a,
+.site-slider-slider-one-text-button span,
+.site-slider-slider-oneplus-text-heading,
+.site-slider-slider-oneplus-text-button a,
+.site-slider-slider-oneplus-text-button span,
+.site-slider-slider-video-one-text-heading,
+.site-slider-slider-video-one-text-button a,
+.site-slider-slider-video-one-text-button span,
+.site-slider-slider-two-text-heading,
+.site-slider-slider-two-text-button a,
+.site-slider-slider-two-text-button span,
+.cycle-slideshow-captiony h2,
+.cycle-slideshow-captiony h2 a,
+.hero-heading,
+.hero-pitch-text h2,
+.hero-pitch-button p a,
+.hero-pitch-button p span,
+.hero-pane-mobile-title p,
+.biz0ne-welcome h1,
+.biz0ne-products-services-name,
+.biz0neplus-welcome h1,
+.biz0neplus-products-services-name,
+.biztwo-welcome h1,
+.biztwo-products-services-name,
+.biztwo-portfolio-heading,
+.bizthree-welcome h1,
+.bizthree-products-services-name,
+.bizfour-welcome h1,
+.bizfour-products-services-name,
+.bizfive-welcome h1,
+.bizfive-products h2,
+.bizfive-services h2,
+.bizfive-products-services-name,
+.bizfive-blog h2,
+.bizfive-news-name,
+.bizfive-testimonial h2,
+.bizsix-welcome h1,
+.bizsix-welcome-cta-container span,
+.bizsix-quote-text p,
+.bizseven-welcome h1,
+.bizseven-work-intro h1,
+.bizseven-welcome h1,
+.bizeight-welcome h2,
+.bizeight-products-services-name,
+.bizeight-clients h2,
+.bizeight-blog h2,
+.bizeight-news-name,
+.biznine-products-item-title,
+.biznine-quote-text,
+.biznine-about-inner h1,
+.portfolio-one-item-desc-link a, .portfolio-one-item-desc-link a:visited,
+.portfolio-two-item-desc-link a, .portfolio-two-item-desc-link a:visited,
+.portfolio-three-item-desc-link a, .portfolio-three-item-desc-link a:visited,
+.portfolio-four-item-desc-link a, .portfolio-four-item-desc-link a:visited,
+.bizseven-work-intro h1,
+.bizseven-welcome h1,
+.fractionslider .claim,
+.fractionslider .middle span,
+.fractionslider .button,
+.sl-slider blockquote cite a,
+.sl-slider blockquote cite span {
+	font-family: 'Montserrat';
+}
+
+.site-header {
+		
+		
+}
+.site-title a, .site-title a:visited, .site-title a:active{
+			
+}
+.site-description{
+			
+}
+.site-slider{
+			
+}
+.main-navigation-inner{
+				
+}
+.main-navigation{
+				
+}
+.nav-border-top{
+		
+}
+.main-navigation-inner .main-navigation li:hover,
+.main-navigation li:hover {
+			
+}
+.main-navigation-inner .main-navigation a,
+.main-navigation a {
+			
+}
+.main-navigation-inner .main-navigation ul ul,
+.main-navigation ul ul {
+		
+}
+.main-navigation-inner .main-navigation ul ul a,
+.main-navigation ul ul a {
+	}
+.main-navigation-inner .main-navigation ul ul li:hover,
+.main-navigation ul ul li:hover {
+		
+}
+.main-navigation-inner .main-navigation li.current_page_item,
+.main-navigation-inner .main-navigation li.current-menu-item,
+.main-navigation li.current_page_item,
+.main-navigation li.current-menu-item {
+			
+}
+
+
+/* Slider One Starts Here */
+	
+
+.site-slider-slider-one-text-button a{
+			}
+.site-slider-slider-one-text-button span{
+			}
+/* Slider One Ends Here */
+	
+
+
+	
+
+
+	
+
+
+
+
+/* Main Content Starts Here */
+.site-main{
+	
+		
+}
+
+/* BizOne Starts */
+.biz0ne-welcome h1{
+	color:;
+}
+.biz0ne-welcome, .biz0ne-welcome ul li, .biz0ne-welcome ul li:before{
+	color:;
+}
+.biz0ne-welcome a, .biz0ne-welcome ul li a{
+	color:;
+}
+.biz0ne-products-services-name, .biz0ne-products-services-name a{
+	color:;
+}
+.biz0ne-products-services-description, .biz0ne-products-services-description ul li, .biz0ne-products-services-description ul li:before{
+	color:;
+}
+.biz0ne-products-services-description a, .biz0ne-products-services-description ul li a{
+	color:;
+}
+.biz0ne-quote{
+	
+		
+}
+.biz0ne-quote-text{
+	color:;
+		
+}
+.biz0ne-quote-name span{
+	background-color:;
+	color:;
+}
+/* BizOne Ends */
+
+
+
+
+
+
+
+
+
+
+
+/* Posts-Pages-Sidebars Starts*/
+.post .entry-title, .entry-meta, .entry-meta-bottom-item {
+	color:;
+}
+.entry-meta-bottom{
+	
+}
+.entry-meta-bottom-item a{
+	background:;
+}
+.post .entry-title, .post .entry-title a{
+	color:;
+}
+.page .entry-title{
+	color:;	
+}
+.page-content,
+.entry-content,
+.entry-summary,
+.entry-meta {
+	color:;
+}
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.entry-meta-bottom-item a,
+.entry-meta a{
+	color:;
+}
+blockquote{
+		
+}
+mark, ins, pre, .more-link, .page-links a{
+	background:;
+}
+.wp-caption{
+		
+}
+.site-content .gallery a img{
+		
+}
+.paging-navigation .nav-previous, .paging-navigation .nav-next, .post-navigation, .comments-area{
+	background-color:;	
+	color:;
+}
+.post-navigation .nav-previous a, .post-navigation .nav-next a,
+.comment-navigation .nav-previous a, .comment-navigation .nav-next a,
+.comment-author cite, .comment-author time, .comment-author .edit-link a,
+.comments-area a,
+.paging-navigation .nav-previous a, .paging-navigation .nav-next a{
+	color:;	
+}
+.comment-form-comment textarea, .comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="password"], .comment-form input[type="search"]{
+	background-color:;	
+	color:;
+			
+}
+.form-submit #submit{
+	background-color:;	
+	color:;	
+}
+.comment-body .reply a{
+	background-color:;	
+	color:;	
+}
+/* Posts-Pages-Sidebars Ends*/
+
+/* Widget Area Starts */
+.widget-area, .fourohfour-widget-container{
+	
+}
+.widget {
+	color:;
+}
+.widget a{
+	color:;
+}
+.widget h1 {
+	color:;
+}
+.widget ul li{
+		
+}
+.widget ul li a{
+	color:;
+}
+.search-field, .widget select{
+	background: !important;
+	color: !important;
+}
+.search-submit{
+	background: !important;
+	color: !important;
+}
+/* Widget Area Ends */
+
+/* Main Content Ends Here */
+
+/* Footer clients Section Starts Here*/
+.footer-client-logos-container{
+	
+		
+}
+/* Footer clients Section Ends Here*/
+.footer-social{
+		
+}
+.footer-five-map{
+	
+			
+}
+.footer-six-map-container, .footer-six-address, .footer-six-address a, .footer-six-email:before, .footer-six-phone:before, .footer-six-fax:before, .footer-six-skype:before{
+	color:;
+}
+.site-footer{
+			
+}
+.site-footer .widget h1 {
+	color:;
+}
+.site-footer .widget, .site-info p, .site-info-three p {
+	color:;
+}
+.site-footer .widget a, .site-footer .widget ul li a, .site-info a, .site-info h3 a, .site-info p a, .site-info-three a, .site-info-three h3 a, .site-info-three p a{
+	color:;
+}
+.site-footer .search-field, .footer-search .search-field{
+		color:;
+}
+.site-footer .search-submit, .footer-search .search-submit{
+		color: !important;
+}
+.site-footer .widget select, .footer-widget-three .widget select, .footer-widget-two .widget select {
+	background:;
+	color:;
+}
+
+.portfolio-page-title{
+	color:;
+}
+.portfolio-description{
+	color:;
+	}
+.portfolio-two-item-odd, .portfolio-two-item-even, .portfolio-three-item-odd, .portfolio-three-item-even, .portfolio-four-item-odd, .portfolio-four-item-even{
+	
+		
+}
+.portfolio-two-item-image, .portfolio-three-item-image, .portfolio-four-item-image{
+	
+		
+}
+.portfolio-one-item-desc-title, .portfolio-two-item-desc-title, .portfolio-three-item-desc-title, .portfolio-four-item-desc-title,
+.portfolio-one-item-desc-title a, .portfolio-two-item-desc-title a, .portfolio-three-item-desc-title a, .portfolio-four-item-desc-title a{
+	color:;
+}
+.portfolio-one-item-desc-desc, .portfolio-one-item-desc-desc ul li, .portfolio-one-item-desc-desc ul li:before, .portfolio-two-item-desc-desc, .portfolio-two-item-desc-desc ul li, .portfolio-two-item-desc-desc ul li:before, .portfolio-three-item-desc-desc, .portfolio-three-item-desc-desc ul li, .portfolio-three-item-desc-desc ul li:before, .portfolio-four-item-desc-desc, .portfolio-four-item-desc-desc ul li, .portfolio-four-item-desc-desc ul li:before{
+	color:;
+}
+.portfolio-two-item-desc-link, .portfolio-three-item-desc-link, .portfolio-four-item-desc-link{
+	
+		
+}
+
+.portfolio-one-item-desc-link a, .portfolio-two-item-desc-link a, .portfolio-three-item-desc-link a, .portfolio-four-item-desc-link a,
+.portfolio-one-item-desc-link a:visited, .portfolio-two-item-desc-link a:visited, .portfolio-three-item-desc-link a:visited, .portfolio-four-item-desc-link a:visited{
+	color:;
+	
+		
+}
+
+.wpcf7-text, .wpcf7-number, .wpcf7-date, .wpcf7-textarea, .wpcf7-select, .wpcf7-quiz, .wpcf7-captchar, .wpcf7-file{
+	
+	
+}
+.wpcf7-submit{
+	
+}
+
+@media screen 
+and (min-width : 600px) 
+and (max-width : 900px) {
+		
+}
+</style>
+<style id="custom-background-css">
+body.custom-background { background-image: url("https://www.johndcook.com/wp-content/themes/ThemeAlley.Business.Pro/skins/images/alexandria/page_bg.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+<link rel="icon" href="https://www.johndcook.com/wp-content/uploads/2020/01/cropped-favicon_512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.johndcook.com/wp-content/uploads/2020/01/cropped-favicon_512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.johndcook.com/wp-content/uploads/2020/01/cropped-favicon_512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.johndcook.com/wp-content/uploads/2020/01/cropped-favicon_512-270x270.png" />
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-243275 single-format-standard custom-background wp-theme-ThemeAlleyBusinessPro group-blog">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS5XWB8K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="wrapper-one">
+<div id="wrapper-two">
+<div id="wrapper-three">
+<div id="page" class="hfeed site">
+	    <div class="header-social">
+        
+       <div class="responsive-container">
+            
+            
+       </div>
+        
+    </div> 
+       
+	<header id="masthead" class="site-header" role="banner">
+    
+    	<div class="responsive-container">
+        
+                
+        	
+                <div class="site-branding">
+                	
+                                        
+					<a href="/">
+						<img src="https://www.johndcook.com/wp-content/themes/ThemeAlley.Business.Pro/images/Logo.svg" alt="John D. Cook" />
+					</a>
+					
+                </div>
+           
+    
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <div class="screen-reader-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+        
+                    <div class="menu-main_header-container"><ul id="main-nav" class="menu"><li id="menu-item-22639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22639"><a href="https://www.johndcook.com/blog/applied-math/">MATH</a>
+<ul class="sub-menu">
+	<li id="menu-item-36928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36928"><a href="https://www.johndcook.com/blog/digital-signal-processing-and-time-series-analysis/">SIGNAL PROCESSING</a></li>
+	<li id="menu-item-246828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246828"><a href="https://www.johndcook.com/blog/partial-differential-equations/">DIFFERENTIAL EQUATIONS</a></li>
+	<li id="menu-item-37298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37298"><a href="https://www.johndcook.com/blog/applied-probability/">PROBABILITY</a></li>
+	<li id="menu-item-36974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36974"><a href="https://www.johndcook.com/blog/applied-math/">SEE ALL &#8230;</a></li>
+</ul>
+</li>
+<li id="menu-item-22638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22638"><a href="https://www.johndcook.com/blog/applied-statistics/">STATS</a>
+<ul class="sub-menu">
+	<li id="menu-item-37293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37293"><a href="https://www.johndcook.com/blog/expert-testimony/">EXPERT TESTIMONY</a></li>
+	<li id="menu-item-246824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246824"><a href="https://www.johndcook.com/blog/expert-consultant-in-biomathematics-and-biostatistics/">BIOSTATISTICS</a></li>
+	<li id="menu-item-246825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246825"><a href="https://www.johndcook.com/blog/applied-privacy/">DATA PRIVACY</a></li>
+	<li id="menu-item-36975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36975"><a href="https://www.johndcook.com/blog/applied-statistics/">SEE ALL &#8230;</a></li>
+</ul>
+</li>
+<li id="menu-item-36773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36773"><a href="https://www.johndcook.com/blog/data-privacy/">PRIVACY</a>
+<ul class="sub-menu">
+	<li id="menu-item-36924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36924"><a href="https://www.johndcook.com/blog/expert-hipaa-deidentification/">HIPAA</a></li>
+	<li id="menu-item-216604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216604"><a href="https://www.johndcook.com/blog/hipaa-identifiers-explained/">SAFE HARBOR</a></li>
+	<li id="menu-item-46817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46817"><a href="https://www.johndcook.com/blog/differential-privacy/">DIFFERENTIAL PRIVACY</a></li>
+	<li id="menu-item-246822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246822"><a href="https://www.johndcook.com/blog/cryptography/">CRYPTOGRAPHY</a></li>
+</ul>
+</li>
+<li id="menu-item-36977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36977"><a href="https://www.johndcook.com/blog/writing/">WRITING</a>
+<ul class="sub-menu">
+	<li id="menu-item-22607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-22607"><a href="https://www.johndcook.com/blog/">BLOG</a></li>
+	<li id="menu-item-27267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27267"><a href="https://www.johndcook.com/blog/rss-feed/">RSS FEED</a></li>
+	<li id="menu-item-68120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68120"><a href="https://www.johndcook.com/blog/twitter_page/">TWITTER</a></li>
+	<li id="menu-item-68123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68123"><a href="https://www.johndcook.com/blog/newsletter/">NEWSLETTER</a></li>
+	<li id="menu-item-38107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38107"><a href="https://www.johndcook.com/blog/articles/">PUBLICATIONS</a></li>
+	<li id="menu-item-22605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22605"><a href="https://www.johndcook.com/blog/notes/">TECH NOTES</a></li>
+</ul>
+</li>
+<li id="menu-item-41553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41553"><a href="https://www.johndcook.com/blog/about-2/">ABOUT</a>
+<ul class="sub-menu">
+	<li id="menu-item-36976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36976"><a href="https://www.johndcook.com/blog/clients-new/">CLIENTS</a></li>
+	<li id="menu-item-18295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18295"><a href="https://www.johndcook.com/blog/endorsements/">ENDORSEMENTS</a></li>
+	<li id="menu-item-36923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36923"><a href="https://www.johndcook.com/blog/team/">TEAM</a></li>
+	<li id="menu-item-41726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41726"><a href="https://www.johndcook.com/blog/services-2/">SERVICES</a></li>
+</ul>
+</li>
+</ul></div>                </nav><!-- #site-navigation -->
+               
+				<div class="header-contacts">
+					<div class="header-phone"><a href="tel:8324228646">(832) 422-8646</a></div>
+					<a href="https://www.johndcook.com/blog/contact/" class="btn btn-primary">Contact</a>
+				</div>
+			   
+                        
+            
+                    
+    	</div><!-- #Responsive-Container -->            
+            
+	</header><!-- #masthead -->
+    
+    <div id="inner-container">
+    
+        
+    
+	
+            
+	<div id="main" class="site-main">
+        
+    	<div class="responsive-container">    
+        
+    		<div class="content-container">         
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+			
+<article id="post-243275" class="post-243275 post type-post status-publish format-standard hentry category-math tag-math">
+	<header class="entry-header">
+    	
+                
+		<h1 class="entry-title">How much will a cable sag? A simple approximation</h1>
+		
+                
+        		<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/" title="17:15" rel="bookmark"><time class="entry-date published" datetime="2024-03-09T17:15:14-06:00">9 March 2024</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://www.johndcook.com/blog/author/john/" title="View all posts by John">John</a></span></span>		</div><!-- .entry-meta -->
+                
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Suppose you have a cable of length 2<em>s</em> suspended from two poles of equal height a distance 2<em>x</em> apart. Assuming the cable hangs in the shape of a catenary, how much does it sag in the middle?</p>
+<p>If the cable were pulled perfectly taut, we would have <em>s</em> = <em>x</em> and there would be no sag. But in general, <em>s</em> &gt; <em>x</em> and the cable is somewhat lower in the middle than on the two ends. The sag is the difference between the height at the end points and the height in the middle.</p>
+<p>The equation of a catenary is</p>
+<p style="padding-left: 40px;"><em>y</em> = <em>a</em> cosh(<em>t</em>/<em>a</em>)</p>
+<p>and the length of the catenary between <em>t</em> = −<em>x</em> and <em>t</em> = <em>x</em> is</p>
+<p style="padding-left: 40px;">2<em>s</em> = 2<em>a</em> sinh(<em>x</em>/<em>a</em>).</p>
+<p>You could solve this equation for <em>a</em> and the sag will be</p>
+<p style="padding-left: 40px;"><em>g</em> = <em>a</em> cosh(<em>x</em>/<em>a</em>) − <em>a.</em></p>
+<p>Solving for <em>a</em> given <em>s</em> is not an insurmountable problem, but there is a simple approximation for <em>g</em> that has an error of less than 1%. This approximation, given in [1], is</p>
+<p style="padding-left: 40px;"><em>g</em>² = (<em>s</em> − <em>x</em>)(<em>s</em> + <em>x</em>/2).</p>
+<p>To visualize the error, I set <em>x</em> = 1 and let <em>a</em> vary to produce the plot below.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-medium" src="https://www.johndcook.com/catenary_sag.png" width="480" height="360" /></p>
+<p>The relative error is always less than 1/117. It peaks somewhere around <em>x</em> = 1/3 and decreases from there, the error getting smaller as <em>a</em> increases (i.e. the cable is pulled tighter).</p>
+<h2>Related posts</h2>
+<ul>
+<li class="link"><a href="https://www.johndcook.com/blog/2022/03/01/catenary-kiln/">Catenary kiln</a></li>
+<li class="link"><a href="https://www.johndcook.com/blog/2020/06/29/parabola-catenary/">Approximating a catenary by a parabola</a></li>
+<li class="link"><a href="https://www.johndcook.com/blog/2020/09/26/sagging-tape-measure/">A sagging tape measure</a></li>
+</ul>
+<p>[1] J. S. Frame. An approximation for the dip of a catenary. Pi Mu Epsilon Journal, Vol. 1, No. 2 (April 1950), pp. 44–46</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-meta-bottom">
+				<div class="entry-meta-bottom-item">Categories : <a href="https://www.johndcook.com/blog/category/math/" rel="category tag">Math</a></div><div class="entry-meta-bottom-item">Tags : <a href="https://www.johndcook.com/blog/tag/math/" rel="tag">Math</a></div><div class="entry-meta-bottom-item">Bookmark the <a href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/" title="Permalink to How much will a cable sag? A simple approximation" rel="bookmark">permalink</a></div>		 
+        
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+								<nav role="navigation" id="nav-below" class="post-navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="nav-previous"><span class="meta-nav">Previous Post</span><a href="https://www.johndcook.com/blog/2024/03/09/normalized-cryptograms/" rel="prev">Unique letter patterns in words</a></div>		<div class="nav-next"><span class="meta-nav">Next Post</span><a href="https://www.johndcook.com/blog/2024/03/14/accelerating-archimedes/" rel="next">Accelerating Archimedes</a></div>
+	
+	</nav><!-- #nav-below -->
+	            
+			
+	<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			2 thoughts on &ldquo;<span>How much will a cable sag? A simple approximation</span>&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+			
+	<li id="comment-1173656" class="comment even thread-even depth-1">
+		<article id="div-comment-1173656" class="comment-body">
+			
+            <div class="comment-author vcard">
+            	<div class="comment-author-image">
+                	
+                </div>
+            	
+                <div class="comment-author-name">
+                						<div>
+						<cite class="fn"><a href="http://www.jimshapiro.com" class="url" rel="ugc external nofollow">Jim Shapiro</a></cite>                    </div>
+                    <div>
+                        <a href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/#comment-1173656">
+                                <time datetime="2024-03-10T12:27:13-05:00">
+                                    10 March 2024 at 12:27                                </time>
+                        </a>
+                    </div>
+                    <div>
+						                    </div>
+                    <div>
+					  
+                    </div>                  
+                </div>                
+            </div>
+            
+			<div class="comment-content">
+				<p>This very problem arises when you adjust the height of permanent pickleball (or tennis) nets. I give the solution on my web site. This problem is quite counterintuitive as you only have to make the net a little longer (about 1/3&#8243;) to get a much larger (4&#8243;) sag.</p>
+			</div><!-- .comment-content -->
+            
+			<div class="reply">
+							</div><!-- .reply -->            
+            
+                        
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-1173771" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-1173771" class="comment-body">
+			
+            <div class="comment-author vcard">
+            	<div class="comment-author-image">
+                	
+                </div>
+            	
+                <div class="comment-author-name">
+                						<div>
+						<cite class="fn">BobC</cite>                    </div>
+                    <div>
+                        <a href="https://www.johndcook.com/blog/2024/03/09/catenary-sag-approx/#comment-1173771">
+                                <time datetime="2024-03-16T22:19:17-05:00">
+                                    16 March 2024 at 22:19                                </time>
+                        </a>
+                    </div>
+                    <div>
+						                    </div>
+                    <div>
+					  
+                    </div>                  
+                </div>                
+            </div>
+            
+			<div class="comment-content">
+				<p>This problem is especially important when powerlines heat up under load on hot days, then droop close to nearby vegetation, the very thing that has triggered multiple vast wildfires, especially in Southern California.</p>
+<p>Predicting this droop based on material physics would seem to be a straightforward problem, yet it seems to be beyond the abilities of local utilities to triage and mitigate in advance.</p>
+			</div><!-- .comment-content -->
+            
+			<div class="reply">
+							</div><!-- .reply -->            
+            
+                        
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+			<div class="no-comments"><p class="comment-body">Comments are closed.</p></div>
+	
+	
+</div><!-- #comments -->
+
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+				<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://www.johndcook.com/blog/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text">			<div class="textwidget"><div style="height: 250px; width: 250px;"><a href="//www.johndcook.com"><img loading="lazy" decoding="async" style="height: auto; width: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;" src="//www.johndcook.com/jdc_20170630.jpg" alt="John D. Cook" width="250" height="250" /></a></div>
+<p style="margin-bottom: 1.5em; margin-top: 1.5em;"><strong>John D. Cook, PhD<br />
+</strong></p>
+<p>My colleagues and I have decades of consulting experience helping companies solve complex problems involving <a href="https://www.johndcook.com/blog/expert-hipaa-deidentification/">data privacy</a>, <a href="https://www.johndcook.com/blog/applied-math/">applied math</a>, and <a href="https://www.johndcook.com/blog/applied-statistics/">statistics</a>.</p>
+<p>Let&#8217;s talk. We look forward to exploring the opportunity to help your company too.</p>
+</div>
+		</aside> 
+	</div><!-- #secondary -->
+
+    		</div><!-- .content-container -->
+        
+    	</div><!-- .Responsive-Container -->
+        
+	</div><!-- #main -->
+
+	
+            <div class="footer-client-logos-container">
+    
+       <div class="responsive-container">
+            
+			
+            	<ul class="footer-client-logos">
+                
+                       
+                      
+                         
+                      
+                       
+                      
+                       
+                      
+                       
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                                                                                                                           
+                
+                </ul><!-- .footer-client-logos --> 
+            
+       </div><!-- .responsive-container -->
+            
+    </div><!-- .footer-client-logos-container -->
+            
+        
+	<!-- Footer Starts Here -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+    
+    	<div class="responsive-container">
+            	
+            <div class="site-info">
+            
+            
+                                                <h3><a href="https://www.johndcook.com/blog/">John D. Cook</a></h3>
+                                <p>&copy; All rights reserved.</p>                                                <div class="footer-search"><form role="search" method="get" class="search-form" action="https://www.johndcook.com/blog/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+				                
+            </div><!-- .site-info -->
+            
+            <div class="footer-widget-three">
+            	<aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p><a href="tel:8324228646">(832) 422-8646</a>
+</p>
+<p><a href="//www.johndcook.com/blog/contact/" >EMAIL</a></p></div></aside>            </div>
+            
+            <div class="footer-widget-three">
+            	            
+            </div>
+            
+            <div class="footer-widget-three">
+            	            
+            </div>            
+            
+    	</div><!-- #Responsive-Container -->
+                    
+	</footer><!-- #colophon -->    <!-- Footer ends Here -->
+</div><!-- #inner-container -->    
+</div><!-- #page -->
+</div><!-- #wrapper-one -->
+</div><!-- #wrapper-two -->
+</div><!-- #wrapper-three -->
+
+
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/blog/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ThemeAlley.Business.Pro/*","/blog/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="jquery-js" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script id="wpo_min-footer-1-js" src="https://www.johndcook.com/wp-content/cache/wpo-minify/1789382821/assets/wpo-minify-footer-c8122bac.min.js"></script>
+
+	
+
+	<script type="text/javascript">
+		(function($) {
+			$(".nav-previous, .nav-next").click(function () {
+			    window.location = $(this).find("a:first").attr("href");
+	        	return false;
+			});
+			$(".nav-previous, .nav-next").hover(function () {
+		        window.status = jQuery(this).find("a:first").attr("href");
+		    }, function () {
+		        window.status = "";
+		    });
+		})(jQuery);
+	</script>	
+
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3d312fefa54d7d4',t:'MTc4OTc2MzA2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

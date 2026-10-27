@@ -1,0 +1,487 @@
+arXiv:1403.0267v3 [cond-mat.soft] 15 Aug 2014
+
+Submitted to J. Elasticity, issue on the mechanics of ribbons and Mo¨bius bands
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+Julien Chopin · Vincent D´emery · Benny Davidovitch
+November 4, 2018
+Abstract We address the mechanics of an elastic ribbon subjected to twist and tensile load. Motivated by the classical work of Green [1, 2] and a recent experiment [3] that discovered a plethora of morphological instabilities, we introduce a comprehensive theoretical framework through which we construct a 4D phase diagram of this basic system, spanned by the exerted twist and tension, as well as the thickness and length of the ribbon. Different types of instabilities appear in various "corners" of this 4D parameter space, and are addressed through distinct types of asymptotic methods. Our theory employs three instruments, whose concerted implementation is necessary to provide an exhaustive study of the various parameter regimes: (i) a covariant form of the Fo¨ppl-von Ka´rma´n (cFvK) equations to the helicoidal state ­ necessary to account for the large deflection of the highly-symmetric helicoidal shape from planarity, and the buckling instability of the ribbon in the transverse direction; (ii) a far from threshold (FT) analysis ­ which describes a state in which a longitudinally-wrinkled zone expands throughout the ribbon and allows it to retain a helicoidal shape with negligible compression; (iii) finally, we introduce an asymptotic isometry equation that characterizes the energetic competition between various types of states through which a twisted ribbon becomes strainless in the singular limit of zero thickness and no tension.
+Keywords Buckling and wrinkling · Far from threshold · Isometry · Helicoid
+J.C and V.D. have contributed equally to this work. Julien Chopin Civil Engineering Department, COPPE, Universidade Federal do Rio de Janeiro, 21941-972, Rio de Janeiro RJ, Brazil and Department of Physics, Clark University, Worcester, Massachusetts 01610, USA E-mail: jchopin@coc.ufrj.br Vincent D´emery Physics Department, University of Massachusetts, Amherst MA 01003, USA E-mail: vdemery@physics.umass.edu Benny Davidovitch Physics Department, University of Massachusetts, Amherst MA 01003, USA E-mail: bdavidov@physics.umass.edu
+
+2
+
+Julien Chopin et al.
+
+ssFvK equations
+
+cFvK equations t, W, L
+
+t, W = 1, L
+
+
+
+E,
+
+Y,
+
+B
+
+=
+
+Yt2 12(1- 2 )
+
+Y
+
+= 1, B =
+
+t2 12(1- 2 )
+
+T = T/Y ,  = /L (x^, y^, z^) s, r z(s, r)
+
+X(s, r) n^ 
+ g c A
+, D H, K
+
+
+z1(s, r)
+
+lon, lon tr, tr  = 2/T lon rwr  =  - 24 f (r) Uhel, UFT
+
+Udom, Usub
+
+X cl (s) t^ = dXcl(s)/ds r^(s) b^(s)
+ (s), (s)
+
+"small-slope" (standard) Fo¨ppl-von Ka´rma´n equations covariant Fo¨ppl-von Ka´rma´n equations thickness, width and length of the ribbon (nonitalicized quantities are dimensional) thickness, width and length normalized by the width Poisson ratio
+Young, stretching and bending modulus
+stretching and bending modulus, normalized by the stretching modulus tension twist angle and normalized twist Cartesian basis material coordinates (longitudinal and transverse) out of plane displacement (of the helicoid) in the small-slope approximation surface vector unit normal to the surface stress tensor strain tensor metric tensor curvature tensor elastic tensor partial and covariant derivatives mean and Gaussian curvatures infinitesimal amplitude of the perturbation in linear stability analysis normal component of an infinitesimal perturbation to the helicoidal shape longitudinal instability threshold and wavelength transverse instability threshold and wavelength confinement parameter threshold confinement for the longitudinal instability. (half the) width of the longitudinally wrinkled zone distance to the threshold confinement amplitude of the longitudinal wrinkles elastic energies (per length) of the helicoid and the far from threshold longitudinally wrinkled state dominant and subdominant (with respect to t) parts of UFT ribbon centerline tangent vector in the ribbon midplane the normal to the tangent vector
+Frenet binormal to the curve Xcl(s) torsion and curvature of Xcl(s)
+
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+
+3
+
+Fig. 1 A ribbon of length L and width W (and thickness t, not shown) is submitted to a tension T and a twist angle ; the twist parameter is defined as  = /L = W/L. The longitudinal and transverse material coordinates are s and r, respectively. n^ is the unit normal to the surface, (x^, y^, z^) is the standard basis, (x^, y^) being the plane of the untwisted ribbon.
+
+1 Introduction
+
+1.1 Overview
+
+A ribbon is a thin, long solid sheet, whose thickness and length, normalized by the
+
+width, satisfy:
+
+thickness : t 1 ; length : L 1 .
+
+(1)
+
+The large contrast between thickness, width, and length, distinguishes ribbons from other types of thin objects, such as rods (t  1, L 1) and plates (t 1, L  1), and underlies their complex response to simple mechanical loads. The unique nature of the mechanics of elastic ribbons is demonstrated by subjecting them to elementary loads ­ twisting and stretching ­ as shown in Fig. 1. This basic loading, which leads to surprisingly rich plethora of patterns, a few of which are shown in Fig. 2, is characterized by two small dimensionless parameters:
+
+twist :  1 ; tension : T 1 ,
+
+(2)
+
+where  is the average twist (per length), and T is the tension, normalized by the stretching modulus 1.
+Most theoretical approaches to this problem consider the behavior of a real ribbon through the asymptotic "ribbon limit", of an ideal ribbon with infinitesimal thickness and infinite length: t  0, L  . A first approach, introduced by Green
+
+1 Our convention in this paper is to normalize lengths by the ribbon width W, and stresses by the stretching modulus Y, which is the product of the Young modulus and the ribbon thickness (non-italicized fonts are used for dimensional parameters and italicized fonts for dimensionless parameters). Thus, the actual thickness and length of the ribbon are, respectively, t = t · W and L = L · W, the actual force that pulls on the short edges is T · YW, and the actual tension due to this pulling force is T = T · Y.
+
+4
+
+Julien Chopin et al.
+
+[1, 2], assumes that the ribbon shape is close to a helicoid (Fig. 2a), such that the ribbon is strained, and may therefore become wrinkled or buckled at certain values of  and T (Fig. 2b,c,g,h) [4, 5]. A second approach to the ribbon limit, initiated by Sadowsky [6] and revived recently by Korte et al. [7], considers the ribbon as an "inextensible" strip, whose shape is close to a creased helicoid ­ an isometric (i.e. strainless) map of the unstretched, untwisted ribbon (Fig. 2d). A third approach, which may be valid for sufficiently small twist, assumes that the stretched-twisted ribbon is similar to the wrinkled shape of a planar, purely stretched rectangular sheet, with a wrinkle's wavelength that vanishes as t  0 and increases with L [8]. Finally, considering the ribbon as a rod with highly anisotropic cross section, one may approach the problem by solving the Kirchoff's rod equations and carrying out stability analysis of the solution, obtaining unstable modes that resemble the looped shape (Fig. 2e) [9].
+A recent experiment [3], which we briefly describe in Subsec. 1.2, revealed some of the predicted patterns and indicated the validity of the corresponding theoretical approaches at certain regimes of the parameter plane (T, ) (Fig. 2). Motivated by this development, we introduce in this paper a unifying framework that clarifies the hidden assumptions underlying each theoretical approach, and identifies its validity range in the (T, ) plane for given values of t and L. Specifically, we show that a single theory, based on a covariant form of the Fo¨ppl­von Ka´rma´n (FvK) equations of elastic sheets, describes the parameter space (T, , t, L-1) of a stretched twisted ribbon where all parameters in Eqs. (1 and 2) are assumed small. Various "corners" of this 4D parameter space are described by distinct singular limits of the governing equations of this theory, which yield qualitatively different types of patterns. This realization is illustrated in Fig. 3, which depicts the projection of the 4D parameter space on the (T, ) plane, and indicates several regimes that are governed by different types of asymptotic expansions.
+
+1.2 Experimental observations
+
+The authors of [3] used Mylar ribbons, subjected them to various levels of tensile
+
+load and twist, and recorded the observed patterns in the parameter plane (T, ),
+
+which we reproduce in Fig. 2. The experimental results indicate the existence of
+
+three major regimes that meet at a "-point" (T, ). We describe below the
+
+morphology in each of the three regimes and the behavior of the curves that
+
+separate them:
+
+· The helicoidal shape (Fig. 2a) is observed if the twist  is sufficiently small. For T < T, the helicoid is observed for  < lon, where lon  24T is nearly
+
+independent on the ribbon thickness t. For T > T, the helicoid is observed for  < tr, where tr exhibits a strong dependence on the thickness (tr  t) and a
+
+weak (or none) dependence on the tension T . The qualitative change at the -point
+
+reflects two sharply different mechanisms by which the helicoidal shape becomes
+
+unstable.
+
+· As the twist exceeds lon (for T < T), the ribbon develops longitudinal
+
+wrinkles in a narrow zone around its centerline (Fig. 2b,c). Observations that
+
+are made wrinkle's
+
+close to the emergence of wavelength and the width
+
+this wrinkle pattern revealed of the wrinkled zone scale as
+
+tha(tt/botTh)1t/h2e.
+
+This observation is in excellent agreement with Green's characterization of the
+
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+
+5
+
+Fig. 2 Left: Typical morphologies of ribbons subjected to twist and stretching: (a) helicoid, (b,c) longitudinally wrinkled helicoid, (d) creased helicoid, (e) formation of loops and selfcontact zones, (f) cylindrical wrapping, (g) transverse buckling and (h) twisted towel shows transverse buckling/wrinkling. Right: (i) Experimental phase diagram in the tension-twist plane, adapted from [3]. The descriptive words are from the original diagram [3]. Note that the twist used in the experiment is not very small; this apparent contradiction with our hypothesis  1 (Eq. 2) is clarified in Appendix A.
+helicoidal state, based on the familiar FvK equations of elastic sheets [2]. Green's solution shows that the longitudinal stress at the helicoidal state becomes compressive around the ribbon centerline if  > 24T , and the linear stability analysis of Coman and Bassom [5] yields the unstable wrinkling mode that relaxes the longitudinal compression.
+· As the twist exceeds tr (for T > T), the ribbon becomes buckled in the transverse direction (Fig. 2g), indicating the existence of transverse compression at the helicoidal state that increases with . A transverse instability cannot be explained by Green's calculation, which yields no transverse stress [2], but has been predicted by Mockensturm [4], who studied the stability of the helicoidal state using the full nonlinear elasticity equations. Alas, Mockensturm's results were only numerical and did not reveal the scaling behavior tr  t observed in [3]. Furthermore, the nonlinear elasticity equations in [4] account for the inevitable geometric effect (large deflection of the twisted ribbon from its flat state), as well as a mechanical effect (non-Hookean stress-strain relation), whereas only the geometric effect seems to be relevant for the experimental conditions of [3].
+· Turning back to T < T, the ribbon exhibits two striking features as the twist  is increased above the threshold value lon. First, the longitudinally-wrinkled ribbon transforms to a shape that resembles the creased helicoid state predicted by [7] (Fig. 2d); this transformation becomes more prominent at small tension (i.e. decreasing T at a fixed value of ). Second, the ribbon undergoes a sharp, secondary transition, described in [3] as similar to the "looping" transition of rods [9, 10, 11, 12] (Fig 2e). At a given tension T < T, this secondary instability occurs at a critical twist value that decreases with T , but is nevertheless significantly larger than lon  24T .
+· Finally, the parameter regime in the (T, ) plane bounded from below by this secondary instability (for T < T) and by the transverse buckling instability (for
+
+6
+
+Julien Chopin et al.
+
+T > T), is characterized by self-contact zones along the ribbon (Fig. 2e). The formation of loops (for T < T) is found to be hysteretic unlike the transverse buckling instability (for T > T).
+In a recent commentary [13], Santangelo recognized the challenge and the opportunity introduced to us by this experiment: "Above all, this paper is a challenge to theorists. Here, we have an experimental system that exhibits a wealth of morphological behavior as a function of a few parameters. Is there anything that can be said beyond the linear stability analysis of a uniform state? How does a smooth, wrinkled state become sharply creased? These are questions that have been asked before, but maybe now there is a possibility to answer them ­ at least in one system". The current paper is motivated by four specific puzzles:
+(A) What is the minimal generalization of the standard FvK equations (i.e. beyond Green's calculation) that accounts for the transverse compression of the helicoidal state, and allows a quantitative description of the transverse instability of a ribbon with Hookean stress-strain relationship (i.e. linear material response)?
+(B) How does the longitudinally-wrinkled pattern evolve upon exerting a twist  larger than the threshold lon, where the state cannot be described any longer as a small perturbation to the compressed helicoidal shape?
+(C) Why do the three curves, that mark the thresholds for the secondary, "looping" instability of the helicoidal state, and the two primary instabilities (longitudinal wrinkling and transverse buckling), meet at a single triple point (T, )? If the three thresholds are associated with distinct physical mechanisms, as was conjectured in [3], it would have been natural for them to cross at two points (at least), rather than to meet at a single point.
+(D) What is the physical mechanism underlying the transformation of the ribbon from the longitudinally-wrinkled pattern to the creased helicoid shape upon reducing the tension T ? Is this a smooth crossover, or a sharp "phase transition" that occurs at some threshold curve in the (T, ) plane?
+
+1.3 Main results and outline
+Motivated by the above questions, we develop a unified theoretical framework that addresses the rich phenomenology exhibited by the stretched-twisted ribbon in the 4D parameter space spanned by the ribbon length L, its thickness t, the twist , and the tension T , where we focus on the asymptotic regime defined by Eqs. (1,2). Our theory leads to a phase diagram whose projection on the tension-twist plane is plotted schematically in Fig. 3, and reveals three major morphological phases: the helicoid, the longitudinally wrinkled state, and a region delimited by the transverse instability. This development is based on three fundamental elements:
+(i) A covariant version of FvK equations of elastic sheets, dubbed here "cFvK", which is needed to describe the large deflection (from planarity) of the twisted state of the ribbon.
+(ii) A far-from-threshold (FT) expansion of the cFvK equations that describes the state of the ribbon when the twist exceeds the threshold value lon for the longitudinal wrinkling instability.
+(iii) A new, asymptotic isometry equation (Eq. 42), that describes the elastic energies of admissible states of the ribbon in the vicinity of the vertical axis in the
+
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+
+7
+
+Fig. 3 The phase diagram in the tension-twist plane consists of three main regions: the helicoid, the longitudinally-wrinkled helicoid and a region delimited from below by a transverse instability. These regions meet at the -point. The complete phase diagram is more subtle and the following parts are magnified: (a) At vanishing tension, the ribbon shape becomes closer and closer to an (asymptotic) isometry; this is investigated in Subsec. 3.5. (b) The transverse buckling instability is the focus of Sec. 4, where a transition from buckling to wrinkling is predicted. (c) At very low tension and twist, the longitudinal instability is described by Green's theory [2] (see Subsec 3.2). (d) The transition from the helicoid to the far from threshold longitudinally-wrinkled helicoid is detailed in Sec. 3. (e) At very low twist, the transverse compression due to the clamped edges overcomes the one due to the twist (see Subsec. 5.4). Solid lines are for quantitative predictions, dashed lines indicate scaling laws or unknown thresholds.
+parameter plane (T, ). We use the notion of "asymptotic isometry" to indicate the unique nature by which the ribbon shape approaches the singular limit of vanishing thickness and tension (t  0, T  0 and fixed  and L).
+We commence our study in Sec. 2 with the helicoidal state of the ribbon (Fig. 2a) ­ a highly symmetric state whose mechanics was addressed by Green
+
+8
+
+Julien Chopin et al.
+
+through the standard FvK equations [2], which is valid for describing small devi-
+
+ations of an elastic sheet from its planar state. We employ a covariant form of the
+
+FvK theory for Hookean sheets (cFvK equations), which takes into full considera-
+
+tion the large deflection of the helicoidal shape from planarity. Our analysis of the
+
+cFvK equations provides an answer to question (A) above, curing a central short-
+
+coming of Green's approach, which provides the longitudinal stress but predicts a
+
+vanishing transverse stress. The cFvK equations of the helicoidal state yield both
+
+components of the stress tensor, and show that the magnitude of the transverse
+
+stress is nonzero, albeit much smaller than the longitudinal one. Another cru-
+
+cial difference between the two stress components of the helicoidal state pertains
+
+to their sign: the transverse stress is compressive throughout the whole ribbon,
+
+everywhere in the parameter plane (T, ); in contrast, the longitudinal stress is compressive in a zone around the ribbon centerline only for  > lon  24T . The compressive nature of the stress components gives rise to buckling and wrinkling
+
+instabilities that we address in Secs. 3 and 4.
+
+In Sec. 3 we address the wrinkling instability that relaxes the longitudinal compression for  > 24T . Noticing that the longitudinally-compressed zone of the helicoidal state broadens upon increasing the ratio  = 2/T , we recognize a close
+
+analogy between the longitudinally-wrinkled state of the ribbon and wrinkling
+
+phenomena in radially-stretched sheets [14, 15, 16], where the size of the wrinkled
+
+zone depends on a confinement parameter, defined by a ratio between the loads ex-
+
+erted on the sheet. Exploiting this analogy further, we find that the longitudinally-
+
+wrinkled ribbon at  > lon is described by a far-from-threshold (FT) expansion of the cFvK equations, where the longitudinal stress (at any given  > 24) becomes
+
+compression-free in the singular limit of an infinitely thin ribbon, t  0. The FT
+
+theory predicts that the broadening of the wrinkled zone with the confinement
+
+ is dramatically larger than the prediction of a near-threshold (NT) approach,
+
+which is based on a perturbative (amplitude) expansion around the compressive
+
+helicoidal state. Our FT theory of the longitudinally wrinkled state provides an
+
+answer to question (B) in the above list.
+
+
+
+Analyzing the FT expansion in the two limits   24 (i.e.   24T ), and
+
+   (i.e. fixed  and T  0), elucidates further the nature of the longitudinally
+
+wrinkled state. In the limit   24, plottedschematically in Fig. 3d, we find that the FT regime prevails in the domain  > 24T in the (T, ) plane, whereas the
+
+NT parameter regime, at which the state is described as a perturbation to the
+
+unwrinkled helicoidal state, shrinks to a narrow sliver close to the threshold curve
+
+as the thickness vanishes, t  0. Analyzing the other limit,   , we show
+
+that the longitudinally-wrinkled state becomes an asymptotic isometry, where the
+
+strain vanishes throughout the twisted ribbon. In Sec. 5 we expand more on the
+
+meaning and implications of asymptotic isometries for a stretched-twisted ribbon.
+
+The FT analysis of the two limits,   24 and   , reveals the intricate me-
+
+chanics of a ribbon subjected to twist , whereby the longitudinally wrinkled state
+
+entails a continuous trajectory in the (T, ) plane, from a strainless deformation (at T  0) to a fully strained helicoidal shape (at T  2/24).
+
+In Sec. 4 we turn to the transverse instability, capitalizing on our results from
+
+Secs. 2 and 3. First, we note that the transverse stress is compressive everywhere
+
+in the (T, ) plane; second, we note that it is obscured by the longitudinal stress.
+
+These two features imply that the threshold for the transverse instability occurs
+
+at a curve tr(T ) in the (T, ) plane that divides it into two parts: In the first part,
+
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+
+9
+
+ defined by the inequality tr(T ) < 24T , the longitudinal stress is purely tensile, and the transverse instability appears as a primary instability of the helicoidal state; in the second part, defined by tr(T ) > 24T , the transverse instability is preceded by the longitudinal instability, and thus materializes as a secondary instability of the helicoidal state. We conclude that the "looping" instability observed in [3] does not stem from a new physical mechanism, but simply reflects the change in nature of the transverse instability when the threshold line tr(T ) crosses the curve lon = 24T that separates the longitudinally-compressed and longitudinally-tensed domains of the (T, ) plane. Thus, the emergence of a single "triple" point (T, ) is not mysterious, but comes naturally as the intersection of these two curves in the (T, ) plane. This result answers question (C) in our list.
+The cFvK equations, together with the FT analysis of the longitudinallywrinkled state in Sec. 3, allow us to compute the deformation modes that relax the transverse compression. Two results from this stability analysis are noteworthy. First, assuming an infinitely long ribbon, we find that the threshold curve satisfies tr(T )  t/ T in both the "low"-tension regime (T < T) and "large"-tension regime (T > T), albeit with different numerical pre-factors. This theoretical prediction is in strong accord with the experimental data for the transverse buckling instability and the "looping" instability in [3]. Second, we find that the length of the ribbon has a dramatic effect on the dependence of the -point on the ribbon thickness t, and ­ more importantly ­ on the spatial structure of the transverse instability. Specifically, we predict that if L-2 t 1, the transverse instability is buckling, and if t L-2 1, it may give rise to a wrinkling pattern, similarly to a stretched, untwisted ribbon [8], with a characteristic wavelength tr < 1 that becomes smaller as T increases. This "buckling to wrinkling" transition is depicted in Fig. 3b.
+In Sec. 5 we turn to the edges of the (T, ) plane, namely, the vicinity of the vertical and horizontal axes: (T = 0, ) and (T,  = 0), respectively. In order to address the first limit, we briefly review the work of Korte et al. [7] that predicted and analyzed the creased helicoid state. We discuss the asymptotic isometry exhibited by the creased helicoid state in the singular limit t  0, T  0, and contrast it with the asymptotic isometry of the longitudinally wrinkled state, which was noted first in Sec. 3. We elucidate a general framework for analyzing morphological transitions between various types of asymptotic isometries in the neighborhood of the singular hyper-plane t = 0, T = 0 in the 4D parameter space (T, , t, L). As a consequence of this discussion, we propose the scenario illustrated in Fig. 3a, where the longitudinally wrinkled state undergoes a sharp transition to the creased helicoid state in the vicinity of the (T = 0, ) line. Thus, while our discussion here is less rigorous than in the previous sections (due to the complexity of the creased helicoid state [7]), we nevertheless provide a heuristic answer to question (D) in our list.
+Since the characterization of the creased helicoid state in [7] is based on the Sadowsky's formalism of inextensible strips rather than on the FvK theory of elastic sheets, we use this opportunity to elaborate on the basic difference between the "rod-like" and "plate-like" approaches to the mechanics of ribbons. We also recall another rod-like approach, based on implementation of the classical Kirchoff equations for a rod with anisotropic cross section [9, 10, 11, 12], and explain why it is not suitable to study the ribbon limit (Eq. 1) that corresponds to a rod
+
+10
+
+Julien Chopin et al.
+
+with highly anisotropic cross section. Finally, we turn to the vicinity of the purestretching line, ( = 0, T ), and address the parameter regime where the twist  is so small that the ribbon does not accommodate a helicoidal shape. We provide a heuristic, energy-based argument, which indicates that the helicoidal state is established if the twist  is larger than a minimal value that is proportional to the Poisson ratio, and scales as 1/ L.
+Each section (2-5) starts with an overview that provides a detailed description of the main results in that section. Given the considerable length of this manuscript, a first reading may be focused on these overview subsections only (2.1,3.1,4.1,5.1), followed by Sec. 6, where we describe experimental challenges and propose a list of theoretical questions inspired by our work.
+
+2 Helicoidal state
+
+2.1 Overview
+
+The helicoidal state has been studied by Green [2], who computed its stress field using the standard version of the FvK equations (8,9). This familiar form, to which we refer here as the ss-FvK equations ("ss" stands for "small slope") is valid for small deflections of elastic sheets from their planar state [17]. The Green's stress, Eqs. (21,22), has a longitudinal component that contains terms proportional to T and to 2, and no transverse component. However, the experiments of [3], as well as numerical simulations [18, 19], have exhibited a buckling instability of the helicoidal state in the transverse direction, indicating the presence of transverse compression. One may suspect that the absence of transverse component in Green's stress indicates that the magnitude of this component is small, being proportional to a high power of the twist , which cannot be captured by the ss-FvK equations.
+Here we resort to a covariant form of the FvK equations, which we call "cFvK" [20, 21, 22], that does not assume a planar reference state, and is thus capable of describing large deviations from a planar state. Notably, the large deflection of the helicoidal state from planarity does not involve large strains. Hence, as long as T,  1, we consider a ribbon with Hookean response, namely ­ linear stress-strain relationship. This approach is simpler than Mockensturm's [4] (which assumes a non-Hookean, material-dependent response), and enables the analytical progress in this section and the following ones. Solving the cFvK equations for the helicoidal state, we get the following expressions for the stress field in the longitudinal (s^) and transverse (r^) directions:
+
+hssel(r)
+
+=
+
+T
+
++
+
+2 2
+
+r2 - 1 12
+
+,
+
+(3)
+
+hrrel(r)
+
+=
+
+2 2
+
+r2 - 1 4
+
+2 T+
+
+r2 + 1
+
+4
+
+12
+
+,
+
+(4)
+
+where r  [-1/2, 1/2] is the dimensionless transverse coordinate. The longitudinal
+component is exactly the one found by Green [2], whereas the transverse component is nonzero, albeit of small magnitude: hrrel  2hssel, which explains why it is missed by the ss-FvK equations. The transverse stress arises from a subtle
+coupling between the longitudinal stress and the geometry of the ribbon.
+
+Roadmap to the morphological instabilities of a stretched twisted ribbon
+
+11
+
+As Eqs. (3,4) show, the longitudinal stress hssel(r) is compressive close to the centerline r = 0 if 2 > 24T , whereas the transverse stress hrrel(r) is compressive everywhere in the ribbon for any (T, ). The compressive nature of hssel(r) and hrrel(r) leads to buckling and wrinkling instabilities that we address in the next sections.
+In Sec. 2.2 we review the (standard) ss-FvK equations, and their helicoidal solution found by Green [2]. In Sec. 2.3 we proceed to derive the cFvK equations, following [22], and use this covariant formalism to determine the stress in the helicoidal state.
+
+2.2 Small slope approximation and the Green's solution
+
+2.2.1 Small-slope FvK equations
+
+We review briefly the standard ss-FvK equations, using some basic concepts of differential geometry that will allow us to introduce their covariant version in the next subsection. Assuming a small deviation from a plane, a sheet is defined by its out-of-plane displacement z(s, r) and its in-plane displacements us(s, r) and ur(s, r); where s and r are the material coordinates. In this configuration, the strain is given by
+
+1
+
+ = 2 [u + u + (z)(z)] .
+
+(5)
+
+The greek indices  and  take the values s or r. We define the curvature tensor and the mean curvature as:
+
+c =  z,
+
+(6)
+
+H
+
+=
+
+1 2
+
+c
+
+=
+
+1 z,
+2
+
+(7)
+
+where we use the Einstein summation convention, such that c is the trace of the curvature tensor. The use of upper or lower indices corresponds to the nature of
+the tensor (contravariant or covariant, respectively), which will become relevant in
+the next subsection. The ss-FvK equations express the force balance in the normal direction (z^) and the in-plane directions (s^, r^), and involve the curvature tensor and the stress tensor (s, r):
+
+c = 2BH,
+
+(8)
+
+ = 0,
+
+(9)
+
+where B = t2/[12(1 - 2)] is the bending modulus of the sheet 2. The stress-strain relationship is given by Hooke's law (linear material response):
+
+
+
+=
+
+1  1+
+
++
+
+1
+
+ -
+
+
+
+2
+
+
+
+
+
+.
+
+(10)
+
+where we used the Kronecker symbol .
+
+2 Recall that we normalize stresses by the stretching modulus Y and lengths by the ribbon width W. The dimensional bending modulus is thus: Y(Wt)2/(12(1 - 2)).
+
+12
+
+Julien Chopin et al.
+
+2.2.2 Green's solution for the helicoid
+
+We now apply the ss-FvK equations (8,9) to find the stress in the helicoidal state. Since this formalism assumes a small deviation of the ribbon from the plane, we approximate the helicoidal shape through:
+
+z(s, r) = sr ,
+
+(11)
+
+obtained by Taylor expansion of the z-coordinate of the full helicoidal shape, given below in Eq. (29), for |s| -1. Its corresponding curvature tensor is:
+
+c = 
+
+01 10
+
+,
+
+(12)
+
+leading to the mean curvature H = 0. The force balance equations (8-9) now read:
+
+sr = 0,
+
+(13)
+
+sss = 0,
+
+(14)
+
+rrr = 0.
+
+(15)
+
+The ss-FvK equations are supplemented by two boundary conditions: The longitudinal stress must match the tensile load exerted on the short edges, whereas the long edges are free, namely:
+
+1/2
+ss(r)dr = T,
+-1/2
+rr(r = ±1/2) = 0.
+
+(16) (17)
+
+Since Eq. (15) implies that the transverse stress is uniform across the ribbon, the boundary condition (17) implies that it is identically zero:
+
+rr(r) = 0.
+
+(18)
+
+With Hooke's law (10), this shows that ss = ss. Using the small slope expressions for the strain-displacement relationship (Eq. 5) and for helicoidal shape (Eq. 11), we obtain the longitudinal stress
+
+ss(r) = 2r2 - ,
+
+(19)
+
+2
+
+where  = -sus is the longitudinal contraction of the ribbon. Since  does not depend on s (due to Eq. 14) or on r (due to the translational symmetry of the helicoidal shape along s^), its value is determined by the condition (16):
+
+2
+
+= -T .
+
+(20)
+
+24
+
+We thus obtain the Green's stress [2]:
+
+ss(r) = T + 2 r2 - 1 ,
+
+(21)
+
+2
+
+12
+
+rr(r) = 0 ; rs = 0 .
+
+(22)
+
+

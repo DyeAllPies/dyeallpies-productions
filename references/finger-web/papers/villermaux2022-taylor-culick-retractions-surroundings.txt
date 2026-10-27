@@ -1,0 +1,334 @@
+                                                  This draft was prepared using the LaTeX style file belonging to the Journal of Fluid Mechanics  1
+
+arXiv:2202.13400v2 [physics.flu-dyn] 15 Jun 2022  Taylor-Culick retractions and the influence
+                                                                   of the surroundings
+
+                                                        Vatsal Sanjay1 , Uddalok Sen1 ¶, Pallav Kant1, and Detlef
+                                                                                                Lohse1,2
+
+                                                    1Physics of Fluids Group, Max Planck Center for Complex Fluid Dynamics, Department of
+                                                   Science and Technology, MESA+ Institute for Nanotechnology, and J. M. Burgers Centre for
+                                                    Fluid Dynamics, University of Twente, P. O. Box 217, 7500 AE Enschede, The Netherlands
+                                                  2Max Planck Institute for Dynamics and Self-Organization, Am Fassberg 17, 37077 Go¨ttingen,
+
+                                                                                                            Germany
+
+                                                                           (Received xx; revised xx; accepted xx)
+
+                                                  When a freely suspended liquid film ruptures, it retracts spontaneously under the action
+
+                                                  of surface tension. If the film is surrounded by air, the retraction velocity is known to
+
+                                                  approach the constant Taylor-Culick velocity. However, when surrounded by an external
+
+                                                  viscous medium, the dissipation within that medium dictates the magnitude of the
+
+                                                  retraction velocity. In the present work, we study the retraction of a liquid (water) film
+
+                                                  in a viscous oil ambient (two-phase Taylor-Culick retractions), and that sandwiched
+
+                                                  between air and a viscous oil (three-phase Taylor-Culick retractions). In the latter case,
+
+                                                  the experimentally-measured retraction velocity is observed to have a weaker dependence
+
+                                                  on the viscosity of the oil phase as compared to the configuration where the water
+
+                                                  film is surrounded completely by oil. Numerical simulations indicate that this weaker
+
+                                                  dependence arises from the localization of viscous dissipation near the three-phase contact
+
+                                                  line. The speed of retraction only depends on the viscosity of the surrounding medium and
+
+                                                  not on that of the film. From the experiments and the numerical simulations, we reveal
+
+                                                  unprecedented regimes for the scaling of the Weber number Wef of the film (based on its
+
+                                                  retraction velocity) or the capillary number Cas of the surroundings vs. the Ohnesorge
+
+                                                  number Ohs of the surroundings in the regime of large viscosity of the surroundings
+                                                                                     -2                    0
+                                                  (Oh s  1), namely Wef        Oh    s   and Cas      Oh   s  for the two-phase Taylor-Culick
+
+                                                  configuration,  and Wef    Oh  -1  and  Ca s    Oh  1/2  for  the three-phase  Taylor-Culick
+                                                                                 s                    s
+
+                                                  configuration.
+
+                                                  Key words:
+
+                                                  1. Introduction
+
+                                                     Liquid films, sheets, and shells have piqued the interest of fluid dynamicists for nearly
+                                                  two centuries (Savart 1833a,b,c; Taylor 1959a,b; Clanet 2007; Villermaux 2020). A
+                                                  freely suspended liquid film warrants further attention among these configurations as
+                                                  it is inherently metastable owing to its high surface area. Indeed, if a large enough
+
+                                                                                  Both authors contributed equally to this work.
+                                                                          Email address for correspondence: vatsalsanjay@gmail.com
+
+                                                                             ¶ Email address for correspondence: u.sen@utwente.nl
+                                                                               Email address for correspondence: d.lohse@utwente.nl
+2         V. Sanjay, U. Sen, P. Kant, and D. Lohse
+(a)
+                     (b)                       (c)
+  air(a)
+                                               air(a)
+
+          water(f )                 water(f )          water(f )
+
+                     oil(s)                    oil(s)
+
+Figure 1. Schematics depicting the configurations studied in the present work: (a) retraction of
+a water film (f ) of thickness h0 in an air (a) environment (classical configuration), (b) retraction
+of water film (f ) in an oil (s) environment (two-phase configuration), (c) retraction of a water
+film sandwiched between air and oil (three-phase configuration). The dot-dashed line represents
+the axis of rotational symmetry, and R(t) is the radius of the growing hole centered at this axis.
+In all the schematics, the water film is retracting from left to right with velocity vf , as indicated
+by the arrow, and ij denotes the surface tension coefficient between fluids i and j.
+
+(Taylor & Michael 1973; Villermaux 2020) hole nucleates on the film, the sheet will
+spontaneously retract to reduce its surface area. Such interfacial destabilization leading to
+film rupture and bursting can also result in waterborne disease transmission (Bourouiba
+2021). The bursting of liquid films at an oil-air interface is important for various industrial
+applications in the chemical and petrochemical engineering sectors as well. One area of
+particular interest is underwater oil spills in oceans, such as the Deepwater Horizon spill
+in 2010 in the Gulf of Mexico (Summerhayes 2011). For these spills, droplets (or slugs) of
+oil may rise to the free surface of water via buoyancy, and then rupture the free surface of
+water directly above it. The water film will retract upon rupture, and the oil will spread
+on the water surface, thus perpetuating an environmental hazard.
+
+   Perhaps the most widely studied example of sheet destabilization and retraction is
+during the bursting of liquid (e.g., soap) films in air ­ an area of active research since the
+pioneering works (Dupr´e 1867, 1869; Rayleigh 1891; Taylor 1959b; Culick 1960; McEntee
+& Mysels 1969) in the late nineteenth and mid-twentieth century to the more recent
+investigations (Bremond & Villermaux 2005; Mu¨ller et al. 2007; Lhuissier & Villermaux
+2012; Munro et al. 2015; Deka & Pierson 2020). In these studies, the outer medium is
+assumed passive (inviscid and zero-inertia). The origin of the nucleation of the initial
+hole in the film can be manifold (Lohse & Villermaux 2020). After film rupture, the
+internal viscous stresses in the film do not contribute to the momentum balance, but
+dictate the distribution of momentum within the film (Savva & Bush 2009), as long as
+the Ohnesorge number of the film (ratio of its visco-capillary to inertio-capillary time
+scales, see § 4) is less than its aspect ratio (see Deka & Pierson 2020). Nonetheless, half
+of the surface energy released goes into internal viscous dissipation (see appendix A and
+Culick (1960); de Gennes (1996); Su¨nderhauf et al. (2002); Villermaux (2020)).
+
+   A representative schematic of the situation mentioned above is shown in figure 1a
+(henceforth referred to as the classical Taylor-Culick configuration), where the water
+film (f ) of thickness h0 is retracting in air (a) under the action of surface tension. The
+retraction velocity, vf , in such a scenario is constant (after a period of initial transience)
+and approaches the Taylor-Culick velocity given by
+
+                             vTC =  2af ,              (1.1)
+                                    f h0
+
+where 2af is the net surface tension driving the retraction (af being the interfacial
+tension coefficient between the film and air) and f is the density of the liquid film
+Taylor-Culick retractions  3
+
+(figure 1a). Furthermore, it was observed that during the retraction, the liquid collects
+in a thicker rim at the retracting edge of the film, particularly for low viscosity liquids
+(Rayleigh 1891; Ranz 1959; Pandit & Davidson 1990, not depicted in figure 1a). The
+seminal work of Keller (1983) further explores the retraction of these films of non-uniform
+thickness.
+
+   The effect of viscosity of the film (f ) during its retraction process has also been studied
+(Debr´egeas et al. 1995, 1998). Brenner & Gueyffier (1999) showed that although viscosity
+does not have any effect on the constant retraction velocity, it can have a significant effect
+on the shape of the retracting edge of a planar film. They report that if the radial extent
+of the film is greater than its Stokes length (= f /(f vTC)), a growing rim is formed,
+whereas the rim is absent for the converse situation. Savva & Bush (2009) extended
+the work by Brenner & Gueyffier (1999) for highly viscous films, and also developed a
+lubrication model for the retraction dynamics of a circular hole. They concluded that
+although viscosity does not determine the magnitude of the constant retraction velocity,
+it does dictate the time required (post rupture) to attain that constant velocity, which
+increases with increasing viscosity. Recently, Pierson et al. (2020); Deka & Pierson (2020)
+revisited the viscous retraction dynamics by exploring self-similar solutions for slender
+filaments and sheets of finite length.
+
+   The rheological properties of the film also influence the retraction dynamics (Dalnoki-
+Veress et al. 1999; Tammaro et al. 2018; Villone et al. 2019; Kamat et al. 2020). For
+instance, Sen et al. (2021) showed that viscoelastic filaments can retract at velocities
+higher than the Newtonian Taylor-Culick limit owing to elastic tension. Moreover, the
+retraction dynamics of liquids have also been studied in the context of dewetting for a
+wide range of scenarios (Redon et al. 1991; Brochard-Wyart et al. 1993; Shull & Karis
+1994; Andrieu et al. 1996; Lambooy et al. 1996; Haidara et al. 1998; Buguin et al. 1999;
+P´eron et al. 2012; Peschka et al. 2018; Kim et al. 2020). Lastly, there has also been a
+recent surge in the study of liquid retraction in other configurations, such as liquid strips
+(Lv et al. 2015), smectic films (Trittel et al. 2013), foam films (Petit et al. 2015), and
+emulsion films (Vernay et al. 2015).
+
+   In all the aforementioned studies, the surrounding medium is assumed to play no
+role in the rupture dynamics. A question naturally arises: what happens when the outer
+medium also interacts with the retracting film? In particular, how do the viscosity and the
+inertia of the outer medium influence the rupture dynamics (Mysels & Vijayendran 1973;
+Joanny & de Gennes 1987; Reyssat & Qu´er´e 2006; Jian et al. 2020b)? A representative
+schematic for such a scenario is shown in figure 1b, where a water film is retracting
+in a viscous oil ambient. This geometry will henceforth be referred to as the two-phase
+configuration where the net surface tension force responsible for retraction is 2sf (sf
+being the interfacial tension coefficient between the film and the surrounding medium,
+see figure 1b). In such a situation, viscous dissipation is not limited only to the retracting
+film, but is also present in the ambient. If the ambient happens to be significantly more
+viscous than the film, then the dissipation in the ambient dominates. In such a situation,
+the retraction velocity is still a constant. However, unlike the classical case, the velocity
+depends on the viscosity s of the ambient medium (Martin et al. 1994; Reyssat & Qu´er´e
+2006). Common realizations of this configuration include relaxation of filaments and
+droplets in a viscous medium (Stone & Leal 1989), or that of air-films during drop impact
+(Jian et al. 2020a,b). Additionally, in this context, Anthony et al. (2020) showed that
+the so-called "inertially limited viscous regime" in the early-times of drop coalescence
+(Paulsen et al. 2012; Paulsen 2013) stems from a Taylor-Culick type retraction of the air
+film between the deformable drops.
+
+   In the present work, we study the influence of the surrounding medium on the retraction
+4  V. Sanjay, U. Sen, P. Kant, and D. Lohse
+
+velocity of a ruptured liquid film using both force balance and energy conservation
+arguments. To accomplish this goal, along with the two canonical configurations shown
+in figures 1a and 1b, we also study the retraction dynamics of a liquid film sandwiched
+between air and a viscous oil bath. A representative schematic is shown in figure 1c.
+This geometry will henceforth be referred to as the three-phase configuration. This paper
+elucidates this case experimentally by inflating an oil droplet at the water-air interface
+and letting the water film rupture. Such a configuration can also be found in the early
+stages of water film retraction when an air bubble approaches a water-oil interface if
+the oil-layer is thick enough (Feng et al. 2014, 2016). Furthermore, we also use direct
+numerical simulations (DNS) to demystify the retraction dynamics by using a precursor
+film-based three-fluid volume of fluid (VoF) method. We show that the film in this
+three-phase configuration still retracts with a constant velocity, and similar to the two-
+phase case, the retraction velocity depends on the viscosity s of the oil bath. However,
+this dependence is weaker in the three-phase configuration. Furthermore, we reveal an
+unprecedented scaling relationship for the retraction velocity of the film, which arises
+from the localization of the viscous dissipation near the three-phase contact line.
+
+   The paper is organized as follows: § 2 describes the problem statement for the three-
+phase Taylor-Culick retractions along with the experimental method employed to probe
+this configuration. The results from these experiments are discussed in § 3. § 4 presents
+the numerical framework, and § 5 describes the simulation results for both the two-
+phase and three-phase configurations. § 6 demonstrates the balance of forces in Taylor-
+Culick retractions, followed by the corresponding scaling relationships in § 7. Further,
+§ 8 analyzes the overall energy balance, highlighting the differences in the viscous
+dissipation mechanisms between the two-phase and three-phase configurations. The work
+culminates with conclusions in § 9. Throughout the manuscript, we refer to Appendix A
+for discussions on the classical Taylor-Culick retractions, and use the experimental
+datapoints from Reyssat & Qu´er´e (2006) for the two-phase configuration.
+
+2. Film bursting at an air-liquid interface: experimental method
+
+   We study the three-phase configuration experimentally by inflating an oil drop (`s'
+for `surroundings' in figure 1c) at a water-air free interface and capturing the retraction
+of the water film (f in figure 1c). The schematic of the experimental setup is shown
+in figure 2a. A plastic box of dimensions 25 mm × 25 mm × 15 mm (length × width ×
+height, Bodemschat) filled with purified water (Milli-Q) was used as the liquid bath
+for most of the experiments. To study the effect of the viscosity of the retracting
+film, the water in the bath was replaced by glycerol (Sigma-Aldrich)-water mixtures
+(concentrations in the range 50% ­ 70% by wt.) for some experiments. A dispensing
+needle (inner diameter = 0.41 mm, HSW Fine-Ject) was submerged within the bath such
+that its dispensing end was at a depth of 2.4 mm from the free surface (depth kept
+constant during all experiments). A silicone oil (Wacker) droplet was created at the tip
+of the needle by connecting it to an oil-filled plastic syringe (5 mL, Braun Injekt) via
+a flexible plastic PEEK tubing (Upchurch Scientific). The oil flow rate was maintained
+at 0.05 mL/min with the help of a syringe infusion pump (Harvard Apparatus). In the
+present experiments, silicone oils of different viscosities were used, and their densities
+(s), kinematic (s), and dynamic viscosities (s) are listed in Table 1. It is to be noted
+that for only the AK 0.65 oil (s = 4.94 × 10-4 Pa.s), the drop is less viscous than the
+water film (f = 8.9 × 10-4 Pa.s), while for all the other oils, the film is less viscous.
+The oil-water interfacial tension (sf ) was considered to be 0.040 N/m (Peters & Arabali
+2013).
+                       Taylor-Culick retractions                                      5
+
+(a)
+                                                 light source
+
+                                           45° mirror
+
+high-speed camera      water film
+                                  oil
+
+                       water
+
+                                                                  syringe infusion
+                                                                  pump
+
+(b)
+    rupture
+
+               1 mm    t  =   t   +  0.16  ms                  t  =  t   +  0.32  ms
+      t=t                      0                                      0
+
+                 0
+
+t  =  t   +  0.48  ms  t  =   t   +  0.64  ms                  t  =  t   +  0.80  ms
+       0                       0                                      0
+
+Figure 2. (a) Schematic of the experimental setup; (b) typical time-lapsed experimental
+snapshots of the film rupture and the subsequent retraction process (s = 10 cSt). The time
+instant t = t0 denotes the first frame where rupture (indicated by the white arrow) is discernible.
+
+   The drop volume was increased by a slow infusion using the syringe pump. The needle
+depth below the free surface was chosen such that the drop remained anchored to the
+needle during inflation. As a result, the water film right above the oil droplet progressively
+thins with increasing volume of the drop. Below a certain thickness, the film ruptures
+due to van der Waals forces (Vaynblat et al. 2001), and subsequently retracts into the
+bath. This situation is analogous to the rupture and retraction of a water film sandwiched
+between air and a viscous oil droplet. This is also a configuration that is flipped vertically
+6  V. Sanjay, U. Sen, P. Kant, and D. Lohse
+
+   Silicone oil s (kg/m3) s (cSt) s (Pa.s)
+
+   AK 0.65  760  0.65 4.94 × 10-4
+
+   AK 5     920  5 4.60 × 10-3
+
+   AK 10    930  10 9.30 × 10-3
+   AK 20
+            950  20 1.90 × 10-2
+
+   AK 35    960  35 3.36 × 10-2
+   AK 50
+            960  50 4.80 × 10-2
+
+   AK 100   960  100 9.60 × 10-2
+
+   AK 200   970  200 1.94 × 10-1
+   AK 350
+            970  350 3.40 × 10-1
+
+   AK 1000  970  1000 9.70 × 10-1
+
+   Table 1. Salient properties of the silicone oils used in the present work.
+
+as compared to the early time scenario studied by Feng et al. (2016). Another key
+difference is that we ensure negligible vertical velocity at the point of rupture of the
+water film, making this scenario ideal for studying three-phase Taylor Culick retractions.
+
+   High-speed imaging of this rupture and retraction phenomena was performed at
+50000 fps (frames-per-second) for the lower viscosity oils and at 10000 fps for the higher
+viscosity ones, with a 2.5 µs exposure time, by a high-speed camera (Fastcam Nova S12,
+Photron) connected to a macro lens (DG Macro 105 mm, Sigma) with 64 mm of lens
+extender (Kenko). The camera was pointed at a plane mirror (Thorlabs) inclined at 45
+to the horizontal to capture the top view of the retraction phenomenon (figure 2a), while
+the experiments were illuminated from the top by a LED light source (KL 2500 LED,
+Schott). A typical bursting event is shown in figure 2b, where time t = t0 indicates the
+instant when rupture is optically discernible. With increasing time, the size of the hole
+formed due to rupture increases as the film retracts. The phenomenological observations
+shown in figure 2b will be discussed in detail in § 3. The captured images were then
+further analyzed using the open-source software FIJI (Schindelin et al. 2012) and an
+in-house OpenCV-based Python script to obtain quantitative information presented in
+the following sections.
+
+3. Film bursting at an air-liquid interface: experimental results
+
+   The rupture and retraction of a water film on the surface of an oil drop of
+s = 4.94 × 10-4 Pa.s is shown in figure 3a (and supplementary movie SM1).
+The timestamps indicate (t - t0), where t0 is the time instant when rupture is optically
+discernible, and t is the current time. As mentioned earlier, in this particular case, the
+water film is more viscous than the oil. It is to be noted that in the present experiments,
+we could not precisely control the location of rupture as it was sensitive to experimental
+noise (see § 4.2 of Villermaux 2020). Hence, the rupture in the present experiments did
+not always occur at the apex of the thinning film. Such behavior was also observed in
+other similar experiments of film rupture (Oldenziel et al. 2012; de Maleprade et al.
+2016). The rupture location may also be determined by a `prehole' formation, also
+observed by Vernay et al. (2015) for the bursting of emulsion-based liquid sheets. In
+their work, Vernay et al. (2015) show that the presence of emulsion oil droplets at
+the air-water interface results in lowering of the local interfacial tension, leading to
+Marangoni flows away from that location. This flow leads to a local thinning of the film,
+which ultimately ruptures at that location. They also report that the prehole formation
+

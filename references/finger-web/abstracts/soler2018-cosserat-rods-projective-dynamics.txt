@@ -1,0 +1,21 @@
+DOI: 10.1111/cgf.13519 — https://igl.ethz.ch/projects/cosserat-rods/CosseratRods-SCA2018.pdf
+
+Soler, C., Martin, T. & Sorkine-Hornung, O. (2018). "Cosserat Rods with Projective Dynamics."
+Computer Graphics Forum 37(8) (Proc. SCA 2018), 137–147.
+
+We present a novel method to simulate Cosserat rods with Projective Dynamics (PD). The proposed
+method is both numerically robust and accurate with respect to the underlying physics, making it
+suitable for a variety of applications in computer graphics and related disciplines. Cosserat
+theory assigns an orientation frame to each point and is thus able to realistically simulate
+stretching and shearing effects, in addition to bending and twisting. Within the PD framework, it
+is possible to obtain accurate simulations given the implicit integration over time and its
+decoupling of the local-global solve. In the proposed method, we start from the continuous
+formulation of the Cosserat theory and derive the constraints for the PD solver. We extend the
+standard definition of PD and add body orientations as system variables. Thus, we include the
+preservation of angular momentum, so that twisting and bending can be accurately simulated. Our
+formulation allows the simulation of different bending behaviors with respect to a user-defined
+Young's modulus, the radius of the rod's cross-section, and material density. We show how
+different material specifications in our simulations converge within a few iterations to a
+reference solution, generated with a high-precision finite element method. Furthermore, we
+demonstrate mesh independence of our formulation: refining the simulation mesh still results in
+the same characteristic motion, which is in contrast to previous position based methods.

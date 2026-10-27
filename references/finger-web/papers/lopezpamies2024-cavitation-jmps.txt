@@ -1,0 +1,544 @@
+                                           J. Mech. Phys. Solids 188 (2024) 105683
+                                        Contents lists available at ScienceDirect
+
+              Journal of the Mechanics and Physics of Solids
+
+                              journal homepage: www.elsevier.com/locate/jmps
+
+The poker-chip experiments of synthetic elastomers explained
+
+Farhad Kamarei a, Aditya Kumar b, Oscar Lopez-Pamies a,
+
+a Department of Civil and Environmental Engineering, University of Illinois, Urbana­Champaign, IL 61801, USA
+b School of Civil and Environmental Engineering, Georgia Institute of Technology, GA 30332, USA
+
+ARTICLE INFO  ABSTRACT
+
+Keywords:     In a recent study, Kumar and Lopez-Pamies (J. Mech. Phys. Solids 150: 104359, 2021) have
+Elastomers    provided a complete quantitative explanation of the famed poker-chip experiments of Gent and
+Cavitation    Lindley (Proc. R. Soc. Lond. Ser. A 249: 195­205, 1959) on natural rubber. In a nutshell, making
+Fracture      use of the fracture theory of Kumar, Francfort, and Lopez-Pamies (J. Mech. Phys. Solids 112:
+Strength      523­551, 2018), they have shown that the nucleation of cracks in poker-chip experiments in
+Defects       natural rubber is governed by the strength -- in particular, the hydrostatic strength -- of the
+              rubber, while the propagation of the nucleated cracks is governed by the Griffith competition
+              between the bulk elastic energy of the rubber and its intrinsic fracture energy. The main
+              objective of this paper is to extend the theoretical study of the poker-chip experiment by
+              Kumar and Lopez-Pamies to synthetic elastomers that, as opposed to natural rubber: () may
+              feature a hydrostatic strength that is larger than their uniaxial and biaxial tensile strengths
+              and () do not typically exhibit strain-induced crystallization. A parametric study, together
+              with direct comparisons with recent poker-chip experiments on a silicone elastomer, show that
+              these two different material characteristics have a profound impact on where and when cracks
+              nucleate, as well as on where and when they propagate. In conjunction with the results put forth
+              earlier for natural rubber, the results presented in this paper provide a complete description and
+              explanation of the poker-chip experiments of elastomers at large. As a second objective, this
+              paper also introduces a new fully explicit constitutive prescription for the driving force that
+              describes the material strength in the fracture theory of Kumar, Francfort, and Lopez-Pamies.
+
+1. Introduction
+
+    The famed poker-chip experiments of Gent and Lindley (1959) are widely regarded as the cradle1 of the investigations into
+nucleation on internal cracks in elastomers, a phenomenon popularly referred to as cavitation, a term that Gent and Lindley (1957)
+themselves coined.
+
+    As schematically depicted in Fig. 1, the poker-chip experiment consists in firmly bonding a thin disk of the elastomer to stiff
+fixtures and then pulling the fixtures apart in a testing machine. Gent and Lindley (1959) made use of specimens with numerous (in
+excess of twenty) diameter-to-thickness ratios  spanning the range   [2, 50] and carried out experiments on eight different
+elastomers with a spectrum of different elastic behaviors. Specifically, they carried out experiments on seven different vulcanizates
+of natural rubber, four unfilled and the other three filled with different volume fractions of carbon black, as well as on one type of
+
+styrene-butadiene rubber (SBR). One of the unfilled vulcanizates (labeled G in their paper) was transparent, which allowed them to
+
+    Corresponding author.
+       E-mail addresses: kamarei2@illinois.edu (F. Kamarei), aditya.kumar@ce.gatech.edu (A. Kumar), pamies@illinois.edu (O. Lopez-Pamies).
+
+   1 See, nevertheless, the works of Busse (1938) and Yerzley (1939) for earlier preliminary poker-chip experiments on natural and synthetic (neoprene) rubber.
+
+https://doi.org/10.1016/j.jmps.2024.105683
+Received 7 February 2024; Received in revised form 13 April 2024; Accepted 7 May 2024
+Available online 11 May 2024
+0022-5096/© 2024 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+F. Kamarei et al.  Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+Fig. 1. Schematic of the poker-chip experimental setup in (a) the initial configuration and in (b) a deformed configuration at an applied deformation  and
+corresponding tensile force  . Relative to its initial thickness , the initial diameter  of the elastomer disk -- the ``poker chip'' -- is typically in the range
+  [2, 50]. For reference in the text, the midplane and centerline of the specimen are marked in part (b).
+
+observe in situ the appearance of cracks within the specimen during the loading process. The wealth of experimental observations
+generated by Gent and Lindley (1959) can be catalogued into the following three types:
+
+     · The force­deformation response. The primary quantitative observation reported by Gent and Lindley (1959) corresponds to plots
+       of the normalized global force  = 4 (2) versus the normalized global deformation  =  of the poker-chip specimens
+       up to a large force ( = 5.88 MPa) but not all the way until their complete failure (see Fig. 1 in their paper). These plots
+       exhibit an initial stiffening region, followed by a plateau, followed by a secondary stiffening region before complete rupture
+       is reached.
+
+     · In situ and post mortem images of the cracks. Gent and Lindley (1959) also reported images of the nucleated/propagated cracks
+
+      in the interior of the specimens. For the transparent vulcanizate G, they provided an in situ image illustrating that the first
+
+       appearance of a crack occurs around the centerline of the specimen through its midplane (see Fig. 3 in their paper). For
+
+      vulcanizate D, the unfilled rubber for which most of the reported results pertain to, they included post-mortem images of the
+
+       midplane of specimens cut open right after reaching the normalized force  = 2.75 MPa (see Fig. 4 in their paper).
+
+      Importantly, for the thinner specimens, according to the transparent vulcanizate G, the sequence of events is such that a crack
+
+       (or a few cracks) first appears around the centerline of the specimen. Upon further loading, more cracks continue to appear
+       radially away until the midplane is well populated with cracks, save for a boundary layer around the free lateral boundary.
+
+      For instance, for vulcanizate D, the post-mortem image of the midplane for a very thin specimen with diameter-to-thickness
+
+       ratio  = 33 shows the presence of about 100 cracks.
+       As the diameter-to-thickness ratio  decreases, the post-mortem images of the midplanes show that fewer cracks get
+
+      nucleated. For vulcanizate D, a thick specimen with diameter-to-thickness ratio  = 3.5 shows only one nucleated crack,
+
+       while the next thicker specimen with diameter-to-thickness ratio  = 2 shows no evidence of cavitation.
+
+      Since no results for the transparent vulcanizate G were reported for thicker specimens, the location and the sequence of
+
+       nucleation events of the various cracks and whether they propagate are unknown for those. The elongated shape of the cracks
+       in the post-mortem images of the midplanes do suggest that they are nucleated away from the midplane, although still around
+       the centerline, and that they propagate significantly with continuing loading.
+     · The local-maximum stress . Finally, Gent and Lindley (1959) reported plots of a critical stress  versus the poker-chip initial
+       thickness  and the elastomer Young's modulus  (see Figs. 6 and 7 in their paper), which they defined as the value of the
+       normalized force  at the first local maximum in the force­deformation ( vs. ) response of the specimens, presumed to be
+       a proxy for the first nucleation of cracks, and therefore referred to as the ``cracking stress''.
+
+    Despite being commonly credited with initiating the field of cavitation in elastomers, it was only in 2015 that a direct comparison2
+between a theoretical explanation and the founding poker-chip experiments of Gent and Lindley (1959) was presented in the
+literature by Lefèvre et al. (2015). That direct comparison indicated that cavitation as reported by Gent and Lindley (1959) is
+first and foremost a fracture process, and not a purely elastic one as conjectured for decades.3
+
+    Guided by the findings of Lefèvre et al. (2015), and by the plethora of experimental results accumulated in the literature since
+the early 1900s on the nucleation and propagation of cracks within the bulk of elastomers as well as from pre-existing cracks,
+notches, and other boundary points (Busse, 1934; Rivlin and Thomas, 1953; Greensmith, 1960; Rong et al., 2016; Chen et al.,
+2017; Poulain et al., 2017, 2018), within the basic setting of negligible viscous dissipation, Kumar et al. (2018a) then introduced
+a complete theory -- regularized, of phase-field type -- to model the nucleation and propagation of fracture in elastic brittle
+
+   2 See, however, the work of Stringfellow and Abeyaratne (1989) for an earlier preliminary comparison.
+   3 For a comprehensive account of the fascinating history of cavitation in elastomers, the reader is referred to the recent review by Breedlove et al. (2024).
+
+                                                                                                             2
+F. Kamarei et al.  Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+solids undergoing arbitrarily large quasistatic deformations. The theory can be viewed as a natural generalization of the phase-field
+approximation (Bourdin et al., 2000) of the celebrated variational theory of brittle fracture of Francfort and Marigo (1998) -- which
+is nothing more than the mathematical statement of Griffith's competition of bulk and fracture energies in its general form (Griffith,
+1921) -- to account for the material strength. As such, the theory is a top-down or macroscopic theory of fracture that is based on
+three intrinsic macroscopic material properties. When specialized to elastomers, these are:
+
+     I. the stored-energy function
+
+              ()
+
+    describing the elasticity of the elastomer for arbitrary deformation gradients ,
+II. the strength surface
+
+               () = 0
+
+     describing the strength of the elastomer for arbitrary first Piola­Kirchhoff stress tensors , and
+III. the critical energy release rate
+
+         
+
+describing the intrinsic fracture energy of the elastomer, that is, the amount of energy per unit undeformed area required to
+create new surface in the elastomer (from an existing crack).
+
+Consistent with the aforementioned plethora of experimental results amassed for over a century, the theory describes that nucleation
+of fracture in a body under a uniform state of stress is governed by the strength of the elastomer, from large4 pre-existing cracks is
+governed by the Griffith competition between the elastic energy and the intrinsic fracture energy, while under any other circumstance
+(e.g., from boundary points, smooth or sharp, small pre-existing cracks, or any other subregion in the body under a non-uniform state
+of stress) is governed by an interpolating interaction among the strength and the Griffith competition. At the same time, the theory
+describes that propagation of fracture is, akin to nucleation from large pre-existing cracks, also governed by the Griffith competition
+between the elastic and fracture energies.
+
+    As part of a program aimed at validating its status as a complete theory of fracture by direct comparisons with experiments not
+just on elastomers but on nominally elastic brittle materials at large (Kumar et al., 2018a,b; Kumar and Lopez-Pamies, 2020; Kumar
+et al., 2020, 2022, 2024), Kumar and Lopez-Pamies (2021) have deployed the fracture theory of Kumar et al. (2018a) to simulate
+the seminal poker-chip experiments of Gent and Lindley (1959). The results have served to explain in a detailed and quantitative
+manner all the three types of experimental observations outlined above and in so doing they have revealed that
+
+     i. the nucleation of cracks in the poker-chip experiments of Gent and Lindley (1959) on natural rubber is governed by the
+         strength -- in particular, the hydrostatic strength  -- of the rubber, while
+
+     ii. the propagation of the nucleated cracks is governed by the Griffith competition between the bulk elastic energy of the rubber
+         and its intrinsic fracture energy  .
+
+    Now, two distinctive characteristics of natural rubber are that: () its hydrostatic strength is substantially smaller than its uniaxial
+and biaxial tensile strengths and () it exhibits strain-induced crystallization.
+
+    In particular, as elaborated in Subsection 4.2 of Kumar and Lopez-Pamies (2021), the uniaxial and biaxial tensile strengths of
+the vulcanizate  used by Gent and Lindley (1959) are  = 11.3 ± 3.7 MPa and  = 14.8 ± 6.2 MPa, while its hydrostatic strength5
+is  = 2.9 ± 0.5 MPa. That is, the hydrostatic strength is about four times smaller than the uniaxial and biaxial tensile strengths.
+This is the reason why the nucleation of cracks in the poker-chip experiments of Gent and Lindley (1959) are dominated by the
+(weaker) hydrostatic strength of the rubber.
+
+    Moreover, as elaborated in Subsection 4.3 of Kumar and Lopez-Pamies (2021), the strain-induced crystallization of the
+vulcanizate  used by Gent and Lindley (1959) results in a very large increase in its resistance to crack growth at large stretches, one
+that can be approximately described in terms of an ``effective'' critical energy release rate that is not a constant but an increasing
+function of deformation with values ranging from  = 50 Nm when the rubber is undeformed to  = 10, 000 Nm when the
+rubber is fully stretched. This is the reason why the force­deformation ( vs. ) response of the poker-chip experiments of Gent and
+Lindley (1959) exhibits a secondary stiffening region at large stretches before complete rupture is reached.
+
+    In stark contrast to natural rubber, synthetic elastomers may feature a hydrostatic strength that is larger than their uniaxial and
+biaxial tensile strengths and, by and large, do not exhibit strain-induced crystallization. Because of these two different material
+characteristics, where and when fracture nucleates and propagates in a given problem can potentially be very different for synthetic
+elastomers than for natural rubber.
+
+   4 ``Large'' refers to large relative to the characteristic size of the underlying heterogeneities in the elastomer under investigation. By the same token, ``small''
+refers to sizes that are of the same order or just moderately larger than the sizes of the heterogeneities.
+
+   5 All three strength values , ,  referred to the nominal stresses defined by the points  (diag(, 0, 0)) = 0,  (diag(, , 0)) = 0, and  (diag(, , )) =
+0, with , ,  > 0, in terms of the strength surface  () = 0.
+
+                                                                                                             3
+F. Kamarei et al.                                                Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+    In this context, the main objective of this paper is to extend the theoretical study by Kumar and Lopez-Pamies (2021) of the
+poker-chip experiment on natural rubber to synthetic elastomers.6 As a second objective, this paper also introduces a new fully
+explicit constitutive prescription for the driving force that describes the material strength in the fracture theory of Kumar et al.
+(2018a).
+
+    The organization of this paper is as follows. We begin in Section 2 by presenting an elementary strength analysis of the poker-chip
+experiment for specimens with a range of diameter-to-thickness ratios  made of synthetic elastomers featuring different strength
+surfaces  () = 0. This analysis is aimed at illustrating that the strength surface of a synthetic elastomer with a large hydrostatic
+strength relative to its uniaxial tensile strength -- counter to natural rubber -- can be first violated substantially away from the
+centerline of the specimen. In Section 3, we recall the fracture theory of Kumar et al. (2018a) and spell out its specialization leading
+to the governing equations of the poker-chip experiment. We devote Section 3.2 to introducing the new constitutive prescription for
+the driving force that describes the strength of the elastomer in the theory. In Section 3.4, we then show that such a prescription can
+be made fully explicit. In Section 4, we deploy the theory presented in Section 3 to work out simulations of the deformation and the
+nucleation and propagation of fracture in poker-chip experiments for specimens with a range of diameter-to-thickness ratios 
+made of elastomers featuring different strength surfaces  () = 0 and critical energy release rates  . In Section 5, we confront the
+predictions from the theory with the recent poker-chip experiments of Guo and Ravi-Chandar (2023) on a silicone elastomer, who
+were first to report that the locations of the first nucleation of cracks in poker-chip specimens made of a synthetic elastomer may
+be different from those found by Gent and Lindley (1959). We conclude in Section 6 by summarizing the main findings of this work
+and by recording a number of final comments.
+
+2. An elementary strength analysis of the poker-chip experiment
+
+2.1. Initial configuration and kinematics
+
+    Consider a poker-chip specimen of diameter  = 2.5 cm and thickness in the range   [0.0625, 0.625] cm that in its initial
+(undeformed and stress-free) configuration at time  = 0 occupies the open domain
+
+      {                               ,             }
+                        12           2           2
+0  =                        + 22  <      |3|  <
+
+with respect to the Cartesian laboratory frame of reference {} ( = 1, 2, 3); see Fig. 1. These specific value for  and range of values
+for  are chosen here because they are representative of typical poker-chip specimens. Note, in particular, that they span the range
+of diameter-to-thickness ratios
+
+           [4, 40].
+         
+
+Making use of standard notation, we denote the initial boundary of the specimen by 0 and its outward unit normal by .
+    At a later time   (0,  ], in response to the applied boundary conditions described in Section 2.3 below, the position vector 
+
+of a material point in the specimen will move to a new position specified by
+
+ = (, ),
+
+where (, ) is a mapping from 0 to the current configuration (). We write the associated deformation gradient at  and  as
+                     
+
+         (, ) = (, ) = (, ).
+                     
+
+    For later reference, we also spell out here the right polar decomposition of the deformation gradient in the standard form
+ = , in terms of the rigid rotation tensor  and the right stretch tensor , and introduce the Cauchy­Green deformation tensor
+ =   = 2.
+
+2.2. Constitutive behavior of the elastomer: Elasticity, strength, and critical energy release rate
+
+    The specimen is taken to be made of a homogeneous, isotropic, elastic brittle elastomer. Its mechanical behavior is hence
+characterized by three intrinsic properties: () its elasticity, () its strength, and () its critical energy release rate.
+
+   6 Here, it is fitting to remark that the experiment that has been utilized the most to study cavitation in elastomers is, by far, the poker-chip experiment and
+that most of such experiments have been performed on synthetic elastomers as opposed to natural rubber; see, e.g., Lindsey (1967), Kakavas and Chang (1991),
+Cristiano et al. (2010), Euchler et al. (2020), Le Menn (2022) and Guo and Ravi-Chandar (2023).
+
+                                                                                                             4
+F. Kamarei et al.                                                                                  Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+2.2.1. The elasticity
+    Precisely, we take the elastic behavior of the elastomer to be characterized by the non-Gaussian stored-energy function (Lopez-
+
+Pamies, 2010)
+
+         ()  =        (1,  )     =    2  31-    (1      -  3 )   -   2    ln   +    (  -  1)2,     (1)
+                                          2                                        2
+                                                                    
+                                                                        
+                                     =1
+                                                                    =1
+
+where
+
+                                                            
+       1 =    = tr  and  = det  = det 
+
+stand for the first and third principal invariants of the right Cauchy­Green deformation tensor , while , , and  are material
+constants.
+
+    It follows that the first Piola­Kirchhoff stress at any material point   0 and time   [0,  ] is given by
+
+                                     (2                 )(                         2     )
+                                                                                        - ,
+       (, )        =        ()   =  31- 1-1  + (                                      
+                                                                      - 1) -
+
+                                     =1                                        =1
+                                      
+
+                                         21                                
+
+where, for later use, we have introduced the notation 1 (1,  ) = (1,  )1 and  (1,  ) = (1,  ) .
+    For definiteness, unless otherwise stated, in all the simulations presented in this work, we make use of the values listed in Table 1
+
+for the material constants , , and , which were deduced in Poulain et al. (2017) to describe the elastic behavior of a popular
+silicone elastomer, PDMS Sylgard 184 with a 30:1 weight ratio of base elastomer to cross-linking agent. In the remainder of this
+
+paper, we simply refer to this synthetic elastomer as PDMS 30:1.
+
+2.2.2. The strength
+    Following Kumar and Lopez-Pamies (2020), the strength surface of the elastomer is taken to be characterized by the Drucker­
+
+Prager-type strength surface
+
+                                                                               
+
+                                                                           = - 3
+                                                                    0
+        () =          12    - 2 + 11 + 0      =  0         with                3 -              ,  (2)
+                      3                                                               
+                                                                           =
+                                                                    1              (3       )
+                                                                                3       -
+
+                                                                    
+
+where
+
+       1 = tr (1) = 1 + 2 + 3
+       
+                                                                                                   (3)
+       2  =        1  (     (1)  )2               )  1  ((1  + 2    + 3)2  - 21 - 22  - 23)
+                   2   (tr           - tr ((1))2 =   2
+
+       
+
+stand for the first and second principal invariants of the Biot stress tensor (1) = (  +  )2, while the material constants  > 0
+and  > 0 denote the uniaxial tensile and hydrostatic strengths of the elastomer, that is, again, they denote the critical nominal
+stress values at which fracture nucleates under uniform states of monotonically increased uniaxial tension  = diag( > 0, 0, 0) and
+
+hydrostatic stress  = diag( > 0,  > 0,  > 0), respectively.
+    The two-material-parameter strength surface (2) is arguably the simplest model7 that allows to interpolate in a reasonable manner
+
+the few select strength data points that are typically available from experiments for elastomers, while at the same time it also permits
+
+to expediently explore different hydrostatic-to-uniaxial strength ratios .
+    Fig. 2 shows plots, in the space of principal Biot stresses (1, 2, 3), of the strength surface (2) evaluated at the values of  and
+
+ listed in Table 1. As determined in Appendix A of Kumar and Lopez-Pamies (2020), the values  = 0.24 MPa and  = 0.36 MPa
+are in the ballpark of the uniaxial tensile and hydrostatic strengths of PDMS 30:1. The two other values  = 0.12 MPa and 0.72 MPa
+are selected here so as to lead to strength surfaces with a very small and a very large hydrostatic strength relative to the uniaxial
+
+tensile strength; recall that the case of a very weak hydrostatic strength relative to the uniaxial tensile strength is representative of
+
+natural rubber.
+
+Remark 1. For given uniaxial tensile and hydrostatic strengths  and , the strength surface (2) predicts the biaxial tensile
+strength
+
+         =   (1       +   )-1         .
+               3         
+
+This relation implies in particular that  >  for  > 23 and hence, for the values of  and  listed in Table 1, that
+ >  when  > .
+
+   7 Other expressions for ``failure envelops'' that have been proposed in the literature for elastomers include, for instance, those presented in Hamdi et al.
+(2006), Lopez-Pamies et al. (2011), Rosendahl et al. (2019) and Pourmodheji et al. (2020).
+
+                                                                                                             5
+F. Kamarei et al.                                                                         Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+Fig. 2. Strength surface (2) evaluated at the strength constants  = 0.24 MPa and  = 0.12, 0.36, 0.72 MPa (blue, red, orange) listed in Table 1. (a) Plot of the
+surface in the space of principal Biot stresses (1, 2, 3). (b) Plot of the surface in the space of principal stresses (1, 2) with 3 = 2.
+
+Table 1
+Material constants describing the elasticity, the strength, and the intrinsic fracture energy of the synthetic elastomers used in the
+simulations.
+
+                   Elasticity constants          1 (MPa)                2 (MPa)           1        2        (MPa)
+                                                 0.0319                 0.0186            1.391    -1.021  50.5
+
+                   Strength constants             (MPa)                  (MPa)             
+                   Critical energy release rate  0.24                   0.12, 0.36, 0.72  1, 3, 3
+                                                  (N/m)                                   22
+                                                 10, 75, 150, 200, 500
+
+Remark 2. The strength of any material, and hence of any elastomer, is inherently stochastic. This is because the strength at a
+macroscopic material point  depends on the nature of the underlying defects from which fracture initiates, and this is known to
+exhibit a stochastic spatial variation in any given piece of material. Accordingly, the strength constants  and  in the strength
+surface (2) should be viewed not as deterministic but as stochastic material constants.
+
+Remark 3. According to our choice of signs in (2), provided that 3 > , any stress state such that
+          ()  0
+
+is in violation of the strength of the elastomer.
+
+2.2.3. The critical energy release rate
+    Finally, we take the critical energy release rate that describes the resistance to crack growth in the elastomer to be given by the
+
+constant
+
+          .
+For definiteness, in all the simulations presented in this work, we make use of the values listed in Table 1 for  . Among these,
+the value  = 75 Nm corresponds to a direct measurement by Gent and Tobias (1982) of a PDMS similar to PDMS 30:1. The
+additional values  = 10, 150, 200, 500 Nm are selected here so as to probe the effect of the entire range of realistic values for the
+intrinsic fracture energy of common synthetic elastomers (Shrimali and Lopez-Pamies, 2023b).
+
+2.3. Boundary conditions
+
+    We consider that the specimen is firmly bonded to stiff fixtures which are then pulled apart quasistatically at a constant rate  0
+so that the thickness of the specimen increases from  to  =  +  0; see Fig. 1.
+
+                                                                                                             6
+F. Kamarei et al.                                                                                    Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+Accordingly, we have the Dirichlet boundary condition
+
+(,            )    =            )  =  11     +  22  +    (      +   0   )   (, )  0 × [0,  ]                                  (4)
+                       (,       )  =  11     +  22  +      3    -  2    3,  (, )  0 × [0,  ]
+                                                                    0
+                                                         (         2   )
+                                                           3            3,
+
+                      (,
+                      
+
+                      
+
+at the top and bottom boundaries
+
+0               {                            <   ,  3  =   }       and  0   =    {            +  22  <   ,  3  =  -     }
+              =   12 + 22                       2         2                               12            2            2     ,
+
+while the lateral boundary
+
+                   {                             ,              }
+                             2                  2            2
+0             =                     +  2     =      |3|   <
+                                 1
+                                          2
+
+is always traction free and hence subject to the Neumann boundary condition
+
+(, ) = , (, )  0 × [0,  ].                                                                                                    (5)
+
+2.4. The governing equations of elastostatics
+
+    Prior to the nucleation of fracture, neglecting inertia and body forces, the combination of all of the above ingredients with the
+balance of linear momentum leads to the following set of governing equations of elastostatics
+
+Div [                        ]  =   ,                                       (, )  0 × [0,  ]
+                        ()
+
+                   =      (,    )  =  11     +  22  +    (      +   0  )    (, )  0 × [0,  ]
+(, )                                                       3       2    3,
+
+
+                   =    (,      )  =  11     +  22  +    (      -   0  )    (, )  0 × [0,  ]                                  (6)
+                                                           3       2    3,
+(, )
+
+
+              ()          =  ,                                              (, )  0 × [0,  ]
+                                                                              0
+
+ 
+
+(, 0) = ,
+
+
+for the deformation field (, ).
+
+While the elastostatics Eqs. (6) do not generally admit analytical solutions, they are amenable to numerical solution by the FE
+
+(finite element) method. So as to generate FE solutions that accurately and efficiently deal with the near incompressibility of the
+
+elastomer under study here -- note from Table 1 that the ratio of initial bulk modulus  =  + 23(11 + 22) to initial shear
+modulus  = 1 + 2 is  = 103 -- we make use of the non-conforming FE discretization of low order due to Crouzeix and Raviart
+
+(1973). All the FE results that are presented in this paper are generated with such a discretization.
+
+2.5. Where and when the strength surface is violated
+
+Having formulated the elastostatics problem (6), we are now in a position to investigate the pointwise stress field (, ) in the
+
+poker-chip specimen during its loading, this prior to the nucleation of fracture. Because of the lack of loading singularities in the
+
+problem, such a stress field is warranted to be bounded almost everywhere, the sole exception being the geometric singularity at
+
+the curve
+
+0          =  {                 + 22   =      ,  |3|   =   } ,
+                           12                2            2
+
+where the free boundary of the specimen and the stiff fixtures meet. What is more, the spatial variation of the stress field turns out
+not to be excessively large. This implies that the nucleation of fracture is expected to be dominated by the strength of the elastomer;
+see Remark 4 below.
+
+    Next, in order to begin gaining quantitative insight into the first instance of fracture nucleation in a poker-chip experiment, we
+present results for where and when the strength surface of the elastomer is violated in the specimen as the applied global deformation
+ =  increases, that is, for where and when
+
+                   
+
+ () =                 12  - 2 +                      )    1  -               0.                                               (7)
+                      3                  3   (3 -                  3 
+
+                                                                3 - 
+
+Aimed at separately identifying the effects of the properties of the elastomer and of the geometry of the poker-chip specimen, the
+
+results pertain to the three pairs of values (, ) = (0.24, 0.12), (0.24, 0.36), (0.24, 0.72) MPa for the uniaxial tensile and hydrostatic
+strengths listed in Table 1, which correspond to the ratios  = 12, 32, 3, and the three different diameter-to-thickness ratios
+ = 40, 10, 4. This particular set of representative values is selected here because it spans the entire range of possible scenarios.
+
+                                                                                 7
+F. Kamarei et al.  Journal of the Mechanics and Physics of Solids 188 (2024) 105683
+
+Fig. 3. Contour plots, over the deformed configuration, of the regions of the specimen where the stress field exceeds ( ()  0) the Drucker­Prager-type strength
+surface of the elastomer at four increasing values of the normalized global deformation  =  between the fixtures. The results correspond to specimens with
+a diameter-to-thickness ratio  = 40 and an elastomer with uniaxial tensile strength  = 0.24 MPa and the three different values of hydrostatic strength 
+listed in Table 1, so that  = 12, 32, 3. The plots are shown only over half of the specimen for better visualization.
+
+Remark 4. Before proceeding with the presentation of the results, it is important to emphasize that satisfaction of the strength
+condition (7) at a material point  is a necessary but not sufficient condition for fracture nucleation to occur at that point. This
+is because the stress field in a poker-chip experiment is non-uniform and hence the nucleation of fracture in such an experiment
+is governed neither solely by strength nor solely by the Griffith competition between the elastic and fracture energies, but by an
+``interpolation'' between the two; see Subsection 2.3 in Kumar et al. (2020) and Lopez-Pamies (2023), Appendix C in Kumar et al.
+(2024), and Appendix B below. Nevertheless, because the non-uniformity of the stress field is not excessively large (in particular,
+save for the stress at the curve 0, the stress is not singular), the expectation is that the nucleation of fracture is dominated by the
+strength of the elastomer. This expectation was confirmed by Kumar and Lopez-Pamies (2021) for natural rubber. The results in
+Sections 4 and 5 below show that this remains so for synthetic elastomers.
+
+    Fig. 3 presents contour plots of the regions (shown in black) of the specimen at which the criterion (7) is satisfied, and hence
+at which the strength of the elastomer is exceeded, at four increasing values  of the normalized global deformation between the
+fixtures. The results are shown over the deformed configuration and pertain to a very thin specimen with initial thickness  = 0.0625
+cm and hence diameter-to-thickness ratio  = 40. As for all the simulations presented in the main body of this work, again, the
+elasticity of the elastomer is described by the stored-energy function (1) with the material constants listed in Table 1. For direct
+comparison, the figure shows plots for all the three pairs of values (, ) = (0.24, 0.12), (0.24, 0.36), (0.24, 0.72) MPa for the uniaxial
+tensile and hydrostatic strengths listed in Table 1.
+
+    There are several key observations worth remarking from the results presented in Fig. 3. First, irrespective of the value of the
+hydrostatic-to-uniaxial strength ratio , the first violation of the strength surface always happens at the curve 0, where, again,
+the free boundary of the specimen and the stiff fixtures meet (indicated by the blue arrows). Such a strength violation happens
+
+                                                                                                             8
+

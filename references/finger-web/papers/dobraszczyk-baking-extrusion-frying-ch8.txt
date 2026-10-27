@@ -1,0 +1,2455 @@
+                                                                                                                                    237
+
+8
+Baking, Extrusion and Frying
+
+Bogdan J. Dobraszczyk, Paul Ainsworth, Senol Ibanoglu and Pedro Bouchon
+
+8.1
+Baking Bread
+
+Bogdan J. Dobraszczyk
+
+8.1.1
+General Principles
+
+Baking is a term commonly applied to the production of cereal-based products
+such as bread, biscuits, cakes, pizzas, etc., and in its English usage baking is
+generally applied to the production of fermented bread. Baking is at heart a pro-
+cess: the conversion of some relatively unpalatable ingredients (starch, gluten,
+bran, in the case of most cereals) into the aerated, open cell sponge structure
+we know as bread has taken millennia to develop. Bread is one of the oldest
+`functional' or engineered foods, where the addition of bubbles of air by mixing
+and fermentation has created an entirely different product with considerably en-
+hanced sensory properties. Historical records have been found in ancient Egyp-
+tian tomb carvings dating from 3000 BC, which show fermented bread being
+made from wheat flour and baked in clay ovens (see Fig. 8.1). The cultivation of
+wheat for breadmaking has played a key role in the development of modern
+civilization; and bread is one of the principal sources of nutrition for mankind.
+
+  Nutritionally, the production of aerated bread is of little benefit. During fer-
+mentation, the yeast converts some of the starch sugars into CO2, which es-
+capes during baking, decreasing the nutritional benefit of the flour. The produc-
+tion of aerated bread is also energetically wasteful ­ requiring considerable ef-
+fort and expertise. It is the sensory and textural benefits of the aerated structure
+of fermented bread that outweigh the losses which encourage us to spend the
+time and effort in baking bread.
+
+  Each country has its own particular methods of baking, but in essence bread is
+made by simply mixing flour, water, yeast (and air) into a dough, allowing the
+
+Food Processing Handbook. Edited by James G. Brennan
+Copyright © 2006 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+ISBN: 3-527-30719-2
+238 8 Baking, Extrusion and Frying
+
+       Fig. 8.1 Ancient Egyptian baking.
+
+      yeast to ferment for some time to produce an expanding aerated foam and then
+      setting the structure at high temperature in an oven to produce bread. A critical
+      feature of baking is the creation of a stable, aerated structure in the baked bread.
+      Air is a key ingredient in bread, which is added during mixing, manipulated and
+      controlled during proof, and transformed into an interconnected sponge structure
+      during baking. It is the unique viscoelastic properties of gluten, the major protein
+      in wheat flour, which allows the continued expansion and stability of bubbles dur-
+      ing breadmaking. No other cereal is capable of retaining gas to the same extent as
+      wheat during fermentation and baking. The polymer structure and rheological
+      properties of gluten are fundamental in maintaining bubble stability during fer-
+      mentation and in determining the subsequent texture and quality of baked bread.
+      Baking is a deceptively simple-looking process that hides a complex set of chem-
+      ical and physical processes that are still not completely understood.
+      8.1.2
+      Methods of Bread Production
+      A large number of baking methods exist around the world, with each country
+      having its own traditions and practices handed down over generations, produc-
+      ing a wide variety of types of bread. In practice, these methods can be classified
+      into two main processes: (a) bulk fermentation (BF) and (b) mechanical dough
+      development, or the Chorleywood bread process (CBP).
+                                                                                                   8.1 Baking Bread 239
+
+8.1.2.1 Bulk Fermentation
+The major traditional breadmaking process is the bulk fermentation process, in
+which the dough mass is allowed to ferment over a lengthy period of time after
+mixing. Cauvain [1] lists the three essential features of bulk fermentation as:
+· mixing the ingredients, usually at slow speed, to form a homogeneous dough;
+· resting the dough in bulk for a prescribed period of time (typically 3­24 h),
+
+  during which the yeast ferments to inflate the dough;
+· remixing the dough partway through the bulk fermentation, to remove most
+
+  of the larger gas cells produced and subdivide the smaller gas cells to give an
+  effective increase in the number of gas cells (known as `punching' or `knock-
+  back').
+
+The purpose of this bulk fermentation period is partly for flavour development,
+but primarily for developing the dough protein structure so that it is better able
+to retain gas and retard coalescence of gas cells during subsequent proving. The
+slow inflation during bulk fermentation stretches the dough proteins biaxially,
+so that they align into a cooperative network that imparts superior elasticity and
+extensibility to the dough. Historical experience taught bakers that this structure
+development produced a larger loaf volume and finer crumb structure, and bulk
+fermentation has thus been a feature of breadmaking for centuries. Baker and
+Mize [2] showed that gas cells must be incorporated into the dough during mix-
+ing, to act as nucleation sites for the carbon dioxide produced during proving;
+yeast is unable to generate bubbles from nothing. Without these sites, the CO2
+has nowhere within the dough to diffuse and is largely lost from the dough, re-
+sulting in a loaf of low volume and a coarse, unattractive structure. The opera-
+tions of punching and moulding (in which the dough is sheeted between roll-
+ers, then rolled up into a `Swiss roll' to orient subsequent bubble growth and
+give a firmer crumb structure) serve to redistribute the gas bubbles, so that the
+relationship between aeration during mixing and final baked loaf structure is
+weak.
+
+8.1.2.2 Chorleywood Bread Process
+The modern commercial process used in commercial bakeries in the UK and
+many other countries is known as the Chorleywood bread process (CBP), which
+was developed in 1961 by the Flour Milling and Baking Research Association at
+Chorleywood [3]. This method produces bread and other fermented bakery
+goods without the need for a long fermentation period. Dough development in
+CBP is achieved during high-speed mixing by intense mechanical working of
+the dough in a few minutes. Not only does the CBP save considerable time in
+the baking process, which helps keep down the production costs and delivers
+cheaper bread, but it also produces bread which is better in respect of volume,
+colour and keeping qualities. CBP is now by far the most common method
+used throughout all sectors of the bread baking industry. The main features of
+the CBP process are shown in Fig. 8.2.
+                                             240 8 Baking, Extrusion and Frying
+
+Fig. 8.2 The Chorleywood bread process [4].
+                                                                                                   8.1 Baking Bread 241
+
+  Table 8.1 describes the major operations in the CBP and contrasts these with
+bulk fermentation processes. In the CBP, mixing and dough development are
+combined into a single operation of a few minutes, in contrast to the much
+slower, low-energy mixing for BF (8­15 min). Oxidants such as ascorbic acid are
+added in the CBP method to facilitate rapid dough development. Increased
+yeast levels and higher proof temperatures are required in the CBP to ensure
+adequate CO2 production, as the yeast has less time to multiply during the
+much shorter proof period. The yeast metabolises less of the flour, therefore ex-
+tra water is required in the dough, thereby increasing yield. The CBP can also
+use flour with a lower protein content than that required for BF, thereby in-
+creasing the use of more homegrown UK wheat which traditionally has a lower
+protein content than imported wheats from North America. High melting point
+fats and emulsifiers are required in the dough formulation for CBP bread, to
+aid bubble stabilisation during baking. Partial vacuum or pressure/vacuum is
+applied during mixing to regulate the bubble sizes and structure in the final
+bread texture. Because the CBP eliminates punching and performs moulding
+before much yeast activity has occurred, the bubble size distribution at the end
+of mixing has a much greater influence on baked loaf structure than for tradi-
+tional BF processes. Due to the rapid development of the dough structure dur-
+ing mixing in the CBP process, it is considered that flavour is not developed as
+strongly in comparison with the BF process. This is counteracted with the addi-
+tion of various ingredients such as enzymes and the use of prefermented ex-
+tracts obtained from BF doughs.
+
+Table 8.1 Comparison of bulk fermentation and Chorleywood bread process (CBP).
+
+             Bulk fermentation                 CBP
+
+Ingredients  Flour                             Flour
+             Water                             Water
+Mixing       Yeast *1%                         Yeast *2.5%
+Proof        Salt                              Salt
+Baking                                         Oxidants (ascorbic acid)
+             Slow mixing (8­15 min)            Fat
+             Low energy (5­15 kJ kg­1)         Emulsifiers
+                                               Lower protein content and more
+             Fermentation for 3­24 h at 26 8C  water relative to BF
+             Remixing during proof to expel    Rapid mixing (< 3 min)
+             excess gas                        High energy (40 kJ kg­1)
+             20­25 min at *200 8C              Partial vacuum or pressure-vacu-
+                                               um
+                                               First proof 10­15 min at room
+                                               temperature
+                                               Second proof 45 min at *40 8C
+                                               As for BF
+242 8 Baking, Extrusion and Frying
+
+      8.1.3
+      The Baking Process
+
+      The baking process can be divided into three main processes: mixing, fermenta-
+      tion (or proof), and baking. These three processes are reviewed in the following
+      sections.
+
+      8.1.3.1 Mixing
+      Mixing of bread dough has three main functions: (a) to blend and hydrate the
+      dough ingredients, (b) to develop the dough and (c) to incorporate air into the
+      dough. In the production of doughs, the nature of the mixing action develops
+      the viscoelastic properties of gluten and also incorporates air, which has a major
+      effect on their rheology and texture. There is an intimate relationship between
+      mixing, aeration and rheology: the design and operation of the mixer develops
+      texture, aeration and rheology to different extents; and conversely the rheology
+      of the food affects the time and energy input required to achieve optimal devel-
+      opment. This is seen in the great variety of mixers used in the baking industry,
+      where certain mixers are required to produce a desired texture or rheology in
+      the bread.
+
+         Extensive work on dough mixing has shown that mixing speed and energy
+      (work input) must be above a certain value to develop the gluten network and
+      to produce satisfactory breadmaking [5]; and an optimum work input or mixing
+      time has been related to optimum breadmaking performance, which varies de-
+      pending on mixer type, flour composition and ingredients [6]. Mixing beyond
+      the optimum (overmixing) is thought to damage the dough, causing the gluten
+      network to break down, resulting in more fragile bubble walls and less gas re-
+      tention and lower baking volume. Overmixing can also result in sticky, difficult
+      to handle doughs which causes production problems. The strong relationship
+      between mixing and handling and baking properties has resulted in a large
+      number of commercial force-recording dough mixers, such as the Farinograph
+      and Mixograph [7, 8], which are used to determine the optimum in mixing
+      speed and energy. Mixing doughs by elongational flow in sheeting to achieve
+      optimum development requires only 10­15% of the energy normally used in
+      conventional high-speed shear mixers [9], suggesting that much higher rates of
+      work input can be achieved due to the enhanced strain hardening of doughs
+      under extension.
+
+      8.1.3.2 Fermentation (Proof )
+      Fermentation, or proof, is the critical step in the breadmaking process, where
+      the expansion of air bubbles previously incorporated during mixing provides the
+      characteristic aerated structure of bread, which is central to its appeal. During
+      proof, the gas content within the dough increases from around 4­8% to ap-
+      proximately 80%. The original bubble structure formed during mixing and sub-
+                                                                                                   8.1 Baking Bread 243
+
+Fig. 8.3 CO2 release and change in dough height during proof.
+
+sequently altered during punching and moulding is slowly expanded by the dif-
+fusion of CO2 which is dissolved in the surrounding liquid phase within the
+dough [10]. This causes the steady increase in the volume of the dough known
+as proof, since at this stage the bubbles are discrete and no gas can escape.
+Eventually the bubbles start to interconnect or coalesce, CO2 gas begins to es-
+cape and volume expansion ceases (see Fig. 8.3). The growth and stability of the
+gas bubbles during proof determine the ultimate expansion of the dough and
+its final baked texture and volume [11].
+
+  The coalescence of gas bubbles is the key event which determines the extent
+of bubble expansion and volume increase during proof, and also the final loaf
+texture. If coalescence is delayed, bubbles can expand for much longer, giving a
+larger proof volume and a finer texture, i.e. smaller gas cells. If coalescence oc-
+curs early, then gas escape occurs much earlier and proof volume is decreased
+and the texture is much coarser. The rheological properties of the bubble cell
+walls are very important in controlling coalescence in doughs, in particular the
+elongational strain hardening properties of the gluten polymers [12, 13].
+
+8.1.3.3 Baking
+In baking the foam structure of the dough, created by the gas cells, is turned into a
+loaf of bread with an interconnected sponge structure supported by the starch-pro-
+tein matrix. Within the first few minutes of baking, the volume of the dough in-
+creases rapidly and reaches the maximum size of the loaf; and this period is called
+oven rise or oven spring [14]. At the end of oven spring, there is a sharp increase in
+the rate of gas lost from the loaf, which is due to the rapid coalescence or rupture
+of the bubble cell walls. At the temperature of starch gelatinisation (*65 8C), there
+is a transfer of water from the protein to the starch, leading to a swelling of the
+starch granules and a rapid increase in viscosity of the dough, which sets the
+sponge structure. These physical changes lead to a change from a closed cell foam
+structure to an open cell sponge structure (see Fig. 8.4).
+244 8 Baking, Extrusion and Frying
+
+                                    Fig. 8.4 Open cell sponge structure of
+                                    bread.
+
+  During baking, there is an evaporation of water from the loaf, which is partic-
+ularly marked near the surface of the loaf; and this evaporation plus the occur-
+rence of the Maillard reaction cause a characteristic dark brown crust to be
+formed on the exterior of the loaf. The Maillard reaction is a complex set of
+chemical reactions in which the amino acids in proteins react with reducing su-
+gars such as glucose and fructose and which are very important to our percep-
+tion of flavour in baked bread.
+
+8.1.4
+Gluten Polymer Structure, Rheology and Baking
+
+Gluten is the major protein in wheat flour doughs, responsible for their unique
+viscoelastic behaviour during deformation. It is now widely accepted that gluten
+proteins are responsible for variations in baking quality; and in particular it is
+the insoluble fraction of the high molecular weight (HMW) glutenin polymer
+which is best related to differences in dough strength and baking quality
+amongst different wheat varieties [15, 16]. For example, the rheological proper-
+ties of gluten are known to be important in the entrainment, retention and sta-
+bility of gas bubbles within dough during mixing, fermentation and baking [13,
+17], which ultimately are responsible for the texture and volume of the final
+baked product.
+
+  Gluten proteins comprise a highly polydisperse system of polymers, classi-
+cally divided into two groups based on their extractability in alcohols: gliadins
+and glutenins. The gliadins are single-chain polypeptides with MW ranging
+from 2 ´ 104 to 7 ´1 04, whilst the glutenins are multiple-chain polymeric pro-
+teins in which individual polypeptides are thought to be linked by interchain
+disulphide and hydrogen bonds to give a wide MW distribution, ranging be-
+tween 105 and 109. Gluten has a bimodal MW distribution which roughly paral-
+lels the classic division based on solubility into gliadins and glutenins (see
+Fig. 8.5) [18, 19].
+                                                                                                   8.1 Baking Bread 245
+
+Fig. 8.5 Molecular weight distribution of gluten, showing bimodal distribution.
+
+  Individual glutenin polymers have an extended rod-like structure ca. 50­
+60 nm in length, made up of a central repetitive region, which is known to
+adopt a regular spiral structure (see Fig. 8.6) [20] and terminal regions which
+contain cysteine residues which are associated with intermolecular crosslinking
+by disulphide bonds.
+
+  The rheological properties of gluten are known to depend on the three-dimen-
+sional organisation of the polymer network, where individual linear HMW glu-
+tenin polymers (subunits) are linked by disulphide and hydrogen bonding and
+entanglements to form a network structure. The microscopic structure of gluten
+is seen clearly in confocal laser scanning microscopy (see Fig. 8.7), where gluten
+strands form a three-dimensional network in which are embedded rigid starch
+granules.
+
+Fig. 8.6 Spiral structure of glutenin polymers; obtained by atomic force microscopy.
+246 8 Baking, Extrusion and Frying
+
+       Fig. 8.7 Microstructure of dough, showing gluten, starch and
+       air bubbles during the early stages of proof; obtained by
+       confocal laser scanning microscopy.
+
+         Recent studies in polymer physics have shown that molecular size, structure
+      and MW distributions of polymers are intimately linked to their rheological
+      properties and ultimately to their performance in various end use applications
+      [21, 22]. Beyond a critical molecular weight (MWc), characteristic for each poly-
+      mer, rheological properties such as viscosity, relaxation time and strain harden-
+      ing start to increase rapidly with increasing MW. Above MWc, the polymers start
+      to entangle, giving rise to the observed rapid increase in viscosity with MW (see
+      Fig. 8.8).
+
+         Entanglements can be viewed as physical constraints between segments of
+      the polymer chain, rather like knots (see Fig. 8.9).
+
+         A relatively small variation in the highest end of the MW distribution can give
+      rise to a large increase in viscosity and strain hardening and is likely to have a
+      large effect on baking performance. If the polymers are branched, viscosity rises
+      even more rapidly. The effect of polymer chain branching on shear and exten-
+      sional viscosity of polymers and doughs is shown in Fig. 8.10. At low strains,
+      shear and extensional viscosities are very similar, but as deformation increases,
+      the effect of polymer branching and entanglement becomes apparent, with a
+      steep rise in viscosity with strain (known as strain hardening) apparent for
+      extensional deformation and a decrease in viscosity with shear deformation
+      (known as shear thinning).
+
+         An increase in the number of branches increases strain hardening and exten-
+      sional viscosity and decreases shear viscosity. Extensional rheological properties
+      appear to be more sensitive to changes in MW, polymer entanglements and
+      branching than dynamic shear properties. This indicates that it is more likely to
+      be the physical interactions of the secondary molecular structure of the insol-
+      uble HMW glutenin (such as branching and entanglements) that are responsi-
+                                                                                                   8.1 Baking Bread 247
+
+Fig. 8.8 Effect of molecular weight (MW) and branching on
+zero-shear viscosity for polymer melts. Beyond a critical
+molecular weight for entanglements (MWc), viscosity (g0)
+increases rapidly for linear polymer as MW3.4.
+
+Fig. 8.9 Model of entanglement network in a high MW polymer during stretching.
+248 8 Baking, Extrusion and Frying
+
+       Fig. 8.10 Effect of polymer chain branching on shear and ex-
+       tensional viscosities of (a) branched low-density polyethylene
+       at 125 8C and (b) dough.
+
+      ble for the rheological properties of dough and its baking performance than the
+      primary chemical structure or size of individual glutenin molecules. Recent evi-
+      dence suggests that (a) these insoluble HMW polymers are entangled with a
+      corresponding long relaxation time, (b) they are branched and form extensive
+      intermolecular secondary structures held together by hydrogen bonding and (c)
+      differences in these secondary structures are likely to be strongly related to ex-
+      tensional rheology and baking performance [13, 23, 24, 25].
+                                                                  8.1 Baking Bread 249
+
+8.1.5
+Baking Quality and Rheology
+
+During proof and baking, the growth and stability of gas bubbles within the
+dough determines the expansion of the dough and therefore the ultimate vol-
+ume and texture of the baked product. The limit of expansion of these bubbles
+is related directly to their stability, due to retardation of coalescence and loss of
+gas when the bubbles fail. The rheological properties of the expanding bubble
+walls are therefore important in maintaining stability in the bubble wall and
+promoting gas retention. The relevant rheological conditions around an expand-
+ing gas cell during proof and baking are biaxial extension, large extensional
+strain and low strain rates. Any rheological tests which seek to relate to baking
+performance should be performed under conditions similar to those of baking
+expansion. Methods such as bubble inflation and lubricated compression offer
+the most appropriate method for measuring extensional rheological properties
+of doughs. The major advantage of these tests is that the deformation closely re-
+sembles practical conditions experienced by the cell walls around the expanding
+gas cells within the dough during proof and oven rise, i.e. large deformation
+biaxial extension and can be carried out at the low strain rates and elevated tem-
+peratures relevant to baking.
+
+  The failure of gas cell walls in doughs has been shown to be directly related
+to the elongational strain hardening properties of the dough measured under
+large deformation biaxial extension [26]. Strain hardening is shown as an in-
+crease in the slope of the stress-Hencky strain curve with increasing extension,
+giving rise to the typical J-shaped stress-strain curve observed for highly extensi-
+ble materials (see Fig. 8.11).
+
+Fig. 8.11 Typical J-shaped stress-Hencky strain curve in biaxial
+extension for a dough bubble, indicating strain hardening as
+a rapid increase in stiffness with increasing inflation (Hencky
+strain). Bubble inflation using SMS Dough Inflation System,
+maximum stress and Hencky strain calculated for bubble wall
+polar region.
+250 8 Baking, Extrusion and Frying
+
+         Strain hardening in doughs is thought to arise mainly from stretching of
+      polymer chains between points of entanglement in the larger glutenin mole-
+      cules, which gives rise to the increasing stiffness observed at large strains. Un-
+      der extensional flow, entangled polymers exhibit strain hardening which is en-
+      hanced for polymers with a broad MW distribution, particularly a bimodal dis-
+      tribution and branching. It is therefore expected that the broad bimodal MW
+      distribution and branched structure typical of gluten will result in enhanced
+      strain hardening and a bimodal distribution of relaxation times. Recent work
+      has shown that bread doughs exhibit strain hardening under large extensional
+      deformations and that these extensional rheological properties are important in
+      baking performance [12, 13, 27]. Strain hardening allows the expanding gas cell
+      walls to resist failure by locally increasing resistance to extension as the bubble
+      walls become thinner and provides the bubble walls with greater stability
+      against early coalescence and better gas retention. It is expected therefore that
+      doughs with good strain hardening characteristics should result in a finer
+      crumb texture, e.g. smaller gas cells, thinner cell walls, an even distribution of
+      bubble sizes and a larger baked volume than doughs with poor strain hardening
+      properties. Good breadmaking doughs have been shown to have good strain
+      hardening properties and inflate to larger individual bubble volumes before rup-
+      ture, whilst poor breadmaking doughs inflate to lower volumes and have much
+      lower strain hardening (see Fig. 8.12).
+
+         Loaf volume and crumb score for a number of doughs from flour varieties
+      with varying baking performance has been related directly to the strain harden-
+      ing properties of single dough bubbles measured at elevated temperatures in
+
+       Fig. 8.12 Relationship between strain hardening and baking
+       volume for a number of flour varieties with varying baking
+       performance.
+                                                                                                        8.2 Extrusion 251
+
+Fig. 8.13 Dough bubble wall stability (measured as Hencky
+failure strain) as a function of strain hardening, showing
+instability at strain hardening < 1.
+
+biaxial extension. Once strain hardening drops below a value of around 1, bub-
+ble wall stability decreases rapidly (see Fig. 8.13). Bubble wall stability (as indi-
+cated by a strain hardening value of 1) is increased to progressively higher tem-
+peratures with increasing baking volume, allowing the bubbles to resist coales-
+cence and retain gas for much longer during the baking process. Bubble wall
+instability in poorer breadmaking varieties occurs at much lower temperatures,
+giving earlier bubble coalescence and release of gas, resulting in lower loaf vol-
+umes and poorer texture [28].
+
+8.2
+Extrusion
+Paul Ainsworth and Senol Ibanoglu
+
+8.2.1
+General Principles
+Extrusion can be defined as the process of forcing a pumpable material through
+a restricted opening. It involves compressing and working a material to form a
+semisolid mass under a variety of controlled conditions and then forcing it, at a
+predetermined rate, to pass through a hole.
+
+  The origins of extrusion are in the metallurgical industry, where in 1797 a
+piston driven device was used to produce seamless lead pipes [29]. The current
+understanding of extrusion technology and the developments in machine design
+are largely due to research carried out by the plastics industry.
+
+  Extrusion technology was first applied to food materials in the mid-1800s,
+when chopped meat was stuffed into casings using a piston type extruder. In
+252 8 Baking, Extrusion and Frying
+
+      the 1930s, a single-screw extruder was introduced to the pasta industry, to both
+      mix the ingredients (semolina and water) and to shape the resulting dough into
+      macaroni in one continuous operation.
+
+         Today, a wide variety of intermediate or food products are produced by extru-
+      sion.
+
+      8.2.1.1 The Extrusion Process
+      Extrusion is predominantly a thermomechanical processing operation that com-
+      bines several unit operations, including mixing, kneading, shearing, conveying,
+      heating, cooling, forming, partial drying or puffing, depending on the material
+      and equipment used. During extrusion processing, food materials are generally
+      subjected to a combination of high temperature, high pressure and high shear.
+      This can lead to a variety of reactions with corresponding changes in the func-
+      tional properties of the extruded material.
+
+         In the extrusion process, there are generally two main energy inputs to the
+      system. Firstly there is the energy transferred from the rotation of the screws
+      and secondly the energy transferred from the heaters through the barrel walls.
+      The thermal energy that is generated by viscous dissipation and/or transferred
+      through the barrel wall results in an increase in the temperature of the material
+      being extruded. As a result of this, there may be phase changes, such as melt-
+      ing of solid material, and/or the evaporation of moisture.
+
+         The ingredients used in extrusion are predominantly dry powdered materials,
+      with the most commonly used being wheat, maize and rice flours. The condi-
+      tions in the extruder transform the dry powdered materials into fluids and
+      therefore, characteristics such as surface friction, hardness and cohesiveness of
+      particles become important. In the high solids concentration of the extruder
+      melt, the presence of other ingredients, such as lipids and sugars, can cause
+      significant changes in the final product characteristics.
+
+         In addition to starch-based products, a range of protein-rich products can be
+      manufactured by extrusion, using raw materials such as soya or sunflower, fava
+      beans, field bean and isolated cereal proteins. Fig. 8.14 shows a schematic dia-
+      gram of an extruder.
+
+         In order to convey the dry raw material to the extruder barrel, volumetric and
+      gravimetric feeders tend to be used. Volumetric devices include single- and
+      twin-screw feeders, rotary airlock feeders, disk feeders, vibratory feeders and vol-
+      umetric belt feeders. In all of these feed mechanisms, it is assumed that the
+      density of the feed material remains constant over time and hence a constant
+      volume of feed will result in a constant mass flow rate [30]. Gravimetric feeders
+      are more expensive and more complex than volumetric feeders. They are usual-
+      ly microprocessor-controlled to monitor the mass flow rate and adjust the feeder
+      speed as required. The most commonly used gravimetric feeders are the
+      weight-belt and the `loss in weight' feeders [31].
+
+         Addition of liquid feed ingredients to the extruder can be achieved using a
+      variety of devices, including rotameters, fluid displacement meters, differential
+                                                                                                        8.2 Extrusion 253
+
+Fig. 8.14 Schematic diagram of an extruder.
+
+pressure meters, mass flow meters, velocity flow meters and positive displace-
+ment pumps [30].
+
+8.2.1.2 Advantages of the Extrusion Process
+There are many benefits to using extruders to process food materials. They are
+capable of producing a wide variety of different product types and shapes, often
+with only small changes to the extruder, its operational settings or the raw ma-
+terials used. From an engineering perspective, extruders can be described as a
+combination of a pump and a scraped surface heat exchanger for which operat-
+ing conditions are relatively insensitive to material viscosity [32]. Thus extrusion
+systems are able to process highly viscous materials that are difficult or impossi-
+ble to handle using conventional methods.
+
+  The ability of extruders to process biopolymers and ingredient mixes at rela-
+tively high temperatures (250 8C) and pressures (e.g. 25 MPa) with high shear
+forces and low moisture contents (10­40%) leads to a variety of fast and com-
+paratively efficient chemical reactions and functional changes of the extruded
+material [33].
+
+  The ability of extrusion systems to carry out a series of unit operations simul-
+taneously and continuously gives rise to savings in labour costs, floor space
+costs and energy costs whilst increasing productivity [34]. These production effi-
+ciencies, combined with the ability to produce shapes not easily formed with
+other production methods, have led to extensive use of extrusion in the food in-
+dustry. An indication of the range of applications is given in (Table 8.2) [33].
+254 8 Baking, Extrusion and Frying
+
+Table 8.2 Extrusion cooking applications [33].
+
+Bread crumbs                                    Degermination of spices
+Precooked starches                              Flavour encapsulation
+Anhydrous decrystallisation of sugars to        Enzymic liquefaction of starch for fermenta-
+make confectioneries                            tion into ethanol
+Chocolate conching                              Quick-cooking pasta products
+Pretreated malt and starch for brewing          Oilseed treatment for subsequent oil extrac-
+                                                tion
+Stabilisation of rice bran                      Preparation of specific doughs
+Gelatin gel confectioneries                     Destruction of aflatoxins or gossypol in pea-
+                                                nut meal
+Caramel, liquorice, chewing gum                 Precooked soy flours
+Corn and potato snack                           Gelation of vegetable proteins
+Co-extruded snacks with internal fillings       Restructuring of minced meat
+Flat crispbread, biscuits, crackers, cookies    Preparation of sterile baby foods
+Precooked flours, instant rice puddings         Oilseed meals
+Cereal-based instant dried soup mixes or        Sterile cheese processes
+drink bases
+Transformation of casein into caseinate         Animal feeds
+Precooked instant weaning foods or gruels       Texturised vegetable proteins
+
+8.2.2
+Extrusion Equipment
+
+Extruders come in a wide variety of shapes, sizes and methods of operation, but
+can be categorised into one of three main types: piston, roller and screw ex-
+truders [32, 35]. The simplest of these is the piston extruder, which consists of a
+single piston or a battery of pistons that force the material through a nozzle
+onto a wide conveyor. The pistons can deliver very precise quantities of materi-
+als and are often used in the confectionery industry to deposit the centre fillings
+of chocolates. Roller extruders consist of two counter-rotating drums placed
+close together. The material is fed into the gap between the rollers that rotate at
+similar or different speeds and have smooth or profiled surfaces. A variety of
+product characteristics can be obtained by altering the rotation speeds of the
+rollers and the gap between them. This process is used primarily with sticky
+materials that do not require high-pressure forming. Screw extruders are the
+most complex of the three categories of extruder and employ single-, twin-, or
+multiple-screws rotating in a stationary barrel to convey material forward
+through a specially designed die. Amongst the screw type extruders, it is com-
+mon to classify machines on the basis of the amount of mechanical energy they
+can generate. A low-shear extruder is designed to minimise the mechanical en-
+ergy produced and is used primarily to mix and form products. Conversely,
+high-shear extruders aim to maximise mechanical energy input and are used in
+applications where heating is required.
+                                                                                                        8.2 Extrusion 255
+
+Fig. 8.15 A co-rotating twin-screw extruder
+(Continua 37; Werner and Pfleiderer, Stuttgart, Germany).
+
+  In the food industry, single- and twin-screw extruders predominate and hence
+are discussed in more detail.
+
+  Fig. 8.15 shows a co-rotating twin-screw extruder (Continua 37; Werner and
+Pfleiderer, Stuttgart, Germany).
+
+8.2.2.1 Single-Screw Extruders
+Single-screw extruders were first used in the 1940s to produce puffed snacks
+from cereal flours and grits. During transport through the extruder, mechanical
+energy from the rotation of the screw is converted to heat, raising the tempera-
+ture of the mixture to over 150 8C. The resulting plasticised mixture is then
+forced through the die. The sudden reduction in pressure at the die causes
+moisture to flash off rapidly as steam, puffing the product. From the late 1950s,
+extrusion processes were developed to manufacture products such as dry ex-
+panded pet food, dry expanded `ready to eat' breakfast cereals and textured vege-
+table protein.
+
+  Because single-screw extruders have relatively poor mixing ability, they are of-
+ten used with materials that have been either premixed or preconditioned. Pre-
+conditioning is used to increase residence time, to reduce mechanical power
+consumption and/or to increase capacity. The preconditioner is an atmospheric
+or pressurised chamber in which raw granular food ingredients are uniformly
+moistened or heated or both by contact with live steam or water before entering
+the extruder.
+
+  The single-screw extruder relies upon drag flow to convey the feed material
+through the barrel of the extruder and to develop pressure at the die. In order
+for the product to advance along the barrel, it must not rotate with the screw.
+256 8 Baking, Extrusion and Frying
+
+      The frictional force between the material and the barrel wall is the only force
+      that can keep the material from turning with the screw and hence many single-
+      screw machines have grooves cut in the barrel to promote adhesion to the bar-
+      rel wall.
+
+         The rotation of the screw in the barrel gives rise to a second flow, called the
+      cross-channel flow. This flow does not contribute to the net movement of mate-
+      rial along the barrel but instead recirculates it within the screw flights and
+      hence is responsible for some of the mixing action of the extruder.
+
+         In forcing the feed material along the barrel of the extruder and through the
+      restricted opening of the die, a third flow known as the pressure flow is gener-
+      ated. The pressure flow causes movement backwards down the extruder barrel,
+      causing further mixing of the product. The three flows combine to give the net
+      flow of material out of the die.
+
+         Single-screw extrusion operation depends upon the pressure requirements of
+      the die, the slip at the barrel wall (controlled by the barrel wall temperature, the
+      presence of barrel wall grooves, or both) and the degree to which the screw is
+      filled. Screw fill is dictated by feed rate, screw speed, melt characteristics and
+      viscosity of the material extruded. The coupling of these variables limits the op-
+      erating range and flexibility of single-screw extruders [36].
+
+         In the compression section of the screw, the compression ratio increases rap-
+      idly causing most of the mechanical energy used to turn the screw to be dissi-
+      pated causing an increase in the temperature of the material. This results in
+      the plasticisation of the dry feed ingredients. Energy input to the extrusion sys-
+      tem may also arise from heat transfer through the jacket and latent heat from
+      steam injected into the ingredients in the preconditioner.
+
+      8.2.2.2 Twin-Screw Extruders
+      Twin-screw extruders were introduced to the food industry in the 1970s and are
+      now extensively used in food production.
+
+         In addition to manufacturing foods similar to those produced by single-screw
+      extruders, twin-screw extruders have found a wide application in the food indus-
+      try due to their better process control and versatility, their flexible design per-
+      mitting easy cleaning and rapid product changeover and their ability to handle
+      a wide variety of formulations.
+
+         Twin-screw extruders differ from the single-screw extruder in terms of their
+      processing capability and mechanical characteristics and are largely responsible
+      for the increasing popularity of extrusion processing. The screws in a twin-
+      screw extruder are positioned adjacent to each other and are retained in position
+      by a profiled barrel housing, having a horizontal `figure of eight' appearance.
+      The position of the screws in relation to one another and their direction of rota-
+      tion, can be used to categorise twin-screw machines.
+
+         Twin-screw extruders can have intermeshing screws in which the flights of
+      one screw engage the other or they can have nonintermeshing screws in which
+      the threads of the screws do not engage one another, allowing one screw to turn
+                                                                                                        8.2 Extrusion 257
+
+without interfering with the other. Nonintermeshing screw extruders function
+like single-screw extruders but have a higher capacity.
+
+  Twin-screw extruders may have co-rotating or counter-rotating screws. Both
+co-rotating and counter-rotating extruders can have fully, partially or noninter-
+meshing screws. Co- and counter-rotating screws differ in their transport char-
+acteristics and are therefore suited to different technological applications [35,
+37].
+
+  Intermeshing twin-screw extruders generally act like positive displacement
+pumps, forcing the material within the flights to move towards the die by rota-
+tion of the screws. The movement of the material is dependant upon the screw
+geometry and occurs independently of the operating conditions. Twin-screw in-
+termeshing extruders have found wide applications due to their positive pump-
+ing action, efficient mixing and self-cleaning characteristics.
+
+  Intermeshing counter-rotating machines are particularly suited to the proces-
+sing of relatively low-viscosity materials that require low screw speeds and a
+long residence time. Examples of products suited to this type of extruder in-
+clude chewing gum, jelly and liquorice confections [35]. These extruders exhibit
+poor mixing characteristics as each half of the chamber housing the screws acts
+independently and thus two streams of material that have little interaction are
+generated. Hence the only mixing that is done is due to the recirculation within
+the chamber itself.
+
+  Although high pressures can be achieved in counter-rotating extruders if the
+screw speed is increased, large separating forces are generated at the interface
+between the screws, giving a calendaring effect which can cause excessive wear.
+Hence, the production of expanded products with counter-rotating extruders is
+considered uneconomic [30, 35].
+
+  Intermeshing co-rotating extruders are particularly suited to applications
+where a high degree of heat transfer is required but not forced conveyance and
+thus are widely used for the production of expanded products. In this type of
+extruder, the material being extruded is transferred from one screw to the other.
+The flow mechanism is a combination of both drag and positive displacement
+flow [38]. The self-wiping style of co-rotating extruders is most commonly used
+due to their high capacity and enhanced mixing ability [30]. Co-rotating extrud-
+ers can be operated at higher speeds than counter-rotating extruders because
+the radial forces generated are more evenly distributed. The conveying ability of
+twin-screw extruders allows them to handle sticky and other difficult to handle
+ingredients [35].
+
+  In order to improve the mixing, heat transfer and viscous dissipation of
+mechanical energy, sections of the extruder are completely filled with material.
+To create these filled sections, some type of restriction is placed on the screw
+configuration. The addition of forward- or reverse-conveying discs into the screw
+configuration alters the pressure profile within the barrel. The forward-convey-
+ing discs push the material towards the die increasing the pressure in the bar-
+rel. Reverse-conveying discs reduce the pressure by delaying the passage of
+material through the extruder, increasing the barrel fill prior to the restriction,
+258 8 Baking, Extrusion and Frying
+
+      allowing additional processing and improved efficiency of heat transfer through
+      the barrel wall. Restrictions in the screw configuration are placed under greater
+      stresses and hence they tend to wear, requiring more frequent replacement than
+      other elements of the screw.
+
+         Nonintermeshing twin-screw extruders can be described as two single-screw
+      extruders sitting side by side with only a small portion of the barrels in com-
+      mon [39]. Like the single-screw extruder, these extruders rely on friction for ex-
+      trusion.
+
+      8.2.2.3 Comparison of Single- and Twin-Screw Extruders
+      A comparison of single- and twin-screw extruders is shown in Table 8.3 [37].
+
+         For a given throughput, twin-screw extruders are 1.5 to 2.0 times as expensive
+      as single-screw extruders, primarily due to the complexity of the screw, drive
+      and heat-transfer jackets [40].
+
+         The preconditioning of feed ingredients with live steam is widely used in con-
+      junction with single-screw extrusion processes and provides around half of the
+      heat necessary for cooking/processing, the remainder of the heat being derived
+      from the mechanical energy inputs. The rate of heat transfer to a material using
+      the direct injection of live steam is very high and thus represents the lowest-cost
+      method of heating the product. For this reason, single-screw extruders usually
+      have lower energy costs than twin-screw extruders.
+
+         The cost of twin-screw extruders can, however, be offset by their ability to pro-
+      cess at lower moisture levels, thus reducing or eliminating the need for addi-
+      tional postprocess drying [40].
+
+         The geometry and characteristics of the screws used in twin-screw extrusion
+      present some advantages over single-screw extruders and enables the twin-screw
+      extruder to process a wide range of ingredients that cause feeding problems for
+      single-screw machines [39]. The conveying angle, combined with the self-wiping
+      feature, results in an extruder that is less prone to surging. Increased uniform-
+      ity of processing also occurs in twin-screw extruders due to the consistency of
+      shear rate across the channel depth, leading to a narrower residence time distri-
+      bution and increased mixing within the screw channel [30].
+
+         A single-screw extruder is relatively ineffective in transferring heat from bar-
+      rel jackets because convective heat transfer is limited by poor mixing within the
+      channel. Instead, the jackets in single-screw extruders control barrel wall tem-
+      perature to regulate slip between the materials and the wall. Twin-screw extrud-
+      ers have considerably more heat exchange capability that expands their applica-
+      tion to heating and cooling viscous pastes, solutions and slurries [40].
+
+         Single- and twin-screw extruders have found many different applications in
+      the food industry. For example, single-screw extruders are considered an eco-
+      nomic and effective method for the thermal processing and forming of pet
+      foods, whilst twin-screw extruders have been widely used in snack food produc-
+      tion, where better control and flexibility is required [37].
+                                                                         8.2 Extrusion 259
+
+Table 8.3 Relative comparison of single- and twin-screw extruders [37].
+
+Item                         Single-screw                  Twin-screw
+
+Relative cost/unit capacity  1.0                           1.5­2.5
+Capital cost of extruder
+Capital cost of system       1.0                           0.9­1.3
+Relative maintenance
+Energy                       1.0                           1.0­2.0
+With preconditioner
+Without preconditioner       Half from steam               Generally not used
+                             Mechanical energy             Mix of mechanical and heat
+Screw                                                      exchange
+Conveying angle
+Wear                         108                           308
+                             Highest at discharge and      Highest at restrictions and
+Positive displacement        transition sections           kneading discs
+                             No                            No, but approached by fully
+Self-cleaning                                              intermeshing screws
+Variable flight height       No                            Self-wiping
+L/D                          Yes                           No
+Mixing                       4­25                          10­25
+Uniformity of shear          Poor                          Good
+Relative RTD spread          Poor                          Good
+Venting                      1.2                           1.0
+Drive                        Requires two extruders        Yes
+Relative screw speed
+Relative thrust-bearing      1.0­3.0                       1.0
+capacity
+Relative torque/pressure     Up to 2.5                     1.0
+Heat transfer
+                             Up to 5.0                     1.0
+Operations                   Poor; jackets control barrel  Good in filled sections
+Moisture                     wall temperature and slip at
+Ingredients                  wall
+Flexibility
+                             12­35%                        6% to very high
+                             Flowing granular materials    Wide range
+                             Narrow operating range        Greater operating range
+
+8.2.3
+Effects of Extrusion on the Properties of Foods
+
+8.2.3.1 Extrusion of Starch-Based Products
+Cereal flours and other starchy materials are widely used as raw materials in
+the production of many extruded products. The physical characteristics of cereal
+fluids developed within an extruder and their extrudates are predominantly due
+to the starch component present, which usually represents between 50% and
+80% of the dry solids in the mixture. Accordingly, many of the studies relating
+260 8 Baking, Extrusion and Frying
+
+      to cereal extrusion focus on changes occurring in the starch component of the
+      product under varying extrusion conditions and the resulting effects on its phys-
+      ical, chemical and organoleptic properties. The type of extruder, feed moisture,
+      feed rate, barrel temperature, screw speed, screw profile and die size are all im-
+      portant in developing the characteristics of the extruded product.
+
+         Cereals and starch-based products have been processed by extrusion since the
+      initial introduction of the process to the food industry.
+
+         A study of the effect of feed moisture and barrel temperature on the extrusion
+      of commercial yellow corn grits found that an increase in feed moisture or bar-
+      rel temperature, up to 177 8C, causes an increase in WAI [41]. At temperatures
+      above 177 8C WAI was found to decrease. Similarly, WSI was found to gradually
+      increase with an increase in barrel temperature up to a value of 177 8C, with a
+      more pronounced increase above this temperature. For any given set of operat-
+      ing conditions, a decrease in feed moisture content resulted in reduced WAI
+      and increased WSI. Determination of the final cooked-paste viscosities showed
+      maximum viscosity at 25% feed moisture.
+
+         A study carried out by Mercier and Feillet [42] looked at the modification of
+      carbohydrate components in a range of cereal products, namely corn grits, corn,
+      waxy corn, Amylon 5 and 7 (52% and 61% amylose), wheat and rice. The barrel
+      temperature was varied from 70 8C to 225 8C with a moisture content of 22%.
+      Their study showed a consistent increase in WSI with increasing barrel tem-
+      perature, agreeing with earlier work [43]. Analysis of WAI for waxy corn showed
+      a decrease with increasing barrel temperature from 70 8C to 225 8C, whilst the
+      Amylon 5 and 7 samples showed little change until 200 8C, after which there
+      was a sharp increase. WAI data for corn, wheat and rice products showed a
+      gradual increase with barrel temperature, reaching a maximum at around
+      180 8C. At an extrusion temperature of 135 8C, the cooked viscosity of corn and
+      rice starch was similar, while wheat starch gave a higher final cooked viscosity.
+      Data obtained from the extrusion of starch with different amylose contents at
+      different temperatures showed that the WSI and water-soluble carbohydrate in-
+      creased less with increasing amylose content.
+
+         Research on the effect of several extrusion variables such as moisture, barrel
+      temperature, screw geometry and screw speed on the gelatinisation of corn
+      starch indicated that barrel temperature and moisture had the greatest effect on
+      the gelatinisation of starch [43]. The results showed that the maximum gelatini-
+      sation occurred at high moisture and low barrel temperatures or vice versa.
+      Higher screw speed reduced gelatinisation and was related to lower residence
+      times. During the extrusion of cereal starches, it was found that starch was
+      solubilised in a macromolecular form and no small oligo- or monosaccharides
+      were formed [42]. Research on potato starch [44] showed that extrusion prefer-
+      entially broke the a-1­4 linkages of amylose and not the outer chains of amylo-
+      pectin. Linear oligosaccharides having no a-1-6 linkages were found.
+
+         The effect of feed moisture, barrel temperature, screw speed and die size on
+      the gelatinisation of wheat flour during extrusion showed that the degree of
+      starch gelatinisation increased sharply with increasing temperature, when the
+                                                                                                        8.2 Extrusion 261
+
+feed moisture contents were 24­27%, but increased more gradually when mois-
+ture contents were 18­21% [45]. At lower temperatures (65­80 8C) an increase
+in feed moisture content was found to cause a slight decrease in gelatinisation,
+whilst at higher temperatures (95­110 8C), an increase in moisture resulted in a
+significantly increased degree of gelatinisation. Increase in the screw speed was
+found to decrease the degree of starch gelatinisation, despite the increased
+shear. This was explained by the decrease in retention time of the sample in the
+extruder. Increasing the die size was found to reduce the degree of starch gelati-
+nisation. This was explained by the possible decrease in the retention time of
+the sample in the extruder due to lower pressures and decreased surface shear.
+
+  At a constant moisture content, the effect of barrel temperature, feed rate and
+screw speed on starch gelatinisation during the extrusion of a yoghurt-wheat
+mix showed that barrel temperature had the most pronounced effect, followed
+by feed rate and screw speed [46].
+
+  A comparison of the appearance of starch granules from wheat semolina
+prior to and after extrusion at 60 8C showed little difference in the shape of the
+starch granules [47]. Increasing the barrel temperature resulted in a flattening
+of the granule although the original shape (unextruded) was still recognisable.
+A complete destruction of the granule was not seen until the barrel temperature
+reached 125 8C.
+
+  The physiochemical properties of several blends of raw, gelatinised and dex-
+trinised commercial yellow corn flour were evaluated [48] and the results com-
+pared to those of raw commercial yellow corn flour extruded at a range of mois-
+ture contents. The extruded samples had properties similar to blends containing
+gelatinised and dextrinised corn. Reduction of the extrusion moisture level re-
+sulted in an increase in the relative proportion of dextrinised corn from 10% to
+60%. It was suggested that dextrinisation is the dominant mechanism for starch
+degradation during extrusion, especially at low moisture contents.
+
+  Colonna et al. [49] extruded modified wheat starch and found this led to a
+macromolecular degradation of amylose and amylopectin, by random chain
+splitting. The water soluble fractions were composed of partly depolymerised
+amylose and amylopectin. It was also concluded that shear in the extruder com-
+pletely disperses starch components by decreasing molecular entanglement.
+
+  A study [50] to evaluate the structural modifications occurring during extru-
+sion cooking of wheat starch revealed that the amylopectin fraction of the starch
+was significantly degraded during extrusion and the degradation products were
+also macromolecules. It was felt that the structural modifications occurring dur-
+ing the extrusion was limited debranching, attributed to mechanical rupture of
+covalent bonds.
+
+  A study [51] of the effect of moisture content, screw speed and barrel tem-
+perature on starch fragmentation of corn starch found that carbohydrate from
+the extruded samples dissolved at a significantly faster rate than from native
+corn starch, with a pronounced difference in the amount of material solubilised
+within the first 2 h. It was suggest that this was indicative of an increase in the
+amount of linear polysaccharide and thus an increase in the degree of fragmen-
+262 8 Baking, Extrusion and Frying
+
+      tation. The amount of large molecular weight material decreased from 68% to a
+      range of 24­58%, depending upon the extrusion conditions applied. Reductions
+      in moisture content or temperature resulted in an increase in fragmentation,
+      whilst decreasing the screw speed resulted in a decrease in fragmentation.
+
+         Bhattacharya and Hanna [52] studied the effect of moisture content, barrel
+      temperature and screw speed on the textural properties of extrusion-cooked corn
+      starch. Their results showed that the feed moisture content and barrel tempera-
+      ture affected the expansion of the extruded products predominantly. Increasing
+      the moisture content reduced expansion in both waxy and nonwaxy corn starch
+      samples. They suggest that this is due to a reduction in the dough/melt tem-
+      perature that in turn reduces the degree of gelatinisation. An increase in the
+      barrel temperature was found to increase the degree of expansion reflecting an
+      increase in gelatinisation. Similar results were reported on the extrusion of po-
+      tato flakes [53]. Screw speed was shown to be insignificant in its effect on ex-
+      pansion of the product. Although an increase in the screw speed increased the
+      rate of shear and hence the degree of starch modification, this was accompanied
+      by a reduction of residence time which cancelled out the effect of the additional
+      shear. The shear strength of the products was found to increase with increasing
+      moisture content, reflecting the decrease in expansion and increase in density.
+
+         The effect of screw speed on the extrusion of mixtures of yellow corn meal
+      with wheat and oat fibres has been reported [54]. An increase in the screw
+      speed was found to reduce the torque and die pressure, whilst increasing the
+      specific mechanical energy and resulting in a decrease in radial expansion, with
+      increases in axial expansion, bulk density and breaking force. It is suggested
+      that the reduction in torque and die pressure is the result of a decrease in the
+      screw fill. The reduction in radial expansion and the increases in axial expan-
+      sion, bulk density and breaking force are reported to be due to the reduced die
+      pressure and resistance to the flow of extrudate at the die. These results are
+      contrary to those of Fletcher et al. [55], who observed an increase in die pres-
+      sure and radial expansion with increasing screw speed. The conflicting results
+      in these studies suggest that the textural characteristics may or may not be af-
+      fected by screw speed, depending upon the feed material and the geometry and
+      design of the screw used.
+
+         Although the extrusion characteristics of cereals are dominated by the physi-
+      cal and chemical changes occurring in the starch component, cereals typically
+      contain 6­16% protein and 0.8­7.0% lipid, which can significantly affect the
+      properties of the extruded product [56]. In addition to the components of the
+      cereal itself, a wide variety of materials are incorporated into cereal extrusion
+      mixes to modify the characteristics of the final product.
+
+      Protein Typically protein acts as a `filler' in cereal extrudates and is dispersed
+      in the continuous phase of the extrusion melt, modifying the flow behaviour
+      and characteristics of the cooled extrudates. Proteinaceous materials hydrate in
+      the mixing stage of the process and become soft viscoelastic doughs during for-
+      mation of the extrusion melt. The shearing forces generated in the extruder
+                                                                                                        8.2 Extrusion 263
+
+cause breakage of the protein into small particles of roughly cylindrical and
+globular shapes. At levels of around 5­15%, they tend to reduce the extensibility
+of the starch polymer foam during its expansion at the die exit, reducing the de-
+gree of expansion [56].
+
+  Extrudates show a reduction in cell size with the addition of protein propor-
+tional to the amount of protein added. At higher levels of protein, severely torn
+regions in the cell walls of the extrudate are noted, indicating a loss of elasticity
+in the extrusion melt.
+
+  Martinez-Serna et al. [57] investigated the effects of whey protein isolates on
+the extrusion of corn starch. The isolates were blended with corn starch at con-
+centrations between 0% and 20% and then extruded at varying barrel tempera-
+tures, screw speeds and moisture contents. Their results showed that an in-
+crease in barrel temperature increased the level of starch-protein interaction. Ex-
+trusion of the blend showed a 30% reduction in expansion when compared to
+extruded corn starch alone. They suggest that this is due to modification in the
+viscoelastic properties of the dough, as a result of competition for the available
+water between the starch and protein fractions, leading to a delay in starch gela-
+tinisation. Increasing the screw speed and hence shear rate led to an increase
+in viscosity due to unfolding of the protein, involving rupture of covalent bonds
+or interaction with the starch. A similar trend was also observed when the pro-
+tein concentration was increased.
+
+Fat Fats and oils have two functions in starch extrusion processes. They act as
+a lubricant in the extrusion melt and modify the eating qualities of the final ex-
+truded product. The action of the extruder screws causes the oils to be either
+dispersed into small droplets or smeared on the polymers [56].
+
+  Extrusion of starches with low lipid contents, such as potato or pea starch, at
+low moisture contents (< 25%) is extremely difficult, due to degradative dehydra-
+tion of the starch polymers. This results in the formation of a very sticky melt,
+which tends to cause blockages. The addition of 0.5­1.0% of an oil to the starch
+reduces the degradation of the starch and enables extrusion without blockages
+[56].
+
+  The macromolecular modifications occurring in manioc starch extruded with-
+out and with a range of lipids (oleic acid, dimodan, copra and soya lecithin)
+have been investigated [58]. The results showed that an increase in extrusion
+temperature or screw speed increased the degree of macromolecular degrada-
+tion of the native manioc starch. Addition of all lipids at 2% was shown to re-
+duce the degree of macromolecular degradation, with all samples having higher
+intrinsic viscosities than the native starch extruded under the same conditions.
+Whilst all of the added lipids gave rise to an increase in the intrinsic viscosity,
+differences were apparent between each of the lipid-starch extrudates, suggest-
+ing different modes of action for each of the lipids studied.
+
+  A highly expanded oat cereal product is difficult to achieve due to its high fat
+content. The effects of the process conditions on the physical and sensory prop-
+erties of an extruded oat-corn puff showed that increasing the level of oat flour
+264 8 Baking, Extrusion and Frying
+
+      (and hence fat content) caused an increase in the extrudate bulk density and a
+      reduction in specific length and expansion [59].
+
+         An investigation into the improvement of extruded rice products showed that
+      defatting of the flour resulted in improved expansion and lower bulk densities
+      [60].
+
+      Sugars Sucrose and other sugars are commonly added to extruded products,
+      particularly breakfast cereals. The level of sugar added to a product varies but is
+      typically within the range 6­25 wt% on a final dry product basis. Sugar contrib-
+      utes to binding, flavour and browning characteristics and is important in con-
+      trolling texture and mouthfeel. In addition, it can act as a carrier and potentia-
+      tor of other flavours.
+
+         The effects of sucrose on the structure and texture of extrudates has been
+      studied extensively.
+
+         When extrusion is carried out at moisture contents above 16%, addition of su-
+      crose progressively reduces extrudate expansion, with an accompanying increase
+      in product density. This effect was noted at sucrose concentrations as low as 2%
+      when extruding with a feed moisture of 20% [61]. In addition to the reduction
+      in expansion and increase in density, an increase in mechanical strength and
+      the number of cells formed per unit area has been observed [62]. The structural
+      changes in the extrudates brought about by the addition of sucrose have been at-
+      tributed to competition for moisture, inhibition of gelatinisation and plasticisation
+      of starch-based systems by low molecular weight constituents during extrusion.
+
+         The effect of sucrose and fructose on the extrusion of maize grits indicated
+      inhibition of starch conversion due to a reduction in specific mechanical energy
+      input [63]. In addition, a change in the packing of amylose-lipid complexes in
+      the extrudate was noted. It is suggested that this rearrangement process is ac-
+      celerated by the addition of the sugars due to the enhanced molecular mobility.
+
+         The effect of sucrose on both maize and wheat flour extrudates showed that, in
+      contrast to maize extrudates, sucrose addition had little effect on the degree of
+      starch conversion and sectional expansion of wheat flour extrudates [64]. It was
+      postulated that the observed differences between the wheat-sucrose and maize-su-
+      crose extrudates may be a result of particle size and the presence of gluten.
+
+      8.2.3.2 Nutritional Changes
+
+      Protein Extrusion cooking, like other food processing, may have both beneficial
+      and undesirable effects on the nutritional value of proteins. During extrusion,
+      chemical constituents of the feed material are exposed to high temperature,
+      high shear and/or high pressure that may improve or damage the nutritional
+      quality of proteins in the extruded materials by various mechanisms. These
+      changes depend on temperature, moisture, pH, shear rate, residence time, their
+      interactions, the nature of the proteins themselves and the presence of materi-
+      als such as carbohydrates and lipids.
+                                                                                                        8.2 Extrusion 265
+
+  The proteins present in the feed material may undergo structural unfolding
+and/or aggregation when subjected to heat or shear during extrusion. Intact
+protein structures represent a significant barrier to digestive enzymes; and the
+combination of heat and shear is a very efficient way of disrupting such struc-
+tures.
+
+  In general, denaturation of protein to random configurations improves nutri-
+tional quality by making the molecules more accessible to proteases and, thus,
+more digestible. This is especially important in legume-based foods that contain
+active enzyme inhibitors in the raw state.
+
+  Disulphide bonds are involved in stabilizing the native tertiary configurations
+of most proteins. Their disruption aids in protein unfolding and thus digestibil-
+ity. Mild shearing can contribute to the breaking of these bonds.
+
+  Partial hydrolysis of proteins during extrusion increases their digestibility by
+producing more open configurations and increasing the number of exopepti-
+dase-susceptible sites. Conversely, production of an extensively isopeptide cross-
+linked network could interfere with protease action, reducing the digestibility
+[65].
+
+  The Maillard reaction may take place during extrusion cooking of protein
+foods containing reducing sugars. The chemical reaction between the reducing
+sugars and a free amino group on an amino acid has important nutritional and
+functional consequences for extruded products. Maillard reactions can result in
+a decrease in protein quality, by lowering digestibility and producing nonutilis-
+able products. During extrusion, the Maillard reaction is favoured by conditions
+of high temperatures (> 180 8C) and shear (> 100 rpm) in combination with low
+moisture (< 15%) [66].
+
+  Loss of total lysine and changes in the in vitro availability of amino acids in
+protein-enriched biscuits when extruded at different mass temperatures and
+moisture contents have been investigated [67, 68]. It was found that digestibility
+of the product extruded at 170 8C was not different from that of the raw materi-
+al. However, increasing the mass temperature to 210 8C decreased the in vitro di-
+gestibility.
+
+  In a similar study [69], it was reported that screw speed was not a major fac-
+tor in the retention of available lysine, but 40% of the available lysine present
+in the unextruded mix was lost during extrusion conditions above 170 8C mass
+temperature at a moisture content of 13%. The loss of lysine decreased when
+the water was increased to 18%, despite an increase in barrel temperature to
+produce an equivalent mass temperature to the 13% moisture mixture. Higher
+loses in lysine were observed with increased sucrose content and reduced pH.
+
+  Extrusion of corn gluten meal and blends of corn gluten meal and whey at var-
+ious screw speeds and barrel temperatures showed an increase in the in vitro di-
+gestibility of the extruded product when compared to the raw material [70]. It was
+also found that the addition of whey had no significant effect on digestibility.
+
+  The protein nutritional value of extruded wheat flours was studied by Bjorck
+et al. [71]. Amino acid analysis showed that lysine retention was between 63%
+and 100%. It was found that the retention was positively affected by an increase
+266 8 Baking, Extrusion and Frying
+
+      in feed rate and negatively by an increase in screw speed. The authors felt that
+      the prominent lysine damage under severe conditions was probably due to the
+      formation of reducing carbohydrates through the hydrolysis of starch. The loss
+      of other amino acids was found to be small.
+
+         The effects of a range of extrusion process variables on the in vitro protein di-
+      gestibility of minced fish and wheat flour mixes have been studied [72]. The ex-
+      trudates showed slight increases in their in vitro protein digestibility values. The
+      authors found that, of the process variables studied, only the effects of feed rate
+      and temperature of extrusion were significant.
+
+         The effect of extrusion on the in vitro protein digestibility of sorghum showed
+      that varying screw speed and moisture content did not have a significant effect
+      on the digestibility of sorghum, but temperature was significant in improving
+      the digestibility of sorghum [73].
+
+         Dahlin and Lorenz [74] investigated the effect of extrusion on the protein di-
+      gestibility of various cereal grains (sorghum, millet, quinoa, wheat, rye and
+      corn). When the extrusion feed moisture was decreased from 25% to 15%, an
+      increase in protein digestibility was observed. It was found that a screw speed
+      of 100 rpm and a product temperature of 150 8C improved the in vitro protein
+      digestibility of all cereals studied.
+
+         Extrusion of a yoghurt-wheat mixture at a constant moisture content of 43%
+      showed no decrease in the in vitro protein digestibility, up to barrel tempera-
+      tures of 120 8C and screw speeds of 300 rpm [75].
+
+         In addition to lysine loss and decrease in protein digestibility, the colour of
+      an extruded product is another indication of the extent of the Maillard reactions.
+      A correlation was found between the degree of browning of extruded wheat
+      flour and the total lysine content of the samples [71]. It was also found that
+      there was a positive correlation between Hunter L values for wheat-based break-
+      fast cereals and in vitro protein digestibility and available lysine [76].
+
+      Vitamins The retention of vitamins in extrusion cooking generally decreases with
+      increasing temperature, increasing screw speed, decreasing moisture, decreasing
+      throughput, decreasing die diameter and increasing specific energy input [77].
+
+         The stability of thiamin, riboflavin and niacin during the extrusion cooking of
+      full-fat soy flour has been studied [78, 79]. Different barrel temperatures and water
+      contents of feed material with a residence time of 1 min did not affect riboflavin
+      and niacin. However, some loss of thiamin was observed at high moisture (< 15%),
+      high barrel temperature (< 153 8C) and long residence times (< 1 min).
+
+         The retention of thiamin and riboflavin in maize grits during extrusion has
+      been studied [80]. The average retention was 54% for thiamin and 92% for ribo-
+      flavin. These workers found that moisture content (13­16%) did not have any
+      effect on the stability of thiamin. An increased degradation was seen for thia-
+      min with increasing temperature and screw speed. Riboflavin degradation in-
+      creased with increasing moisture content and screw speed.
+
+         Thiamin losses in extruded potato flakes at a range of barrel temperatures
+      and screw speeds, different screw compression ratios and die diameters and a
+                                                                                                        8.2 Extrusion 267
+
+moisture content of 20% have been studied [53]. It was reported that thiamin
+loss did not exceed 15% in all runs.
+
+  The importance of moisture content on the retention of thiamin in potato flakes
+during extrusion indicated that, at moisture contents of 25­59%, retention ranged
+from 22% to 97% [81]. The retention was poor at low moisture contents.
+
+  Thiamin losses in extruded legume products with increase in process tem-
+perature (93­165 8C), pH (6.2­7.4) and screw speed (10­200 rpm) have been re-
+ported [82]. The retention of thiamin increased with higher moisture contents
+(30­45%).
+
+  The effect of throughput and moisture content on the stability of thiamin, ri-
+boflavin, B6, B12 and folic acid when extruding flat bread showed that vitamin
+stability improved with increased throughput and increased water content [83].
+
+  Guzman-Tello and Cheftel [84] studied the stability of thiamin as an indicator
+of the intensity of thermal processing during extrusion cooking. They found
+that retention of thiamin decreased from 88.5% to 57.5% when the product
+temperature increased from 131 8C to 176 8C. Other extrusion parameters were
+kept constant. More thiamin was retained by increasing the moisture content
+(14.0­28.5% wet basis), while higher screw speeds (125 rpm and 150 rpm)
+caused higher losses.
+
+  At screw speeds up to 300 rpm at a barrel temperature of 120 8C, no loss of
+thiamin and riboflavin was observed when extruding a yoghurt-wheat mixture
+at a moisture content of 43% [75].
+
+  Although extrusion systems can be successfully used with higher vitamin re-
+tentions, food manufacturers often carry out vitamin fortification postextrusion,
+by dusting, enrobing, spraying or coating.
+
+8.2.3.3 Flavour Formation and Retention During Extrusion
+Much of the flavour, or the volatile components of flavour are either lost to the
+atmosphere as the extrudate exits the die or they become bound to starch or
+proteins during extrusion. Because of the high losses, flavours are generally
+added after extrusion. Postextrusion flavouring processes have many disadvan-
+tages, including difficulty in obtaining even application, possibility of contami-
+nation and rubbing off of the coating in the package or consumer's hands. A
+limited range of encapsulated and extrusion stable flavours have been developed
+to address these problems. However, these are often restricted in application
+due to their cost. An alternative approach to the problem of flavouring extruded
+products involves the addition of reactive flavour precursors to the extrusion
+mix. The conditions applied during the extrusion process cause a reaction of
+the precursors to produce the desired flavour compounds. These precursors are
+usually compounds known to participate in the browning and flavour reactions
+that occur normally during the extrusion process.
+
+  In the extrusion of cereal-based products, flavours are predominantly gener-
+ated by nonenzymic browning reactions, typified by caramelisation, the Maillard
+reaction and oxidative decomposition.
+268 8 Baking, Extrusion and Frying
+
+         The temperature and shear conditions generated in the extruder provide the
+      physical and chemical means whereby starch and protein can be partially de-
+      graded to provide the reactants that can then participate in nonenzymic brown-
+      ing reactions. In addition, lipids (especially unsaturated lipids) may undergo
+      thermal degradation, thereby providing additional flavour compounds.
+
+         An evaluation of the volatile compounds and colour formation in a whey pro-
+      tein concentrate-corn meal extruded product showed 71 volatile compounds in
+      the headspace of the samples, 68 of which were identifiable [85]. The com-
+      pounds present included 12 aldehydes, ten ketones, six alcohols, two esters, six
+      aromatics and ten hydrocarbons. In addition, 11 pyrazines, four furans, five het-
+      erocyclics and two sulphur compounds were isolated. They suggest that these
+      compounds were products of the Maillard reaction and are possibly the most
+      important in contributing to the corn flavour of the product. The concentrations
+      of pyrazines, furans and other heterocyclics were found to increase with increas-
+      ing levels of whey protein in the extrudates.
+
+         Nair et al. [86] identified 91 compounds in the condensate flash off at the die
+      and 56 compounds from the headspace of the extrudate of corn flour. They sug-
+      gest that the difference in the composition of the two samples is a reflection of
+      the volatility with water of the compounds. Whilst their study identified a signif-
+      icant number of compounds formed during extrusion were retained in the ex-
+      trudate, it was concluded that flash off at the die is still a major hindrance to
+      the flavouring of extruded products.
+
+         The effects of product temperature, moisture content and residence time on
+      the aroma volatiles generated during the extrusion of maize flour have been in-
+      vestigated by Bredie et al. [87]. Their results showed that low temperatures and
+      high moisture contents favoured the production of volatiles associated with lipid
+      degradation. Increasing both the temperature and residence time, along with a
+      reduction in moisture content, was reported to increase the production of com-
+      pounds derived from the Maillard reaction whilst reducing the levels of those
+      compounds associated with lipid degradation.
+
+         The effect of pH on the volatiles formed in a model system, containing wheat
+      starch, lysine and glucose, showed that both the total yield and number of com-
+      pounds formed are greater at pH 7.7 than at pH 4.0 and pH 5.0, where the total
+      yields are similar [88]. At pH 7.7, the volatile compounds from the extrudate
+      were dominated by pyrazines that gave the extrudates a nutty, toasted and
+      roasted character. Modification to pH 4.0 or pH 5.0 reduced the production of
+      pyrazines and increased the production of 2-furfural and 5-methylfurfural,
+      which accounted for over 80% of the total volatiles. It is suggested that the pres-
+      ence of these compounds is an indication of starch degradation, leading to an
+      additional source of carbohydrate precursor during extrusion. They conclude
+      that it may be possible to control flavour and colour development by careful
+      control of the processing conditions.
+
+         Using a trained sensory panel to study the aroma profile of extrudates pro-
+      duced from wheat flour and wheat starch fortified with mixtures of cysteine,
+      glucose and xylose [89], a vocabulary of 24 odour attributes was developed, with
+                                                                                                            8.3 Frying 269
+
+17 of the attributes significantly differentiating the samples. The results indi-
+cated that extrusion of the wheat flour alone resulted in an extrudate aroma that
+was characterised by the terms biscuity, cornflakes, sweet and cooked milk. Ad-
+dition of cysteine and glucose resulted in major differences in aroma, with the
+cereal terms popcorn, nutty/roasted and puffed wheat predominating. Cysteine/
+xylose mixtures gave rise to sulphur odour notes, such as garlic-like, onion-like,
+rubbery and sulphury, with the less desirable terms acrid/burnt, sharp/acidic
+and stale cooking oil becoming apparent.
+
+  A more extensive study using wheat starch, cysteine, xylose and glucose ex-
+truded at a range of pH and target die temperatures has been carried out [90].
+Extrudates prepared using glucose were more frequently described as biscuity
+and nutty, whereas those prepared using xylose were commonly described using
+the terms meaty or onion-like. Analysis of the extrudates identified 80 com-
+pounds. Yields of the compounds formed were generally higher in extrudates
+prepared using xylose than those using glucose, under the same processing con-
+ditions. Increases in temperature and pH were reported to increase the yields of
+the compounds formed. Pyrazines and thiophenes were amongst the most
+abundant classes of compounds identified. Results from the analysis of the ex-
+trudates prepared using glucose showed aliphatic sulphur compounds and thio-
+zoles to feature strongly in the aroma, whereas use of xylose gave rise to both
+nonsulphur-containing and sulphur-containing furans.
+
+8.3
+Frying
+
+Pedro Bouchon
+
+8.3.1
+General Principles
+
+Deep-fat or immersion frying is an old and popular process, which originated and
+developed around the Mediterranean area due to the influence of olive oil [91]. To-
+day, numerous processed foods are prepared by deep-fat frying all over the world
+since, in addition to cooking, frying provides unique flavours and textures that im-
+prove the overall palatability. This section briefly describes the frying process from
+industrial and scientific perspectives. First, it introduces the process and presents
+some fried food quality characteristics. Thereafter, it describes the equipment and
+oils used in frying and some features of potato chip and potato crisp production.
+Finally, this section reviews main research in the field.
+270 8 Baking, Extrusion and Frying
+
+      8.3.1.1 The Frying Process
+      Deep-fat frying can be defined as a process for the cooking of foods, by immer-
+      sing them in an edible fluid (fat) at a temperature above the boiling point of
+      water [92]. Frying temperatures can range from 130 8C to 190 8C, but the most
+      common temperatures are 170­190 8C. Immersion frying is a complex process
+      that involves simultaneous heat and mass transfer resulting in counterflow of
+      water vapour (bubbles) and oil at the surface of the food. In addition, frying in-
+      duces physicochemical alterations of major food components and significant
+      microstructural changes [93]. In fact, most of the desirable characteristics of
+      fried foods are derived from the formation of a composite structure: a dry, po-
+      rous, crisp and oily outer layer or crust, with a moist, cooked interior or core.
+      The crust is the result of several alterations that mainly occur at the cellular
+      and subcellular level and are located in the outermost layers of the product.
+      These chemical and physical changes include: physical damage produced when
+      the product is cut and a rough surface is formed with release of intracellular
+      material, starch gelatinisation and consequent dehydration, protein denatura-
+      tion, breakdown of the cellular adhesion, water evaporation and rapid dehydra-
+      tion of the tissue and, finally, oil uptake itself.
+
+         Dehydration, high temperatures and oil absorption distinguish frying from
+      simmering, which occurs in a moist medium and where the temperature does
+      not exceed the boiling point of water. During baking, heat transfer coefficients
+      are much lower than during frying and, although there is surface dehydration
+      and crust formation, there is no oil uptake. In addition, the high temperatures
+      achieved during frying (usually more than 150 8C) allow enzyme inactivation, in-
+      tercellular air reduction and destruction of microorganisms, including patho-
+      gens [94].
+
+      8.3.1.2 Fried Products
+      A wide variety of food materials is used to make fried products, including
+      meats, dairy, grains and vegetables. Different shapes and forms, such as chips,
+      crisps, doughnuts, battered and breaded food, among others, can be found in
+      the market. Therefore, frying technology is important to many sectors of the
+      food industry: including suppliers of oils and ingredients, fast-food shop and
+      restaurant operators, industrial producers of fully fried, parfried and snack foods
+      and manufacturers of frying equipment [95].
+
+         The quantities of food fried and oils used at both the industrial and commer-
+      cial levels are huge. For example, the USA produces, on average, over 2.3 ´ 106 t
+      of sliced frozen potato and potato products every year, the majority of which are
+      fried or partially fried [96]. Commercial deep-fat frying has been estimated to be
+      worth £ 45 ´ 109 in the USA and at least twice this amount for the rest of the
+      world [95]. In the UK, the crisp market is currently worth £ 693 ´ 106, while all
+      other snack products together are worth £ 751 ´ 106 [97].
+
+         One of the most important quality parameters of fried products is the amount
+      of fat absorbed during the frying process [98]. Per capita consumption of oils
+                                                             8.3 Frying 271
+
+Table 8.4 Oil absorption in fried foods.
+
+Food item                                 Fat (g) absorbed in 100 g edible portion
+
+Frozen chips                              &5
+Fresh chips                               & 10
+Battered food (fish/chicken)              & 15
+Low fat crisps                            & 20
+Breaded food (fish/chicken)               15­20
+Potato crisps                             35­40
+Doughnuts a)                              15­20
+
+a) Doughnuts also contain about 10% fat used in preparation
+     of the dough.
+
+and fats was estimated to be 62.7 lb year­1 (28.4 kg year­1) in the USA, far ex-
+ceeding the recommendations found in The Surgeon General's Report on Nutri-
+tion and Health [99]. Excess consumption of fat is considered as the key dietary
+contributor to coronary heart disease and perhaps cancer of the breast, colon
+and prostate [100]. Therefore, consumer trends are moving towards healthier
+food and low-fat products, creating the need to reduce amount of oil in end
+products. Despite such market forces, the consumption of snack food is increas-
+ing in developed and developing countries, and fried products still contain large
+amounts of fat. An example of the total oil content of selected snack and fast
+foods is presented in Table 8.4 (from [101]). Most of these products have an oil
+content varying from 5% (frozen chips) to 40% (potato crisps).
+
+  In addition, recently, Swedish scientists sounded an alarm in April 2002,
+when they discovered that certain cooked foods, particularly potato crisps and
+potato chips, contained high levels of acrylamide, a chemical compound that is
+listed by the World Health Organization (WHO) as a probable human carcino-
+gen [102]. Acrylimide is a substance used to produce plastics and dyes that can
+be produced when foods are heated above 120 8C, due to a reaction between
+amino acids and reducing sugars [103]. Today, there is no concensus about
+whether acrylamide in food is a danger and the WHO has not called yet for any
+reduction in foods containing high levels of this compound.
+
+  As mentioned, there is an increased demand for low-fat products. However,
+reduced and no-fat crisps varieties represent only 11% of potato crisp market
+sales in the USA [104]. Sales of fat-free snacks are increasing but, as these prod-
+ucts are baked rather than fried, they have different flavour and textural charac-
+teristics to fried crisps and, therefore, consumer acceptance is low. However,
+low-fat snacks, such as crisps or tortilla chips, are acquiring greater acceptance.
+These products are usually dried prior to frying and research is focused in de-
+veloping a product with enough fat to impart the desired organoleptic proper-
+ties.
+272 8 Baking, Extrusion and Frying
+
+      8.3.2
+      Frying Equipment
+
+      Frying equipment can be divided into two groups: (a) batch frying equipment,
+      which is used in small plants and catering restaurants, and (b) continuous fry-
+      ing equipment, which is used on the industrial scale to process large amounts
+      of product.
+
+      8.3.2.1 Batch Frying Equipment
+      A batch fryer consists of one or more chambers with an oil capacity in the
+      range 5­25 l. The oil can be heated directly by means of an electrical resistance
+      heater that may be installed a few centimetres above the bottom of the fryer.
+      This enables a cool zone to be formed at the bottom of the vessel where debris
+      can fall, remaining there and minimising oil damage. The fryer can also be
+      heated by direct gas flames underneath the bottom of the vessel, although this
+      arrangement makes the provision of a cold zone under the heaters difficult
+      [101]. Recently developed high-efficiency fryers include turbojet infrared burners
+      which use less than 30­40% energy than standard gas-fired fryers with the
+      same capacity [104]. Modern batch fryers are constructed with high-grade stain-
+      less steel; and no copper or brass is used in any valve fitting or heating element,
+      to avoid oxidation catalysis. Usually, the operators immerse and remove the bas-
+      kets manually from the oil, but new equipment may include an automatic bas-
+      ket lift system that rises automatically when the frying time is finished. Re-
+      moval of food scraps and oil filtration is an essential practice that needs to be
+      carried out on a daily basis, to increase oil shelf life and avoid smoking, char-
+      ring and off flavours. New equipment can also have an inbuilt pump filtration
+      unit for the removal of sediments [105]. Some catering outlets, especially those
+      devoted to chicken frying, prefer to use pressure batch fryers. These reduce fry-
+      ing time considerably and the fried products have a high moisture content, with
+      a uniform colour and appearance [104].
+
+      8.3.2.2 Continuous Frying Equipment
+      Large-scale processing plants use continuous fryers. These are automated ma-
+      chines that consist of a frying vessel where oil is maintained at the desired tem-
+      perature, a conveyor that displaces the product through the unit and an extrac-
+      tion system that eliminates the fumes, primarily made up of moisture and a
+      fine mist of fatty acids.
+
+         The oil can be heated either directly by means of an electric heater or a bat-
+      tery of gas burners, or indirectly, by pumping a heated thermal fluid into the
+      pipes immersed in the oil bath. Some fryers are equipped with external heat ex-
+      changers. In those systems, the oil is continuously removed at the discharge
+      end of the tank, pumped through a filter unit and then through an external
+      heat exchanger, before it is returned to the receiving end of the vessel (see
+                                                                                                            8.3 Frying 273
+
+                                                     Heat exchanger
+Fig. 8.16 Scheme for a fryer with an external heating system and fat filter unit.
+
+Fig. 8.16). Some continuous fryers are designed with multiple heating zones
+along the fryer that can be adjusted separately, providing optimal temperature
+control to improve product quality.
+
+  As the oil is absorbed by the fried product, it has to be made up with fresh
+oil continuously. The amount of fresh oil added to the vessel defines the oil
+turnover [105]:
+
+  Oil turnover  weight of oil in fryer
+                       weight of oil added per hour
+
+which represents the time needed to replace all the oil contained in the fryer. A
+fast oil turnover is desired as it maintains satisfactorily the level of free fatty
+acids, preserving oil quality for longer periods of time. Normally, the oil turn-
+over is kept at 3­8 h [105].
+
+  Industrial fryers have oil capacities ranging from 200 kg to 1000 kg and can
+produce up to 25 000 kg h­1 of chips and 2500 kg h­1 of crisps. Some of the
+main frying equipment manufacturers are Florigo B.V. in The Netherlands,
+Heat and Control and Stein in the USA.
+
+  In the last decade, the continuous vacuum frying system developed by Florigo
+B.V. during the 1960s has been reintroduced. The equipment was first created
+to produce high-quality chips but, due to the improvement in blanching tech-
+nology and raw material quality, the use of this technology almost disappeared
+[104, 106]. Nowadays, vacuum frying technology is being used to maintain natu-
+ral colours, flavours and nutrients in products with high added value, such as
+vegetables and fruits, due to the fact that much lower temperatures can be ap-
+plied during frying.
+
+8.3.2.3 Oil-Reducing System
+Given the current concern with lowering the diet fat contents, an oil-reducing
+unit has been developed. The equipment is mounted at the discharge end of
+the fryer and removes the fat excess from the recently fried food, using a steam-
+274 8 Baking, Extrusion and Frying
+
+      ing and drying technology. Superheated steam at 150­160 8C, which is circulated
+      by fan through the heat exchangers, flows through the product bed and re-
+      moves nonabsorbed surface oil from the hot surface of the food. Consecutively,
+      the oil-vapour mixture is filtered and the oil is pumped back to the fryer. The
+      low-fat stripping system can reduce oil content in crisps by 25% [107]. Units
+      range from batch strippers for pilot plants or product development to continu-
+      ous production units.
+
+      8.3.3
+      Frying Oils
+
+      Food can be fried in a wide range of oils and fats, including vegetable oils,
+      shortenings, animal fats or a mixture thereof. The main criteria used to select
+      frying oils are: long frying stability, fluidity, bland flavour, low tendency to foam
+      or smoke formation, low tendency to gum (polymerise), oxidative stability of the
+      oil in the fried food during storage, good flavour stability of the product and
+      price [101, 105]. The fat melting point is a very important parameter, as it af-
+      fects the temperature of heating in tanks and pipes during storage and han-
+      dling; and also it may affect the sensory attributes of fried products that are eat-
+      en at colder temperatures. Conversely, fats with a high melting point frequently
+      have less tendency to oxidation.
+
+         Frying oils are principally from vegetable sources. Some traditional oils used
+      for frying are: corn, cottonseed and groundnut oils, which are used as a stable
+      source of polyunsaturated fatty acids due to their low linolenic acid content
+      [108]. However, over recent decades, the use of groundnut oil has diminished
+      due to its cost and also due to production problems related to naturally occur-
+      ring aflatoxins [101, 105].
+
+         Nowadays, palm oils are increasingly used in industrial frying. Palm oil is a
+      semisolid fat, which is fractionated at low temperature to give a liquid fraction
+      called palm olein with a melting point that ranges between 19 8C and 24 8C and
+      a fraction called palm stearin, with a high melting point, melting at no less than
+      44 8C. Also, a double-fractioned oil called super olein can be obtained, which has a
+      melting point range of 13­16 8C. Palm olein is liquid enough for frying use; how-
+      ever, super olein is the grade used to produce fully liquid frying oil blends, to-
+      gether with sunflower and groundnut oils. Palm oil and palm olein have a very
+      good frying performance due to their high resistance to oxidation and flavour re-
+      version because of their low unsaturation; and they are now becoming virtually the
+      standard oils for industrial frying in West Europe [109]. However, the high level of
+      saturated (palmitic) fatty acids (38.2­42.9% in palm olein and 40.1­47.5% in palm
+      oil) may be criticised from a nutritional view point.
+
+         Rapeseed (canola) and soyabean oils have a high level of linolenic acid (8­
+      10%), making them vulnerable to oxidation and off flavour development; and
+      therefore they can be slightly hydrogenated for industrial frying. This procedure
+      can also be applied to sunflower oil and may be attractive where an oil with a
+      high polyunsaturated to saturated ratio is needed for dietary purposes [101].
+                                                                                                            8.3 Frying 275
+
+  Olive oil has excellent attributes that make it suitable as a frying oil. It has a
+low level of polyunsaturated fatty acids and a mixture of phenolic antioxidants
+that make it resistant to oxidation. Extra-virgin and virgin olive oils are expen-
+sive for industrial use, although refined solvent-extracted olive oil can be satis-
+factory for industrial frying.
+
+  Animal fats are also used for frying in some regions, due to the characteristic
+flavours that they impart to the fried food, despite their high level of saturated
+fatty acids. Fish oils are rarely used for frying, as their high level of long-chain
+polyunsaturated fatty acids makes them prone to oxidation [101].
+
+  Recently some fat substitutes, such as sucrose polyesters (olestra), have been
+extensively studied. In fact, Olean (Procter & Gamble's brand name for olestra)
+has been introduced in the USA and several snacks fried in olestra are already
+in the market (fat-free Pringles, Frito-Lay Wow). Olestra is synthesised from su-
+crose and fatty acid methyl esters and has no calories because its structure pre-
+vents digestive enzymes from breaking it down. Two main negative aspects are
+currently discussed in relation to olestra that impair its acceptance in other
+countries. First, olestra can cause gastrointestinal discomfort in some people
+and, second, there is some debate about the ability of olestra to reduce the ab-
+sorption of fat-soluble nutrients [104].
+
+  Antioxidants such as tertiary butyl hydroquinone (TBHQ), butylated hydroxy-
+anisole (BHA) and butylated hydroxytoluene (BHT) are usually added to im-
+prove oil stability. TBHQ is regarded as the best antioxidant for protecting
+frying oils against oxidation and, like BHA and BHT, it provides carry-through
+protection to the finished fried product.
+
+8.3.4
+Potato Chip and Potato Crisp Production
+
+Potato is the primary raw material used in the frying industry. The storage organ
+and hence the food part of potato is the tuber, essentially a thickened underground
+stem, which is made of 2% skin, 75­85% parenchyma and 14­20% pith [110]. The
+anatomy of the potato plant has been described in detail by Artschwager [111, 112],
+from Talburt [113]. In terms of their composition, potatoes are mainly made up of
+water, having an average of 77.5% (range 63.2­86.9%) [113]. The chemical compo-
+sition of the remaining solid part can greatly vary, depending on a wide range of
+factors, including variety, maturity, cultural practice, environmental differences,
+chemical application and storage conditions. Starch represents 65­89% of the
+dry matter weight; and amylose and amylopectin are usually present in a 1:3 ratio
+[114]. Starch granules are ellipsoidal in shape, about 100 ´ 60 lm, much larger
+than the average starch granules of cereal grains.
+
+  For potato fried products, potatoes with high solids content (20­22%) are pre-
+ferred, as they result in better finished product texture, higher yields and lower
+oil absorption [115]. Also, low reducing sugar contents are required to minimise
+colour development during processing, which is generated by the Maillard,
+nonenzymatic browning reaction [116].
+276 8 Baking, Extrusion and Frying
+
+      8.3.4.1 Potato Chip Production
+      Potato chips are traditionally produced by cutting potato strips from fresh pota-
+      toes (parallelepiped of 1 ´ 1 cm cross-section by 4­7 cm in length), which are
+      then deep-fat fried. Three major kinds of chip are produced at a commercial
+      scale: (a) deep-frozen completely fried chips, which just require oven heating,
+      (b) deep-frozen partially fried chips, which require additional frying before eat-
+      ing, and (c) refrigerated partially fried chips, which have a short shelf life and
+      need additional frying [117]. A summary of the production process is described
+      below.
+
+         The technology of chip production progressively improves as the industry de-
+      velops modern equipment and entire technological lines for its manufacture
+      [117]. Processors of frozen chips wash and peel potatoes with lye or steam, as
+      abrasion peeling results in higher losses. Peeled potatoes are conveyed over
+      trimmers and cut. Strip cutters orient potatoes along the long axis, in order to
+      obtain the greatest yield of long cuts. Subsequently, chips are blanched in hot
+      water prior to frying. The usual range of water temperatures is 60­85 8C. The
+      positive effects of blanching include: a more uniform colour of the fried prod-
+      uct, reduction of the frying time, since the potato is partially cooked, and im-
+      provement of texture of the fried product [118]. After blanching, excess water is
+      removed, in order to minimise the frying time and lower the oil content of the
+      product. This is carried out by means of dewatering screens and, subsequently,
+      blowing warm air in continuous dryers. Afterwards, potato strips are parfried in
+      a continuous fryer. The frying time is controlled by the rate of conveyor move-
+      ment, oil temperature, dry matter content in the potato tubers, size of strips
+      and type of processed chip (parfried or finish fried). The most common tem-
+
+Fig. 8.17 Flow sheet for frozen chips:           inator; 13, inspection belt; 14, blancher;
+1, trash remover; 2, washer; 3, preheater;       15, dewatering screen; 16, dryer; 17, fryer;
+4, lye peeler; 5, washer; 6, trimming belt;      18, deffater; 19, cooler; 20, freezer; 21, pack-
+7, 8, size grader; 9, surge hopper; 10, strip    age filler; 22, freezing storage; from [117].
+cutter; 11, sliver eliminator; 12, nubbin elim-
+                                                                                                            8.3 Frying 277
+
+perature range falls within 160 8C and 180 8C. Temperatures above 190 8C are
+not used, due to the possibility of more rapid oil breakdown. The recommended
+frying parameters are, for finish-fried chips, 5 min at 180 8C and, for parfried,
+3 min at 180 8C [117].
+
+  The excess fat is removed by passing the product immediately after emerging
+from the fryer over a vibrating screen, allowing the fat to drain off and, there-
+after, the product is air-cooled for about 20 min while it is conveyed to the freez-
+ing tunnel. Finally, the product is packed in polyethylene/polypropylene bags or
+in cartons for the retail trade. A flow sheet for frozen chips is presented in
+Fig. 8.17.
+
+8.3.4.2 Potato Crisp Production
+Snack food manufacturers produce two types of potato crisps: traditional crisps
+made by thinly slicing fresh potatoes and crisps processed from potato dough
+and formed into potato crisp shapes. Processing lines for potato crisps include
+similar steps as in potato chip production. Potatoes are washed, peeled and
+sliced, commonly using a rotary slicer. Shape and thickness can be varied to
+meet marketing needs, but thickness is usually in the range 50­60 thou (1.27­
+1.52 mm). To remove excess starch, the potato slices are washed and dried on a
+flat wire conveyor to remove as much surface starch and water as possible [119].
+Some potato processing plants use blanching prior to frying to improve the col-
+our of the crisp. The blanching solution is heated to 65­95 8C and blanching
+takes around 1 min. Then excessive water is removed. Thereafter, potatoes are
+usually fried in a continuous fryer, where they remain from 1.5­3.0 min at 170­
+190 8C, until the moisture level is less than 2% of the total weight. The frying
+time depends on the flow of slices to the fryer, the initial moisture level of the
+potato and the desired browning. Subsequently, crisps are conveyed, allowing
+excess oil to drain off, and are salted or flavoured. Finally, crisps are cooled on a
+conveyor and sorted by size before packaging.
+
+  Crisp products, made from potato dough, are normally based on starch-con-
+taining ingredients such as potato flakes, flours, starches, ground slices, meals,
+granules or mixtures thereof. Dry ingredients are mixed, normally followed by
+the addition of the liquid ingredients. Thereafter, the mixture is introduced to
+the sheeting line, where they are formed into discrete pieces. Subsequently, the
+product is fried in a continuous fryer, following a similar procedure to the one
+described above, for potato crisp manufacture. Production lines can vary de-
+pending on the final requirements and uses of the final product. Restructured
+potato crisps may not have similar flavour and textural characteristics to fresh
+potato crisps, but they have the advantages of uniformity and absence of de-
+fects.
+278 8 Baking, Extrusion and Frying
+
+      8.3.5
+      Heat and Mass Transfer During Deep-Fat Frying
+
+      Deep-fat frying is a thermal process, in which heat and mass transfer occur si-
+      multaneously. A schematic diagram of the process is shown in Fig. 8.18, where
+      it can be observed that convective heat is transferred from the frying medium
+      to the surface of the product and, thereafter, conductive heat transfer occurs in-
+      side the food. Mass transfer is characterised by the loss of water from the food
+      as water vapour and by the movement of oil into the food [93].
+      Farkas et al. [120] observed that the temperature at any location in the core re-
+      gion is limited to values below the boiling point of the interstitial liquid (ap-
+      proximately 105 8C). When all the liquid is evaporated from the region, the mov-
+      ing front propagates towards the interior and the temperature begins to rise, ap-
+      proaching the oil temperature. On the basis of visual observations and analysis
+      of temperature profiles and moisture data, they suggested that the frying pro-
+      cess is composed of four distinct stages:
+      1. Initial heating, which lasts a few seconds and corresponds to the period of
+
+         time whilst the surface temperature reaches the boiling point of the liquid.
+         Heat transfer is by natural convection and no vaporisation of water occurs.
+      2. Surface boiling, which is characterised by the sudden loss of water, the begin-
+         ning of the crust formation and a forced convection regime due to high tur-
+         bulence, associated with nucleate boiling.
+      3. Falling rate, which is the longest, in which the internal moisture leaves the
+         food, the core temperature rises to the boiling point, the crust layer increases
+         in thickness and finally the vapour transfer at the surface decreases.
+      4. Bubble end point.
+
+      Natural convective heat transfer coefficients range over 250­280 W m­2 K­1 at fry-
+      ing temperatures according to estimations from Miller et al. [121] and Moreira et al.
+      [122], whereas forced convective heat transfer coefficients can achieve maximum
+      values up to two or three times bigger that those measured in the absence of bub-
+      bling [97, 123­125]. This value gradually decreases over the duration of the process.
+
+       Fig. 8.18 Schematic diagram of simultaneous heat and mass transfer during frying.
+                           8.3 Frying 279
+
+8.3.6
+Modelling Deep-Fat Frying
+
+Many of the studies related to frying have been limited fundamentally to obser-
+vations on the frying process. Mathematical models have been centred on the
+prediction of temperature profiles inside the fried food and the prediction of the
+kinetics of moisture loss; and very little has been carried out in relation to oil
+uptake. Models with different levels of complexity have been reported, which
+vary considerably in terms of the assumptions made. Most of the models for
+water evaporation during frying consider the fried product as a single phase,
+with no differentiation between the crust and the core regions and without the
+existence of a moving crust/core interface, where either energy or mass diffu-
+sion are considered to be the rate controlling mechanisms [126­135].
+
+  However, some authors have recognised the existence of two separate regions,
+the crust and the core, and have proposed a model considering the presence of
+a moving boundary [97, 120, 136, 137]. In fact, Farkas et al. [120] were the pio-
+neers in developing a comprehensive model of thermal and moisture transport
+during frying. They formulated their model by analogy to freezing [138] and to
+the solution of the uniform retreating ice front during freeze-drying [139]. They
+provided different sets of equations for the two regions, separated by a moving
+boundary where the evaporation occurred. In their model they did not include
+the oil phase. They described the heat transfer in both regions using the un-
+steady heat transfer conduction equation, they considered water diffusional flow
+within the core region and they assumed that water vapour movement was pres-
+sure-driven. The final set of equations consisted of four nonlinear partial differ-
+ential equations, which were solved using finite differences. The results were
+compared with experimental data; and they obtained a reasonable prediction for
+temperature profiles, water content and thickness of the crust region [140].
+However, as Farid and Chen [136] pointed out, simulations were time-consum-
+ing, making it difficult to extrapolate the model to a multidimensional geometry
+and therefore they simplified the model. A similar approach was assumed by
+Bouchon [97], when modelling water evaporation in an infinite slab and in an
+infinite cylinder.
+
+  Ni and Datta [137] developed a multiphase porous media model to predict
+moisture loss, oil absorption and energy transport in a potato slab, also consid-
+ering a moving front. They assumed that vapour and air transport were consid-
+ered to be driven by convective and diffusive flows, while liquid water and oil
+were supposed to be driven by convective and capillary flows. Model predictions
+were compared with literature experimental data, mainly from Farkas et al.
+[140]. They centred their validation on temperature profiles, moisture content
+and crust thickness predictions, however, they did not include oil uptake absorp-
+tion as part of their model validation.
+280 8 Baking, Extrusion and Frying
+
+      8.3.7
+      Kinetics of Oil Uptake
+
+      The selection of a model needs to be in accordance with experimental observa-
+      tions that reveal how oil absorption takes place. It is not clearly understood yet
+      when and how the oil penetrates into the structure, however it has been shown
+      that most of the oil is confined to the surface region of the fried product [141­
+      147] and there is strong evidence that it is mostly absorbed during the cooling
+      period [132, 148­150].
+
+         Gamble et al. [151] gave a reasonable initial explanation of the deep-fat frying
+      mechanism. They proposed that most of the oil is pulled into the product when
+      it is removed from the fryer due to condensation of steam producing a vacuum
+      effect. They suggested that oil absorption depends on the amount of water re-
+      moved and on the way this moisture is lost. In accordance, Ufheil and Escher
+      [149] suggested that oil uptake is primarily a surface phenomenon, involving an
+      equilibrium between adhesion and drainage of oil upon retrieval of the slice
+      from the oil.
+
+         Moreira and Barrufet [152] explained the mechanism of oil absorption during
+      cooling in terms of capillary forces. The model considered that during frying
+      heat transfer was controlled by convection and conduction and that during cool-
+      ing mass transfer from the surface oil and the surrounding air into the struc-
+      ture was controlled by capillary pressure.
+
+         Recently, Bouchon and Pyle [153] developed a model for oil absorption during
+      the cooling period, which considered the competition between drainage and
+      suction. A key element in the model was the hypothesis that oil suction would
+      only begin once a positive pressure driving force had developed.
+
+      8.3.8
+      Factors Affecting Oil Absorption
+
+      There has been much research to examine the different factors affecting oil ab-
+      sorption during frying and many empirical studies have correlated oil absorp-
+      tion measurements with process and/or product characteristics.
+
+         Gamble et al. [154] concluded that a lower oil temperature resulted in a lower
+      oil content in potato crisps in the early stages of frying with a greater difference
+      between 145 8C and 165 8C than between 165 8C and 185 8C. Similarly, Moreira
+      et al. [132] determined higher differences in oil absorption in tortilla chips (wet
+      base) between 130 8C and 160 8C than between 160 8C and 190 8C. However, re-
+      sults were expressed as oil uptake on a wet basis. Consequently, there was a sys-
+      tematic reduction in the basis, as the water content was constantly reduced due
+      to the higher dehydration that resulted when the product was fried at a higher
+      temperature for the same period of time. In contrast, Bouchon [97] determined
+      that the rate of oil absorption (dry base) by potato cylinders was not significantly
+      affected by oil temperature (155, 170, 185 8C). In addition, no significant differ-
+      ences were found in oil absorption between the two higher temperatures. How-
+                                                                                                            8.3 Frying 281
+
+ever, when frying at 155 8C, a significant lower absorption was found, compared
+to the previous ones. Similarly, Moreira et al. [155] determined that the oil ab-
+sorption rate was unaffected by the oil temperature when frying tortilla chips
+and that a frying temperature of 190 8C gave a higher oil content (3­5%) than a
+frying temperature of 155 8C. Nonaka et al. [156] also found that oil content in-
+creased with increasing frying temperature when frying potato chips.
+
+  The influence of oil type and quality on oil absorption and residues absorbed
+by fried foods is widely documented [95, 96, 156­159]. No relationship has been
+found between oil type and oil absorption, although it has been shown that an
+increase in the oil's initial interfacial tension decreases oil absorption [160]. Blu-
+menthal [96, 157], noticed the importance of oil surface tension during deep-fat
+frying and developed what he called the surfactant theory of frying. He ex-
+plained that several classes of surfactants are formed during frying of food,
+either as a result of the degradation of the frying oil itself or as a result of the
+reactions occurring between the food components and the oil. These com-
+pounds act as wetting agents, reducing the interfacial tension between the food
+and the frying oil, causing increased contact between the food and the oil and
+finally producing excessive oil absorption by the fried product.
+
+  An increase in additional factors such as initial solids content [117, 161, 162],
+slice thickness [163­165] and gel strength [166] have been shown to reduce oil
+uptake. Additionally, it has been found that an increase in the initial porosity of
+the food increases the absorption [167]. However, as explained by Saguy and
+Pinthus [99], crust formation plays an additional and fundamental role as soon
+as frying commences.
+
+  Some prefrying treatments have been shown to significantly reduce oil absorp-
+tion during frying. Lowering the moisture content of the food prior to frying using
+microwave and hot air treatment results in a reduction in the final oil content
+[104, 142, 151], whereas freeze-drying increases the absorption [154]. Also, post-
+treatments such as hot air drying [156] have been shown to reduce oil uptake.
+
+  In addition, during the last decade much attention has been given to the use
+of hydrocolloids such as methylcellulose (MC), hydroxypropyl methylcellulose
+(HPMC), long-fibre cellulose and corn zein, to inhibit oil uptake [128, 168­171].
+The hydrocolloid mixture is added to the batter or breading coating, which cre-
+ates a barrier against oil absorption either prior and/or during frying. Batters
+and breadings are gaining more importance as they contribute significantly to
+the added product value [172], however, most of the information on this subject
+is of a proprietary nature [99].
+
+8.3.9
+Microstructural Changes During Deep-Fat Frying
+
+The importance of microstructural changes during deep-fat frying has been re-
+cognised in modelling heat and mass transport and unravelling their mecha-
+nisms. Three of five papers by leading scientists in the field published in an
+overview on frying of foods (Food Technology, October 1995) included SEM
+282 8 Baking, Extrusion and Frying
+
+      photomicrographs of fried products, suggesting the importance of microstruc-
+      ture. In fact, Baumann and Escher [165] recommended that the explanation of
+      some factors in oil absorption needs to be validated by structural analysis in re-
+      lation to the location of oil deposition and to the mechanisms of oil adhesion.
+      Since the first histological studies of deep-fat fried potatoes by Reeve and Neel
+      [173], using light microscopy, evidence has accumulated that, except for the out-
+      ermost layers damaged by cutting, the majority of the inner cells retain their in-
+      dividuality after frying and their interior contains dehydrated but gelatinised
+      starch granules. The microstructural aspect of the core tissue is similar to that
+      of cooked potatoes. In the case of potato crisps (or outer layers in potato chips)
+      cells shrink during frying but do not rupture, while cell walls become wrinkled
+      and convoluted around the dehydrated gelled starch [146, 173]. It is thought that
+      the rapid dehydration occurring during deep-fat frying reduces the starch-swel-
+      ling process and therefore cell walls do not break as sometimes occurs during
+      ordinary cooking. Similar observations were determined by Costa et al. [174],
+      when studying structural changes of potato during frying, and by Mc Donough
+      et al. [175], when evaluating the physical changes during deep-fat frying of tor-
+      tilla chips.
+
+         Keller et al. [141] and Lamberg et al. [142] determined the extent of oil pene-
+      tration in fried chips, using Sudan red B, a heat-resistant and oil-soluble dye,
+      which was added to the frying medium before frying. They concluded that oil
+      uptake during deep-fat frying was localised on the surface of the fried product
+      and restricted to a depth of a few cells. In fact, Bouchon et al. [147], using high
+      spatial resolution infrared microspectroscopy, determined oil distribution pro-
+      files within fried potato cylinders. Results confirmed that oil was confined to
+      the outer region and that oil distribution reflected the anisotropic nature of the
+      porous network developed during the process.
+
+         Blistering in potato crisps takes place after separation of neighbouring intact
+      cells alongside cell walls, similar to fracture observed in steam-cooked potatoes
+      [176], and oil was found to be mainly distributed in the cell walls, intercellular
+      spaces and blister areas [173]. Aguilera and Gloria [177] demonstrated that three
+      distinct microstructures exist in finished fried commercial chips: (a) a thin outer
+      layer (approx. 250 lm) formed by remnants of cell walls of broken or damaged
+      cells by cutting, (b) an intermediate layer of shrunken intact cells which extends
+      to the evaporation front and (c) the core with fully hydrated intact cells contain-
+      ing gelatinised starch.
+
+         It is thought that standard microscopic techniques may produce artefacts in
+      samples like swelling of the interiors by solvents and smearing of oil during
+      sectioning. In an attempt to reduce invasion and destruction of samples, Farkas
+      et al. [143] used magnetic resonance imaging (MRI) to determine water location
+      and oil penetration depth in immersion-fried potato cylinders. They confirmed
+      that oil was mainly located on the surface of the product and penetrated only
+      slightly inside the structure. Confocal laser scanning microscopy (CLSM) has
+      been introduced recently as a new methodology for studying oil location directly
+      in fried potato chips with minimal intrusion [145, 146]. This was achieved by
+                                                                                                            References 283
+
+frying in oil containing a heat-stable fluorochrome (Nile red) and observing the
+fried crust, without further preparation, under a CLSM. This technique allows
+optical sectioning to be carried out using a laser beam, avoiding any physical
+damage on the specimen. It was shown that cells seem to be quite preserved
+and surrounded by oil, which is not uniformly located at each depth, suggesting
+that at least some of the oil penetrates into the interior of a potato strip by mov-
+ing between cells.
+
+  Recently, it was suggested that surface roughness increases importantly sur-
+face area, enhancing oil absorption [172]. In an effort to quantify the irregular
+conformation of the surface, Pedreschi et al. [178] and Rubnov and Saguy [179]
+used fractal geometry and confirmed the significant role of crust roughness in
+oil absorption.
+
+References
+
+1 Cauvain, S. P. 1998, Breadmaking Pro-           Wheat and Gluten Baking Quality with
+  cesses, in Technology of Breadmaking, ed.       The Two-Gram Direct Drive Mixograph
+  S. P. Cauvain, L. S. Young, Blackie Aca-        Using Multivariate Statistical Analysis,
+  demic and Professional, London, pp 18­          Cereal Chem. 79, 607­612.
+  44.                                          9 Kilborn, R. H., Tipples, K. H. 1974, Im-
+                                                  plications of the Mechanical Development
+2 Baker, J. C., Mize, M. D. 1941, The Ori-        of Bread Dough by Means of Sheeting
+  gin of the Gas Cell in Bread Dough,             Rolls, Cereal Chem. 51, 648­657.
+  Cereal Chem. 18, 19­34.                     10 Chiotellis, E., Campbell, G. M. 2003,
+                                                  Proving of Bread Dough I. Modelling
+3 Chamberlain, N., Collins, T. H., Elton,         the Evolution of the Bubble Size Distri-
+  G. A. H. 1962, The Chorleywood Bread            bution, Trans. IChemE 81, 194­206.
+  Process, Baker's Dig. 36, 52­53.            11 Chiotellis, E., Campbell, G. M. 2003,
+                                                  Proving of Bread Dough II. Measure-
+4 Dobraszczyk, B. J., Campbell, G. M., Gan,       ment of Gas Production and Retention,
+  Z. 2001, Bread ­ A Unique Food, in              Trans. IChemE 81, 207­216.
+  Cereals & Cereal Products: Chemistry and    12 Kokelaar, J. J., van Vliet, T., Prins, A.
+  Technology, ed. D. A. V. Dendy, B. J. Do-       1996, Strain Hardening and Extensibility
+  braszczyk, Aspen Publishers, Gaithers-          of Flour and Gluten Doughs in Relation
+  burg, pp 182­232.                               to Breadmaking Performance, J. Cereal
+                                                  Sci. 24, 199­214.
+5 Kilborn, R. H., Tipples, K. H. 1972, Fac-   13 Dobraszczyk, B. J., Morgenstern, M. P.
+  tors Affecting Mechanical Dough Devel-          2003, Review: Rheology and the Bread-
+  opment I. Effect of Mixing Intensity and        making Process, J. Cereal Sci. 38, 229­245.
+  Work Input, Cereal Chem. 49, 4­47.          14 He, H., Hoseney, R. C. 1991, Gas Reten-
+                                                  tion of Different Cereal Flours, Cereal
+6 Mani, K., Eliasson, A.-C., Lindahl, L.,         Chem. 68, 334­336.
+  Trägrdh, C. 1992, Rheological Properties    15 MacRitchie, F., Lafiandra, D. 1997,
+  and Bread Making Quality of Wheat               Structure-Function Relationships of
+  Flour Doughs made with Different                Wheat Proteins, in Food Proteins and Their
+  Dough Mixers, Cereal Chem. 69, 222­             Applications, ed. S. Damodaran, A. Paraf,
+  225.                                            Marcel Dekker, New York, pp 293­323.
+                                              16 Weegels, P. L., Hamer, R. J., Schofield,
+7 Dobraszczyk, B. J. 2001, Wheat and              J. D. 1996, Critical Review: Functional
+  Flour, in Cereals & Cereal Products: Chem-
+  istry and Technology, ed. D. A. V. Dendy,
+  B. J. Dobraszczyk, Aspen Publishers,
+  Gaithersburg, pp 100­139.
+
+8 Dobraszczyk, B. J., Schofield, J. D. 2002,
+  Rapid Assessment and Prediction Of
+284 8 Baking, Extrusion and Frying
+
+    Properties of Wheat Glutenin, J. Cereal         Breadmaking Performance, Cereal Chem.
+    Sci. 23, 1­18.                                  80, 218­224.
+17 Chin, N. L., Campbell, G. M. 2005,           29 Hsieh, F. 1992, Extrusion and Extrusion
+    Dough Aeration and Rheology II. Effects         Cooking, in Encyclopedia of Food Science
+    of Flour Type, Mixing Speed and Total           and Technology, ed. Y. H. Hui, John Wiley
+    Work Input on Aeration and Rheology of          & Sons, New York, pp 795­800.
+    Bread Dough, J. Cereal Sci. (in press).     30 Harper, J. M. 1989, Food Extruders and
+18 Carceller, J. L., Aussenac, T. 2001, Size        Their Applications, in Extrusion Cooking,
+    Characterisation of Glutenin Polymers           ed. C. Mercier, P. Linko, J. M. Harper,
+    by HPSEC-MALLS, J. Cereal Sci. 33,              AACC, St Paul, pp 1­16.
+    131­142.                                    31 Lanz, R. 1983, Successful Multi-Compo-
+19 Arfvidsson, C., Wahlund, K.-G., Eliasson,        nent, Continuous-Extruder Feeding, in
+    A.-C. 2004, Direct Molecular Weight De-         Progress in Food Engineering, ed. C. Can-
+    termination in the Evaluation of Dissolu-       terelli, C. Peri, Forster, Kisnacht, pp 625­
+    tion Methods for Unreduced Glutenin, J.         629.
+    Cereal Sci. 39, 1­8.                        32 Janssen, L. P. B. M. 1993, Extrusion Cook-
+20 Shewry, P. R., Halford, N. G., Belton,           ing ­ Principals and Practice, in Encyclo-
+    P. S., Tatham, A. S. 2002, The Structure        pedia of Food Science Food Technology and
+    and Properties of Gluten: an Elastic Pro-       Nutrition, ed. R. Macrae, R. K. Robinson,
+    tein from Wheat Grain, Phil. Trans. R.          M. J. Sadler, Academic Press, London,
+    Soc. Lond. B 357, 133­142.                      pp 1700­1705.
+21 Doi, M., Edwards, S. F. 1986, The Theory     33 Cheftel, J. C. 1986, Nutritional Effects of
+    of Polymer Dynamics, Oxford University          Extrusion Cooking, Food Chem., 20, 263­
+    Press, Oxford.                                  283.
+22 McLeish, T. C. B., Larson, R. G. 1998, Mo-   34 Heldman, D. R., Hartel, R. W. 1997, Prin-
+    lecular Constitutive Equations for a Class      ciples of Food Processing, Chapman and
+    of Branched Polymers: The Pom-Pom               Hall, New York.
+    Model, J. Rheol. 42, 81­110.                35 Frame, N. D. 1994, Operational Charac-
+23 Li, W., Dobraszczyk, B. J., Schofield, J.        teristics of the Co-Rotating Twin-Screw
+    D. 2003, Stress Relaxation Behaviour of         Extruder, in The Technology of Extrusion
+    Wheat Dough and Gluten Protein Frac-            Cooking, ed. N. D. Frame, Blackie Aca-
+    tions, Cereal Chem. 80, 333­338.                demic and Professional, Glasgow, pp 1­
+24 Humphris, A. D. L., McMaster, T. J.,             51.
+    Miles, M., Gilbert, S. M., Shewry, P. R.,   36 Harper, J. M. 1990, Extrusion of Foods,
+    Tatham, A. S. 2000, Atomic Force Micro-         in IFT Symposium Series: Biotechnology
+    scopy (AFM) Study of Interactions of            and Food Process Engineering, ed. H. G.
+    HMW Subunits of Wheat Glutenin,                 Schwartzberg, M. A. Rao, Marcel Dekker,
+    Cereal Chem. 77, 107­110.                       New York, pp 295­308.
+25 Belton, P. S. 1999, On the Elasticity of     37 Harper, J. M. 1986, Processing Character-
+    Wheat Gluten, J. Cereal Sci. 29, 103­107.       istics of Food Extruders, in Food Engi-
+26 Dobraszczyk, B. J., Roberts, C. A. 1994,         neering and Process Applications, Vol 2,
+    Strain Hardening and Dough Gas Cell-            Unit Operations, ed. M. L. Mauger, P. Je-
+    Wall Failure in Biaxial Extension,              lem, Elsevier Applied Science, London,
+    J. Cereal Sci. 20, 265­274.                     pp 101­114.
+27 van Vliet,T., Janssen, A. M., Bloksma,       38 Jager, T., van Zuilichem, D. J., Stolp, W.
+    A. H., Walstra, P. 1992, Strain Hardening       1992, Residence Time Distribution, Mass
+    of Dough as a Requirement for Gas Re-           Flow, and Mixing in a Co-Rotating Twin-
+    tention, J. Texture Stud. 23, 439­460.          Screw Extruder, in Food Extrusion Science
+28 Dobraszczyk, B. J., Smewing, J., Alberti-        and Technology, ed. J. L. Kokini, C. Ho,
+    ni, M., Maesmans, G., Schofield, J. D.          M. V. Karwe, Marcel Dekker, New York,
+    2003, Extensional Rheology and Stability        pp 71­88.
+    of Gas Cell Walls in Bread Doughs at
+    Elevated Temperatures in Relation to
+                                                   References 285
+
+39 Dziezak, J. D. 1989, Single- and Twin-              Insolubilization During Twin-Screw Ex-
+    Screw Extruders in Food Processing,                trusion of Corn Meal, Cereal Chem. 67,
+    Food Technol. 43, 163­ 174.                        268­275.
+                                                   52 Bhattacharya, M., Hanna, M. A. 1987,
+40 Harper, J. M. 1992, A Comparative Anal-             Textural Properties of Extrusion-Cooked
+    ysis of Single and Twin Screw Extruders,           Corn Starch, Lebensm. Wiss. Technol. 20,
+    in Food Extrusion Science and Technology,          195­201.
+    ed. J. L. Kokini, C. Ho, N. W. Kaewe,          53 Maga, J. A., Cohen, M. R. 1978, Effect of
+    Marcel Dekker, New York, pp 139­148.               Extrusion Parameters on Certain Sen-
+                                                       sory, Physical and Nutritional Properties
+41 Anderson, R. A., Conway, H. F., Pfeifer,            of Potato Flakes, Lebensm. Wiss. Technol.
+    V. F., Griffin, E. L. 1969, Gelatinization of      11, 195­197.
+    Corn Grits by Roll- and Extrusion-Cook-        54 Hsieh, F., Mulvaney, S. J., Huff, H. E.,
+    ing, Cereal Sci. Today 14, 1­12.                   Lue, L., Brent, J. 1989, Effect of Extru-
+                                                       sion Parameters on Certain Sensory,
+42 Mercier, C., Feillet, P. 1975, Modification         Physical and Nutritional Properties of
+    of Carbohydrate Components by Extru-               Potato Flakes, Lebensm. Wiss. Technol. 22,
+    sion-Cooking of Cereal Products, Cereal            204­207.
+    Chem. 52, 283­297.                             55 Fletcher, S. I., Richmond, P., Smith,
+                                                       A. C. 1985, An Experimental Study of
+43 Lawton, B. T., Henderson, G. A., Derlat-            Twin-Screw Extrusion-Cooking of Maize
+    ka, E. J. 1972, The Effects of Extruder            Grits, J. Food Eng. 4, 291­312.
+    Variables on the Gelatinization of Corn        56 Guy, R. C. E. 1994, Raw Materials for Ex-
+    Starch, Can. J. Chem. Eng. 50, 168­173.            trusion Cooking Processes, in The Tech-
+                                                       nology of Extrusion Cooking, ed. N. D.
+44 Mercier, C. 1977, Effect of Extrusion-              Frame, Blackie Academic and Profes-
+    Cooking on Potato Starch Using a Twin              sional, Glasgow, pp 52­72.
+    Screw French Extruder, Staerke 29, 48­52.      57 Martinez-Serna, M., Hawkes, J., Villota,
+                                                       R. 1990, Extrusion of Natural and Modi-
+45 Chiang, B. Y. and Johnson, J. A., Gelatini-         fied Whey Proteins in Starch-Based Sys-
+    zation of starch in extruded products,             tems, in Engineering and Food Vol 3: Ad-
+    Cereal Chemistry, 54, 436­443, 1977.               vanced Processes, ed. W. E. L. Spiess, H.
+                                                       Schubert, Elsevier Applied Science, Lon-
+46 Ibanoglu, S., Ainsworth, P., Hayes, G. D.           don, pp 346­365.
+    1996, Extrusion of Tarhana: Effect of Op-      58 Colonna, P., Mercier, C. 1983, Macromo-
+    erating Variables on Starch Gelatiniza-            lecular Modifications of Manoic Starch
+    ton, Food Chem. 57, 541­544.                       Components by Extrusion-Cooking With
+                                                       and Without Lipids, Carbohydr. Polym. 3,
+47 Kim, J. C., Rottier, W. 1980, Modification          87­108.
+    of Aestivum Wheat Semolina by Extru-           59 Liu, Y., Hsieh, F., Heymann, H., Huff,
+    sion, Cereal Foods World 24, 62­66.                H. E. 2000, Effect of Process Conditions
+                                                       on the Physical and Sensory Properties
+48 Gomez, M. H., Aguilera, J. M. 1983,                 of Extruded Oat-Corn Puff, J. Food Sci.
+    Changes in the Starch Fraction During              65, 1253­1259.
+    Extrusion Cooking of Corn, J. Food Sci.        60 Kumagai, H., Lee, B. H., Yano, T. 1987,
+    48, 378­381.                                       Flour Treatment to Improve the Quality
+                                                       of Extrusion-Cooked Rice Flour Prod-
+49 Colonna, P., Doublier, J. L., Melcion,              ucts, J. Agric. Biol. Chem. 51, 2067­2071.
+    J. P., Monredon, F., Mercier, C. 1984,         61 Jin, Z., Hsieh, F., Huff, H. E. 1994, Ex-
+    Physical and Functional Properties of              trusion Cooking of Corn Meal with Soy
+    Wheat Starch After Extrusion Cooking               Fiber, Salt and Sugar, Cereal Chem. 71,
+    and Drum Drying, in Thermal Processing             227­234.
+    and Quality of Foods, ed. P. Zeuthen,
+    J. C. Cheftel, C. Eriksson, M. Jul, H. Le-
+    niger, P. Linko, G Varela, G. Vos, Else-
+    vier Applied Science, London, pp 96­112.
+
+50 Davidson, V. J., Paton, D., Diosady, L. L.,
+    Larocque, G. 1984, Degradation of
+    Wheat Starch in a Single-Screw Extruder:
+    Characterization of Extruded Starch Poly-
+    mers, J. Food Sci. 49, 453­459.
+
+51 Wen, L. F., Rodis, P., Wasserman, B. P.
+    1990, Starch Fragmentation and Protein
+286 8 Baking, Extrusion and Frying
+
+62 Ryu, G. H., Neumann, P. E., Walker, C. E.             on In Vitro Protein Digestibility of Sor-
+    1993, Effects of Some Baking Ingredi-                ghum, J. Food Sci. 52, 218­219.
+    ents on Physical and Structural Proper-          74 Dahlin, K., Lorenz, K. 1993, Protein Di-
+    ties of Wheat Flour Extrudates, Cereal               gestibility of Extruded Cereal Grains,
+    Chem. 70, 291­297.                                   Food Chem. 48, 13­18.
+                                                     75 Ibanoglu, S., Ainsworth, P., Hayes, G. D.
+63 Fan, J., Mitchell, J. R., Blanshard, J. M. V.         1997, In Vitro Protein Digestibility and
+    1996, The Effect of Sugars on the Extru-             Content of Thiamin and Riboflavin in
+    sion of Maize Grits: II. Starch Conver-              Extruded Tarhana, a Traditional Turkish
+    sion, Int. J. Food Sci. Technol. 31, 67­76.          Cereal Food, Food Chem. 58, 141­144.
+                                                     76 McAuley, J. A., Kunkel, M. E., Acton, J. C.
+64 Carvalho, C. W. P., Mitchell, J. R. 2000,             1987, Relationships of Available Lysine
+    Effect of Sugar on the Extrusion of                  to Lignin, Color and Protein Digestibility
+    Maize Grits and Wheat Flour, Int. J.                 of Selected Wheat-Based Breakfast
+    Food Sci. Technol. 35, 569­576.                      Cereals, J. Food Sci. 52, 1580­1582.
+                                                     77 Killeit, U. 1994, Vitamin Retention in
+65 Phillips, R. D. 1989, Effect of Extrusion             Extrusion Cooking, Food Chem. 49, 149­
+    Cooking on the Nutritional Quality of                155.
+    Plant Proteins, in Protein Quality and the       78 Mustakas, G. C., Griffin, E. L., Alien,
+    Effect of Processing, ed. R. D. Phillips, J. W.      L. E., Smith, O. B. 1964, Production and
+    Finley, Marcel Dekker, New York, pp 219­             Nutritional Evaluation of Extrusion
+    246.                                                 Cooked Full Fat Soybean Flour, Am. Oil
+                                                         Chem. Soc. 41, 607­615.
+66 Camire, M. E., Camire, A., Krumhar, K.            79 Mustakas, C. G., Albrecht, W. J., Bookwal-
+    1990, Chemical and Nutritional Changes               ter, G. N., McGhee, J. E., Kwolek, W. F.,
+    in Foods During Extrusion, Crit. Rev.                Griffin, E. L. 1970, Extruder-Processing
+    Food Sci. Nutr. 29, 35­57.                           to Improve Nutritional Quality, Flavor,
+                                                         and Keeping Quality of Full-Fat Soy
+67 Björk, I., Asp, N. G. 1983, The Effects of            Flour, Food Technol. 24, 102­108.
+    Extrusion Cooking on Nutritional Value ­         80 Beetner, G., Tsao, T., Frey, A., Harper,
+    a Literature Review, J. Food Eng. 2, 281­            J. M. 1974, Degradation of Thiamine and
+    308.                                                 Riboflavin During Extrusion Processing,
+                                                         J. Food Sci. 39, 207­208.
+68 Björk, I., Asp, N. G. 1984, Protein Nutri-        81 Maga, J. A., Sizer, C. E. 1978, Ascorbic
+    tional Value of Extrusion-Cooked Wheat               Acid and Thiamine Retention During
+    Flours, Food Chem. 15, 203­214.                      Extrusion of Potato Flakes, Lebensm.
+                                                         Wiss. Technol. 11, 192­194.
+69 Noguchi, A., Mosso, K., Aymard, C., Jeu-          82 Pham, C. B., Rosario, R. R. 1986, Studies
+    nink, J., Cheftel, J. C. 1982, Protein Nu-           on the Development of Texturized Vege-
+    tritional Value of Extrusion-Cooked                  table Products by the Extrusion Process.
+    Wheat Flours, Lebensm. Wiss. Technol. 15,            III. Effects of Processing Variables of
+    105­110.                                             Thiamine Retention, J. Food Technol. 21,
+                                                         569­576.
+70 Bhattacharya, M., Hanna, M. A. 1988, Ex-          83 Millauer, C., Wiedmann, W. M., Killeit,
+    trusion Processing to Improve Nutritional            U. 1984, Studies on the Development of
+    and Functional Properties of Corn Glu-               Texturized Vegetable Products by the Ex-
+    ten, Lebensm. Wiss. Technol. 21, 20­24.              trusion Process. III. Effects of Proces-
+                                                         sing Variables of Thiamine Retention, in
+71 Bjorck, I., Matoba, T., Nair, B. M. 1985,             Thermal Processing and Quality of Foods,
+    In-Vitro Enzymatic Determination of the              ed. P. Zeuthen, J. C. Cheftel, C. Eriksson,
+    Protein Nutritional Value and the                    M. Jul, H. Leniger, P. Linko, G. Varela,
+    Amount of Available Lysine in Extruded               G. Vos, Elsevier Applied Science, Lon-
+    Cereal-Based Products, Agric. Biol. Chem.            don, pp 208­213.
+    49, 945­ 951.
+
+72 Bhattacharya, S., Das, H., Bose, A. N.
+    1988, Effect of Extrusion Process Vari-
+    ables on In Vitro Protein Digestibility of
+    Fish-Wheat Flour Blends, Food Chem.
+    28, 225­231.
+
+73 Fapojuwo, O. O., Maga, J. A., Jansen,
+    G. R. 1987, Effect of Extrusion Cooking
+                                                  References 287
+
+84 Guzman-Tello, R., Cheftel, J. C. 1987,          92 Farkas, B. E. 1994, Modelling Immer-
+    Thiamine Destruction During Extrusion               sion Frying as a Moving Boundary
+    Cooking as an Indication of the Intensity           Problem, Ph.D dissertion, University of
+    of Thermal Processing, Int. J. Food Sci.            California, Davis.
+    Technol. 22, 549­562.
+                                                   93 Singh, R. P. 1995, Heat and Mass
+85 Bailey, M. E., Gutheil, R. A., Hsieh, F.,            Transfer in Foods During Deep-Fat Fry-
+    Cheng, C., Gerhardt, K. O. 1994, Mail-              ing, Food Technol. 49, 134­ 137.
+    lard Reaction Volatile Compounds and
+    Color Quality of a Whey Protein Concen-        94 Aguilera, J. M. 1997, Fritura de Alimen-
+    trate-Corn Meal Extruded Product, in                tos, in Temas en Tecnologia de Alimentos,
+    Thermally Generated Flavours: Maillard,             ed. J. M. Aguilera, Instituto Politecnico
+    Microwave and Extrusion Processes (ACS              Nacional, Mexico D. F., pp 187­214.
+    Symposium Series 543), ed. T. H. Parli-
+    ment, M. J. Morello, R. J. McGorrin,           95 Blumenthal, M. M. 1991, A New Look
+    American Chemical Society, Washington,              at the Chemistry and Physics of Deep-
+    D. C., pp 315­327.                                  Fat Frying, Food Chem. 45, 68­71.
+
+86 Nair, M., Shi, Z., Karwe, M., Ho, C. T.,        96 Blumenthal, M. M., Stier, R. F. 1991,
+    Daun, H. 1994, Collection and Charac-               Optimization of Deep-Fat Frying Op-
+    terization of Volatile Compounds Re-                erations, Trends Food Sci. Technol. 2,
+    leased at the Die During Twin Screw Ex-             144­148.
+    trusion of Corn Flour, in Thermally Gen-
+    erated Flavours: Maillard, Microwave and       97 Bouchon, P. 2002, Modelling Oil Up-
+    Extrusion Processes (ACS Symposium Se-              take During Frying, Ph.D. dissertation,
+    ries 543), ed. T. H. Parliment, M. J. Morel-        University of Reading, Reading.
+    lo, R. J. McGorrin, American Chemical
+    Society, Washington, D. C., pp 334­347.        98 Bouchon, P., Pyle, D. L. 2004, Studying
+                                                        Oil Absorption in Restructured Potato
+87 Bredie, W. L. P., Mottram, D. S., Guy,               Chips, J. Food Sci. 69, 115­122.
+    R. C. E. 1998, Aroma Volatiles Generated
+    During Extrusion Cooking of Maize Flour,       99 Saguy, I. S., Pinthus, E. J. 1995, Oil Up-
+    J. Agric. Food Chem. 46, 1479­1487.                 take During Deep-Fat Frying: Factors
+                                                        and Mechanism, Food Technol. 49, 142­
+88 Ames, J. M., Defaye, A. B., Bates, L.                145, 152.
+    1997, The Effect of pH on the Volatiles
+    Formed in an Extruded Starch-Glucose-         100 Browner, W. S., Westonhouse, J., Tice,
+    Lysine Model System, Food Chem. 58,                 J. A. 1991, What if Americans Ate Less
+    323­327.                                            Fat? A Quantitative Estimate of the Ef-
+                                                        fect on Mortality, J. Am. Med. Assoc.
+89 Bredie, W. L. P., Hassell, G. M., Guy,               265, 3285­3291.
+    R. C. E., Mottram, D. S. 1997, Aroma
+    Characteristics of Extruded Wheat Flour       101 Rossel, J. B. 1998, Industrial Frying
+    and Wheat Starch Containing Added                   Process, Grasas Aceites, 49, 282­295.
+    Cysteine and Reducing Sugars, J. Cereal
+    Sci. 25, 57­63.                               102 Mitka, M. 2002, Fear of Frying: Is
+                                                        Acrylamide in Foods a Cancer Risk?,
+90 Ames, J. M., Guy, R. C. E., Kipping, G. L.           J. Am. Med. Assoc. 288, 2105­2106.
+    2001, Effect of pH and Temperature on
+    the Formation of Volatile Compounds in        103 Mottram, D. S., Wedzicha, B. L., Dod-
+    Cysteine/Reducing Sugar/Starch Mix-                 son, A. T. 2002, Food Chemistry: Acryl-
+    tures During Extrusion Cooking, J. Agric.           amide is Formed in the Maillard Reac-
+    Food Chem. 49, 1885­1894.                           tion, Nature 419, 448­449.
+
+91 Varela, G. 1988, Current Facts About Fry-      104 Moreira, R. G., Castell-Perez, M. E., Bar-
+    ing of Food, in Frying of Foods: Principles,        rufet, M. A. 1999, Deep-Fat Frying: Fun-
+    Changes, New Approaches, ed. G. Varela,             damentals and Applications, Aspen Pub-
+    A. E. Bender, I. D. Morton, Ellis Hor-              lications, Gaithersburg.
+    wood, Chichester, pp 9­25.
+                                                  105 Kochhar, S. P. 1998, Security in Indus-
+                                                        trial Frying Processes, Grasas Aceites
+                                                        49, 282­302.
+
+                                                  106 Banks, D. 1996, Food Service Frying,
+                                                        in Deep Frying, ed. E. G. Perkins, M. D.
+                                                        Erickson, AOAC Press, Champaign,
+                                                        pp 245­257.
+288 8 Baking, Extrusion and Frying                            Fat Products, 5th edn, ed. Y. I. Hui, Wi-
+                                                              ley, New York, pp 409­428.
+       107 Kochhar, S. P. 1999, Safety and Reli-        120 Farkas, B. E., Singh, R. P., McCarthy,
+             ability During Frying Operations ­ Ef-           M. J. 1996 a, Modeling Heat and Mass
+             fects of Detrimental Components and              Transfer in Immersion Frying, I. Mod-
+             Fryer Design Features, in Frying of              el Development, J. Food Eng. 29, 211­
+             Food, ed. D. Boskou, I. Elmadfa, Tech-           226.
+             nomic Publishing, Lancaster, pp 253­       121 Miller, K. S., Singh, R. P., Farkas, B. E.
+             269.                                             1994, Viscosity and Heat Transfer Coef-
+                                                              ficients for Canola, Corn, Palm and
+       108 Pavel, J. 1995, Introduction to Food Pro-          Soybean Oil, J. Food Process. Preserv. 18,
+             cessing, Reston Publishing Co., Reston.          461­472.
+                                                        122 Moreira, R. G., Palau, J. Sweat, V., Sun,
+       109 Pantzaris, T. P. 1999, Palm Oil in Fry-            X. 1995 a, Thermal and Physical Prop-
+             ing, in Frying of Food, ed. D. Boskoy, I.        erties of Tortilla Chips as a Function of
+             Elmadfa, Technomic Publishing, Lan-              Frying Time, J. Food Process. Preserv.
+             caster, pp 223­252.                              19, 175­189.
+                                                        123 Hubbard, L. J., Farkas, B. E. 1999, A
+       110 Montaldo, A. 1984, Cultivo y Mejora-               Method for Determining the Convec-
+             miento de la Papa, Instituto Interameri-         tive Heat Transfer Coefficient During
+             cano Cooperacion para la Agricultura,            Immersion Frying, J. Food Process Eng.
+             San Jose.                                        22, 201­214.
+                                                        124 Hubbard, L. J., Farkas, B. E. 2000, Influ-
+       111 Artschwager, E. 1918, Anatomy of the               ence of Oil Temperature on Convective
+             Potato Plant, With Special Reference to          Heat Transfer During Immersion Fry-
+             the Ontogeny of the Vascular System,             ing, J. Food Process. Preserv. 24, 143­
+             J. Agric. Res. 14, 221­252.                      162.
+                                                        125 Costa, R. M., Oliveira, F. A. R., Delaney,
+       112 Artschwager, E. 1924, Studies on the               O., Gekas, V. 1999, Analysis of the
+             Potato Tuber, J. Agric. Res. 27, 809­835.        Heat Transfer Coefficient During Pota-
+                                                              to Frying, J. Food Eng. 39, 293­299.
+       113 Talburt, W. F., Schwimmer, S., Burr,         126 Ashkenazi, N., Mizrahi, S., Berk, Z.
+             H. K. 1975, Structural and Chemical              1984, Heat and Mass Transfer in Fry-
+             Composition of the Potato Tuber, in              ing, in Engineering and Food, ed. B. M.
+             Potato Processing, 3rd edn, ed. W. Tal-          McKenna, Elsevier Applied Science,
+             burt, O. Smith, AVI Publishing Co.,              London, pp 109­116.
+             Westport, pp 11­42.                        127 Rice, P., Gamble, M. H. 1989, Technical
+                                                              Note: Modelling Moisture Loss During
+       114 Banks, W., Greenwood, C. T. 1959, The              Potato Slice Frying, Int. J. Food Sci.
+             Starch of the Tuber and Shoots of the            Technol. 24, 183­187.
+             Sprouting Potato, Biochem. J. 73, 237­     128 Kozempel, M. F., Tomasula, P. M.,
+             241.                                             Craig, J. C. Jr. 1991, Correlation of
+                                                              Moisture and Oil Concentration in
+       115 True, R. H., Work, T. M., Bushway, R. J.,          French Fries, Lebensm. Wiss. Technol.
+             Bushway, A. A. 1983, Sensory Quality             24, 445­448.
+             of French Fries Prepared from Belrus       129 Ateba, P., Mittal, G. S. 1994, Modelling
+             and Russet Burbank Potatoes, Am. Po-             the Deep-Fat Frying of Beef Meatballs,
+             tato J. 60, 933­937.                             Int. J. Food Sci. Technol. 29, 429­440.
+                                                        130 Rao, V. N. M., Delaney, R. A. M. 1995,
+       116 Mottur, G. P. 1998, A Scientific Look at           An Engineering Perspective on Deep-
+             Potato Chips ­ The Original Savoury              Fat Frying of Breaded Chicken Pieces,
+             Snack, Am. Assoc. Cereal Chem. 34,               Food Technol. 49, 138­141.
+             620­626.
+
+       117 Lisinska, G., Leszczynski, W. 1991, Po-
+             tato Science and Technology, Elsevier Ap-
+             plied Science, London.
+
+       118 Weaver, M. L., Reeve, R. M., Kueneman,
+             R. W. 1975, Frozen French Fries and
+             Other Frozen Potato Products, in Pota-
+             to Processing, ed. G. Varela, A. E. Ben-
+             der, D. Morton, AVI Publishing Co.,
+             Westport, pp 403­442.
+
+       119 Gebhardt, B. 1996, Oils and Fats in
+             Snack Foods, in Bailey's Industrial Oil &
+                                                References 289
+
+131 Dincer, I. 1996, Modelling for Heat               Singh, A. Wirakartakusumah, CRC
+      and Mass Transfer Parameters in Deep            Press, Boca Raton, pp 237­245.
+      Frying of Products, Heat Mass Transfer    144 Saguy, I. S., Gremaud, E., Gloria, H.,
+      32, 109­113.                                    Turesky, R. J. 1997, Distribution and
+                                                      Quantification of Oil Uptake in French
+132 Moreira, R. G., Sun, X., Chen, Y. 1997,           Fries Utilizing Radiolabeled 14C Palmi-
+      Factors Affecting Oil Uptake in Tortilla        tic Acid, J. Agric. Food Chem. 45, 4286­
+      Chips in Deep-Fat Frying, J. Food Eng.          4289.
+      31, 485­498.                              145 Pedreschi, F., Aguilera, J. M., Arbildua,
+                                                      J. J. 1999, CLSM Study of Oil Location
+133 Chen, Y., Moreira, R. G. 1997, Model-             in Fried Potato Slices, Microsc. Anal.
+      ling of a Batch Deep-Fat Frying Process         37, 21­22.
+      for Tortilla Chips, Trans. IChemE Part    146 Bouchon, P., Aguirera, J. M. 2001, Mi-
+      C 75, 181­190.                                  crostructural Analysis of Frying of Po-
+                                                      tatoes, Int. J. Food Sci. Technol. 36,
+134 Ngadi, M. O., Watts, K. C., Correia, L. R.        669­676.
+      1997, Finite Element Method Model-        147 Bouchon, P., Hollins, P., Pearson, M.,
+      ling of Moisture Transfer in Chicken            Pyle, D. L., Tobin, M. J. 2001, Oil Distri-
+      Drum During Deep-Fat Frying, J. Food            bution in Fried Potatoes Monitored by
+      Eng. 32, 11­20.                                 Infrared Microspectroscopy, J. Food Sci.
+                                                      66, 918­923.
+135 Sahin, S., Sastry, S. K., Bayindirli, B.    148 Bouchon, P., Aguilera, J. M., Pyle, D. L.
+      1999, Heat Transfer During Frying of            2003, Structure-Oil Absorption Kinetics
+      Potato Slices, Lebensm. Wiss. Technol.          Relationships During Deep-Fat Frying,
+      32, 19­24.                                      J. Food Sci. 68, 2711­2716.
+                                                149 Ufheil, G., Escher, F. 1996, Dynamics
+136 Farid, M. M., Chen, X. D. 1998, The               of Oil Uptake During Deep-Fat Frying
+      Analysis of Heat and Mass Transfer              of Potato Slices, Lebensm. Wiss. Technol.
+      During Frying of Food Using a Moving            29, 640­644.
+      Boundary Solution, Heat Mass Transfer     150 Aguilera, J. M., Gloria, H. 2000, Oil Ab-
+      34, 69­77.                                      sorption During Frying of Frozen Par-
+                                                      fried Potatoes, J. Food Sci. 65, 476­479.
+137 Ni, H., Datta, A. K. 1999, Moisture, Oil    151 Gamble, M. H., Rice, P. 1987, Effect of
+      and Energy Transport During Deep-Fat            Pre-Fry Drying on Oil Uptake and Dis-
+      Frying of Food Materials, Trans.                tribution on Potato Crisp Manufacture,
+      IChemE Part C 77, 194­204.                      Int. J. Food Sci. Technol. 22, 535­548.
+                                                152 Moreira, R. G., Barrufet, M. A. 1998, A
+138 Carslaw, H. S., Jaeger, J. C. 1959, Con-          New Approach to Describe Oil Absorp-
+      duction of Heat in Solids, 2nd edn, Ox-         tion in Fried Foods: A Simulation
+      ford University Press, New York.                Study, J. Food Eng. 35, 1­22.
+                                                153 Bouchon, P., Pyle, D. L. 2002, School
+139 King, C. J. 1970, Freeze Drying of                of Food Biosciences, University of
+      Foodstuffs, Crit. Rev. Food Technol. 1,         Reading, Reading.
+      379­451.                                  154 Gamble, M. H., Rice, P., Selman, J. D.
+                                                      1987, Relationship Between Oil Uptake
+140 Farkas, B. E., Singh, R. P., Rumsey,              and Moisture Loss During Frying of
+      T. R. 1996 b, Modeling Heat and Mass            Potato Slices from c.v. Record UK Tu-
+      Transfer in Immersion Frying, II, Mod-          bers, Int. J. Food Sci. Technol. 22, 233­
+      el Solution and Verification, J. Food           241.
+      Eng. 29, 227­248.                         155 Moreira, R. J., Palau, J., Sun, X. 1995b,
+                                                      Simultaneous Heat and Mass Transfer
+141 Keller, C., Escher, F., Solms, J. A. 1986,        During the Deep Fat Frying of Tortilla
+      Method of Localizing Fat Distribution           Chips, J. Food Process Eng. 18, 307­320.
+      in Deep-Fat Fried Potato Products,
+      Lebensm. Wiss. Technol. 19, 346­348.
+
+142 Lamberg, I., Hallstrom, B., Olsson, H.
+      1990, Fat Uptake in a Potato Drying/
+      Frying Process, Lebensm. Wiss. Technol.
+      23, 295­300.
+
+143 Farkas, B. E., Singh, R. P., McCarthy,
+      M. J. 1992, Measurement of Oil/Water
+      Interface in Foods During Frying, in
+      Advances in Food Engineering, ed. R. P.
+290 8 Baking, Extrusion and Frying                           Deep-Fat Frying, J. Food Sci. 58, 204­
+                                                             205.
+       156 Nonaka, M, Sayre, R. N., Weaver, M. L.      169 Balasubramaniam, V. M., Chinnan,
+             1977, Oil Content of French Fries as            M. S., Mallikarjunan, P., Phillips, R. D.
+             Affected by Blanch Temperatures, Fry            1997, The Effect of Edible Film on Oil
+             Temperatures and Melting Point of               Uptake and Moisture Retention of a
+             Frying Oils, Am. Potato J. 54, 151­159.         Deep-Fat Fried Poultry Product, J. Food
+                                                             Process Eng. 20, 17­29.
+       157 Blumenthal, M. M. 2001, A New Look          170 Williams, R., Mittal, G. S. 1999, Low-
+             at Frying Science, Cereals Foods World          Fat Fried Foods with Edible Coatings:
+             46, 352­354.                                    Modelling and Simulation, J. Food Sci.
+                                                             64, 317­322.
+       158 Pokorny, J. 1980, Effect of Substrates      171 Malikarjunan, P., Chinnan, N. S., Bala-
+             on Changes of Fats and Oils During              subramaniam, V. M., Phillips, R. D.
+             Frying, Riv. Ital. Sostanze Grasse, 57,         1997, Edible Coatings for Deep-Fat Fry-
+             222­225.                                        ing of Starchy Products, Lebensm. Wiss.
+                                                             Technol. 30, 709­714.
+       159 Krokida, M. K., Oreopoulou, V., Marou-      172 Saguy, I. S., Ufheil, G., Livings, S.
+             lis, Z. B. 2000, Water Loss and Oil Up-         1998, Oil Uptake in Deep-Fat Frying:
+             take as a Function of Frying Time, J.           Review, Oleag. Corps Gras Lipids 5, 30­
+             Food Eng. 44, 39­46.                            35.
+                                                       173 Reeve, R. M., Neel, E. M. 1960, Micro-
+       160 Pinthus, E. J., Saguy, I. S. 1994, Initial        scopy Structure of Potato Chips, Am.
+             Interfacial Tension and Oil Uptake by           Potato J. 37, 45­57.
+             Deep-Fat Fried Foods, J. Food Sci. 59,    174 Costa, R. M., Oliveira, F. A. R., Boutche-
+             804­807, 823.                                   va, G. 2000, Structural Changes and
+                                                             Shrinkage of Potato During Frying, Int.
+       161 Gamble, M. H., Rice, P. 1988 a, Effect            J. Food Sci. Technol. 36, 11­24.
+             of Initial Solids Content on Final Oil    175 McDonough, C., Gomez, M. H., Lee,
+             Content of Potato Chips, Lebensm.               J. K., Waniska, R. D., Rooney, L. W.
+             Wiss. Technol. 21, 62­65, 1988 a.               1993, Environmental Scanning Elec-
+                                                             tron Microscopy Evaluation of Tortilla
+       162 Lulai, E. G., Orr, P. H. 1979, Influence          Chip Microstructure During Deep-Fat
+             of Potato Specific Gravity on Yield and         Frying, J. Food Sci. 58, 199­203.
+             Oil Content of Chips, Am. Potato J. 56,   176 van Marle, J. T., Clerkx, A. C. M., Boek-
+             379­390.                                        stein, A. 1992, Cryo-Scanning Electron
+                                                             Microscopy Investigation of the Texture
+       163 Gamble, M. H., Rice, P. 1989, The Ef-             of Cooked Potatoes, Am. Potato J. 11,
+             fect of Slice Thickness on Potato Crisp         209­216.
+             Yield and Composition, J. Food Eng. 8,    177 Aguilera, J. M., Gloria, H. 1997, Deter-
+             31­46.                                          mination of Oil in Fried Potato Prod-
+                                                             ucts by Differential Scanning Calori-
+       164 Selman, J. D., Hopkins, M. 1989, Fac-             metry, J. Agric. Food Chem. 45, 781­
+             tors Affecting Oil Uptake During the            785.
+             Production of Fried Potato Products       178 Pedreschi, F., Aguilera, J. M., Brown,
+             (Technical Memorandum 475), Campden             C. 2000, Characterization of Food Sur-
+             Food and Drink Research Association,            faces Using Scale-Sensitive Fractal
+             Chipping Campden.                               Analysis, J. Food Process Eng. 23, 127­
+                                                             143.
+       165 Baumann, B., Escher, E. 1995, Mass          179 Rubnov, M., Saguy, I. S. 1997, Fractal
+             and Heat Transfer During Deep Fat               Analysis and Crust Water Diffusivity of
+             Frying of Potato Slices ­ 1. Rate of            a Restructured Potato Product During
+             Drying and Oil Uptake, Lebensm. Wiss.           Deep-Fat Frying, J. Food Sci. 62, 135­
+             Technol. 28, 395­403.                           137, 154.
+
+       166 Pinthus, E. J, Weinberg, P., Saguy, I. S.
+             1992, Gel-Strength in Restructured Po-
+             tato Products Affects Oil Uptake Dur-
+             ing Deep-Fat Frying, J. Food Sci. 57,
+             1359­1360.
+
+       167 Pinthus, E. J., Weinberg, P., Saguy, I. S.
+             1995, Oil Uptake in Deep-Fat Frying as
+             Affected by Porosity, Journal of Food
+             Sci. 60, 767­769.
+
+       168 Pinthus, E. J., Weinberg, P., Saguy, I. S.
+             1993, Criterion for Oil Uptake During
+

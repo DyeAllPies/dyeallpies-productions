@@ -62,9 +62,32 @@ class RawWriter:
 
 
 def decode_check(path):
-    """The delivery gate: a full decode with errors only. Returns (ok, stderr)."""
+    """The delivery gate: a full decode with errors only. Returns (ok, stderr). It passes a SILENT file
+    (2026-09-18: the finger web's exports had no audio track for a whole round because the upright master
+    was made without one and `audio_from=` copied nothing), so print `streams()` next to it."""
     r = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-f", "null", "-"], capture_output=True, text=True)
     return r.returncode == 0 and not r.stderr.strip(), r.stderr
+
+
+def streams(path):
+    """One line for the delivery report: the video stream, and the audio stream or NO AUDIO."""
+    p = probe(path); v = p["video"]; a = p["audio"]
+    s = f"video {v['codec_name']} {v['width']}x{v['height']} {v.get('nb_frames', '?')} frames"
+    return s + (f", audio {a['codec_name']} {a['sample_rate']} Hz {a['channels']} ch" if a else ", NO AUDIO")
+
+
+def mux_audio(video, audio_src, out, start=0.0, duration=None, bitrate="160k"):
+    """Lay `audio_src`'s audio from `start` seconds under `video`'s video stream (copied, no re-encode; the
+    audio re-encoded to AAC so the trim is sample-accurate). `duration` limits the audio read; every video
+    frame is kept. NO -shortest here: with the audio trimmed to the video's length it ends an AAC frame early
+    and -shortest then dropped the last video frame of both exports (2026-09-18). For an export rendered from a
+    silent master: `start` is the export's first source frame over the frame rate."""
+    cmd = ["ffmpeg", "-v", "error", "-y", "-i", video, "-ss", f"{start:.4f}"] + (["-t", f"{duration:.4f}"] if duration else [])
+    cmd += ["-i", audio_src, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", bitrate, "-movflags", "+faststart", out]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError("mux failed: " + r.stderr)
+    return out
 
 
 def preview_720(src, out):
